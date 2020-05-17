@@ -1,0 +1,30 @@
+---
+title: Assessment
+type: "generic_page"
+---
+
+# Course assessment
+
+Students will be assessed on the basis of the following components:
+
+- [**10%**] Presence and class participation;
+
+- [**40%**] Completion of a homework task between week 1 and week 2;
+
+- [**50%**] Completion of a final assignment consisting in producing a publication-quality visualization of either rating data or reaction time data.
+
+
+# Assessment material
+
+- Template for the session summaries ([here](https://github.com/vini-macuch-silva/intro-to-psycholinguistics/tree/master/materials/S01/Summary-S01.Rmd));
+
+- Assessment rubric for the written assignments ([here](https://github.com/vini-macuch-silva/intro-to-psycholinguistics/tree/master/materials/Ass-rubric-summary.pdf));
+
+- Assessment rubric for the paper presentations ([here](https://github.com/vini-macuch-silva/intro-to-psycholinguistics/tree/master/materials/Ass-rubric-presentation.pdf));
+
+- Questions for the report assignment ([here](https://github.com/vini-macuch-silva/intro-to-psycholinguistics/tree/master/materials/Reference-final-assignment.pdf)).
+
+
+<div class="alert">
+The course instructor will upload a summary of each session by the beginning of the following session.
+</div>
