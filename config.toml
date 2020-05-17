@@ -9,7 +9,7 @@
 # GitHub pages the way I've done for the example site at
 # https://djnavarro.github.io/hugo-slum/, then you can do something
 # like this:
-baseurl = "/data-viz-for-behavioral-scientists/"
+baseurl = "/basics-of-data-viz-for-behavioral-scientists/"
 
 
 
