@@ -5,4 +5,4 @@ type: "generic_page"
 
 # Course materials
 
-The materials consist primarily of a browser-readable tutorial, as used in class. The tutorial can be found [here](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/materials/basics-of-data-wrangling-in-r.html) 
+The primary source for this course consists of a browser-readable code book, which is used as a teaching aid in class but can also serve as a self-standing tutorial. The book can be found [here](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/basics-of-data-wrangling-in-r.html).
