@@ -5,4 +5,4 @@ type: "generic_page"
 
 # Course materials
 
-The primary source for this course consists of a browser-readable code book, which is used as a teaching aid in class but can also serve as a self-standing tutorial. The book can be found [here](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/R-Markdown-book/).
+The primary source for this course consists of a browser-readable code book, which is used as a teaching aid in class but can also serve as a self-standing tutorial. The book can be found [here](https://vini-macuch-silva.github.io/basics-of-data-viz-for-behavioral-scientists/R-Markdown-book/).
