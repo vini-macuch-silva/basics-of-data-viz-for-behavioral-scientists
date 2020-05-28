@@ -5,14 +5,14 @@ type: "generic_page"
 
 # Course syllabus
 
-- Session 1 [xx/xx]: Introduction to data wrangling in R
+- Session 1 [xx/xx]: Basics of data wrangling in R
 
-- Session 2 [xx/xx]: Exploring and visualizing rating data from a psycholinguistic norming study
+- Session 2 [xx/xx]: Statistical data types and measurement levels in behavioral research
 
-- Session 3 [xx/xx]: Exploring and visualizing rating data from a psycholinguistic norming study
+- Session 3 [xx/xx]: Exploring rating data from a psycholinguistic experiment
 
-- Session 4 [xx/xx]: Exploring and visualizing rating data from a psycholinguistic norming study
+- Session 4 [xx/xx]: Communicating patterns in rating data from a psycholinguistic experiment
 
-- Session 5 [xx/xx]: Exploring and visualizing reaction time data from a psycholinguistic experiment
+- Session 5 [xx/xx]: Exploring reaction time data from a psycholinguistic experiment
 
-- Session 6 [xx/xx]: Exploring and visualizing reaction time data from a psycholinguistic experiment
+- Session 6 [xx/xx]: Communicating patterns in reaction time data from a psycholinguistic experiment
