@@ -1,4 +1,5 @@
 book_filename: "basics-data-viz"
+output_dir: "docs"
 delete_merged_file: true
 language:
   ui:
