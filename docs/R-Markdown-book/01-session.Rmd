@@ -6,13 +6,31 @@ We will start by installing R -- which is the programming language we will be us
 
 To install R, go to the following webpage > https://cloud.r-project.org/ < and select your operating system as well as your R version. As the page will tell you, you want to go for base R if this is your first install. Once you've installed R, open it and let's get familiarized with some basic concepts and operations, as well as with the way R syntax generally works.
 
-R serves first and foremost as a computing tool, that is, as a tool for calculating things but also for manipulating and organizing data of different sorts. To get started, type in your R console `2 + 2`, as shown in the code box below, and see what happens. To run the code in R, either press Enter or select the bit of code and press Ctrl + Enter. Below the inputted code you should see the result of your operation, which in this case is straightforward and not in any sense unexpected.
+R serves first and foremost as a computing tool, that is, as a tool for calculating things. To get started, type in your R console `2 + 2`, as shown in the code box below, and see what happens. To run the code in R, either press *Enter* or select the bit of code and press *Ctrl + Enter*. Below the inputted code you should see the result of your operation, which in this case is straightforward and not in any sense unexpected.
 
 ```{r}
 2 + 2
 ```
 
-Now, obviously we will use R to run much more complex and useful calculations. More importantly for our purposes, we will use R to manipulate data in ways which help us discover and highlight data patterns which we deem interesting either for ourselves as data analysts or for an external audience, which given the context of this course is assumed to be academic or to some extent or another familiar with the goals and interests of scientific data communication. But for now let's continue with our R basics. This is a good point to bring in RStudio, which will only enhance our experience as R data analysts. You can download RStudio here > https://rstudio.com/products/rstudio/download/. Once you've installed RStudio, let's have a look at the interface it offers us.
+In R you are able to perform the same arithmetic operations you'd be able to perform in any programming language, such as subtraction `2 - 2`, multiplication `2 * 2`, or division `2 / 2`. You are also able to use logical operators to check whether a given relation between two or more elements is true or false. Suppose you want to know whether `2` is larger than `3`, you can check that by running the code below.
+
+```{r}
+2 > 3
+```
+
+Unsurprisingly, the output of the code above tells us that `2` is not greater than `3`. Other important logical operations include checking whether two elements are equal to one another `2 == 3`, not equal to another `2 != 3`, or checking whether the relation between two sets of elements or two individual operations is true or false. For instance, check the difference between the output of the two code snippets below.
+
+```{r}
+2 >= 3 | 3 >= 3
+
+2 >= 3 & 3 >= 3
+```
+
+While in the first case the output of the joint logical operation is true, in the second case it is false, and this has to do with the usage of the operators `|` and `&`. What these operators do is to evaluate different combinations of individual outputs. In both cases, the individual operations which get evaluated consist of checking whether a given value is equal to or higher than `3`. `|` indicates that the output of either one or the other individual operation should be equal to or greater than `3`, while `&` indicates that the output of both individual operations should be equal to or greater than `3`. These sorts of logical operations will come in very handy later when we manipulate data structures consisting of lists of several values.
+
+Now, other than performing basic operations such as the ones above, more importantly for our purposes we will use R to manipulate and organize data in ways which help us discover and highlight patterns which we deem interesting as data analysts. More than that, we will use R to create visual representations of data so as to help us communicate any interesting data patterns to an external audience. In this course, we will learn how to communicate data to an audience which is academic or at least to some extent or another familiar with the goals and interests of scientific communication. But first let's learn some more about the basics in R. 
+
+This is a good point to bring in RStudio, which will only enhance our experience as R data analysts. You can download RStudio here > https://rstudio.com/products/rstudio/download/. Note that you need to have base R installed to be able to run RStudio. Once you've installed RStudio, let's have a look at the interface it offers us.
 
 ![RStudio interface](../images/rstudio-windows.png)
 
@@ -20,7 +38,7 @@ In a nutshell, RStudio has 4 panels or regions of interest, as shown in the pict
 
 ## Creating data structures
 
-Now that we know where to write code in RStudio and where to look for the output and representation of our operations, let's have a look at how we can create and manipulate different types of variables in R. Let's bring back our basic arithmetic operation from above, `2 + 2`. It's fine simply running the operation as this chunk of code currently does, but usually you will want to access the output of one operation and feed it to another operation, or maybe you will want to store it locally for purposes of record-keeping and data management. Let's then store the result of `2 + 2` in a new variable, which we can call *op1*, short for operation one. You can do that in R by assigning an operation or an already existing code output to a label, an unique identifier which stands for your newly created variable. Simply type the name of your new variable followed by an arrow and the operation or code output you wish to assign to it.  
+Now that we know where to write code in RStudio and where to look for the output and representation of our operations, let's have a look at how we can create and manipulate different types of data in R. Let's bring back our basic arithmetic operation from above, `2 + 2`. It's fine simply running the operation as this chunk of code currently does, but usually you will want to access the output of one operation and feed it to another operation, or maybe you will want to store it locally for purposes of record-keeping and data management. Let's then store the result of `2 + 2` in a new variable, which we can call *op1*, short for operation one. You can do that in R by assigning an operation or an already existing code output to a label, an unique identifier which stands for your newly created variable. Simply type the name of your new variable followed by an arrow and the operation or code output you wish to assign to it.  
 
 ```{r}
 op1 <- 2 + 2
@@ -151,7 +169,7 @@ df1_long
 
 ```
 
-As you will notice as you start coding in R, usually there are multiple alternative ways of achieving the same desired end result. One alternative to our reshaping operation as coded above involves using the so-called *pipe* operator `%>%`, which is one of the many handy tools that come with the **tidyverse**. If we inspect our code, more specifically the arguments in the `pivot_longer()` function, we see that the original data frame, *df1*, is called inside the function as its first argument. What that means is that `pivot_longer` needs to know which data frame is to be reshaped, the specific instructions of how exactly to reshape it being given in the arguments `names_to` and `values_to`. Now, in many functions you will need to specify which data source is the object of whatever operation the function is supposed to perform. If you are performing a single operation at a time, specifying the data source in the function argument is fine, however, if you are to perform several distinct operations, all sharing the same data source, chaining those operations might be a more programmatic, or at least more convenient, way of doing things. This is where the *pipe* operator comes in. Using `%>%` to 'pipe' a data source into one or more operations is a great way of saving yourself typing and writing a more fluid, though arguably less explicit, chunk of code. Run the code below and check whether the output differs from the code chunk above.
+As you will notice as you start coding in R, usually there are multiple alternative ways of achieving the same desired end result. One alternative to our reshaping operation as coded above involves using the so-called *pipe* operator `%>%`, which is one of the many handy tools that come with the **tidyverse**. If we inspect our code, more specifically the arguments in the `pivot_longer()` function, we see that the original data frame, *df1*, is called inside the function as its first argument. What that means is that `pivot_longer` needs to know which data frame is to be reshaped, the specific instructions of how exactly to reshape it being given in the arguments `names_to` and `values_to`. Now, in many functions you will need to specify which data source is the object of whatever operation the function is supposed to perform. If you are performing a single operation at a time, specifying the data source in the function argument is fine, however, if you are to perform several distinct operations, all sharing the same data source, chaining those operations might be a more convenient way of doing things. This is where the *pipe* operator comes in. Using `%>%` to 'pipe' a data source into one or more operations is a great way of saving yourself typing and writing a more fluid, though arguably less explicit, chunk of code. Run the code below and check whether the output differs from the code chunk above.
 
 ```{r}
 df1_long <- df1 %>%
@@ -226,7 +244,7 @@ df1_long %>%
 
 ```
 
-Now the operation works seamlessly. Our initial failed attempt should serve as a reminder, however, that one should always know what type of data they are trying to manipulate. In many cases, we won't exactly know, for example, why a given operation won't work on a vector of type **logical** or **numeric**, which will require some research about the exact operator or function we're trying to use, but overall knowing how our variables of interest are stored and represented in R is a must to any process of data manipulation and analysis, particularly when the data we deal with have meaningful counterparts in a study design, such as a group of participants or a particular type of measurement. 
+Now the operation works seamlessly. Our initial failed attempt should serve as a reminder, however, that one should always know what type of data they are trying to manipulate. In many cases, we won't exactly know, for example, why a given operation won't work on a vector of type **logical** or **numeric**. Such situations will usually require some research about the exact operator or function we're trying to use, but overall knowing how our variables of interest are stored and represented in R is a must to any process of data manipulation and analysis. This will be particularly true when the data we deal with have meaningful counterparts in a study design, such as a group of participants or a particular type of measurement. 
 
 Let's try one more trick before summarizing what we've learned so far. Currently, *numbers* is organized in an ascending order. But what if we wanted to display our number values in a descending order? We could create a new *numbers* vector with the reverse order, and then replace the old vector with the new one, but that is a pretty roundabout solution. Instead, we can use the **dplyr** function `arrange()`, as shown below.
 
@@ -261,7 +279,7 @@ In the next session of our course we will talk about statistical data types and 
 
 1. Convert *df1_long* back to its original, wide format. Try using the `pivot_wider()` function from the **tidyr** package.
 
-2. Remove the variable *letters* from *df1*. Try using `select()`, and for that inspect the function documentation.
+2. Remove the variable *letters* from *df1*. Try using `select()`, and for that inspect the function documentation using the **Help** tab on the lower right panel of RStudio.
 
 3. Find observations that have a *numbers* value above 4 and then add 4 to those values. Chain those two operations together using the pipe `%>%`.
 
