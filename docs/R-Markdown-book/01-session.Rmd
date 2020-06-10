@@ -18,7 +18,7 @@ In R you are able to perform the same arithmetic operations you'd be able to per
 2 > 3
 ```
 
-Unsurprisingly, the output of the code above tells us that `2` is not greater than `3`. Other important logical operations include checking whether two elements are equal to one another `2 == 3`, not equal to another `2 != 3`, or checking whether the relation between two sets of elements or two individual operations is true or false. For instance, check the difference between the output of the two code snippets below.
+Unsurprisingly, the output of the code above tells us that `2` is not greater than `3`. Other important logical operations include checking whether two elements are equal to one another `2 == 3`, not equal to another `2 != 3`, or whether the relation between multiple sets of elements or multiple individual operations is true or false. For instance, notice the difference between the output of the two code snippets below.
 
 ```{r}
 2 >= 3 | 3 >= 3
@@ -28,7 +28,7 @@ Unsurprisingly, the output of the code above tells us that `2` is not greater th
 
 While in the first case the output of the joint logical operation is true, in the second case it is false, and this has to do with the usage of the operators `|` and `&`. What these operators do is to evaluate different combinations of individual outputs. In both cases, the individual operations which get evaluated consist of checking whether a given value is equal to or higher than `3`. `|` indicates that the output of either one or the other individual operation should be equal to or greater than `3`, while `&` indicates that the output of both individual operations should be equal to or greater than `3`. These sorts of logical operations will come in very handy later when we manipulate data structures consisting of lists of several values.
 
-Now, other than performing basic operations such as the ones above, more importantly for our purposes we will use R to manipulate and organize data in ways which help us discover and highlight patterns which we deem interesting as data analysts. More than that, we will use R to create visual representations of data so as to help us communicate any interesting data patterns to an external audience. In this course, we will learn how to communicate data to an audience which is academic or at least to some extent or another familiar with the goals and interests of scientific communication. But first let's learn some more about the basics in R. 
+Now, other than performing basic operations such as the ones above, more importantly for our purposes we will use R to manipulate and organize data in ways which help us discover and highlight patterns which we deem interesting as data analysts. More than that, we will use R to create visual representations of data so as to help us communicate any interesting data patterns to an external audience. In this course, we will learn how to communicate data to an audience which is academic or to some extent or another familiar with the goals and interests of scientific communication. But first let's learn some more about the basics in R. 
 
 This is a good point to bring in RStudio, which will only enhance our experience as R data analysts. You can download RStudio here > https://rstudio.com/products/rstudio/download/. Note that you need to have base R installed to be able to run RStudio. Once you've installed RStudio, let's have a look at the interface it offers us.
 
@@ -111,7 +111,14 @@ str(df1)
 
 ```
 
-By inspecting our new data frame we can see that *letters*, originally a character vector, is now a factor, each individual letter consisting of a label, or as R calls it, a level, of its own. There is an explanation for this: when creating a data frame R converts character vectors to factors by default. This can lead to confusion later on when you manipulate your variable, now part of a data frame. In case the automatic conversion is unintended, you can avoid it by specifying the argument `stringsAsFactors` in the `data.frame()` function. Functions in R, like `data.frame()`, have arguments, which are slots that get filled with both mandatory and optional information. Think of arguments as switches that can be manipulated in order to produce slightly different outputs with the same function call. In the code below, we change `stringAsFactors` from its default `TRUE` to `FALSE` in order to avoid the conversion of our character vector. Notice the difference in the output.
+By inspecting our new data frame we can see that *letters*, originally a character vector, is now a factor, each individual letter consisting of a label, or as R calls it, a level, of its own. There is an explanation for this: when creating a data frame R converts character vectors to factors by default. This can lead to confusion later on when you manipulate your variable, now part of a data frame. In case the automatic conversion is unintended, you can avoid it by specifying the argument `stringsAsFactors` in the `data.frame()` function. 
+
+***
+**NOTE**: Starting with R version 4.0, released in June 2020, `data.frame()` does not convert character vectors to factors by default anymore. If you have installed R from scratch right before working on this session, you will be using R version 4.0 or newer, which means your default is `stringsAsFactors = FALSE`.
+
+***
+
+Functions in R, like `data.frame()`, have arguments, which are slots that get filled with both mandatory and optional information. Think of arguments as switches that can be manipulated in order to produce slightly different outputs with the same function call. In the code below, we change `stringAsFactors` from its default `TRUE` to `FALSE` in order to avoid the conversion of our character vector. Notice the difference in the output.
 
 ```{r}
 df1 <- data.frame(numbers, letters, stringsAsFactors = FALSE)
@@ -234,17 +241,28 @@ df1_long %>%
 
 ```
 
-This didn't work the way we wanted, but luckily R throws error warnings to help us understand what might have gone awry. According to the warning, the *greater-than* operator `>` is not meaningful for factors. Let's try to make sense of that. First, recall that the *numbers* variable is a factor, which means that the numbers are only stored as labels and not as actual numeric representations. Now the operation we are trying to perform only makes sense when applied to numeric or integer vectors, given that a nominal value cannot be greater than another nominal value. Let's try to convert *numbers* back to a numeric vector and see whether the operation works.
+This didn't work the way we wanted, but luckily R throws error warnings to help us understand what might have gone awry. According to the warning, the *greater-than* operator `>` is not meaningful for factors. Let's try to make sense of that. First, recall that the *numbers* variable is a factor, which means that the numbers are only stored as labels and not as actual numeric representations. Now the operation we are trying to perform only makes sense when applied to numeric or integer vectors, given that a nominal value cannot be greater than another nominal value. Let's then try to convert *numbers* back to a numeric vector and attempt to perform the operation again.
 
 ```{r}
-df1_long$numbers <- as.numeric(df1_long$numbers)
+as.numeric(df1_long$numbers)
+```
+
+Even before we have the chance to try the extraction operation again, we can see that something went wrong with the factor conversion. The resulting vector does not seem to show the original numeric values but rather the labels associated with them in the factor representation. If we look for help in the documentation on `factor`, we find the following note:
+
+> `as.numeric` applied to a factor is meaningless, and may happen by implicit coercion. To transform a factor f to approximately its original numeric values, `as.numeric(levels(f))[f]` is recommended
+
+Let's then do what the R documentation recommends before we attempt to perform our original extraction operation again.
+
+```{r}
+as.numeric(levels(df1_long$numbers))[df1_long$numbers]
+
+df1_long$numbers <- as.numeric(levels(df1_long$numbers))[df1_long$numbers]
 
 df1_long %>% 
   filter(numbers > 2)
-
 ```
 
-Now the operation works seamlessly. Our initial failed attempt should serve as a reminder, however, that one should always know what type of data they are trying to manipulate. In many cases, we won't exactly know, for example, why a given operation won't work on a vector of type **logical** or **numeric**. Such situations will usually require some research about the exact operator or function we're trying to use, but overall knowing how our variables of interest are stored and represented in R is a must to any process of data manipulation and analysis. This will be particularly true when the data we deal with have meaningful counterparts in a study design, such as a group of participants or a particular type of measurement. 
+Now the factor conversion works seamlessly, and so does the subsequent extraction operation. Our failed attempts should serve as a reminder that one should always know what type of data they are trying to manipulate. In many cases, we won't exactly know, for example, why a given operation won't work on a vector of type **factor** or **numeric**. Such situations will usually require some research about the exact operator or function we're trying to use, but overall knowing how our variables of interest are stored and represented in R is a must to any process of data manipulation and analysis. This will be particularly true when the data we deal with have meaningful counterparts in a study design, such as a group of participants or a particular type of measurement. 
 
 Let's try one more trick before summarizing what we've learned so far. Currently, *numbers* is organized in an ascending order. But what if we wanted to display our number values in a descending order? We could create a new *numbers* vector with the reverse order, and then replace the old vector with the new one, but that is a pretty roundabout solution. Instead, we can use the **dplyr** function `arrange()`, as shown below.
 
@@ -256,7 +274,7 @@ df1_long %>%
 
 This seems to work just fine. Of course not always will we have a handy **tidyverse** function like `arrange()` to quickly solve our problems, but many recurring wrangling operations have been turned into functions to simplify data analysis in R. This is the exact reason why we use the **tidyverse**, as its packages make our job as data analysts much easier in many instances. This is not to say that one needs to rely on these packages and functions, in fact we can even create our own functions or use coding solutions that we might know from other programming languages. The point is to realize which options work best for our individual purposes, considering also the constrains of the data we have at hand.
 
-In the next session of our course we will talk about statistical data types and how we might map the different types of data and measurements found in behavioral studies onto the data structures we can create and manipulate in R. For now, let's recapitulate the key points that we learned in today's session.
+In the next session of our course, before we learn how to plot data, we will talk about how to map data reflecting some of the measures typically found in behavioral research onto the data structures we can create and manipulate in R. For now, let's recapitulate the key points that we learned in today's session.
 
 ## Session summary
 

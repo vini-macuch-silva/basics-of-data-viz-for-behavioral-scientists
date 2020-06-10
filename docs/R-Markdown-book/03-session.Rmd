@@ -1,0 +1,185 @@
+# Communicating patterns in rating data from a psycholinguistic study
+
+## Laying out the basic data patterns
+
+We started by exploring our data and deciding what aspect of it we should highlight and communicate to our audience. Now, we are going to go through the steps of producing a camera-ready visualization of the data, taking into account these considerations of what is to be communicated.
+
+As a reminder, we are dealing with categorical data, where each 'value' consists of a category, in our case one point on a 7-point psychometric scale measuring the compositionality of literal and non-literal idioms. More specifically, our data is ordinal, meaning that the different categories are ranked, as the task participants in the study were asked to perform consisted of rating the compositionality of each individual stimulus they saw using the provided 7-point scale. Now, our main goal is to highlight any potentially systematic differences between the participant ratings as a function of the experimental conditions.
+
+Let's then start by plotting the data using a basic and straightforward **ggplot2** code. All we have to do to create a basic representation of our data is to specify the required arguments in the `ggplot()` function, namely `aes()`, which requires a variable to be plotted to the x-axis -- our experimental conditions -- and one variable to be plotted to the y-axis  -- our ratings. We subsequently tell `ggplot()` to plot the data using boxplots, which we decided was going to be our geom of choice to highlight the patterns of interest in our rating data.
+
+```{r include=FALSE}
+library(tidyverse)
+
+# load data
+exp1 <- read_csv("C:/Users/vinim/Documents/MEGA/Documents/PhD/Teaching/Basics-of-data-visualization-for-behavioral-scientists/data-sets/Michl(2019)/all-250-6000ALL.csv")
+
+# convert variable to factor
+exp1$cond <- as.factor(exp1$cond)
+
+# recode variable 
+exp1$cond <- fct_recode(exp1$cond, metonymic = "1", metaphoric = "2", metaphoric = "3", literal = "4", control = "5")
+
+```
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat)) +
+  geom_boxplot()
+```
+
+Now that we have the basic data patterns laid out, let's start refining our plot, little by little, so it looks increasingly better, both in terms of transparency and effectiveness but also in terms of aesthetic pleasingness. The first thing we are going to do is to flip the boxplots, so they are plotted horizontally as opposed to vertically. Since our main goal with this visualization is to allow our audience to notice where most of the rating mass lies on the scale, it makes sense to plot the scale horizontally, so one can easily notice the data spread for each category but also any differences between categories, which will be plotted one on top of the other. Let's try to achieve that by reversing our `x` and `y` arguments in the `ggplot()` function.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(rat, cond)) +
+  geom_boxplot()
+```
+
+This doesn't seem to work. The problem here is that despite having reverted the axes in the `ggplot()` function `geom_boxplot()` still plots the boxplots vertically, which ends up causing the unintended result. What we need to do here is to flip the `x, y` coordinates. Notice what happens when you add the `coord_flip()` call to our initial code.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat)) +
+  geom_boxplot() +
+  coord_flip()
+```
+
+## Modifying major elements of the plot
+
+Now that we have our data plotted the way we would like it to be, let's work on some further adjustments to the base plot which will greatly improve the effectiveness of our data communication. Remember that there are a couple of useful ways of highlight and contrasting elements. Relevant for this case is the manipulation of color and fill scales. First, let's assign different fills to each experimental condition, which is the variable assigned to the x-axis but plotted on the y-axis, given that we flipped our plot coordinates.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot() +
+  coord_flip()
+```
+
+Now each condition is represented by a different color. Let's change the color palette and slightly increase the transparency of the filled colors. 
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2")
+```
+
+Now let's remove the gray background so as to make the plot somewhat cleaner. Let's also thicken the lines surrounding the boxplots and extending from them, the so-called boxplot whiskers, in order to create a sharper contrast between the boxplots and the white background.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7, lwd = 1.2) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2") + 
+  theme_minimal()
+```
+
+## Refining minor elements of the plot
+
+As it is, the plot looks pretty good already, the most important aspects of the underlying data appropriately represented and well visible. Now we can fix minor issues which arguably only contribute cosmetically to the plot, though when considered together with the previous changes make an astounding impact to the overall quality of the resulting visualization.
+
+Firs, let's get rid of unnecessary elements. Let's remove the grid lines on the y-axis extending horizontally from the condition names. Let's also get rid of the axis titles, which only clutter the plot, as well as the legend that appeared when we added fills to the plot.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7, lwd = 1.2) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2") + 
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.y = element_blank(), legend.position = "none")
+
+```
+
+Now let's add elements to the plot. Let's show the full range of the scale, 1 to 7, to help guide viewers horizontally along the different points of the scale.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7, lwd = 1.2) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2") + 
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.y = element_blank(), legend.position = "none") +
+  scale_y_discrete(limits = c(1:7))
+
+```
+
+Now let's improve the quality of the labels on the different axes. Let's make them more visible by increasing their size and making them bold.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7, lwd = 1.2) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2") + 
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.y = element_blank(), legend.position = "none",
+        axis.text.y = element_text(face = "bold", size = 14), 
+        axis.text.x = element_text(face = "bold", size = 14)) +
+  scale_y_discrete(limits = c(1:7))
+
+```
+
+The next step is to increase the distance between the labels and the actual graph.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7, lwd = 1.2) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2") + 
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.y = element_blank(), legend.position = "none",
+        axis.text.y = element_text(face = "bold", size = 14, margin = margin(t = 0, r = 10, b = 0, l = 0)), 
+        axis.text.x = element_text(face = "bold", size = 14, margin = margin(t = 10, r = 0, b = 0, l = 0))) +
+  scale_y_discrete(limits = c(1:7))
+
+```
+
+Now, let's capitalize the labels on the y-axis. There's at least two options to do that. We could recode the underlying factor in `exp1`, though that would change the actual data representation in R. A less permanent solution is to tell `ggplot()` to replace the existing labels with new ones, which will not change the underlying data representation.
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7, lwd = 1.2) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2") + 
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.y = element_blank(), legend.position = "none",
+        axis.text.y = element_text(face = "bold", size = 14, margin = margin(t = 0, r = 10, b = 0, l = 0)), 
+        axis.text.x = element_text(face = "bold", size = 14, margin = margin(t = 10, r = 0, b = 0, l = 0))) +
+  scale_y_discrete(limits = c(1:7)) +
+  scale_x_discrete(labels = c("control" = "Control", "literal" = "Literal",
+                              "metonymic" = "Metonymic", "metaphoric" = "Metaphoric"))
+
+```
+
+Last, let's add a title to the plot. Note that in many cases titles need not be added to plots, as that can be done straight in the text/ presentation editor one is using (including R, as we will see later).
+
+```{r, out.width="70%", fig.align='center'}
+exp1 %>%
+  ggplot(aes(cond, rat, fill = cond)) +
+  geom_boxplot(alpha = .7, lwd = 1.2) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set2") + 
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.y = element_blank(), legend.position = "none",
+        axis.text.y = element_text(face = "bold", size = 14, margin = margin(t = 0, r = 10, b = 0, l = 0)), 
+        axis.text.x = element_text(face = "bold", size = 14, margin = margin(t = 10, r = 0, b = 0, l = 0)),
+        plot.title = element_text(face = "bold", size = 24, hjust = .5, margin = margin(t = 10, r = 0, b = 25, l = 0))) +
+  scale_y_discrete(limits = c(1:7)) +
+  scale_x_discrete(labels = c("control" = "Control", "literal" = "Literal",
+                              "metonymic" = "Metonymic", "metaphoric" = "Metaphoric")) +
+  ggtitle("Sentence ratings")
+
+```

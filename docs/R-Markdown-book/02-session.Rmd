@@ -1,0 +1,39 @@
+# Exploring and visualizing data in R
+
+## Measurement levels in behavioral research
+
+Before we learn how to plot data in R, let's discuss how the different types of data objects found in R might relate to the levels of measurement usually found in behavioral research. As a disclaimer, by behavioral research I mean widely diverse strands of research, conducted across different fields of the social and cognitive sciences, where behavioral data is the main object of measurement and analysis. Depending on the specific research area and methodology employed, behavioral data can be collected using experiments, questionnaires and surveys, as well as a myriad of other methods. Regardless of the specific data collection method, the considerations we discuss below apply primarily to measures of decision-making and information and linguistic processing, understood both in terms of real-time processing and in terms of offline judgments and interpretation. The examples we will be using in the remainder of this course come from a psycholinguistic study on non-literal language and include both offline and online data.
+
+In behavioral research, traditionally a distinction is made between four basic levels of measurement, namely **nominal**, **ordinal**, **interval**, and **ratio**. Just by looking at the names of the measures themselves, we can see that these levels have rather direct counterparts in the data types found in R, as well as in other programming languages for that matter. In practice, however, the mapping between data objects in R and different levels of measurement is not necessarily straightforward, as these four basic types can be extended to many other categories and sub-types. One must always understand what measure scale their data best corresponds to, so as to encode it appropriately in R both when creating data or when modifying data imported from external sources. Let's start by distinguishing the four basic types of measures.
+
+* **Nominal** measures are best understood as categories or instances of any sort of classification where each value represents one category or class. The most basic type of nominal measures consists of dichotomous data, where there are only two categories and every token must be classified as either one or the other category. There can also be multiple categories, each of them identified by a unique identifier, a label consisting of a name or a number.
+
+  * Example in study design: In an experimental study, individual participants as well as individual stimuli items are understood as nominal measures for the purposes of data and statistical analysis. Individual conditions reflecting a certain experimental manipulation also consist of nominal measures, as well as questions in a questionnaire or survey. 
+
+  * Representation in R: Nominal measures should be coded as unordered factors, the labels representing unique strings or numbers. No arithmetic operations can be performed on nominal measures, yet, one can check whether two values are the same or whether a certain token is included in a given category.
+  
+* **Ordinal** measures are similar to nominal insofar as they represent categories, however, these categories are naturally ordered or ranked, as in a grading or rating scale. Even though the order of the categories is important, only the actual points on the scale are of significance, the intervals between them not being captured by the ordinal scale. Despite variation across disciplines and ongoing discussion about the matter, the most appropriate measure of central tendency applied to ordinal data is the median.
+
+  * Example in study design: In an experimental study, any sort of scale presented to a participant or respondent consists of an ordinal measure. Each point on the scale is represented by a label, and these label are organized in a specific order which has some theoretical or methodological significance. Scales may also be dichotomous, as in judgments of truth value.
+  
+  * Representation in R: Ordinal measures should be coded as ordered factors, the labels following a specific order which can be specified by the analyst. The same sorts of operations that can be performed on nominal measures can be performed on ordinal measures.
+  
+* **Interval** measures reflect an underlying scale where the degree of difference between the individual points on the scale is meaningful. Such intervals may contain arbitrary reference points, such as a zero/ starting point, which can be considered an absolute minimum.
+
+  * Example in study design: In an experimental study, reaction times are interval measures. Zero is the absolute minimum, as the measurement begins only when a certain stimulus or motor/ verbal action is triggered.
+  
+  * Representation in R: Interval measures should be coded as numeric. Any sort of arithmetic operation can be performed on interval measures. The most commonly used measure of central applied to interval measures tendency is the mean.
+  
+* **Ratio** measures reflect the relationship between two units of measurement, for example a count of certain type of token in a given time window. Ratios contain non-arbitrary zero values, which makes it meaningful to say, for instance, there are are twice as as many tokens of a given event or category compared to another event or category.
+
+  * Example in study design: In an experimental study, counts are ratio measures. 
+  
+  * Representation in R: Ratio measures can be coded as either numeric or integer, depending on the corresponding variable in a study design. Counts should be coded as integer.
+  
+These four basic scales of measure illustrate only a portion of the possible types of measurements found in behavioral study designs. This coarse-grained distinction suffices for the purposes of our course, however, these considerations also serves to highlight how important it is to understand how the variables and measurements of a study might relate to the objects used in a programming language to represent and analyze the empirical data. Our course does not cover statistical modeling of data, but in such cases understanding the links between data representations in R and the original types of measurements in a study has an even more impactful role on the resulting calculations obtained from the statistical analyses.
+
+For now, let's keep in mind the considerations above as we starting learning how to plot data in the section below.
+
+## Plotting data in R using ggplot2
+
+  
