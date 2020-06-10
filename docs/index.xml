@@ -18,8 +18,8 @@
       <guid>/assessment/</guid>
       <description>Course assessmentStudents will be assessed on the basis of the following components:
 [10%] Presence and class participation;
-[40%] Completion of a homework assignment between week 1 and week 2. The homework will consist of exploring the rating data and producing a visual report of the most interesting/ relevant data patterns;
-[50%] Completion of a final assignment consisting of drafting a “results” section of a scientific paper which includes publication-ready visualizations of both the rating data and the reaction time data.</description>
+[40%] Completion of a homework assignment between week 1 and week 2. The homework will consist of exploring rating data from a provided data set and producing a basic visual report of the most interesting/ salient data patterns;
+[50%] Completion of a final assignment consisting of drafting a tentative “results” section of a scientific paper built around publication-ready visualizations of both rating data and reaction time data from a provided data set.</description>
     </item>
     
     <item>
@@ -28,7 +28,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/materials/</guid>
-      <description>Course materialsThe primary source for this course consists of a browser-readable code book, which is used as a teaching aid in class but can also serve as a self-standing tutorial. The book can be found here.
+      <description>Course materialsThe primary source for this course consists of a browser-readable book, which is used as a teaching aid in class but can also serve as a self-standing tutorial. The book can be found here.
 </description>
     </item>
     
@@ -38,12 +38,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/syllabus/</guid>
-      <description>Course syllabusSession 1 [xx/xx]: Basics of data wrangling in R
-Session 2 [xx/xx]: Statistical data types and measurement levels in behavioral research
-Session 3 [xx/xx]: Exploring rating data from a psycholinguistic experiment
-Session 4 [xx/xx]: Communicating patterns in rating data from a psycholinguistic experiment
-Session 5 [xx/xx]: Exploring reaction time data from a psycholinguistic experiment
-Session 6 [xx/xx]: Communicating patterns in reaction time data from a psycholinguistic experiment</description>
+      <description>Course syllabusSession 1 [xx/xx]: Basics of data wrangling in R
+Session 2 [xx/xx]: Plotting data using ggplot2
+Session 3 [xx/xx]: Exploring rating data
+Session 4 [xx/xx]: Communicating patterns in rating data
+Session 5 [xx/xx]: Exploring and communicating patterns in reaction time data
+</description>
     </item>
     
   </channel>

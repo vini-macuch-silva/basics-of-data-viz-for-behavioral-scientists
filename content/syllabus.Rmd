@@ -7,12 +7,10 @@ type: "generic_page"
 
 - Session 1 [xx/xx]: Basics of data wrangling in R
 
-- Session 2 [xx/xx]: Statistical data types and measurement levels in behavioral research
+- Session 2 [xx/xx]: Plotting data using ggplot2
 
-- Session 3 [xx/xx]: Exploring rating data from a psycholinguistic experiment
+- Session 3 [xx/xx]: Exploring rating data
 
-- Session 4 [xx/xx]: Communicating patterns in rating data from a psycholinguistic experiment
+- Session 4 [xx/xx]: Communicating patterns in rating data
 
-- Session 5 [xx/xx]: Exploring reaction time data from a psycholinguistic experiment
-
-- Session 6 [xx/xx]: Communicating patterns in reaction time data from a psycholinguistic experiment
+- Session 5 [xx/xx]: Exploring and communicating patterns in reaction time data
