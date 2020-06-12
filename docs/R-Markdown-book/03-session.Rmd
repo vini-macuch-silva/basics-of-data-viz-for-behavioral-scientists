@@ -12,7 +12,7 @@ Let's then start by plotting the data using a basic and straightforward **ggplot
 library(tidyverse)
 
 # load data
-exp1 <- read_csv("C:/Users/vinim/Documents/MEGA/Documents/PhD/Teaching/Basics-of-data-visualization-for-behavioral-scientists/data-sets/Michl(2019)/all-250-6000ALL.csv")
+exp1 <- read_csv("C:/Users/vinim/Documents/MEGA/Documents/PhD/Teaching/Basics-of-data-visualization-for-behavioral-scientists/data-sets/Michl(2019b)/all-250-6000ALL.csv")
 
 # convert variable to factor
 exp1$cond <- as.factor(exp1$cond)

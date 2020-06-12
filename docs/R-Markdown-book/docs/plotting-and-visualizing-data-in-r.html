@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Session 2 Plotting and visualizing data in R | Basics of data visualization for behavioral scientists</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Session 2 Plotting and visualizing data in R | Basics of data visualization for behavioral scientists" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Session 2 Plotting and visualizing data in R | Basics of data visualization for behavioral scientists" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Vinicius Macuch Silva" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="basics-of-data-wrangling-in-r.html"/>
+<link rel="next" href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Basics data visualization</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html"><i class="fa fa-check"></i><b>1</b> Basics of data wrangling in R</a><ul>
+<li class="chapter" data-level="1.1" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.1</b> Installing R and RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#creating-data-structures"><i class="fa fa-check"></i><b>1.2</b> Creating data structures</a></li>
+<li class="chapter" data-level="1.3" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#subsetting-and-manipulating-data"><i class="fa fa-check"></i><b>1.3</b> Subsetting and manipulating data</a></li>
+<li class="chapter" data-level="1.4" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#session-summary"><i class="fa fa-check"></i><b>1.4</b> Session summary</a></li>
+<li class="chapter" data-level="1.5" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#exercises"><i class="fa fa-check"></i><b>1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html"><i class="fa fa-check"></i><b>2</b> Plotting and visualizing data in R</a><ul>
+<li class="chapter" data-level="2.1" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#measurement-levels-in-behavioral-research"><i class="fa fa-check"></i><b>2.1</b> Measurement levels in behavioral research</a></li>
+<li class="chapter" data-level="2.2" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#why-visualize-data"><i class="fa fa-check"></i><b>2.2</b> Why visualize data?</a></li>
+<li class="chapter" data-level="2.3" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#plotting-data-using-ggplot2"><i class="fa fa-check"></i><b>2.3</b> Plotting data using ggplot2</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><i class="fa fa-check"></i><b>3</b> Communicating patterns in rating data from a psycholinguistic study</a><ul>
+<li class="chapter" data-level="3.1" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html#laying-out-the-basic-data-patterns"><i class="fa fa-check"></i><b>3.1</b> Laying out the basic data patterns</a></li>
+<li class="chapter" data-level="3.2" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html#modifying-major-elements-of-the-plot"><i class="fa fa-check"></i><b>3.2</b> Modifying major elements of the plot</a></li>
+<li class="chapter" data-level="3.3" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html#refining-minor-elements-of-the-plot"><i class="fa fa-check"></i><b>3.3</b> Refining minor elements of the plot</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Basics of data visualization for behavioral scientists</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="plotting-and-visualizing-data-in-r" class="section level1">
+<h1><span class="header-section-number">Session 2</span> Plotting and visualizing data in R</h1>
+<div id="measurement-levels-in-behavioral-research" class="section level2">
+<h2><span class="header-section-number">2.1</span> Measurement levels in behavioral research</h2>
+<p>Before we start plotting data using R, it is important to discuss how the different types of data objects found in a programming language such as R might relate to the levels of measurement usually found in behavioral research. By behavioral research I mean widely diverse strands of research, conducted across different fields of the social and cognitive sciences, where, most importantly, behavioral data is the main object of measurement and analysis. Depending on the specific research area and methodology employed, behavioral data can be collected using experiments, questionnaires and surveys, as well as a myriad of other methods. Regardless of the specific data collection method employed, the considerations presented below apply to various measures of decision-making and information and linguistic processing, both measures of real-time processing as well as measures of offline judgment and interpretation. The examples we will be using in the remainder of this course come from psycholinguistics, more specifically from two studies on non-literal language, and feature both online and offline measures.</p>
+<p>In behavioral research, traditionally a distinction is made between four basic levels of measurement, namely <strong>nominal</strong>, <strong>ordinal</strong>, <strong>interval</strong>, and <strong>ratio</strong>. Just by looking at the names of the measures themselves, we can see that these levels have rather direct counterparts in the data types found in R, as well as in other programming languages for that matter. In practice, however, it is importnat to realize that the mapping between data objects in R and different levels of measurement is not necessarily straightforward, as these four basic measure types can be extended to many other categories and sub-types, which may bring with them assumptions of their own. One must always understand what measure scale their data best corresponds to, so as to encode it appropriately in R both when creating data or when working with data imported from external sources. Let’s start by distinguishing between the four basic types of measures.</p>
+<ul>
+<li><p><strong>Nominal</strong> measures are best understood as categories or instances of any sort of classification where each value represents one category or class. The most basic type of nominal measures consists of dichotomous data, where there are only two categories and every token must be classified according to either one or the other category. There can also be multiple categories, each of them identified by a unique identifier, a label which usually consists of a name or a string of letters or numbers.</p>
+<ul>
+<li><p>Example in study design: In an experimental study, individual participants as well as individual stimuli items are understood as nominal measures for the purposes of data and statistical analysis. Individual conditions reflecting a certain experimental manipulation also consist of nominal measures, as well as questions in a questionnaire or survey.</p></li>
+<li><p>Representation in R: Nominal measures should be coded as unordered factors, the labels reflecting unique strings. No arithmetic operations can be performed on nominal measures, yet, one can check whether two values are the same or whether a certain token is included in a given category.</p></li>
+</ul></li>
+<li><p><strong>Ordinal</strong> measures are similar to nominal insofar as they represent categories, however, these categories are naturally ordered or ranked, as in a grading or rating scale. Even though the order of the categories is important, only the actual points on the scale are meaningful, the intervals between them not being captured by the scale. Despite ongoing discussion about the matter as well as variation across disciplines, the median is regarded as the most appropriate measure of central tendency to be applied to ordinal data.</p>
+<ul>
+<li><p>Example in study design: In an experimental study, any sort of scale presented to a participant or respondent consists of an ordinal measure. Each point on the scale is represented by a label, the labels being organized in an order which is either theoretically or methodologically meaningful. Scales need not necessarily consist of several points, they can also be dichotomous, as in judgments of truth value.</p></li>
+<li><p>Representation in R: Ordinal measures should be coded as ordered factors, the labels following a specific order which can be specified by the analyst. The same sorts of operations that can be performed on nominal measures can be performed on ordinal measures.</p></li>
+</ul></li>
+<li><p><strong>Interval</strong> measures reflect an underlying scale where the degree of difference between the individual points on the scale is meaningful. Intervals may contain arbitrary reference points, such as a zero/ starting point, which can be considered an absolute minimum.</p>
+<ul>
+<li><p>Example in study design: In an experimental study, reaction times are interval measures. Zero is the absolute minimum, as the measurement begins only when a certain stimulus or motor/ verbal action is triggered and the measured reaction times cannot be negative.</p></li>
+<li><p>Representation in R: Interval measures should be coded as numeric. Any sort of arithmetic operation can be performed on interval measures. The mean is the most commonly applied measure of central tendency to interval measures.</p></li>
+</ul></li>
+<li><p><strong>Ratio</strong> measures reflect the relationship between two units of measurement, for example a count of a certain type of token in a given time window or as a proportion of another type of token. Ratios contain non-arbitrary zero values, which makes it meaningful to say, for instance, that there are are twice as as many tokens of event or category <em>x</em> compared to event or category <em>y</em>.</p>
+<ul>
+<li><p>Example in study design: In an experimental study, counts or proportions of responses are ratio measures.</p></li>
+<li><p>Representation in R: Ratio measures can be coded as either numeric or integer depending on the corresponding variable in the study design.</p></li>
+</ul></li>
+</ul>
+<p>These four basic types of measurement illustrate only a portion of the possible measure scales found in behavioral study designs. The coarse-grained distinction presented here suffices for the purposes of our course, however, these considerations should also serve to highlight how important it is to understand how the variables and measurements of a study relate to the objects used in a programming language to represent and analyze the data originating from such measurements. So, in a nutshell, knowing your data is crucial.</p>
+</div>
+<div id="why-visualize-data" class="section level2">
+<h2><span class="header-section-number">2.2</span> Why visualize data?</h2>
+<p>Our main goal for today is to learn how to produce visual representations of data. As researchers concerned with analyzing empirical data, we are interested, primarily, in two things: first, we want to understand what the meaningful and relevant patterns in a given data set are; then, we want to be able to highlight and communicate those patterns to an audience who is not directly involved in the process of analyzing the data, be it our peers or other parties involved in the larger process of scientific communication. These two aspects of the data analytic process can be regarded as distinct steps or stages in any analysis pipeline, as they involve different goals and practices. Let’s call the first of them <strong>data exploration</strong> and the second <strong>data communication</strong>.</p>
+<p><strong>Data exploration</strong> involves wrangling and plotting the data in different ways, according to different dimensions, in an attempt to uncover as many facets of the data as possible. It might involve investigating the data beyond the scope of the original research question. The main point at this stage is to gather as much and as detailed information about the data as possible, without placing much emphasis on making plots visually or conceptually transparent nor on refining them aesthetically. As a result of exploring the data, one should be be able to tell, qualitatively at least, what the main aspects of interest of a data set are, and which of these should be further analyzed by means of statistical analyses or techniques other than visualization proper.</p>
+<p><strong>Data communication</strong>, on the other hand, involves taking the insights gained from the exploration of the data – and possibly too from any statistical modeling – and packaging it in such a way that people not involved in the analysis of the data are able to understand what it says about the investigated research questions. This involves highlighting the most important aspects of the data and making sure the main (differences between) measurements are presented in a visually salient and understandable way. However, communicating data visually is not easy: there will always be a trade-off between clarity and fidelity to the data, especially in scenarios where the underlying data is complex and the data patterns of interest are convoluted or non-trivial. Often enough, complex study designs will necessitate complex visualizations, though any data set, no matter how simple, will demand optimizing and refining visualizations. Having said that, making decisions about what aspects of the data to highlight or omit in a visual representation is an integral part of the data analytic process, and as such should be regarded as one of many possible researcher degrees of freedom, along with aspects related to the design of the study, the choice of a data elicitation and data collection method, as well as any decisions related to the statistical modeling of the data.</p>
+<p>Let’s keep in mind these considerations as we get familiar with our first data set and start plotting data in the section below.</p>
+</div>
+<div id="plotting-data-using-ggplot2" class="section level2">
+<h2><span class="header-section-number">2.3</span> Plotting data using ggplot2</h2>
+<p>Now that we’ve discussed what we might be aiming for with visualizations, let’s get familiar with the data set we are going to be using today. The data we are plotting comes from a psycholinguistic study on metonymy and metaphor. Both metonomy and metaphor are forms of non-literal language, however, they differ from one another both conceptually as well as in terms of their degree of non-literalness. Michl (2019a) investigated how non-literalness might be linked to other properties important for the linguistic and cognitive characterization of idioms, such as transparency. For that, she had participants rate different German idioms along a number of dimensions, later using those ratings to predict idiom type in an inferential statistical model. To begin with, let’s take a look at what such idioms might look like. As Michl (2019a) puts it:</p>
+<blockquote>
+<p>In a metaphor such as <em>to swim against the current</em>, what is said (<em>current</em> in a body of water) stands for something literally unrelated (a ‘general trend’). In a metonymy
+such as <em>to have an eye for detail</em>, <em>eye</em> refers to something that is literally or
+immanently related or part of the same concept (i.e., ‘ability to see details’). (pp. 98-99)</p>
+</blockquote>
+<p>The study thus included two types of idiomatic expressions:</p>
+<ul>
+<li><p><strong>Metonymic expressions</strong></p>
+<ul>
+<li><p><em>etw. unter vier Augen besprechen</em> (to discuss something among four eyes = to discuss something in private)</p></li>
+<li><p><em>mit leeren Händen kommen</em> (to come with empty hands = to arrive empty-handed, without contribution)</p></li>
+</ul></li>
+<li><p><strong>Metaphoric expressions</strong></p>
+<ul>
+<li><p><em>die Hand für jmd. ins Feuer legen</em> (to put one’s hand in fire for somebody = to vouchsafe for somebody’s virtue)</p></li>
+<li><p><em>noch feucht hinter den Ohren sein</em> (to still be moist behind the ears = to be young ad inexperienced)</p></li>
+</ul></li>
+</ul>
+<p>Let’s now turn to R. We are going to be using the <strong>tidyverse</strong> package <code>ggpplot2</code> to plot our data in R. In order to produce a visual object with <code>ggplot2</code>, all you have to do is to provide a data source, tell <code>ggplot2</code> how to map certain variables to aesthetics, and tell <code>ggplot2</code> what graphical primitives to use.</p>
+<p>You can think of <code>ggplot2</code> plotting as a layered process. We start with a blank canvas onto which we will be adding elements to make up a graphical representation of some data. This is where you declare your data source.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="basics-of-data-wrangling-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["basics-data-viz.pdf", "basics-data-viz.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
