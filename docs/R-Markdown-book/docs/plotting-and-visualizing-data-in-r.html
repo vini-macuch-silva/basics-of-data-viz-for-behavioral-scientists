@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="basics-of-data-wrangling-in-r.html"/>
-<link rel="next" href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"/>
+<link rel="next" href="communicating-patterns-in-rating-data.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -144,10 +144,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.2" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#why-visualize-data"><i class="fa fa-check"></i><b>2.2</b> Why visualize data?</a></li>
 <li class="chapter" data-level="2.3" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#plotting-data-using-ggplot2"><i class="fa fa-check"></i><b>2.3</b> Plotting data using ggplot2</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><i class="fa fa-check"></i><b>3</b> Communicating patterns in rating data from a psycholinguistic study</a><ul>
-<li class="chapter" data-level="3.1" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html#laying-out-the-basic-data-patterns"><i class="fa fa-check"></i><b>3.1</b> Laying out the basic data patterns</a></li>
-<li class="chapter" data-level="3.2" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html#modifying-major-elements-of-the-plot"><i class="fa fa-check"></i><b>3.2</b> Modifying major elements of the plot</a></li>
-<li class="chapter" data-level="3.3" data-path="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html"><a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html#refining-minor-elements-of-the-plot"><i class="fa fa-check"></i><b>3.3</b> Refining minor elements of the plot</a></li>
+<li class="chapter" data-level="3" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html"><i class="fa fa-check"></i><b>3</b> Communicating patterns in rating data</a><ul>
+<li class="chapter" data-level="3.1" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html#laying-out-the-basic-data-patterns"><i class="fa fa-check"></i><b>3.1</b> Laying out the basic data patterns</a></li>
+<li class="chapter" data-level="3.2" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html#modifying-major-elements-of-the-plot"><i class="fa fa-check"></i><b>3.2</b> Modifying major elements of the plot</a></li>
+<li class="chapter" data-level="3.3" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html#refining-minor-elements-of-the-plot"><i class="fa fa-check"></i><b>3.3</b> Refining minor elements of the plot</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank"></a></li>
@@ -228,7 +228,17 @@ immanently related or part of the same concept (i.e., ‘ability to see details�
 </ul></li>
 </ul>
 <p>Let’s now turn to R. We are going to be using the <strong>tidyverse</strong> package <code>ggpplot2</code> to plot our data in R. In order to produce a visual object with <code>ggplot2</code>, all you have to do is to provide a data source, tell <code>ggplot2</code> how to map certain variables to aesthetics, and tell <code>ggplot2</code> what graphical primitives to use.</p>
-<p>You can think of <code>ggplot2</code> plotting as a layered process. We start with a blank canvas onto which we will be adding elements to make up a graphical representation of some data. This is where you declare your data source.</p>
+<p>You can think of <code>ggplot2</code> plotting as a layered process which requires all basic elements described above. We start with the blank canvas onto which we will be adding elements to build our graphical representation of the data. Let’s call an empty <code>ggplot()</code> function and see what it does, if anything.</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="plotting-and-visualizing-data-in-r.html#cb69-1"></a><span class="kw">ggplot</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-28-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>You might be surprised at the output, but this is as much as our chunk of code does: it lays out a blank canvas, even if we had specified some data within the <code>ggplot()</code> call. What we need to do in order to add content to this plot is to specify our coordinate system, or in other words, which variables should be plotted where. Let’s try to plot the idiom ratings. For that, let’s add our data source to the code above and let’s specify which axis we want to assign the rating variable to – let’s say the x-axis. In order to do this, we need to specify the aesthetics within the <code>ggplot()</code> call. The <strong>aesthetics</strong> tell <code>ggplot()</code> which variable to map onto which coordinate.</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="plotting-and-visualizing-data-in-r.html#cb70-1"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> exp1, <span class="kw">aes</span>(<span class="dt">x =</span> rat))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-29-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>As we can see, we now have the x-coordinate in place – we can already see the rating scale, with the name of the variable as the axis title and some of the points on the scale showing beneath the axis and having a vertical line extending from them. Now let’s add the last essential element to the plot, a geometric object, or <strong>geom</strong>. Aside from aesthetic mappings, <code>ggplot()</code> needs geoms in order to plot data onto the canvas. Once having all three elements, the basic requirements for the call are met, and a single-layered plot is built.</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="plotting-and-visualizing-data-in-r.html#cb71-1"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> exp1, <span class="kw">aes</span>(<span class="dt">x =</span> rat)) <span class="op">+</span></span>
+<span id="cb71-2"><a href="plotting-and-visualizing-data-in-r.html#cb71-2"></a><span class="st">  </span><span class="kw">geom_bar</span>()</span></code></pre></div>
+<pre><code>## Warning: Removed 2 rows containing non-finite values (stat_count).</code></pre>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-30-1.png" width="70%" style="display: block; margin: auto;" /></p>
 
 </div>
 </div>
@@ -238,7 +248,7 @@ immanently related or part of the same concept (i.e., ‘ability to see details�
         </div>
       </div>
 <a href="basics-of-data-wrangling-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="communicating-patterns-in-rating-data-from-a-psycholinguistic-study.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="communicating-patterns-in-rating-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

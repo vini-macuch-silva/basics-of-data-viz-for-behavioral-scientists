@@ -66,4 +66,37 @@ The study thus included two types of idiomatic expressions:
 
 Let's now turn to R. We are going to be using the **tidyverse** package `ggpplot2` to plot our data in R. In order to produce a visual object with `ggplot2`, all you have to do is to provide a data source, tell `ggplot2` how to map certain variables to aesthetics, and tell `ggplot2` what graphical primitives to use.
 
-You can think of `ggplot2` plotting as a layered process. We start with a blank canvas onto which we will be adding elements to make up a graphical representation of some data. This is where you declare your data source.
+You can think of `ggplot2` plotting as a layered process which requires all basic elements described above. We start with the blank canvas onto which we will be adding elements to build our graphical representation of the data. Let's call an empty `ggplot()` function and see what it does.
+
+```{r include=FALSE}
+library(tidyverse)
+
+# load data
+exp1 <- read_csv("C:/Users/vinim/Documents/MEGA/Documents/PhD/Teaching/Basics-of-data-visualization-for-behavioral-scientists/data-sets/Michl(2019b)/all-250-6000ALL.csv")
+
+# convert variable to factor
+exp1$cond <- as.factor(exp1$cond)
+
+# recode variable 
+exp1$cond <- fct_recode(exp1$cond, metonymic = "1", metaphoric = "2", metaphoric = "3", literal = "4", control = "5")
+
+```
+
+```{r, out.width="70%", fig.align='center'}
+ggplot()
+```
+
+You might be surprised at the output, but this is as much as our chunk of code does: it lays out a blank canvas. What we need to do in order to add content to this blank plot is to specify our coordinate system, or in other words, which variables should be plotted where. Let's try to plot the idiom ratings. For that, let's add our data source to the code above and let's specify which axis we want to assign the rating variable to -- let's say the x-axis. In order to do this, we need to specify the aesthetics within the `ggplot()` call. The **aesthetics** tell `ggplot()` which variable to map onto which coordinate.
+
+```{r, out.width="70%", fig.align='center'}
+ggplot(data = exp1, aes(x = rat))
+```
+
+As we can see, we now have the x-coordinate in place -- we can already see the rating scale with the variable name `rat` as the axis title, as well as some of the points of the scale plotted beneath the axis with a vertical line extending from them. Now let's add the last essential element to the plot, a geometric object, or **geom**. Aside from aesthetic mappings, `ggplot()` needs geoms in order to plot data onto the canvas. Once having all three elements, the basic requirements for the call are met, and the plot is built.
+
+```{r, out.width="70%", fig.align='center'}
+ggplot(data = exp1, aes(x = rat)) +
+  geom_bar()
+```
+
+Here we used the geom `geom_bar()`, which plots the data using a bar chart. Notice how `ggplot()` generated the chart by using the counts of responses for each point on the scale. However, as it stands, the plot only tells us about the responses as a function of the points on the scale and not about their relation to the different types of idioms. What we were interested in knowing was what the distribution of responses would look like when taking into account the idiom type. Let's then add that information to the plot.

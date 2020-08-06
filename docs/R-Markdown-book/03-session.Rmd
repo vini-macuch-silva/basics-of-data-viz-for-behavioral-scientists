@@ -1,4 +1,4 @@
-# Communicating patterns in rating data from a psycholinguistic study
+# Communicating patterns in rating data
 
 ## Laying out the basic data patterns
 
