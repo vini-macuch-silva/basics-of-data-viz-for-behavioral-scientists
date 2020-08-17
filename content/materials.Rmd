@@ -10,8 +10,8 @@ The primary source for this course consists of a browser-readable book, which is
 The two papers the data sets used in the course refer to are:
 
 * Metonymies are more literal than metaphors: evidence
-from ratings of German idioms (Michl, 2019a) [[here]](https://vini-macuch-silva.github.io/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/Michl-2019a.pdf)
+from ratings of German idioms (Michl, 2019a) [[here](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/Michl-2019a.pdf)]
 
 * Speedy Metonymy, Tricky Metaphor, Irrelevant
 Compositionality: How Nonliteralness Affects Idioms
-in Reading and Rating (Michl, 2019b) [[here]](https://vini-macuch-silva.github.io/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/Michl-2019b.pdf)
+in Reading and Rating (Michl, 2019b) [[here](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/Michl-2019b.pdf)]
