@@ -44,7 +44,7 @@ Let's keep in mind these considerations as we get familiar with the data we are 
 
 ## Plotting data using ggplot2
 
-Now that we've discussed what we might be aiming for as analysts visualizing data, let's get familiar with the actual data we are going to be using throughout our course. The data we are plotting comes from two psycholinguistic studies on metonymy and metaphor. Both metonomy and metaphor are forms of non-literal language which, despite their common idiomatic nature, differ from one another conceptually as well as in terms of their degree of non-literalness. To begin with, let's take a look at what such idiomatic expressions might look like. As the author of the studies we're referring to has put it:
+Now that we've discussed what we might be aiming for as researchers visualizing data, let's get familiar with the actual data we are going to be using throughout our course. The data we are visualizing comes from two psycholinguistic studies on metonymy and metaphor. Both metonomy and metaphor are forms of non-literal language which, despite their common idiomatic nature, differ from one another conceptually as well as in terms of their degree of non-literalness. To begin with, let's take a look at what such idiomatic expressions might look like. As the author of the studies has put it:
 
 > In a metaphor such as *to swim against the current*, what is said (*current* in a body of water) stands for something literally unrelated (a ‘general trend’). In a metonymy
 such as *to have an eye for detail*, *eye* refers to something that is literally or
@@ -64,13 +64,11 @@ The studies we are concerned with thus include two types of idiomatic expression
     
     * *noch feucht hinter den Ohren sein* (to still be moist behind the ears = to be young ad inexperienced)
     
-In the first of the two studies, Michl (2019a) investigated how non-literalness might be linked to other properties relevant to the linguistic and cognitive characterization of idioms, such as transparency or familiarity. For that, she had participants rate different German idioms along a number of dimensions, later using those ratings to predict idiom type in an inferential statistical model. In the second study, Michl (2019b) had another sample of participants read some of the rated idioms in a task that involved reading sentences in chunks. The read idioms were first rated on their non-literalness by an independent sample of participants, and that is what we turn our attention to now. 
+In the first of the two studies, Michl (2019a) investigated how non-literalness might be linked to other properties relevant to the linguistic and cognitive characterization of idioms, such as transparency and familiarity. For that, she had participants rate different German idioms along a number of dimensions, later using those ratings to predict idiom type in an inferential statistical model. In the second study, Michl (2019b) had participants read some of the idioms used in her first study in a task that involved reading the stimuli one chunk at a time. The idioms used in the second study were first rated on their non-literalness by an independent sample of participants, and that is what we turn our attention to now. 
 
-In order to understand whether the expressions presented to participants in the reading experiment were actually perceived as either more or less literal, Michl (2019b) first had an independent pool of participants rate the experimental items according to their degree of non-literalness. As such, the author asked participants to rate both literal expressions as well as the target idiomatic expressions on a scale from 1 to 4, where 1 stood for an expression that was *not at all literal* and 4 for an expression that was *completely literal*. There were two pre-studies: pre-study 1 focused on the metaphoric expressions while pre-study 2 focused on the metonymic expressions.
+In order to understand the extent to which the expressions presented to participants in the reading experiment were perceived as literal, Michl (2019b) first had an independent pool of participants rate the experimental items according to their degree of non-literalness. As such, the author asked participants to rate both literal expressions as well as the target idiomatic expressions on a scale from 1 to 4, where 1 stood for an expression that was *not at all literal* and 4 for an expression that was *completely literal*. There were two actual studies: pre-study 1 focused on the metaphoric expressions while pre-study 2 focused on the metonymic expressions. Let's get started with plotting the results, first the ones from pre-study 1. For that, we are using the **tidyverse** package `ggpplot2`. 
 
-But let's get started on plotting the ratings, for now the ones from pre-study 1. For that, we are going to be using the **tidyverse** package `ggpplot2`. In order to produce a visual object with `ggplot2`, all we have to do is to provide a data source, then tell `ggplot2` how to map the variables of interest to the plot aesthetics, and finally tell `ggplot2` which graphical primitives to use.
-
-You can think of `ggplot2` plotting as a layered process which requires all basic elements described above. We start with the blank canvas onto which we will be adding elements to build our graphical representation of the data. Let's call an empty `ggplot()` function and see what it does.
+In order to produce a visual object with `ggplot2`, all we have to do is to provide a data source, then tell `ggplot2` how to map the variables of interest to the plot aesthetics, and finally tell `ggplot2` which graphical primitives to use. You can think of `ggplot2` plotting as a layered process which requires all these basic elements just described. We start with the blank canvas onto which we will be adding elements to build our graphical representations of the data. Let's call an empty `ggplot()` function and see what it does.
 
 ```{r include=FALSE}
 library(tidyverse)
@@ -107,7 +105,7 @@ ggplot(data = pre1, aes(x = rat)) +
   geom_bar(aes(fill = typ))
 ```
 
-We now see the same response distribution as above with the addition of color sections to the count bars, each color referring to one expression type. This allows us to distinguish what the relevant patterns in the data are, namely that people rated the metaphoric expressions, plotted in red/ pink, mostly as *not at all literal*, while rating the literal expressions, plotted in blue, mostly as *completely literal*. Despite now being more nuanced and informative than before, arguably the graph has also become somewhat convoluted: one needs to parse both the 'height' of the bars as well as their color composition in order to understand what their relation to each point on the rating scale is. One simple way to counteract this default rendition while at the same time keeping the relevant color distinction in place is to plot the individually colored sections of the bars as individual bars. Let's tell `ggplot()` to do exactly that by 'dodging' the position of the bars.
+We now see the same response distribution as above with the addition of color sections to the count bars, each color referring to one expression type. This allows us to distinguish what the relevant patterns in the data are, namely that people rated the metaphoric expressions, plotted in red/ pink, mostly as *not at all literal*, while rating the literal expressions, plotted in blue, mostly as *completely literal*. Despite now being more nuanced and informative than before, arguably the graph has also become somewhat convoluted: one needs to parse both the 'height' of the bars as well as their color composition in order to understand what their relation to each point on the rating scale is. One simple way to modify this default rendition while keeping the relevant color distinction in place is to plot the individually colored sections of the bars as individual bars. Let's tell `ggplot()` to do exactly that by 'dodging' the position of the bars.
 
 ```{r, out.width="70%", fig.align='center'}
 pre1 %>%
@@ -123,17 +121,7 @@ pre1 %>%
    geom_bar(aes(y = ..prop.., fill = typ), stat = "count", position = position_dodge())
 ```
 
-This didn't work the way we intended. The problem is that the proportions are being calculated relative to the points on the scale, whereas what we want instead is for them to be calculated relative to each expression type. Let's try again but now let's add the aesthetic `group` to `geom_bar`. What this will do is that it will create a grouping variable based on the variable *type*, which should indicate that the proportion of responses is to be plotted relative to the expression type.
-
-
-```{r, out.width="70%", fig.align='center'}
-pre1 %>%
-  ggplot(aes(rat)) +
-   geom_bar(aes(y = ..prop.., fill = typ, group = typ), stat = "count", position = position_dodge())
-```
-
-
-In this plot, one can associate a visual pattern to a quantity which is immediately meaningful. Just by glancing at the plot one can quite easily understand that people rated metaphoric expressions as *not at all literal* in about 80% of the cases.
+This seems to have worked the way we intended: the proportions are being calculated relative to each expression type. In this plot, one can associate a visual pattern to a quantity which is immediately meaningful. Just by glancing at the plot one can quite easily understand that people rated metaphoric expressions as *not at all literal* in about 80% of the cases.
 
 We could also have plotted the ratings proportional to the overall number of responses, though this is not what we are interested in, from the point of view of our data analytic and empirical goals. This might be useful, however, in other cases. Notice the differences in distribution if we had opted for this alternative plotting.
 
@@ -143,7 +131,7 @@ pre1 %>%
    geom_bar(aes(y = (..count..)/sum(..count..), fill = typ), position = position_dodge())
 ```
 
-Now, usually there are several ways of achieving the same, or at least similar, ends in R. In the graph sequence above, we used color as well 'dodged' or split bars to visualize the ratings in terms of our two groups of interest, the metaphoric and the literal expressions. We opted for plotting the responses in a single graph, which means the data points are plotted sharing the same visual real estate at the center as well as the same axes. Notice how we also relied on a legend to be able to tell which expression type was which. One alternative to this rendition is to use *facets*, an option provided in `ggplot2` for splitting observations or groups of observations into different windows or panels within a single graph. facets work in a very simple way, you simply specify what variable(s) the data should be split by, and how the facets are to be plotted, horizontal or vertical to one another. Here we tell `ggplot()` to split the data by the expression type and to plot the facets horizontal to one another.
+Now, usually there are several ways of achieving the same, or at least similar, ends in R. In the graph sequence above, we used color as well 'dodged' or split bars to visualize the ratings in terms of our two groups of interest, the metaphoric and the literal expressions. We opted for plotting the responses in a single graph, which means the data points are plotted sharing the same visual real estate at the center as well as the same axes. Notice how we also relied on a legend to be able to tell which expression type was which. One alternative to this rendition is to use **facets**, an option provided in `ggplot2` for splitting observations or groups of observations into different windows or panels within a single graph. facets work in a very simple way, you simply specify what variable(s) the data should be split by, and how the facets are to be plotted, horizontal or vertical to one another. Here we tell `ggplot()` to split the data by the expression type and to plot the facets horizontal to one another.
 
 ```{r, out.width="70%", fig.align='center'}
 pre1 %>%
@@ -153,12 +141,12 @@ pre1 %>%
 ```
 
 
-This rendition offers a different way of visualizing the same results as above: we can see the distribution of ratings for both the metaphoric and the literal expressions. With the facets it is easy to see that the metaphoric expressions are rated primarily as *not at all literal* while the literal expressions are rated mostly as *completely literal*. Although the two facets share the same y-axis, they are clearly divided in terms of the type of expression, which is indicated on top of each facet by means of a label. We are not going to explore customization right now but with `ggplot2` virtually any aspect of a visualization can be altered or enhanced: here, for example, we could change the position and aesthetics of the facet labels, or the range and aesthetics of the axes and ticks. Importantly for now, notice how we are facetting our data in terms of a single variable, *type*, though facetting is also possible with two variables, in which case there are more degrees of freedom in terms of how exactly to render the visualization spatially. Much like we did before, let's convert the y-axis to represent the proportion of responses by expression type instead of the raw response frequency.
+This rendition offers a different way of visualizing the same results as above: we can see the distribution of ratings for both the metaphoric and the literal expressions. With the facets it is easy to see that the metaphoric expressions are rated mostly as *not at all literal* while the literal expressions are rated mostly as *completely literal*. Although the two facets share the same y-axis, they are clearly divided in terms of expression type, which is indicated on top of each facet by means of a label. Even though we are not going to explore any customization options right now, you can probably already tell that with `ggplot2` virtually any aspect of a visualization can be altered or enhanced: here, for example, we could change the position and aesthetics of the facet labels, or the range and aesthetics of the axes and ticks. More importantly for now, notice how we are facetting our data in terms of a single variable, *type*, though facetting is also possible with two variables, in which case there are more degrees of freedom in terms of how exactly to render the visualization spatially. Much like we did before, let's convert the y-axis to represent the proportion of responses by expression type instead of the raw response frequency.
 
 ```{r, out.width="70%", fig.align='center'}
 pre1 %>%
   ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., group = typ), stat = "count") +
+  geom_bar(aes(y = ..prop..), stat = "count") +
   facet_wrap( ~ typ)
 ```
 
@@ -168,12 +156,11 @@ Currently, our graph does not contain any color coding, which we replaced earlie
 ```{r, out.width="70%", fig.align='center'}
 pre1 %>%
   ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., fill = typ, group = typ), stat = "count") +
+  geom_bar(aes(y = ..prop.., fill = typ), stat = "count") +
   facet_wrap( ~ typ)
 ```
 
-Let's now turn our attention to the data from pre-study 2, which compared metonymic and literal expressions. Let's then plot the ratings using our latest `ggplot()` code.
-
+Let's now turn our attention to the data from pre-study 2, which compared metonymic and literal expressions. Let's plot the ratings using our latest `ggplot()` code.
 
 ```{r include=FALSE}
 # load data
@@ -190,25 +177,28 @@ pre2 %>%
   facet_wrap( ~ typ)
 ```
 
-The plot shows that people rated the literal expressions mostly as *completely literal*, with a monotonic increase of ratings from 1 to 4. As for the metonymic expressions, people rated them mostly as *highly literal*, followed by *fairly literal*. In order to get a global picture of the results of the norming studies, we would like to compare the results of pre-study 2 to those of pre-study 1. Let's then plot the data together. Before we can do that, however, we will have to merge the two individual data sets together, something which we can easily do in R using, for example, tools from the **tidyverse** package `dplyr`. Notice how in the function `bind_rows` below we specify an argument `.id`, which gives us a label we can refer back to to know which data set each individual observation comes from.
-
+The plot looks just like the one we had for pre-study 1, except, of course, that the data patterns are different here: while rating the literal expressions mostly as *completely literal*, people rated the metonymic expressions mostly as *fairly literal*, in contrast to the preference for *not at all literal* ratings in the case of metaphors. Now, in order to get a global picture of the results of the two norming studies, we would like to compare the results of pre-study 2 to those of pre-study 1. Let's then plot the data together. In order to do that, we will have to merge the two individual data sets together, something which we can easily do in R using, for example, tools from the **tidyverse** package `dplyr`. We are using a function called `bind_rows`, which adds one data set right on on top of the other. Notice how in the function call we specify the argument `.id`, which gives us a label we can refer back to to know which data set each individual observation comes from.
 
 ```{r, out.width="70%", fig.align='center'}
 norms <- bind_rows(pre1, pre2, .id = "study")
+```
 
+We successfully joined the two data sets, but we also got an error that due to unequal factor levels one of our resulting factors was coerced into character. We know where this error is coming from: while in the data set from pre-study 1 the factor *type* had the levels *meta* and *woe*, in the date set from pre-study 2 it had the levels *meto* and *woe*. That is all fine, we just have to convert the variable *type* in the combined data set to factor again.
+
+```{r, out.width="70%", fig.align='center'}
 norms$typ <- as.factor(norms$typ)
 ```
 
-Now that we've created a single data set with observations from both the pre-study on metaphors and and the pre-study on metonomies, let's plot the combined results. Let's go back to `facet_wrap()` and try to change our code from earlier to produce a plot with four facets.
+Now that we have a single data set with observations from both the pre-study on metaphors and and the pre-study on metonomies, let's plot the combined results. Let's go back to `facet_wrap()` and try to change our code from earlier to produce a plot with four facets.
 
 ```{r, out.width="70%", fig.align='center'}
 norms %>%
   ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., fill = typ, group = typ), stat = "count") +
+  geom_bar(aes(y = ..prop.., fill = typ), stat = "count") +
   facet_wrap(study ~ typ)
 ```
 
-We were able to achieve what we wanted by instructing `ggplot2` to facet the data by both the original data set, *study*, and the expression type, *type*. Notice how the order of the arguments in the `facet_wrap()` call impacted the resulting plot: *study* was plotted along the x-axis while *type* was plotted along the y-axis. The graph is already good as it is, but let's redesign the facet labels to aid visualization. For that, we create two vectors with the new names we want to assign to the labels. Then, we use `labeller()` to apply those new labels to the already existing plot.
+We were able to achieve what we wanted by instructing `ggplot2` to facet the data by both the original data set, *study*, and the expression type, *type*. Notice how the order of the arguments in the `facet_wrap()` call impacted the resulting plot: *study* was plotted along the x-axis while *type* was plotted along the y-axis. The graph is already good as it is, but let's redesign the facet labels to aid visualization. For that, we'll create two vectors with the new names we want to assign to the labels. Then, we'll use the `labeller()` function from `ggplot2` to apply those new labels to the already existing plot.
 
 ```{r, out.width="70%", fig.align='center'}
 study_labels <- c(
@@ -224,20 +214,22 @@ type_labels <- c(
 
 norms %>%
   ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., fill = typ, group = typ), stat = "count") +
+  geom_bar(aes(y = ..prop.., fill = typ), stat = "count") +
   facet_wrap(study ~ typ, labeller = labeller(study = study_labels, typ = type_labels))
 ```
 
-In order to conclude our introduction to `ggplot2`, let's attempt to visualize the combined results with our split bar technique from earlier, exploring some new visualization possibilities.
+In order to conclude our introduction to `ggplot2`, let's attempt to visualize the combined results with our split bar technique from earlier, exploring an alternative visualization possibility.
 
 ```{r, out.width="70%", fig.align='center'}
 norms %>%
   ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., fill = typ, group = typ), position = position_dodge()) +
+  geom_bar(aes(y = ..prop.., fill = typ), position = position_dodge()) +
   facet_wrap( ~ study, labeller = labeller(study = study_labels, typ = type_labels))
 ```
 
+This is an interesting plot: it subsumes the ratings for each expression type within a single facet which tells us which study the ratings come from. Despite the usage of the split bars though, the plot is somewhat convoluted, as there is a lot of visual information in each facet. Let's try to modify this graph so as to keep both distributions within each facet but only focus on a single expression type per facet. For that, we'll actually plot the graph twice, once highlighting the literal results and once highlighting the non-literal results. 
 
+First, let's create two vectors with the color highlight information: for the literal facets, we color the literal responses in their original color and the non-literal responses in gray; for the non-literal facets we color the non-literal responses in their original color and the literal responses in gray. In both cases, we follow the original coloring scheme, plotting our graph once with each coloring information.
 
 ```{r, out.width="70%", fig.align='center'}
 literal <- c(
@@ -250,32 +242,60 @@ non_literal <- c(
   "meta" = "grey", 
   "meto" = "grey")
 
-legend_norms <- norms %>%
-  ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., fill = typ, group = typ), position = position_dodge()) +
-  facet_wrap( ~ study, labeller = labeller(study = study_labels, typ = type_labels))
-
 literal_norms <- norms %>%
   ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., fill = typ, group = typ), position = position_dodge()) +
+  geom_bar(aes(y = ..prop.., fill = typ), position = position_dodge()) +
   facet_wrap( ~ study, ncol = 1, labeller = labeller(study = study_labels, typ = type_labels)) +
   scale_fill_manual(values = non_literal)
 
+print(literal_norms)
+
 non_literal_norms <- norms %>%
   ggplot(aes(rat)) +
-  geom_bar(aes(y = ..prop.., fill = typ, group = typ), position = position_dodge()) +
+  geom_bar(aes(y = ..prop.., fill = typ), position = position_dodge()) +
   facet_wrap( ~ study, ncol = 1, labeller = labeller(study = study_labels, typ = type_labels)) +
   scale_fill_manual(values = literal)
 
+print(non_literal_norms)
+```
+
+Now that we have two plots, each with their own color highlight, we merge them together into a single plot. This time, we will use a function from an external package, namely the `cowplot` package, as `ggplot2` doesn't offer us exactly the tools we need. Notice how within the `plot_grid()` call, which is being called from the package `cowplot` via `cowplot::plot_grid()`, we specify that no legend should be plotted. This is the case as we'll generate a common legend below.
+
+```{r, out.width="70%", fig.align='center'}
 plot <- cowplot::plot_grid(
   non_literal_norms + theme(legend.position = "none"), 
   literal_norms + theme(legend.position = "none"), 
   nrow = 1)
 
+print(plot)
+```
+
+Finally, all we need to do is to produce a common legend for our new plot. In order to do that, we generate the plot we started with, where there was no custom color information, only so we can get the legend with the right colors in it. We then use the useful `get_legend()` function from `cowplot` to produce our final plot, with the legend included.
+
+```{r, out.width="70%", fig.align='center'}
+legend_norms <- norms %>%
+  ggplot(aes(rat)) +
+  geom_bar(aes(y = ..prop.., fill = typ), position = position_dodge()) +
+  facet_wrap( ~ study, labeller = labeller(study = study_labels, typ = type_labels))
+
+print(legend_norms)
+
 legend <- cowplot::get_legend(legend_norms)
 
 cowplot::plot_grid(plot, legend, rel_widths = c(2, .3))
 ```
+
+## Session summary
+
+* In order to produce a plot with `ggplot2` three basic elements are needed: the `ggplot()` call which sets the canvas, a data source and some basic **aesthetics**, and a geometric object, also known as a **geom**;
+
+* **geoms** are graphical primitives which are used to plot different types of graphs. In today's session, we only used `geom_bar()`, which plots bar plots, but there's a myriad of other geoms in `ggplot2`, some of the most useful for our purposes being `geom_point()` for scatter plots, `geom_box()` for box plots, and `geom_violin()` for violin plots. We will look at some of these other types of geoms later in our course. As we will see, they allow us to plot different types of variables as well as their corresponding interactions;
+
+* **aesthetics** allow us add more elements to our plot, on top of the base geom specifications. They also allow us to customize our plots in different ways. We saw how to add color to a plot using `fill` but also how to create subplots with `facet_wrap()`. We also made some adjustments to our base plots specifying the `position` and `labeller` aesthetics;
+
+* We learned that with `ggplot2` there are usually several ways of achieving the same desired ends. We will talk more about clarity and relevance in data visualization in the next sessions, but already at this point it's good to realize that the same data, with the same intended visualization goal, can be visualized in a variety of ways, often to the same utility to the target audience. Although there are some principles which are generally preferred across different visualization contexts, ultimately many of the design choices are dependent on the personal goals and taste of the analyst. Standards also vary from one field of research to another, but the main takeaway is that we should aim at a trade-off between clarity and functionality that best suits our particular needs as analysts visualizing a specific data sets.
+
+* You can find a summary of the essential `ggplot2` functions on this [Cheatsheet](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/data-visualization-2.1.pdf).
 
 
 ## Exercises
