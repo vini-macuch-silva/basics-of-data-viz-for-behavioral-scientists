@@ -47,6 +47,10 @@ footnotereturnlinkcontents = "↩"
 #
 #    https://djnavarro.github.io/hugo-slum/post/
 #    https://djnavarro.github.io/hugo-slum/project/
+
+[permalinks]
+    assessment = "/assessment/:slug/"
+
 #
 # Each post is then followed by its own "slug", so the full path
 # might be something like this:
