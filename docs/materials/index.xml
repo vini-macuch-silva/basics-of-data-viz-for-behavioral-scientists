@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Materials on Basics of data visualization for behavioral scientists</title>
+    <link>/materials/</link>
+    <description>Recent content in Materials on Basics of data visualization for behavioral scientists</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/materials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Materials</title>
+      <link>/materials/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/materials/materials/</guid>
+      <description>Course materialsThe primary source for this course consists of a browser-readable book, which is used as a teaching aid in class but can also serve as a self-standing tutorial. The book can be found here.
+The two papers the data sets used in the course refer to are:
+Metonymies are more literal than metaphors: evidencefrom ratings of German idioms (Michl, 2019a) [here]
+Speedy Metonymy, Tricky Metaphor, IrrelevantCompositionality: How Nonliteralness Affects Idiomsin Reading and Rating (Michl, 2019b) [here]</description>
+    </item>
+    
+  </channel>
+</rss>

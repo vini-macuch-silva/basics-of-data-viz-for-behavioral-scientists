@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homeworks on Basics of data visualization for behavioral scientists</title>
+    <link>/homework/</link>
+    <description>Recent content in Homeworks on Basics of data visualization for behavioral scientists</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/homework/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homework 1</title>
+      <link>/homework/homework1/homework1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homework/homework1/homework1/</guid>
+      <description>Homework 1For this assignment, you task is to explore and then plot the familiarity ratings, which is one of the measures from the study we looked at in class. Much like we did in class for the transparency measures, you are to explore the data, looking at the main contrast of interest between metaphors and metonomies as well as at other potentially interesting comparisons. You should produce two sets of plots:</description>
+    </item>
+    
+  </channel>
+</rss>

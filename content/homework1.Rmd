@@ -1,6 +1,6 @@
 ---
 title: Homework 1
-type: "generic_page"
+type: "homework"
 slug: homework1
 ---
 
