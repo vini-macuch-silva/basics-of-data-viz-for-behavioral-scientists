@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Session 3 Exploring and communicating patterns in rating data | Basics of data visualization for behavioral scientists</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Session 3 Exploring and communicating patterns in rating data | Basics of data visualization for behavioral scientists" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Session 3 Exploring and communicating patterns in rating data | Basics of data visualization for behavioral scientists" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Vinicius Macuch Silva" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="plotting-and-visualizing-data-in-r.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Basics data visualization</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html"><i class="fa fa-check"></i><b>1</b> Basics of data wrangling in R</a><ul>
+<li class="chapter" data-level="1.1" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.1</b> Installing R and RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#creating-data-structures"><i class="fa fa-check"></i><b>1.2</b> Creating data structures</a></li>
+<li class="chapter" data-level="1.3" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#subsetting-and-manipulating-data"><i class="fa fa-check"></i><b>1.3</b> Subsetting and manipulating data</a></li>
+<li class="chapter" data-level="1.4" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#session-summary"><i class="fa fa-check"></i><b>1.4</b> Session summary</a></li>
+<li class="chapter" data-level="1.5" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#exercises"><i class="fa fa-check"></i><b>1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html"><i class="fa fa-check"></i><b>2</b> Plotting and visualizing data in R</a><ul>
+<li class="chapter" data-level="2.1" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#measurement-levels-in-behavioral-research"><i class="fa fa-check"></i><b>2.1</b> Measurement levels in behavioral research</a></li>
+<li class="chapter" data-level="2.2" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#why-visualize-data"><i class="fa fa-check"></i><b>2.2</b> Why visualize data?</a></li>
+<li class="chapter" data-level="2.3" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#plotting-data-using-ggplot2"><i class="fa fa-check"></i><b>2.3</b> Plotting data using ggplot2</a></li>
+<li class="chapter" data-level="2.4" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#session-summary-1"><i class="fa fa-check"></i><b>2.4</b> Session summary</a></li>
+<li class="chapter" data-level="2.5" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#exercises-1"><i class="fa fa-check"></i><b>2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html"><i class="fa fa-check"></i><b>3</b> Exploring and communicating patterns in rating data</a><ul>
+<li class="chapter" data-level="3.1" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#laying-out-the-data"><i class="fa fa-check"></i><b>3.1</b> Laying out the data</a></li>
+<li class="chapter" data-level="3.2" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#exploring-the-data"><i class="fa fa-check"></i><b>3.2</b> Exploring the data</a></li>
+<li class="chapter" data-level="3.3" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#enriching-the-base-visualizations"><i class="fa fa-check"></i><b>3.3</b> Enriching the base visualizations</a></li>
+<li class="chapter" data-level="3.4" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#modifying-major-elements-of-the-plot"><i class="fa fa-check"></i><b>3.4</b> Modifying major elements of the plot</a></li>
+<li class="chapter" data-level="3.5" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#refining-minor-elements-of-the-plot"><i class="fa fa-check"></i><b>3.5</b> Refining minor elements of the plot</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank"></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Basics of data visualization for behavioral scientists</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="exploring-and-communicating-patterns-in-rating-data" class="section level1">
+<h1><span class="header-section-number">Session 3</span> Exploring and communicating patterns in rating data</h1>
+<div id="laying-out-the-data" class="section level2">
+<h2><span class="header-section-number">3.1</span> Laying out the data</h2>
+<p>Last session we got an introduction on how to use <strong>ggplot2</strong> to plot data in R. We saw that with the basics in place, which are the data to be plotted as well as at least one geom, a graphical primitive in R, we can create graphs which allow us to visualize our data, being up to us as analysts to decide what specific format and what design choices best suit our visualization needs. Today we will dig deeper into how to visualize data using <strong>gpplot2</strong>, first by seeing some examples of how to explore different patterns of interest in a data set and then by creating visualizations which not only highlight the most relevant patterns in the data at hand but which also look refined and visually pleasing. We will be visualizing data from the first of the two studies introduced last session, the one in which the primary question of interest was whether metaphors and metonomies, both of which are forms of non-literal language, differ in their perceived degree of literalness. Recall that in this study the author asked groups of people to rate both types of idiomatic expressions along a number of dimensions which relate to literalness, namely familiarity, transparency, and non-literalness. Let’s focus our attention on the ratings for transparency, which encompass two distinct properties, comprehensibility and relation.</p>
+<p>As the author of the study puts it, <em>comprehensibility</em>, as a feature of transparency, relates to “[…] the ease with which the meaning of an idiomatic unit can be recovered” (Michl, 2019a). In addition to comprehensibility, the relatedness between the literal and non-literal meaning of an idiom also matters for its perceived transparency. Indeed, as the author explains in the paper, the notion of <em>relation</em> “[…] defines the strength of the semantic or conceptual link between the literal and the idiomatic meaning of an idiom”. With these two notions in mind, let’s then turn to the ratings themselves. As we can see, comprehensibility and relation are theoretical constructs which capture the nature of idiom transparency from two different angles, yet they may or may not overlap with one another in the ratings measured empirically. In the study we are concerned with, people were asked to rate 244 different idioms. As a reminder of what these idioms might look like, let’s take a look at an example of each type of expression, taken from the sample used in the study.</p>
+<ul>
+<li><p><strong>Metaphor</strong> - <em>das Eis brechen</em> - to break the ice = to relax a socially stiff/ uncomfortable situation</p></li>
+<li><p><strong>Metonomy</strong> - <em>die Nase rümpfen</em> - to wrinkle one’s nose = to be contemptuous or disgusted</p></li>
+</ul>
+<p>Now, let’s plot the comprehensibility ratings, which range from 1, <em>extremely difficult to understand</em>, to 5, <em>extremely easy to understand</em>. For that, let’s use recycle some code from last session, where we already plotted similar ratings using colored bars to indicate the different expression types. Instead of plotting the raw numbers, let’s make sure to plot the proportion of ratings as a function of the expression types, which is a more reader-friendly plotting option compared to using raw counts.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb1-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb1-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb1-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> rat)) <span class="op">+</span></span>
+<span id="cb1-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb1-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> type, <span class="dt">group =</span> type), <span class="dt">stat =</span> <span class="st">&quot;count&quot;</span>, <span class="dt">position =</span> <span class="kw">position_dodge</span>())</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-2-1.png" width="70%" style="display: block; margin: auto;" />
+As the plot shows us, at least on the surface, the two types of expressions look very similar in terms of their perceived comprehensibility. Given the selected sample of idioms, respondents seem to find, on average, both metaphors and metonomies easy to understand. And yet this finding is is not necessarily transparent when one looks at the plot. On the one hand, it is obvious by looking at it that most of the rating mass is concentrated on the upper end of the scale, over points 4 and 5. On the other hand, however, it is not immediately evident what the central tendency of the response distribution is. Since we are talking about ordinal data here, our preferred measure of central tendency is the median, which seems to be around 4, but this is a guess based on eyeballing the data and roughly estimating it. Before assuming that 4 is the actual median rating, let’s calculate the median directly. For that we will turn to our trusted <strong>dplyr</strong> package from the <strong>tidyverse</strong>, which we’ve already used to wrangle data before.</p>
+<p>So what we want to do here is to calculate the median for each group of interest. Medians can be calculated in R using the function <code>median()</code>, which according to the documentation can be used to compute the sample median and is to be applied to a numeric vector containing the values whose median is to be computed. Now, since we want the median of each group, and not just the overall sample median, we need to group the data. Thanks to <strong>dplyr</strong>, that is easily done using <code>group_by()</code>, inside of which we specify our grouping variable, in this case <strong>type</strong>. Next, what we need to do is to call our summary statistic function, <code>median()</code>, inside of a <code>summarize()</code> call, which creates a new data frame with our summary of interest. Let’s try that.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb2-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb2-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb2-2"></a><span class="st">  </span><span class="kw">group_by</span>(type) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb2-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb2-3"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">median =</span> <span class="kw">median</span>(rat))</span></code></pre></div>
+<pre><code>## # A tibble: 2 x 2
+##   type       median
+##   &lt;chr&gt;       &lt;dbl&gt;
+## 1 metaphoric      4
+## 2 metonymic       4</code></pre>
+<p>The calculated summary statistic confirms our rough guess that the median rating of both metaphors and metonomies is 4. But this still leaves us with the question of how to improve our visualization such that this pattern of interest becomes more noticeable. There might be ways of changing the current plot so as to make the medians stand out, but one more practical solution is to completely re-think our choice of a graph. Notice how we’ve been using the <code>geom_bar()</code> geom so far, but maybe there are better alternatives in the geoms available in <strong>ggplot2</strong>. Let’s explore a little. What we have done so far is to plot one variable, namely <strong>rat</strong>, the resulting graph showing bars either with the raw response counts or with different proportions of responses according to each expression type, which we achieved using <code>fill()</code>. What if we tried to assign <strong>type</strong> to one of the axes instead of using <code>fill()</code> to add it to the graph? Let’s try that, and let’s use another geom instead, since <code>geom_bar()</code> only plots one variable. We can start by giving <code>geom_point()</code> a try, which plots each response as a point. Let’s assign <strong>type</strong> to the x-axis and <strong>rat</strong> to the y-axis.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb4-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb4-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb4-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(type, rat)) <span class="op">+</span></span>
+<span id="cb4-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb4-3"></a><span class="st">  </span><span class="kw">geom_point</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-4-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Our code does exactly what we tell it to do: it plots the ratings on the y-axis and the groups as two distinct ‘columns’ on the x-axis. But why does the plot look so weird, as if there was only one data point for each point on the rating scale? Well, the reason is that <code>geom_point()</code> is useful for displaying the relationship between two continuous variables, as would be the case for interval or ratio data. What we have at hand is two discrete variables, one ordinal and one dichotomous, so our data points are in fact all there, but, since our rating scale consists of discrete points, the responses are overplotted. Let’s use another geom to declutter the overplotted graph and reveal the underlying response points. We’ll use <code>geom_jitter()</code>, which according to the documentation adds a small amount of random variation to the location of each plotted point, such that it is a useful way of handling overplotting caused by discreteness.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb5-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb5-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb5-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(type, rat)) <span class="op">+</span></span>
+<span id="cb5-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb5-3"></a><span class="st">  </span><span class="kw">geom_jitter</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-5-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>With <code>geom_jitter()</code> we’re able to see all the responses, which are clustered around each point on the rating scale. Remember that we were interested in being able to spot where most of the rating mass lies on the scale, so it might make sense to plot the scale horizontally, so one can easily notice the data spread for each expression type as well any differences between the two groups, which will be plotted one on top of the other. Let’s try to achieve that by reversing our <code>x</code> and <code>y</code> arguments in the <code>ggplot()</code> function.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb6-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb6-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb6-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb6-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb6-3"></a><span class="st">  </span><span class="kw">geom_jitter</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-6-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This jittered plot looks more intuitive than the previous one, but even after reversing the axes we still end up with a plot which is not particularly informative; if anything our original barplot was more informative. Let’s try another solution then, namely another geom, <code>geom_count()</code>. According to the documentation, <code>geom_count()</code> is a variant of <code>geom_point()</code> which counts the number of observations of each location and then maps the count to a point area.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb7-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb7-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb7-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb7-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb7-3"></a><span class="st">  </span><span class="kw">geom_count</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-7-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This again somewhat resembles our original barplot insofar as we get a visual correlate of the amount of responses for each point on the rating scale. Still, this plot is arguably much less informative than the original barplot. So do we settle for a barplot or do we try some more alternatives? Let’s try some more alternatives. So far we’ve tried geoms which take either two continuous variables or two discrete variables. <strong>ggplot2</strong> also has geoms which take one discrete and one continuous variable. Even though the ratings we are plotting are ordinal in nature, they are represented in R as a numeric variable, which we can double-check via a <code>str()</code> call.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb8-1"></a><span class="kw">str</span>(rat_comp<span class="op">$</span>rat)</span></code></pre></div>
+<pre><code>##  num [1:16492] 4 2 2 1 1 2 3 3 2 1 ...</code></pre>
+<p>R represents vectors containing numbers as numeric by default, regardless of what these numbers actually represent. We could have converted <strong>rat</strong> to a factor to reflect the nature of its original measurement type, but keeping it as a numeric vector was useful for calculating the median earlier on. Still, what that means is that we are plotting <strong>rat</strong> as a continuous variable, which is useful for the geom we’re using next, <code>geom_boxplot()</code>. Boxplots, or box-and-whisker plots as they are also called, are a very useful way of graphically representing numeric data when one is interested in the quartiles or percentiles of the data distribution. The median itself is the 50th percentile, that is, the point which divides the data distribution in two. The lower and uppers quartiles represent the 25th and the 75th percentiles, respectively. Let’s take a look at our graph and see how all that is represented in a boxplot.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb10-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb10-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb10-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb10-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb10-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-9-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>What this plot tells us is that for both expression types 4 corresponds to the 50th percentile of the data, that is, to the median point in the rating distribution. This is marked by a thick vertical black line in the plot. Moreover, the plot tells us that 3 and 5 are the 25th and 75th percentiles, respectively, which means that half of the data mass lies between these two points. These percentiles are marked by thin vertical black lines, which enclose the area colored in white and halved by the median line. The lines extending from the ‘boxes’ in the graph, the so-called ‘whiskers’, indicate values that lie within a deviation of 1.5 x the range marked by the 25th and 75th percentiles, which is called the interquartile range. Importantly for our current purposes, such a plot gives us both our desired measure of central tendency as well as information about the spread of the data, all readily available as part of the geom itself.</p>
+<p>Before we move on, let’s look at one last geom, <code>geom_violin()</code>. A plot produced with <code>geom_violin()</code> resembles a boxplot except that it has the shape of a density distribution, which may or may not come in handy.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb11-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb11-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb11-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb11-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb11-3"></a><span class="st">  </span><span class="kw">geom_violin</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-10-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>In our case, such a violin plot is not particularly informative, and that is because our data, despite being represented as continuous, actually consists of discrete response bins clustered around each of the five points of the rating scale. We will therefore stick with our boxplot from above, which was the most informative graph for our purposes, perhaps alongside the barplot. Now that we have settled on the type of graph we will be using for our visualization, let’s plot the other transparency measure, the relation ratings.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb12-1"></a>rat_rel <span class="op">%&gt;%</span></span>
+<span id="cb12-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb12-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb12-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb12-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-12-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Given the selected sample of idioms, respondents seem to find that both in the case of metaphors and metonomies their literal and non-literal meanings are neither <em>extremely distantly or not at all related</em> nor <em>extremely closely related</em>. That is to say that, on average, the literal and non-literal meanings of both types of expressions is perceived as not particularly closely or distantly related, which may be expected given the large number of items in the study and inherent variability between items.</p>
+<p>Now that we have both the comprehensibility and the relation ratings, we might want to combine them in a single plot, given that both measures relate to the notion transparency. In order to do that, we will create a graph that shows the correlation between the two response distributions on the basis of visual overlap between the data. First, we need to combine the two data sets, so we can have a single data frame to feed to <code>ggplot()</code>.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb13-1"></a>rat_combi &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(rat_comp, rat_rel, <span class="dt">.id =</span> <span class="st">&quot;study&quot;</span>)</span></code></pre></div>
+<p>Now that we have a combined data frame, let’s plot it using a boxplot, just like we did above. In order to highlight the different measures, we will need to add the variable <strong>study</strong> to the plot, which we created in our <code>bind_rows()</code> call above. If we inspect <strong>rat_combi</strong>, we’ll see that <strong>study</strong> has <em>1</em> and <em>2</em> as default IDs for our two transparency measures, so we should probably change that to something more meaningful, to make our lives easier. We’re using a function called <code>fct_recode()</code> from the <strong>tidyverse</strong> package <strong>forcats</strong>. Note that <strong>study</strong> is not actually coded as a factor in our data frame but rather as character, which is the R default for vectors containing strings. That is not a problem in itself as we can still use <code>fct_recode()</code> to change the labels associated with the values recorded in <strong>study</strong>. Let’s call the comprehensibility measure <em>comp</em> and the relation measure <em>rel</em>.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb14-1"></a><span class="kw">str</span>(rat_combi<span class="op">$</span>study)</span></code></pre></div>
+<pre><code>##  chr [1:37138] &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; &quot;1&quot; ...</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb16-1"></a>rat_combi<span class="op">$</span>study &lt;-<span class="st"> </span><span class="kw">fct_recode</span>(rat_combi<span class="op">$</span>study, <span class="dt">comp =</span> <span class="st">&quot;1&quot;</span>, <span class="dt">rel =</span> <span class="st">&quot;2&quot;</span>)</span>
+<span id="cb16-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb16-2"></a></span>
+<span id="cb16-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb16-3"></a><span class="kw">str</span>(rat_combi<span class="op">$</span>study)</span></code></pre></div>
+<pre><code>##  Factor w/ 2 levels &quot;comp&quot;,&quot;rel&quot;: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
+<p>Now let’s plot the combined ratings, just like we did above with only one measure. Here, we will add the information about the measures as a <code>fill()</code> within our <code>geom_boxplot()</code> call. Note how we are using color here to highlight the source of the ratings, or in other words, what measure they refer to, while we are mapping our expression type directly onto the y-axis.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb18-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb18-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb18-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb18-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb18-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> study))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-15-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>With this plot, we can directly compare our two transparency measures. Of course, we could also reverse the current visual scheme and map the study source to the y-axis and use color to indicate the expression type, like below. This second rendition might be more informative if we would like to highlight both the contrast between the expressions types and the one between the measures themselves.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb19-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb19-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb19-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study)) <span class="op">+</span></span>
+<span id="cb19-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb19-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-16-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>One thing left to do before we move on is to make some minor visual improvements to the plot. Later today we will make further changes to these plots to increase their legibility and clarity, but for now let’s simply dodge the boxes a little bit, so they’re not so close to one another. Within our geom, we can specify the same argument we specified last session when working with barplots, namely <code>position = position_dodge()</code>. Since the boxes in boxplots are already slightly ‘dodged’ by default, we can increase the distance between them by modifying the argument <code>width</code> within <code>position_dodge()</code>.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb20-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb20-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb20-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study)) <span class="op">+</span></span>
+<span id="cb20-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb20-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type), <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">width =</span> <span class="fl">.9</span>))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-17-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>We’ve increased the distance between the boxes in each group, but what if we also wanted to increase the distance between the two groups? Well, we can then modify the <code>width</code> argument within <code>geom_boxplot()</code>, which is a separate argument as the one nested within <code>position_dodge()</code>. Let’s try that out.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb21-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb21-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb21-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study)) <span class="op">+</span></span>
+<span id="cb21-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb21-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type), <span class="dt">width =</span> <span class="fl">.9</span>, <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">width =</span> <span class="fl">.9</span>))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-18-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This didn’t work the way we wanted to, and that’s because we’re now dealing with two <code>width</code> parameters, so we need to adjust them accordingly until we find a balance that suits our needs. Let’s reduce the distance between groups.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb22-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb22-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb22-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study)) <span class="op">+</span></span>
+<span id="cb22-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb22-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type), <span class="dt">width =</span> <span class="fl">.5</span>, <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">width =</span> <span class="fl">.9</span>))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-19-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>We’re getting there, but we should probably reduce the distance between the paired boxes a tiny bit as well.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb23-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb23-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb23-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study)) <span class="op">+</span></span>
+<span id="cb23-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb23-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type), <span class="dt">width =</span> <span class="fl">.5</span>, <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">width =</span> <span class="fl">.7</span>))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-20-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This plot looks good. By inspecting it, one can see that there are no differences in how the two idiom types are perceived, neither in terms of their comprehensibility nor in terms of the relation between their literal and non-literal meanings. There is, however, a difference between the two transparency measures, such that both metaphors and metonomies are perceived, on average, as easy to understand despite their literal and non-literal meanings not being perceived as particularly related. Let’s now explore the data a bit more to see if there are other interesting patterns worth highlighting and communicating.</p>
+</div>
+<div id="exploring-the-data" class="section level2">
+<h2><span class="header-section-number">3.2</span> Exploring the data</h2>
+<p>Before working on improving our plots, we’ll explore our data some more. A detailed account of the hows and whys of exploring data, as part of a data analytic pipeline, is something that goes much beyond the scope of this course and which is directly tied to the specific practices and standards of a research field as well as to specific methods employed to measure and analyze data. Having said that, it’s important to understand what the goal of data exploration might be, and how it might fit within the larger picture of data analysis.</p>
+<p>Analysis of empirical data can be roughly divided into exploratory and confirmatory strands. With exploratory analyses one attempts to describe and summarize the main characteristics of a data set, as a representative snapshot of a given phenomenon, possibly with the intention of generating hypotheses for further empirical testing. In a study which is exploratory in nature, the researchers do not state specific hypotheses about the data they are analyzing, despite having a research question and specific empirical and possibly theoretical goals. With confirmatory analyses, on the other hand, also known as hypothesis testing, one attempts to answer a research question which is formulated in terms of a specific hypothesis or sets of hypotheses, usually accompanied by an [explicit] alternative hypothesis or sets of alternative hypotheses. In a study which is confirmatory in nature, the researchers attempt to confirm hypotheses which they formulate before collecting and analyzing the data. In practice, data exploration and hypothesis testing are complementary aspects of empirical research, such that exploring one data set might lead to generating hypotheses, and possibly building theories, which can be tested explicitly using another data set. While testing hypotheses which are different from the ones formulated beforehand is considered bad practice in confirmatory research, data exploration is something that can and is expected to happen in addition to hypothesis testing, either cumulatively across different studies which rely on different data sets or as part of a single study before any hypotheses are generated and tested.</p>
+<p>The study we are focusing on today can be characterized as exploratory, and as such exploring the data beyond the main contrasts of interest might be particularly fruitful. Given that we are not experts in the particular empirical/ theoretical domain the study is situated in, generating hypotheses for future empirical testing would probably be wishful thinking, and it also escapes the purpose of this exercise. We can, nevertheless, look at the data and see if there’s any interesting descriptive pattern worth highlighting. Given that we have already explored the transparency ratings to some degree in the previous section, let’s look at some of the other variables which are recorded in the data set. Let’s use our trusted <code>str()</code> function to generate an overview of the data frame. Alternatively, we can also view the data by clicking on it in our environment panel on the top right of RStudio.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb24-1"></a><span class="kw">str</span>(rat_combi)</span></code></pre></div>
+<pre><code>## Classes &#39;spec_tbl_df&#39;, &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;: 37138 obs. of  9 variables:
+##  $ study  : Factor w/ 2 levels &quot;comp&quot;,&quot;rel&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ part_id: num  460 460 460 460 460 460 460 460 460 460 ...
+##  $ gender : chr  &quot;female&quot; &quot;female&quot; &quot;female&quot; &quot;female&quot; ...
+##  $ age    : num  31 31 31 31 31 31 31 31 31 31 ...
+##  $ state  : chr  &quot;Niedersachen&quot; &quot;Niedersachen&quot; &quot;Niedersachen&quot; &quot;Niedersachen&quot; ...
+##  $ educ   : chr  &quot;Hoch/Fachhochschul&quot; &quot;Hoch/Fachhochschul&quot; &quot;Hoch/Fachhochschul&quot; &quot;Hoch/Fachhochschul&quot; ...
+##  $ item   : num  1 2 3 4 5 6 7 8 9 10 ...
+##  $ rat    : num  4 2 2 1 1 2 3 3 2 1 ...
+##  $ type   : chr  &quot;metaphoric&quot; &quot;metaphoric&quot; &quot;metaphoric&quot; &quot;metaphoric&quot; ...</code></pre>
+<p>In addition to our main variables of interest <strong>rat</strong> and <strong>type</strong>, which we are already familiar with, we also see other variables which relate to the study per se, such as <strong>part_id</strong> and <strong>item</strong>, as well as basic demographic information about the respondents, like <strong>age</strong>, <strong>gender</strong>, and <strong>educ</strong>. Even though we don’t know what a theory of non-literal language might say about the relation between perceived idiom transparency and traits like gender or age of a language user, we might expect there to be differences in how, for example, young and older language users perceive the comprehensibility of metaphors, or in how users with a higher or lower level of formal education perceive the relation between the literal and non-literal meaning of such expressions. Let’s then start by plotting our ratings from above in terms of different sub-populations of our sample. To simplify our job for now, let’s plot only the comprehensibility ratings, and let’s use color to help us visualize any differences between our two expression types.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb26-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb26-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb26-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb26-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb26-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-22-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>To this plot, we’re adding a <code>facet_wrap()</code> with <strong>gender</strong> as a grouping variable. Let’s also move the legend to underneath the plot, so it doesn’t take up so much space on the right-hand side. For that we need to add a new layer to our <code>ggplot()</code> call, one in which we can specify details about the plot.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb27-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb27-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb27-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb27-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb27-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb27-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb27-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>gender) <span class="op">+</span></span>
+<span id="cb27-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb27-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-23-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>As the graph suggests, there seem to be no systematic differences in terms of how men and women perceive the comprehensibility of both metaphors and metonomies. Let’s now plot the ratings in terms of <strong>age</strong>.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb28-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb28-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb28-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb28-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb28-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb28-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb28-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>age) <span class="op">+</span></span>
+<span id="cb28-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb28-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-24-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This is an interesting plot: what we see is the ratings facetted in terms of all the 34 different ages reported by respondents. Just by glancing at the graph, we see that there is variability in terms of how people of different ages rated the idioms, on average metaphors and metonomies being rated similarly, despite different patterns in some of the facets. Let’s now collapse the ages into more representative age groups, such as how they are usually presented in surveys. For that, we will need to wrangle our data some more. What we’ll do is that we’ll create a new variable, called <strong>age_group</strong>, which is based on groupings of younger, middle-aged, and older respondents. For that, we’re using the function <code>mutate()</code> from <strong>dplyr</strong>, which we first encountered in the exercises from session 1. Within our <code>mutate()</code> call we’re using another function called <code>case_when()</code>, which basically allows us to vectorize multiple if-else statements. Let’s see how that works.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb29-1"></a>rat_comp &lt;-<span class="st"> </span>rat_comp <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb29-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb29-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">age_group =</span> <span class="kw">case_when</span>(age <span class="op">&gt;=</span><span class="st"> </span><span class="dv">18</span> <span class="op">&amp;</span><span class="st"> </span>age <span class="op">&lt;=</span><span class="st"> </span><span class="dv">24</span> <span class="op">~</span><span class="st"> &quot;18-24&quot;</span>,</span>
+<span id="cb29-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb29-3"></a>                               age <span class="op">&gt;=</span><span class="st"> </span><span class="dv">25</span> <span class="op">&amp;</span><span class="st"> </span>age <span class="op">&lt;=</span><span class="st"> </span><span class="dv">54</span> <span class="op">~</span><span class="st"> &quot;25-54&quot;</span>,</span>
+<span id="cb29-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb29-4"></a>                               age <span class="op">&gt;=</span><span class="st"> </span><span class="dv">55</span> <span class="op">&amp;</span><span class="st"> </span>age <span class="op">&lt;=</span><span class="st"> </span><span class="dv">64</span> <span class="op">~</span><span class="st"> &quot;55-64&quot;</span>,</span>
+<span id="cb29-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb29-5"></a>                               age <span class="op">&gt;=</span><span class="st"> </span><span class="dv">65</span> <span class="op">~</span><span class="st"> &quot;65+&quot;</span>))</span></code></pre></div>
+<p>What we did was to create <strong>age_group</strong> on the basis of grouping of values from <strong>age</strong>, such as specified in the call. We can now replace <strong>age</strong> with <strong>age_group</strong> in our code and see how the new plot looks like.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb30-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb30-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb30-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb30-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb30-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb30-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb30-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>age_group) <span class="op">+</span></span>
+<span id="cb30-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb30-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-26-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This plot shows that, despite variability in some of the facets in the plot above, the ratings are the same across three of the four binned age groups, the exception being adults who are older than 65. All in all, the median comprehensibility of both metaphors and metonomies is still 4 on the 5-point scale. Let’s now try to combine this plot with the earlier plot where we grouped participants by gender. For that, we need to add <strong>gender</strong> to our <code>facet_wrap()</code> call.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb31-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb31-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb31-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb31-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb31-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb31-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb31-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(gender <span class="op">~</span><span class="st"> </span>age_group) <span class="op">+</span></span>
+<span id="cb31-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb31-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-27-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This plot confirms what we had already seen separately in the gender and age plots, namely that, on average, the ratings are consistent across men and women as well as across different age groups. The outliers seem to be men who are older than 65. The current plot works well for the purposes of exploring the data, but in case we would like to have something which is a bit more transparent to other viewers, we might want to line the facets for each gender in their own rows. Let’s change that by specifying the number of rows in our <code>facet_wrap()</code> call.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb32-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb32-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb32-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb32-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb32-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb32-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb32-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(gender <span class="op">~</span><span class="st"> </span>age_group, <span class="dt">nrow =</span> <span class="dv">2</span>) <span class="op">+</span></span>
+<span id="cb32-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb32-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-28-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Note that if we had used <code>facet_grid()</code>, which is an alternative to <code>facet_wrap()</code>, we would have had achieved a similar end result without having to specify the number of desired rows, as the two functions work differently and have different arguments.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb33-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb33-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb33-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb33-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb33-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb33-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb33-4"></a><span class="st">  </span><span class="kw">facet_grid</span>(gender <span class="op">~</span><span class="st"> </span>age_group) <span class="op">+</span></span>
+<span id="cb33-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb33-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-29-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Just before we move on to improving the aesthetics of our plots, let’s try to explore the data in terms of one last variable, namely the specific idioms that participants rated. Before we plot the data, let’s double-check how many items there were in total. Let’s use the function <code>unique()</code>, which can be applied to our vector <strong>item</strong> to single out all unique values.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb34-1"></a><span class="kw">unique</span>(rat_comp<span class="op">$</span>item)</span></code></pre></div>
+<pre><code>##   [1]   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
+##  [19]  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
+##  [37]  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54
+##  [55]  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72
+##  [73]  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90
+##  [91]  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108
+## [109] 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126
+## [127] 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144
+## [145] 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162
+## [163] 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180
+## [181] 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198
+## [199] 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216
+## [217] 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234
+## [235] 235 236 237 238 239 240 241 242 243 244</code></pre>
+<p>That means that we have 244 items in total, which might be complicated to plot. Let’s give it a go in any case and see what we get. We’re adding <strong>item</strong> as a grouping variable within <code>facet_wrap()</code>.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb36-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb36-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb36-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb36-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb36-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="kw">aes</span>(<span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb36-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb36-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>item) <span class="op">+</span></span>
+<span id="cb36-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb36-5"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-31-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>The resulting plot is, as expected, simply impossible to parse. We will have to find some alternative way of exploring the items. What we are interested in, ultimately, is in having an overview of the amount of variability in the rated idioms. Since we know that the median rating is 4, perhaps we can use that to break down the responses into smaller groups. Let’s calculate, for each expression type, the relative number of items rated as more than 4 and less than 4. For that, we first group the items by <strong>type</strong>. Then, we create a variable called <strong>median_split</strong>, which indicates whether the rating for a given item is equal to or smaller/ larger than the median. We then group our data by <strong>type</strong> and our new variable <strong>median_split</strong> and summarize the relative number of occurrences.</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb37-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-2"></a><span class="st">  </span><span class="kw">group_by</span>(type) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb37-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">median_split =</span> <span class="kw">case_when</span>(rat <span class="op">&gt;</span><span class="st"> </span><span class="dv">4</span> <span class="op">~</span><span class="st"> &quot;5&quot;</span>,</span>
+<span id="cb37-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-4"></a>                                  rat <span class="op">&lt;</span><span class="st"> </span><span class="dv">4</span> <span class="op">~</span><span class="st"> &quot;1,2,3&quot;</span>,</span>
+<span id="cb37-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-5"></a>                                  rat <span class="op">==</span><span class="st"> </span><span class="dv">4</span> <span class="op">~</span><span class="st"> &quot;4&quot;</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb37-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-6"></a><span class="st">  </span><span class="kw">group_by</span>(type, median_split) <span class="op">%&gt;%</span></span>
+<span id="cb37-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-7"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb37-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb37-8"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">freq =</span> n <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(n))</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 4
+## # Groups:   type [2]
+##   type       median_split     n  freq
+##   &lt;chr&gt;      &lt;chr&gt;        &lt;int&gt; &lt;dbl&gt;
+## 1 metaphoric 1,2,3         3768 0.355
+## 2 metaphoric 4             2950 0.278
+## 3 metaphoric 5             3908 0.368
+## 4 metonymic  1,2,3         2064 0.352
+## 5 metonymic  4             1648 0.281
+## 6 metonymic  5             2154 0.367</code></pre>
+<p>The information we generated tells us, in numbers, what we had already inferred from our graphical representation of the data, namely that most of the rating mass lies on the upper end of the scale, over points 4 and 5. In order to get more detailed information about each item, we’d have to add <strong>item</strong> to our grouping call.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb39-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-2"></a><span class="st">  </span><span class="kw">group_by</span>(type) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb39-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">median_split =</span> <span class="kw">case_when</span>(rat <span class="op">&gt;</span><span class="st"> </span><span class="dv">4</span> <span class="op">~</span><span class="st"> &quot;5&quot;</span>,</span>
+<span id="cb39-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-4"></a>                                  rat <span class="op">&lt;</span><span class="st"> </span><span class="dv">4</span> <span class="op">~</span><span class="st"> &quot;1,2,3&quot;</span>,</span>
+<span id="cb39-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-5"></a>                                  rat <span class="op">==</span><span class="st"> </span><span class="dv">4</span> <span class="op">~</span><span class="st"> &quot;4&quot;</span>)) <span class="op">%&gt;%</span></span>
+<span id="cb39-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-6"></a><span class="st">  </span><span class="kw">group_by</span>(item, type, median_split) <span class="op">%&gt;%</span></span>
+<span id="cb39-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-7"></a><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">n =</span> <span class="kw">n</span>()) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb39-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb39-8"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">freq =</span> n <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(n))</span></code></pre></div>
+<pre><code>## # A tibble: 732 x 5
+## # Groups:   item, type [244]
+##     item type       median_split     n   freq
+##    &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;        &lt;int&gt;  &lt;dbl&gt;
+##  1     1 metaphoric 1,2,3            3 0.0469
+##  2     1 metaphoric 4               13 0.203 
+##  3     1 metaphoric 5               48 0.75  
+##  4     2 metaphoric 1,2,3           11 0.169 
+##  5     2 metaphoric 4               26 0.4   
+##  6     2 metaphoric 5               28 0.431 
+##  7     3 metaphoric 1,2,3           26 0.4   
+##  8     3 metaphoric 4               19 0.292 
+##  9     3 metaphoric 5               20 0.308 
+## 10     4 metaphoric 1,2,3           12 0.185 
+## # ... with 722 more rows</code></pre>
+<p>What we now get is a detailed view of how each item was rated according to our tripartite division of the data around the median. From here on, in order to further explore the items, we’d have to conduct a more thorough inspection of the numbers in the table. We could look, for instance, for those items that received similar ratings, and then inspect the actual idioms to see if there are any commonalities between them. This is, of course, something that requires not only a qualitative view of the data but also expert knowledge about the actual target domain. Because of that, we’re not exploring this data any further, but this should serve to show that data exploration consists of a mix between visualization, wrangling, and numerical/ statistical summarizing. The best place to start is, just liked we did, with plots and graphical representations of the data, but usually several iterations between different techniques will be required to get at interesting and relevant data patterns.</p>
+</div>
+<div id="enriching-the-base-visualizations" class="section level2">
+<h2><span class="header-section-number">3.3</span> Enriching the base visualizations</h2>
+<p>Having laid out some base plots and explored the data along some of its secondary dimensions, we’re now in the position to decide what aspects of our data we want to highlight and communicate to our audience. In order to do that, we are going to go through the steps of producing camera-ready visualizations of the data, taking into account what we learned about it and what we deem interesting to be communicated.</p>
+<p>As a reminder, we are dealing with categorical data, where each ‘value’ consists of a category, in our case one point on a 5-point psychometric scale measuring properties related to idiom literalness. More specifically, our data is ordinal, meaning that the different categories are ranked, as the task participants were asked to perform consisted of rating, for example, the comprehensibility of each idiom they read using the provided 5-point scale. Now, our main goal is to highlight any potentially systematic differences between the participant ratings as a function of the experimental conditions. As we saw, the main contrast between metaphors and metonomies seems to hold across different sub-populations of our sample, the minor differences found in terms of age perhaps not being relevant to the point that they deserve being communicated in a plot of its own. Because of that, let’s focus on communicating the main results, namely the lack of systematic difference in comprehensibility between metaphors and metonomies, and the fact that both were rated, on average, as quite easy to understand, a 4 on the 5-point scale. Before we plot our data, let’s double-check how it’s represented in R.</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb41-1"></a><span class="kw">str</span>(rat_comp<span class="op">$</span>rat)</span></code></pre></div>
+<pre><code>##  num [1:16492] 4 2 2 1 1 2 3 3 2 1 ...</code></pre>
+<p>As we can see, the ratings are coded as numeric, although we know that they represent, in fact, ordinal data. We managed to plot the data before without any problems, but let’s see what happens if we convert <strong>rat</strong> to a factor and try to plot it then.</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb43-1"></a>rat_comp<span class="op">$</span>rat &lt;-<span class="st"> </span><span class="kw">as.factor</span>(rat_comp<span class="op">$</span>rat)</span></code></pre></div>
+<p>Let’s start by re-plotting the comprehensibility ratings using our basic and straightforward <strong>ggplot2</strong> code from above. Remember that all we have to do to create a basic graphical representation of our data is to specify the required arguments in the <code>ggplot()</code> function, namely <code>aes()</code>, which requires a variable to be plotted to the x-axis – our experimental conditions, that is, the two idiom types – and one variable to be plotted to the y-axis – our ratings. We subsequently tell <code>ggplot()</code> to plot the data using boxplots, which we decided was going to be our geom of choice to highlight the patterns of interest in the data.</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb44-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb44-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb44-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(type, rat)) <span class="op">+</span></span>
+<span id="cb44-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb44-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-36-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>That does not look good at all. The reason why we get this odd result is because we’re feeding <code>geom_boxplot()</code>, which takes a continuous and a discrete variable, with two discrete variables, somewhat of a similar problem to what happened to us earlier when we tried feeding <code>geom_point()</code> with the ratings. Let’s change the ratings back to numeric and try again.</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb45-1"></a>rat_comp<span class="op">$</span>rat &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.character</span>(rat_comp<span class="op">$</span>rat))</span>
+<span id="cb45-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb45-2"></a></span>
+<span id="cb45-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb45-3"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb45-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb45-4"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(type, rat)) <span class="op">+</span></span>
+<span id="cb45-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb45-5"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-37-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This works just fine. Now that we have the basic data patterns laid out, let’s start refining our plot, little by little, so it looks increasingly better, both in terms of transparency and effectiveness but also in terms of aesthetics. The first thing we are going to do is to flip the boxplots, so they are plotted horizontally as opposed to vertically. Since our main goal with this visualization is to allow our audience to notice where most of the rating mass lies on the scale, it makes sense to plot the scale horizontally, so one can easily notice the data spread for each group but also any differences between groups, which will be plotted one on top of the other. Let’s do that by reversing our <code>x</code> and <code>y</code> arguments in the <code>ggplot()</code> function, just like we did earlier.</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb46-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb46-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb46-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb46-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb46-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-38-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This works just as intended. In some cases, however, reverting the axes in the <code>ggplot()</code> function will not produce the intended result. Luckily, we can also flip the <code>x, y</code> coordinates without changing the order of the arguments within the <code>ggplot()</code> call. To understand how flipping coordinates works, notice what happens if we add the <code>coord_flip()</code> call to our code.</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb47-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb47-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb47-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type)) <span class="op">+</span></span>
+<span id="cb47-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb47-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></span>
+<span id="cb47-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb47-4"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-39-1.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="modifying-major-elements-of-the-plot" class="section level2">
+<h2><span class="header-section-number">3.4</span> Modifying major elements of the plot</h2>
+<p>Now that we have our data plotted the way we would like it to be, let’s work on some further adjustments to the base plot which will greatly improve the effectiveness of our data communication. Remember that there are a couple of useful ways of highlight and contrasting visual elements. Relevant for this case is the manipulation of color and fill scales. First, let’s assign different fills to each experimental condition, which is the variable assigned to the y-axis.</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb48-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb48-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb48-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb48-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb48-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-40-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Now each condition is represented by a different color. Let’s change the color palette and slightly increase the transparency of the filled colors. For the color itself, we need to specify a new palette in a function that refers to our fill scale, namely <code>scale_fill_brewer()</code>. For the transparency, we modify the <code>alpha</code> parameter within our geom.</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb49-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb49-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb49-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb49-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb49-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>) <span class="op">+</span></span>
+<span id="cb49-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb49-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-41-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Now let’s remove the gray background so as to make the plot somewhat cleaner. Let’s also thicken the lines which surround and extend from the boxplots, the boxplot whiskers, in order to create a sharper contrast between the boxes and the white background. For the lines, we need to adjust the <code>lwd</code> argument within <code>geom_boxplot()</code>, while for the background we’re applying a new theme to the plot, namely <code>them_minimal()</code>, which, among other things, removes the gray background.</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb50-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb50-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb50-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb50-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb50-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>) <span class="op">+</span></span>
+<span id="cb50-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb50-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb50-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb50-5"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-42-1.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="refining-minor-elements-of-the-plot" class="section level2">
+<h2><span class="header-section-number">3.5</span> Refining minor elements of the plot</h2>
+<p>As it is, the plot looks pretty good already, the most important aspects of the underlying data appropriately represented and well clearly visible. Now we can fix minor issues which arguably only contribute cosmetically to the plot, though when considered together with the previous changes make an astounding impact to the overall quality of the resulting visualization.</p>
+<p>Firs, let’s get rid of unnecessary elements. Let’s remove the grid lines on the y-axis extending horizontally from the condition names. Let’s also get rid of the axis titles, which only clutter the plot, as well as the legend that appeared when we added fills to the plot. We’re doing all of those things using the <code>theme()</code> function, which we had already encountered before. <code>theme()</code> takes several arguments which relate to, for example, the legend of the plot, the scales, as well as the labels and titles. We’re specifying that we’d like to remove the title axes, as in <code>axis.title.x = element_blank()</code>, and also telling <code>ggplot()</code> to remove the major grids of the y-axis, which are always plotted by default and not always necessary. Finally, we’re also calling <code>legend_position()</code>, and specifying that the legend should be removed altogether.</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb51-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb51-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb51-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb51-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb51-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>) <span class="op">+</span></span>
+<span id="cb51-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb51-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb51-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb51-5"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb51-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb51-6"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb51-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb51-7"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-43-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Now let’s improve the quality of the labels on the different axes. Let’s make them more visible by increasing their size and making them bold. Notice how we specify <code>axis.text.x = element_text()</code>, and within that function we modify the relevant parameters.</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb52-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb52-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>) <span class="op">+</span></span>
+<span id="cb52-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb52-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-5"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb52-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-6"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb52-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-7"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb52-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-8"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>), </span>
+<span id="cb52-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb52-9"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-44-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>The next step is to increase the distance between the labels and the actual graph. Again notice the usage of the arguments in the <code>element_text()</code> functions.</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb53-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb53-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>) <span class="op">+</span></span>
+<span id="cb53-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb53-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-5"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb53-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-6"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb53-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-7"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb53-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-8"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb53-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-9"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">0</span>, <span class="dt">r =</span> <span class="dv">10</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)), </span>
+<span id="cb53-10"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-10"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb53-11"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb53-11"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-45-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Now, let’s capitalize the labels on the y-axis. There’s at least two options to do that. We could recode the underlying factor in <code>rat_comp</code>, though that would change the actual data representation in R. A less permanent solution is to tell <code>ggplot()</code> to replace the existing labels with new ones, which will not change the underlying data representation.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb54-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb54-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>) <span class="op">+</span></span>
+<span id="cb54-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb54-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-5"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb54-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-6"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb54-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-7"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb54-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-8"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb54-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-9"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">0</span>, <span class="dt">r =</span> <span class="dv">10</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)), </span>
+<span id="cb54-10"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-10"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb54-11"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-11"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>))) <span class="op">+</span></span>
+<span id="cb54-12"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb54-12"></a><span class="st">  </span><span class="kw">scale_y_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;metonymic&quot;</span> =<span class="st"> &quot;Metonymic&quot;</span>, <span class="st">&quot;metaphoric&quot;</span> =<span class="st"> &quot;Metaphoric&quot;</span>))</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-46-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Last, let’s add a title to the plot. Note that in many cases titles need not be added to plots, as that can be done straight in the text/ presentation editor one is using (including R, as we will see later).</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-1"></a>rat_comp <span class="op">%&gt;%</span></span>
+<span id="cb55-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, type, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb55-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>) <span class="op">+</span></span>
+<span id="cb55-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb55-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-5"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb55-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-6"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb55-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-7"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>,</span>
+<span id="cb55-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-8"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb55-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-9"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">0</span>, <span class="dt">r =</span> <span class="dv">10</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)), </span>
+<span id="cb55-10"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-10"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb55-11"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-11"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)),</span>
+<span id="cb55-12"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-12"></a>        <span class="dt">plot.title =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">24</span>, <span class="dt">hjust =</span> <span class="fl">.5</span>, </span>
+<span id="cb55-13"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-13"></a>                                  <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">40</span>, <span class="dt">l =</span> <span class="dv">0</span>))) <span class="op">+</span></span>
+<span id="cb55-14"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-14"></a><span class="st">  </span><span class="kw">scale_y_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;metonymic&quot;</span> =<span class="st"> &quot;Metonymic&quot;</span>, <span class="st">&quot;metaphoric&quot;</span> =<span class="st"> &quot;Metaphoric&quot;</span>)) <span class="op">+</span></span>
+<span id="cb55-15"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb55-15"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Comprehensibility ratings&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-47-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>To finish up, let’s make similar changes to our combined plot, which will require some further adjustments. Let’s use the exact same code from above, replacing <strong>type</strong> with <strong>study</strong> on the y-axis and bringing the legend back, on the upper right corner of the plot. Let’s also center the title of our legend and give the plot the right name.</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb56-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb56-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>) <span class="op">+</span></span>
+<span id="cb56-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb56-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-5"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb56-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-6"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb56-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-7"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.title.align =</span> <span class="fl">0.5</span>,</span>
+<span id="cb56-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-8"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb56-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-9"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">0</span>, <span class="dt">r =</span> <span class="dv">10</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)), </span>
+<span id="cb56-10"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-10"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb56-11"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-11"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)),</span>
+<span id="cb56-12"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-12"></a>        <span class="dt">plot.title =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">24</span>, <span class="dt">hjust =</span> <span class="fl">.5</span>, </span>
+<span id="cb56-13"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-13"></a>                                  <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">40</span>, <span class="dt">l =</span> <span class="dv">0</span>))) <span class="op">+</span></span>
+<span id="cb56-14"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-14"></a><span class="st">  </span><span class="kw">scale_y_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;metonymic&quot;</span> =<span class="st"> &quot;Metonymic&quot;</span>, <span class="st">&quot;metaphoric&quot;</span> =<span class="st"> &quot;Metaphoric&quot;</span>)) <span class="op">+</span></span>
+<span id="cb56-15"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb56-15"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transparency ratings&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-48-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Much like we did earlier, let’s adjust the distance between the boxes and the groups in the <code>geom_boxplot()</code> call. We should also fix the labels, both on the y-axis and in the legend. Notice the new arguments in the <code>scale_fill_brewer()</code> call.</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb57-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study, <span class="dt">fill =</span> type)) <span class="op">+</span></span>
+<span id="cb57-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">lwd =</span> <span class="fl">1.2</span>, <span class="dt">width =</span> <span class="fl">.5</span>, <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">width =</span> <span class="fl">.7</span>)) <span class="op">+</span></span>
+<span id="cb57-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>,</span>
+<span id="cb57-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-5"></a>                    <span class="dt">name =</span> <span class="st">&quot;Idiom type&quot;</span>,</span>
+<span id="cb57-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-6"></a>                    <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;metaphoric&quot;</span> =<span class="st"> &quot;Metaphoric&quot;</span>, <span class="st">&quot;metonymic&quot;</span> =<span class="st"> &quot;Metonymic&quot;</span>)) <span class="op">+</span><span class="st"> </span></span>
+<span id="cb57-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-7"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb57-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-8"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb57-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-9"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.title.align =</span> <span class="fl">0.5</span>,</span>
+<span id="cb57-10"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-10"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb57-11"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-11"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">0</span>, <span class="dt">r =</span> <span class="dv">10</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)), </span>
+<span id="cb57-12"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-12"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb57-13"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-13"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)),</span>
+<span id="cb57-14"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-14"></a>        <span class="dt">plot.title =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">24</span>, <span class="dt">hjust =</span> <span class="fl">.5</span>, </span>
+<span id="cb57-15"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-15"></a>                                  <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">40</span>, <span class="dt">l =</span> <span class="dv">0</span>))) <span class="op">+</span></span>
+<span id="cb57-16"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-16"></a><span class="st">  </span><span class="kw">scale_y_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;rel&quot;</span> =<span class="st"> &quot;Relation&quot;</span>, <span class="st">&quot;comp&quot;</span> =<span class="st"> &quot;Comprehensibility&quot;</span>)) <span class="op">+</span></span>
+<span id="cb57-17"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb57-17"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transparency ratings&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-49-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Two more things to do: first, let’s increase the distance between the legend and the plot itself; then, let’s play with transparency so as to highlight the contrast between the two plotted measures. We already know how to change the distance between our boxes, in fact we can just recover our code from earlier. As for the transparency, here we’re using a trick which is to specify that <code>alpha</code> should refer to an interaction between our two grouping variables, <strong>type</strong> and <strong>study</strong>, and then to set manual <code>alpha</code> values for the different combinations of the two variables. Let’s make the relation plots look bright and the comprehensibility ones look dark.</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb58-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study, <span class="dt">fill =</span> type, <span class="dt">alpha =</span> <span class="kw">interaction</span>(type, study))) <span class="op">+</span></span>
+<span id="cb58-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">lwd =</span> <span class="fl">1.2</span>, <span class="dt">width =</span> <span class="fl">.5</span>, <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">width =</span> <span class="fl">.7</span>)) <span class="op">+</span></span>
+<span id="cb58-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>,</span>
+<span id="cb58-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-5"></a>                    <span class="dt">name =</span> <span class="st">&quot;Idiom type&quot;</span>,</span>
+<span id="cb58-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-6"></a>                    <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;metaphoric&quot;</span> =<span class="st"> &quot;Metaphoric&quot;</span>, <span class="st">&quot;metonymic&quot;</span> =<span class="st"> &quot;Metonymic&quot;</span>)) <span class="op">+</span></span>
+<span id="cb58-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-7"></a><span class="st">  </span><span class="kw">scale_alpha_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="fl">.4</span>, <span class="fl">.4</span>), <span class="dt">guide =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
+<span id="cb58-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-8"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb58-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-9"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb58-10"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-10"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.title.align =</span> <span class="fl">0.5</span>,</span>
+<span id="cb58-11"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-11"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb58-12"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-12"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">0</span>, <span class="dt">r =</span> <span class="dv">10</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)), </span>
+<span id="cb58-13"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-13"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb58-14"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-14"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)),</span>
+<span id="cb58-15"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-15"></a>        <span class="dt">plot.title =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">24</span>, <span class="dt">hjust =</span> <span class="fl">.5</span>, </span>
+<span id="cb58-16"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-16"></a>                                  <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">40</span>, <span class="dt">l =</span> <span class="dv">0</span>))) <span class="op">+</span></span>
+<span id="cb58-17"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-17"></a><span class="st">  </span><span class="kw">scale_y_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;rel&quot;</span> =<span class="st"> &quot;Relation&quot;</span>, <span class="st">&quot;comp&quot;</span> =<span class="st"> &quot;Comprehensibility&quot;</span>)) <span class="op">+</span></span>
+<span id="cb58-18"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb58-18"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transparency ratings&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-50-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>This worked as intended. In this plot, we made use of color and transparency, combined with a vertical collocation of the two contrasted groups, to highlight our contrasts of interest. We could have used other combinations of techniques, though. As we’ve seen, these can include, among other things, changing the color of our geoms, changing the geoms themselves, facetting groups, but also changing the size or orientation of various plotted elements.</p>
+<p>We can now export our plot, say if we’d like to save it locally on our machine as an image file. Let’s export our combined plot as a .png file, which can be done using the <code>ggsave()</code> function.</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-1"></a>rat_combi <span class="op">%&gt;%</span></span>
+<span id="cb59-2"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat, study, <span class="dt">fill =</span> type, <span class="dt">alpha =</span> <span class="kw">interaction</span>(type, study))) <span class="op">+</span></span>
+<span id="cb59-3"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-3"></a><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">lwd =</span> <span class="fl">1.2</span>, <span class="dt">width =</span> <span class="fl">.5</span>, <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="dt">width =</span> <span class="fl">.7</span>)) <span class="op">+</span></span>
+<span id="cb59-4"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-4"></a><span class="st">  </span><span class="kw">scale_fill_brewer</span>(<span class="dt">palette =</span> <span class="st">&quot;Set2&quot;</span>,</span>
+<span id="cb59-5"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-5"></a>                    <span class="dt">name =</span> <span class="st">&quot;Idiom type&quot;</span>,</span>
+<span id="cb59-6"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-6"></a>                    <span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;metaphoric&quot;</span> =<span class="st"> &quot;Metaphoric&quot;</span>, <span class="st">&quot;metonymic&quot;</span> =<span class="st"> &quot;Metonymic&quot;</span>)) <span class="op">+</span></span>
+<span id="cb59-7"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-7"></a><span class="st">  </span><span class="kw">scale_alpha_manual</span>(<span class="dt">values =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="fl">.4</span>, <span class="fl">.4</span>), <span class="dt">guide =</span> <span class="ot">FALSE</span>) <span class="op">+</span></span>
+<span id="cb59-8"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-8"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb59-9"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-9"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">axis.title.x =</span> <span class="kw">element_blank</span>(), <span class="dt">axis.title.y =</span> <span class="kw">element_blank</span>(),</span>
+<span id="cb59-10"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-10"></a>        <span class="dt">panel.grid.major.y =</span> <span class="kw">element_blank</span>(), <span class="dt">legend.title.align =</span> <span class="fl">0.5</span>,</span>
+<span id="cb59-11"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-11"></a>        <span class="dt">axis.text.y =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb59-12"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-12"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">0</span>, <span class="dt">r =</span> <span class="dv">10</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)), </span>
+<span id="cb59-13"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-13"></a>        <span class="dt">axis.text.x =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">14</span>, </span>
+<span id="cb59-14"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-14"></a>                                   <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">0</span>, <span class="dt">l =</span> <span class="dv">0</span>)),</span>
+<span id="cb59-15"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-15"></a>        <span class="dt">plot.title =</span> <span class="kw">element_text</span>(<span class="dt">face =</span> <span class="st">&quot;bold&quot;</span>, <span class="dt">size =</span> <span class="dv">24</span>, <span class="dt">hjust =</span> <span class="fl">.5</span>, </span>
+<span id="cb59-16"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-16"></a>                                  <span class="dt">margin =</span> <span class="kw">margin</span>(<span class="dt">t =</span> <span class="dv">10</span>, <span class="dt">r =</span> <span class="dv">0</span>, <span class="dt">b =</span> <span class="dv">40</span>, <span class="dt">l =</span> <span class="dv">0</span>))) <span class="op">+</span></span>
+<span id="cb59-17"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-17"></a><span class="st">  </span><span class="kw">scale_y_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;rel&quot;</span> =<span class="st"> &quot;Relation&quot;</span>, <span class="st">&quot;comp&quot;</span> =<span class="st"> &quot;Comprehensibility&quot;</span>)) <span class="op">+</span></span>
+<span id="cb59-18"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb59-18"></a><span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;Transparency ratings&quot;</span>)</span></code></pre></div>
+<p><img src="basics-data-viz_files/figure-html/unnamed-chunk-51-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="exploring-and-communicating-patterns-in-rating-data.html#cb60-1"></a><span class="kw">ggsave</span>(<span class="st">&quot;ratings-transparency.png&quot;</span>)</span></code></pre></div>
+<pre><code>## Saving 7 x 5 in image</code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="plotting-and-visualizing-data-in-r.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["basics-data-viz.pdf", "basics-data-viz.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
