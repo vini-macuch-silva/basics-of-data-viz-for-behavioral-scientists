@@ -1,0 +1,19 @@
+---
+title: "Homework 1"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+header-includes: \usepackage{setspace}\onehalfspacing
+fontsize: 12pt
+---
+
+# Homework 1
+
+For this assignment, your task is to explore and then plot the familiarity ratings, which is one of the measures from the study we looked at in class. Much like we did in class for the transparency measures, you are to explore the data, looking at the main contrast of interest between metaphors and metonomies as well as at other potentially interesting comparisons. You should produce two sets of graphs: 
+
+* **Set 1** consists of exploration graphs, where you should plot the data using two different geoms and at least one grouping variable, to be chosen between **state** and **educ**. In total, you should create four plots, two focused on the main contrast of interest, each with a different geom, and two including at least one further variable;
+
+* **Set 2** consists of camera-ready graphs, where you should pick one pattern/ contrast of your choice and plot it using two different geoms. Importantly, your task is to make the graphs look as bad as possible while the data itself is plotted correctly. For that, you will have to explore different combinations of visualization techniques. Make extensive use of `fill`, `color`, facetting, and remember to also modify the legend as well as the plot axes (think of axes labels, ticks, etc.).
+
+Use `ggsave()` to export your final plots as .png files. Upload your files to Stud.IP as a single .zip file containing two folders, one for each set of graphs. The .zip file should be named > homework1_InitialSurname.

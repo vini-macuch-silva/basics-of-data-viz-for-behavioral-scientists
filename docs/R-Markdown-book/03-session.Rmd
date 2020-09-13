@@ -580,20 +580,16 @@ rat_combi %>%
 
 ```
 
-This worked as intended. In order to achieve our end result and thus highlight the contrasts of interest, we made use of color and transparency, combined with a vertical collocation of the two contrasted groups. We could have used other combinations of techniques, though. As we've seen, these can include, among other things, changing the color of our geoms, changing the geoms themselves, facetting groups, but also changing the size or orientation of various plotted elements.
+This worked as intended. In order to achieve our end result and thus highlight the contrasts of interest, we made use of color and transparency, combined with a vertical collocation of the two contrasted groups. We could have used other combinations of techniques, though. As we've seen, these can include, among other things, changing the color of our geoms, changing the geoms themselves, facetting groups, but also changing the size or orientation of the plotted elements.
 
-We can now export our plot, say if we'd like to save it locally on our machine as an image file. Let's export the combined plot as a .png file, which can be done using the `ggsave()` function. You might need to adjust the `width` and `height` arguments within `ggsave()` to get your plot to be exported with the right dimensions.
+As an example of such possible variations, let's use `color` instead of `fill` to highlight **type**. Let's also change the color of the boxes to gray, to increase the visual contrast with the white background. This should also help us understand the difference between `fill` and `color`.
 
 ```{r, out.width="70%", fig.align='center'}
 rat_combi %>%
-  ggplot(aes(rat, study, fill = interaction(type, study), alpha = interaction(type, study), color = interaction(type, study))) +
-  geom_boxplot(lwd = 1.2, width = .5, position = position_dodge(width = .7)) +
-  scale_fill_manual(values = c("light gray", "light gray", "black", "black"),
-                    name = "Idiom type",
-                    labels = c("metaphoric" = "Metaphoric", "metonymic" = "Metonymic")) +
-  scale_alpha_manual(values = c(1, 1, .1, .1),
-                     guide = FALSE) +
-  scale_color_manual(values = c("#66c2a5", "#fc8d62", "#66c2a5", "#fc8d62"),
+  ggplot(aes(rat, study, color = type)) +
+  geom_boxplot(fill = "light gray", lwd = 1.2, width = .5, 
+               position = position_dodge(width = .7)) +
+  scale_color_brewer(palette = "Set2",
                     name = "Idiom type",
                     labels = c("metaphoric" = "Metaphoric", "metonymic" = "Metonymic")) +
   theme_minimal() +
@@ -608,10 +604,42 @@ rat_combi %>%
   scale_y_discrete(labels = c("rel" = "Relation", "comp" = "Comprehensibility")) +
   ggtitle("Transparency ratings")
 
-# ggsave("ratings-transparency.png")
+```
+
+What we did was to color the lines in the boxplot according to the expression type and to fill the boxes with a specified color. Notice how `color` varies as a function of the variable **type** while `color`, which is manually coded, remains constant across both groups.
+
+We can now export our plot, say if we'd like to save it locally on our machine as an image file. Let's export the plot with transparency added to it as a .png file, which can be done using the `ggsave()` function. You might need to adjust the `width` and `height` arguments within `ggsave()` to get your plot to be exported with the right dimensions.
+
+```{r, out.width="70%", fig.align='center'}
+rat_combi %>%
+  ggplot(aes(rat, study, fill = type, alpha = interaction(type, study))) +
+  geom_boxplot(lwd = 1.2, width = .5, position = position_dodge(width = .7)) +
+  scale_fill_brewer(palette = "Set2",
+                    name = "Idiom type",
+                    labels = c("metaphoric" = "Metaphoric", "metonymic" = "Metonymic")) +
+  scale_alpha_manual(values = c(1, 1, .4, .4), guide = FALSE) +
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.y = element_blank(), legend.title.align = 0.5,
+        axis.text.y = element_text(face = "bold", size = 14, 
+                                   margin = margin(t = 0, r = 10, b = 0, l = 0)), 
+        axis.text.x = element_text(face = "bold", size = 14, 
+                                   margin = margin(t = 10, r = 0, b = 0, l = 0)),
+        plot.title = element_text(face = "bold", size = 24, hjust = .5, 
+                                  margin = margin(t = 10, r = 0, b = 40, l = 0))) +
+  scale_y_discrete(labels = c("rel" = "Relation", "comp" = "Comprehensibility")) +
+  ggtitle("Transparency ratings")
+
+ggsave("ratings-transparency.png")
 
 ```
 
 ## Session summary
 
-* In order
+* As we've seen in our last two sessions, geoms are what shape the type of graph one ends up with when using **ggplot2**. The single most important aspect of a geom is what type and number of variables its aesthetics support. We've seen examples of geoms that take one or two variables. In the case of geoms that support two variables, like `geom_boxplot()`, we saw that these can consist either of two variables of the same type, be it continuous or discrete, or a combination of both. In order to produce a plot that renders the data correctly, one needs to understand how the plotted variables are coded in R, so that they match the variable type supported by the selected geom. One also needs to understand what the data corresponds to "in the wild", that is, in terms of its original measurement type. This might impact how the data is plotted regardless of its actual representation in R. Knowing what variables a geom requires and whether one's data matches those requirements is a good recipe for plotting data correctly;
+
+* In order to explore data for the purposes of data analysis, we saw that a good starting point is with plots and visual representations of the data. Often times, however, one will need to wrangle the data in order to produce certain plots. In addition to wrangling, which can be done with the help of many specialized packages like **tidyverse**'s **dplyr**, one usually needs to summarize the data in different ways or to calculate different descriptive statistics on the basis of the raw data, which themselves can also added to plots in different ways. Exploring a data set will usually involve a combination of visualization, wrangling, and numerical/ statistical summarizing;
+
+* In order to enrich **ggplot2**'s base visualizations, one can make use of different aesthetic specifications. As we've seen, these include specifications which affect major elements of a plot, such as `fill`, `color` and `alpha`, geom-specific arguments like `lwd` or `linetype` but also arguments which affect minor elements of the plot such as the legend, the title, and the axes, usually specified within the `theme()` layer. Importantly, as we will see later, where an aesthetic is specified can impact how the plots looks like: whatever is called within the `ggplot()` function will affect all layers in a plot, while aesthetics called within specific geoms will only affect that geom's layer. In addition to specifying aesthetics, using facets or varying the mapping of variables onto the `x, y` coordinates can also help highlight certain contrasts in a graph;
+
+* Plots can be exported from R using the function `ggsave()`, which by default saves the last plotted graph. `ggsave()` takes the arguments `width` and `height` which can be modified in order to change the dimensions of the saved plot.

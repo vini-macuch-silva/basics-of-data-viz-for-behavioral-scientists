@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Session 2 Plotting and visualizing data in R | Basics of data visualization for behavioral scientists</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Session 2 Plotting and visualizing data in R | Basics of data visualization for behavioral scientists" />
   <meta property="og:type" content="book" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="basics-of-data-wrangling-in-r.html"/>
-<link rel="next" href="communicating-patterns-in-rating-data.html"/>
+<link rel="next" href="exploring-and-communicating-patterns-in-rating-data.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -49,6 +49,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
@@ -143,13 +144,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#measurement-levels-in-behavioral-research"><i class="fa fa-check"></i><b>2.1</b> Measurement levels in behavioral research</a></li>
 <li class="chapter" data-level="2.2" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#why-visualize-data"><i class="fa fa-check"></i><b>2.2</b> Why visualize data?</a></li>
 <li class="chapter" data-level="2.3" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#plotting-data-using-ggplot2"><i class="fa fa-check"></i><b>2.3</b> Plotting data using ggplot2</a></li>
-<li class="chapter" data-level="2.4" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#session-summary-1"><i class="fa fa-check"></i><b>2.4</b> Session summary</a></li>
-<li class="chapter" data-level="2.5" data-path="plotting-and-visualizing-data-in-r.html"><a href="plotting-and-visualizing-data-in-r.html#exercises-1"><i class="fa fa-check"></i><b>2.5</b> Exercises</a></li>
+<li class="chapter" data-level="2.4" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#session-summary"><i class="fa fa-check"></i><b>2.4</b> Session summary</a></li>
+<li class="chapter" data-level="2.5" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#exercises"><i class="fa fa-check"></i><b>2.5</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html"><i class="fa fa-check"></i><b>3</b> Communicating patterns in rating data</a><ul>
-<li class="chapter" data-level="3.1" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html#laying-out-the-basic-data-patterns"><i class="fa fa-check"></i><b>3.1</b> Laying out the basic data patterns</a></li>
-<li class="chapter" data-level="3.2" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html#modifying-major-elements-of-the-plot"><i class="fa fa-check"></i><b>3.2</b> Modifying major elements of the plot</a></li>
-<li class="chapter" data-level="3.3" data-path="communicating-patterns-in-rating-data.html"><a href="communicating-patterns-in-rating-data.html#refining-minor-elements-of-the-plot"><i class="fa fa-check"></i><b>3.3</b> Refining minor elements of the plot</a></li>
+<li class="chapter" data-level="3" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html"><i class="fa fa-check"></i><b>3</b> Exploring and communicating patterns in rating data</a><ul>
+<li class="chapter" data-level="3.1" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#laying-out-the-data"><i class="fa fa-check"></i><b>3.1</b> Laying out the data</a></li>
+<li class="chapter" data-level="3.2" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#exploring-the-data"><i class="fa fa-check"></i><b>3.2</b> Exploring the data</a></li>
+<li class="chapter" data-level="3.3" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#enriching-the-base-visualizations"><i class="fa fa-check"></i><b>3.3</b> Enriching the base visualizations</a></li>
+<li class="chapter" data-level="3.4" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#modifying-major-elements-of-the-plot"><i class="fa fa-check"></i><b>3.4</b> Modifying major elements of the plot</a></li>
+<li class="chapter" data-level="3.5" data-path="exploring-and-communicating-patterns-in-rating-data.html"><a href="exploring-and-communicating-patterns-in-rating-data.html#refining-minor-elements-of-the-plot"><i class="fa fa-check"></i><b>3.5</b> Refining minor elements of the plot</a></li>
+<li class="chapter" data-level="3.6" data-path="basics-of-data-wrangling-in-r.html"><a href="basics-of-data-wrangling-in-r.html#session-summary"><i class="fa fa-check"></i><b>3.6</b> Session summary</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank"></a></li>
@@ -287,93 +291,87 @@ immanently related or part of the same concept (i.e., ‘ability to see details�
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-39-1.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>The plot looks just like the one we had for pre-study 1, except, of course, that the data patterns are different here: while still rating the literal expressions mostly as <em>completely literal</em>, people rated the metonymic expressions mostly as <em>fairly literal</em>, in contrast to metaphors which were rated mostly as <em>not at all literal</em>. Now, in order to get a global picture of the combined results of the two norming studies, we would like to compare the results of pre-study 2 to those of pre-study 1. Let’s then plot the data together. In order to do that, we will have to merge the two individual data sets together, something which we can easily do in R using, for example, tools from the <strong>tidyverse</strong> package <code>dplyr</code>. We are using a function called <code>bind_rows</code>, which adds one data set right on top of the other. Notice how in the function call, in addition to the two data frames, we specify the argument <code>.id</code>, which gives us a label we can refer back to to know which data set each individual observation comes from.</p>
 <div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="plotting-and-visualizing-data-in-r.html#cb80-1"></a>norms &lt;-<span class="st"> </span><span class="kw">bind_rows</span>(pre1, pre2, <span class="dt">.id =</span> <span class="st">&quot;study&quot;</span>)</span></code></pre></div>
-<pre><code>## Warning in bind_rows_(x, .id): Unequal factor levels: coercing to character</code></pre>
-<pre><code>## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector
-
-## Warning in bind_rows_(x, .id): binding character and factor vector, coercing
-## into character vector</code></pre>
 <p>We successfully joined the two data sets, but we also got an error that due to unequal factor levels one of our resulting factors was coerced into character. Luckily for us, we know where this error might come from: while in the data set from pre-study 1 the factor <em>type</em> had the levels <em>meta</em> and <em>woe</em>, in the date set from pre-study 2 it had the levels <em>meto</em> and <em>woe</em>, which means that the resulting data frame has a factor with three levels as opposed to two. That is all fine, we just have to convert the variable <em>type</em> in the the new data frame to factor again.</p>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="plotting-and-visualizing-data-in-r.html#cb83-1"></a>norms<span class="op">$</span>typ &lt;-<span class="st"> </span><span class="kw">as.factor</span>(norms<span class="op">$</span>typ)</span></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="plotting-and-visualizing-data-in-r.html#cb81-1"></a>norms<span class="op">$</span>typ &lt;-<span class="st"> </span><span class="kw">as.factor</span>(norms<span class="op">$</span>typ)</span></code></pre></div>
 <p>Now that we have a single data set with observations from both the pre-study on metaphors and and the pre-study on metonomies, let’s plot the combined results. Let’s go back to <code>facet_wrap()</code> and try to change our code from earlier to produce a plot with four facets.</p>
-<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="plotting-and-visualizing-data-in-r.html#cb84-1"></a>norms <span class="op">%&gt;%</span></span>
-<span id="cb84-2"><a href="plotting-and-visualizing-data-in-r.html#cb84-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
-<span id="cb84-3"><a href="plotting-and-visualizing-data-in-r.html#cb84-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">stat =</span> <span class="st">&quot;count&quot;</span>) <span class="op">+</span></span>
-<span id="cb84-4"><a href="plotting-and-visualizing-data-in-r.html#cb84-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(study <span class="op">~</span><span class="st"> </span>typ)</span></code></pre></div>
+<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="plotting-and-visualizing-data-in-r.html#cb82-1"></a>norms <span class="op">%&gt;%</span></span>
+<span id="cb82-2"><a href="plotting-and-visualizing-data-in-r.html#cb82-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
+<span id="cb82-3"><a href="plotting-and-visualizing-data-in-r.html#cb82-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">stat =</span> <span class="st">&quot;count&quot;</span>) <span class="op">+</span></span>
+<span id="cb82-4"><a href="plotting-and-visualizing-data-in-r.html#cb82-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>(study <span class="op">~</span><span class="st"> </span>typ)</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-42-1.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>We were able to achieve what we wanted by instructing <code>ggplot2</code> to facet the data by both the original data set, <em>study</em>, and the expression type, <em>type</em>. Notice how the order of the arguments in the <code>facet_wrap()</code> call impacted the resulting plot: <em>study</em> was plotted along the x-axis while <em>type</em> was plotted along the y-axis. The graph is already good as it is, but let’s redesign the facet labels to aid visualization. For that, we’ll create two vectors with the new names we want to assign to the labels. Then, we’ll use the <code>labeller()</code> function from <code>ggplot2</code> to apply those new labels to the already existing plot.</p>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="plotting-and-visualizing-data-in-r.html#cb85-1"></a>study_labels &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
-<span id="cb85-2"><a href="plotting-and-visualizing-data-in-r.html#cb85-2"></a>  <span class="st">`</span><span class="dt">1</span><span class="st">`</span> =<span class="st"> &quot;Study 1&quot;</span>,</span>
-<span id="cb85-3"><a href="plotting-and-visualizing-data-in-r.html#cb85-3"></a>  <span class="st">`</span><span class="dt">2</span><span class="st">`</span> =<span class="st"> &quot;Study 2&quot;</span></span>
-<span id="cb85-4"><a href="plotting-and-visualizing-data-in-r.html#cb85-4"></a>)</span>
-<span id="cb85-5"><a href="plotting-and-visualizing-data-in-r.html#cb85-5"></a></span>
-<span id="cb85-6"><a href="plotting-and-visualizing-data-in-r.html#cb85-6"></a>type_labels &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
-<span id="cb85-7"><a href="plotting-and-visualizing-data-in-r.html#cb85-7"></a>  <span class="dt">meta =</span> <span class="st">&quot;Metaphoric&quot;</span>,</span>
-<span id="cb85-8"><a href="plotting-and-visualizing-data-in-r.html#cb85-8"></a>  <span class="dt">meto =</span> <span class="st">&quot;Metonymic&quot;</span>,</span>
-<span id="cb85-9"><a href="plotting-and-visualizing-data-in-r.html#cb85-9"></a>  <span class="dt">woe =</span> <span class="st">&quot;Literal&quot;</span></span>
-<span id="cb85-10"><a href="plotting-and-visualizing-data-in-r.html#cb85-10"></a>)</span>
-<span id="cb85-11"><a href="plotting-and-visualizing-data-in-r.html#cb85-11"></a></span>
-<span id="cb85-12"><a href="plotting-and-visualizing-data-in-r.html#cb85-12"></a>norms <span class="op">%&gt;%</span></span>
-<span id="cb85-13"><a href="plotting-and-visualizing-data-in-r.html#cb85-13"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
-<span id="cb85-14"><a href="plotting-and-visualizing-data-in-r.html#cb85-14"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">stat =</span> <span class="st">&quot;count&quot;</span>) <span class="op">+</span></span>
-<span id="cb85-15"><a href="plotting-and-visualizing-data-in-r.html#cb85-15"></a><span class="st">  </span><span class="kw">facet_wrap</span>(study <span class="op">~</span><span class="st"> </span>typ, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels))</span></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="plotting-and-visualizing-data-in-r.html#cb83-1"></a>study_labels &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
+<span id="cb83-2"><a href="plotting-and-visualizing-data-in-r.html#cb83-2"></a>  <span class="st">`</span><span class="dt">1</span><span class="st">`</span> =<span class="st"> &quot;Study 1&quot;</span>,</span>
+<span id="cb83-3"><a href="plotting-and-visualizing-data-in-r.html#cb83-3"></a>  <span class="st">`</span><span class="dt">2</span><span class="st">`</span> =<span class="st"> &quot;Study 2&quot;</span></span>
+<span id="cb83-4"><a href="plotting-and-visualizing-data-in-r.html#cb83-4"></a>)</span>
+<span id="cb83-5"><a href="plotting-and-visualizing-data-in-r.html#cb83-5"></a></span>
+<span id="cb83-6"><a href="plotting-and-visualizing-data-in-r.html#cb83-6"></a>type_labels &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
+<span id="cb83-7"><a href="plotting-and-visualizing-data-in-r.html#cb83-7"></a>  <span class="dt">meta =</span> <span class="st">&quot;Metaphoric&quot;</span>,</span>
+<span id="cb83-8"><a href="plotting-and-visualizing-data-in-r.html#cb83-8"></a>  <span class="dt">meto =</span> <span class="st">&quot;Metonymic&quot;</span>,</span>
+<span id="cb83-9"><a href="plotting-and-visualizing-data-in-r.html#cb83-9"></a>  <span class="dt">woe =</span> <span class="st">&quot;Literal&quot;</span></span>
+<span id="cb83-10"><a href="plotting-and-visualizing-data-in-r.html#cb83-10"></a>)</span>
+<span id="cb83-11"><a href="plotting-and-visualizing-data-in-r.html#cb83-11"></a></span>
+<span id="cb83-12"><a href="plotting-and-visualizing-data-in-r.html#cb83-12"></a>norms <span class="op">%&gt;%</span></span>
+<span id="cb83-13"><a href="plotting-and-visualizing-data-in-r.html#cb83-13"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
+<span id="cb83-14"><a href="plotting-and-visualizing-data-in-r.html#cb83-14"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">stat =</span> <span class="st">&quot;count&quot;</span>) <span class="op">+</span></span>
+<span id="cb83-15"><a href="plotting-and-visualizing-data-in-r.html#cb83-15"></a><span class="st">  </span><span class="kw">facet_wrap</span>(study <span class="op">~</span><span class="st"> </span>typ, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels))</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-43-1.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>In order to conclude our introduction to <code>ggplot2</code>, let’s attempt to visualize the combined results with our split bar technique from earlier, exploring an alternative visualization possibility.</p>
-<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="plotting-and-visualizing-data-in-r.html#cb86-1"></a>norms <span class="op">%&gt;%</span></span>
-<span id="cb86-2"><a href="plotting-and-visualizing-data-in-r.html#cb86-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
-<span id="cb86-3"><a href="plotting-and-visualizing-data-in-r.html#cb86-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
-<span id="cb86-4"><a href="plotting-and-visualizing-data-in-r.html#cb86-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels))</span></code></pre></div>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="plotting-and-visualizing-data-in-r.html#cb84-1"></a>norms <span class="op">%&gt;%</span></span>
+<span id="cb84-2"><a href="plotting-and-visualizing-data-in-r.html#cb84-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
+<span id="cb84-3"><a href="plotting-and-visualizing-data-in-r.html#cb84-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
+<span id="cb84-4"><a href="plotting-and-visualizing-data-in-r.html#cb84-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels))</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-44-1.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>This is an interesting plot: it subsumes the ratings for each expression type within a single facet which tells us which study the ratings come from. Despite the usage of the split bars though, the plot is somewhat convoluted, as there is a lot of visual information in each facet. Let’s try to modify this graph so as to keep both distributions but only focus on a single expression type per facet. For that, we’ll actually plot the graph twice, once highlighting the literal results and once highlighting the non-literal results.</p>
 <p>First, let’s create two vectors with the color highlight information: for the literal facets, we color the literal responses in their original color and the non-literal responses in gray; for the non-literal facets, we color the non-literal responses in their original color and the literal responses in gray. In both cases, we follow the original coloring scheme, plotting our graph once with each coloring information.</p>
-<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="plotting-and-visualizing-data-in-r.html#cb87-1"></a>literal &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
-<span id="cb87-2"><a href="plotting-and-visualizing-data-in-r.html#cb87-2"></a>  <span class="st">&quot;woe&quot;</span> =<span class="st"> &quot;grey&quot;</span>,</span>
-<span id="cb87-3"><a href="plotting-and-visualizing-data-in-r.html#cb87-3"></a>  <span class="st">&quot;meta&quot;</span> =<span class="st"> &quot;#F8766D&quot;</span>, </span>
-<span id="cb87-4"><a href="plotting-and-visualizing-data-in-r.html#cb87-4"></a>  <span class="st">&quot;meto&quot;</span> =<span class="st"> &quot;#00BA38&quot;</span>)</span>
-<span id="cb87-5"><a href="plotting-and-visualizing-data-in-r.html#cb87-5"></a></span>
-<span id="cb87-6"><a href="plotting-and-visualizing-data-in-r.html#cb87-6"></a>non_literal &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
-<span id="cb87-7"><a href="plotting-and-visualizing-data-in-r.html#cb87-7"></a>  <span class="st">&quot;woe&quot;</span> =<span class="st"> &quot;#619CFF&quot;</span>,</span>
-<span id="cb87-8"><a href="plotting-and-visualizing-data-in-r.html#cb87-8"></a>  <span class="st">&quot;meta&quot;</span> =<span class="st"> &quot;grey&quot;</span>, </span>
-<span id="cb87-9"><a href="plotting-and-visualizing-data-in-r.html#cb87-9"></a>  <span class="st">&quot;meto&quot;</span> =<span class="st"> &quot;grey&quot;</span>)</span>
-<span id="cb87-10"><a href="plotting-and-visualizing-data-in-r.html#cb87-10"></a></span>
-<span id="cb87-11"><a href="plotting-and-visualizing-data-in-r.html#cb87-11"></a>literal_norms &lt;-<span class="st"> </span>norms <span class="op">%&gt;%</span></span>
-<span id="cb87-12"><a href="plotting-and-visualizing-data-in-r.html#cb87-12"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
-<span id="cb87-13"><a href="plotting-and-visualizing-data-in-r.html#cb87-13"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
-<span id="cb87-14"><a href="plotting-and-visualizing-data-in-r.html#cb87-14"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">ncol =</span> <span class="dv">1</span>, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels)) <span class="op">+</span></span>
-<span id="cb87-15"><a href="plotting-and-visualizing-data-in-r.html#cb87-15"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> non_literal)</span>
-<span id="cb87-16"><a href="plotting-and-visualizing-data-in-r.html#cb87-16"></a></span>
-<span id="cb87-17"><a href="plotting-and-visualizing-data-in-r.html#cb87-17"></a><span class="kw">print</span>(literal_norms)</span></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="plotting-and-visualizing-data-in-r.html#cb85-1"></a>literal &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
+<span id="cb85-2"><a href="plotting-and-visualizing-data-in-r.html#cb85-2"></a>  <span class="st">&quot;woe&quot;</span> =<span class="st"> &quot;grey&quot;</span>,</span>
+<span id="cb85-3"><a href="plotting-and-visualizing-data-in-r.html#cb85-3"></a>  <span class="st">&quot;meta&quot;</span> =<span class="st"> &quot;#F8766D&quot;</span>, </span>
+<span id="cb85-4"><a href="plotting-and-visualizing-data-in-r.html#cb85-4"></a>  <span class="st">&quot;meto&quot;</span> =<span class="st"> &quot;#00BA38&quot;</span>)</span>
+<span id="cb85-5"><a href="plotting-and-visualizing-data-in-r.html#cb85-5"></a></span>
+<span id="cb85-6"><a href="plotting-and-visualizing-data-in-r.html#cb85-6"></a>non_literal &lt;-<span class="st"> </span><span class="kw">c</span>(</span>
+<span id="cb85-7"><a href="plotting-and-visualizing-data-in-r.html#cb85-7"></a>  <span class="st">&quot;woe&quot;</span> =<span class="st"> &quot;#619CFF&quot;</span>,</span>
+<span id="cb85-8"><a href="plotting-and-visualizing-data-in-r.html#cb85-8"></a>  <span class="st">&quot;meta&quot;</span> =<span class="st"> &quot;grey&quot;</span>, </span>
+<span id="cb85-9"><a href="plotting-and-visualizing-data-in-r.html#cb85-9"></a>  <span class="st">&quot;meto&quot;</span> =<span class="st"> &quot;grey&quot;</span>)</span>
+<span id="cb85-10"><a href="plotting-and-visualizing-data-in-r.html#cb85-10"></a></span>
+<span id="cb85-11"><a href="plotting-and-visualizing-data-in-r.html#cb85-11"></a>literal_norms &lt;-<span class="st"> </span>norms <span class="op">%&gt;%</span></span>
+<span id="cb85-12"><a href="plotting-and-visualizing-data-in-r.html#cb85-12"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
+<span id="cb85-13"><a href="plotting-and-visualizing-data-in-r.html#cb85-13"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
+<span id="cb85-14"><a href="plotting-and-visualizing-data-in-r.html#cb85-14"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">ncol =</span> <span class="dv">1</span>, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels)) <span class="op">+</span></span>
+<span id="cb85-15"><a href="plotting-and-visualizing-data-in-r.html#cb85-15"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> non_literal)</span>
+<span id="cb85-16"><a href="plotting-and-visualizing-data-in-r.html#cb85-16"></a></span>
+<span id="cb85-17"><a href="plotting-and-visualizing-data-in-r.html#cb85-17"></a><span class="kw">print</span>(literal_norms)</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-45-1.png" width="70%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="plotting-and-visualizing-data-in-r.html#cb88-1"></a>non_literal_norms &lt;-<span class="st"> </span>norms <span class="op">%&gt;%</span></span>
-<span id="cb88-2"><a href="plotting-and-visualizing-data-in-r.html#cb88-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
-<span id="cb88-3"><a href="plotting-and-visualizing-data-in-r.html#cb88-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
-<span id="cb88-4"><a href="plotting-and-visualizing-data-in-r.html#cb88-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">ncol =</span> <span class="dv">1</span>, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels)) <span class="op">+</span></span>
-<span id="cb88-5"><a href="plotting-and-visualizing-data-in-r.html#cb88-5"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> literal)</span>
-<span id="cb88-6"><a href="plotting-and-visualizing-data-in-r.html#cb88-6"></a></span>
-<span id="cb88-7"><a href="plotting-and-visualizing-data-in-r.html#cb88-7"></a><span class="kw">print</span>(non_literal_norms)</span></code></pre></div>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="plotting-and-visualizing-data-in-r.html#cb86-1"></a>non_literal_norms &lt;-<span class="st"> </span>norms <span class="op">%&gt;%</span></span>
+<span id="cb86-2"><a href="plotting-and-visualizing-data-in-r.html#cb86-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
+<span id="cb86-3"><a href="plotting-and-visualizing-data-in-r.html#cb86-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
+<span id="cb86-4"><a href="plotting-and-visualizing-data-in-r.html#cb86-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">ncol =</span> <span class="dv">1</span>, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels)) <span class="op">+</span></span>
+<span id="cb86-5"><a href="plotting-and-visualizing-data-in-r.html#cb86-5"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values =</span> literal)</span>
+<span id="cb86-6"><a href="plotting-and-visualizing-data-in-r.html#cb86-6"></a></span>
+<span id="cb86-7"><a href="plotting-and-visualizing-data-in-r.html#cb86-7"></a><span class="kw">print</span>(non_literal_norms)</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-45-2.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Now that we have two plots, each with their own color highlight, we merge them together into a single plot. This time, we will use a function from an external package, namely the <code>cowplot</code> package, as <code>ggplot2</code> doesn’t offer us exactly the tools we need. We use a function called <code>plot_grid()</code>, which is being called from the package <code>cowplot</code> via <code>cowplot::plot_grid()</code>, and to it we add the two plots we just created. Notice how within the call we specify that no legend should be plotted. This is the case as we’ll generate a common legend below.</p>
-<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="plotting-and-visualizing-data-in-r.html#cb89-1"></a>plot &lt;-<span class="st"> </span>cowplot<span class="op">::</span><span class="kw">plot_grid</span>(</span>
-<span id="cb89-2"><a href="plotting-and-visualizing-data-in-r.html#cb89-2"></a>  non_literal_norms <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>), </span>
-<span id="cb89-3"><a href="plotting-and-visualizing-data-in-r.html#cb89-3"></a>  literal_norms <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>), </span>
-<span id="cb89-4"><a href="plotting-and-visualizing-data-in-r.html#cb89-4"></a>  <span class="dt">nrow =</span> <span class="dv">1</span>)</span>
-<span id="cb89-5"><a href="plotting-and-visualizing-data-in-r.html#cb89-5"></a></span>
-<span id="cb89-6"><a href="plotting-and-visualizing-data-in-r.html#cb89-6"></a><span class="kw">print</span>(plot)</span></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="plotting-and-visualizing-data-in-r.html#cb87-1"></a>plot &lt;-<span class="st"> </span>cowplot<span class="op">::</span><span class="kw">plot_grid</span>(</span>
+<span id="cb87-2"><a href="plotting-and-visualizing-data-in-r.html#cb87-2"></a>  non_literal_norms <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>), </span>
+<span id="cb87-3"><a href="plotting-and-visualizing-data-in-r.html#cb87-3"></a>  literal_norms <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;none&quot;</span>), </span>
+<span id="cb87-4"><a href="plotting-and-visualizing-data-in-r.html#cb87-4"></a>  <span class="dt">nrow =</span> <span class="dv">1</span>)</span>
+<span id="cb87-5"><a href="plotting-and-visualizing-data-in-r.html#cb87-5"></a></span>
+<span id="cb87-6"><a href="plotting-and-visualizing-data-in-r.html#cb87-6"></a><span class="kw">print</span>(plot)</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-46-1.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Now, all we need to do is to produce a common legend for our new plot, and then to combine the plot with its legend. In order to do that, we generate the plot we started with, where there was no custom color information, only so we can get the legend with the right colors in it. We then use the useful <code>get_legend()</code> function from <code>cowplot</code> to extract the legend. Finally, we produce our final plot using <code>plot_grid()</code> again, now with the legend included.</p>
-<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="plotting-and-visualizing-data-in-r.html#cb90-1"></a>legend_norms &lt;-<span class="st"> </span>norms <span class="op">%&gt;%</span></span>
-<span id="cb90-2"><a href="plotting-and-visualizing-data-in-r.html#cb90-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
-<span id="cb90-3"><a href="plotting-and-visualizing-data-in-r.html#cb90-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
-<span id="cb90-4"><a href="plotting-and-visualizing-data-in-r.html#cb90-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels))</span>
-<span id="cb90-5"><a href="plotting-and-visualizing-data-in-r.html#cb90-5"></a></span>
-<span id="cb90-6"><a href="plotting-and-visualizing-data-in-r.html#cb90-6"></a><span class="kw">print</span>(legend_norms)</span></code></pre></div>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="plotting-and-visualizing-data-in-r.html#cb88-1"></a>legend_norms &lt;-<span class="st"> </span>norms <span class="op">%&gt;%</span></span>
+<span id="cb88-2"><a href="plotting-and-visualizing-data-in-r.html#cb88-2"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(rat)) <span class="op">+</span></span>
+<span id="cb88-3"><a href="plotting-and-visualizing-data-in-r.html#cb88-3"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">y =</span> ..prop.., <span class="dt">fill =</span> typ), <span class="dt">position =</span> <span class="kw">position_dodge</span>()) <span class="op">+</span></span>
+<span id="cb88-4"><a href="plotting-and-visualizing-data-in-r.html#cb88-4"></a><span class="st">  </span><span class="kw">facet_wrap</span>( <span class="op">~</span><span class="st"> </span>study, <span class="dt">labeller =</span> <span class="kw">labeller</span>(<span class="dt">study =</span> study_labels, <span class="dt">typ =</span> type_labels))</span>
+<span id="cb88-5"><a href="plotting-and-visualizing-data-in-r.html#cb88-5"></a></span>
+<span id="cb88-6"><a href="plotting-and-visualizing-data-in-r.html#cb88-6"></a><span class="kw">print</span>(legend_norms)</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-47-1.png" width="70%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="plotting-and-visualizing-data-in-r.html#cb91-1"></a>legend &lt;-<span class="st"> </span>cowplot<span class="op">::</span><span class="kw">get_legend</span>(legend_norms)</span>
-<span id="cb91-2"><a href="plotting-and-visualizing-data-in-r.html#cb91-2"></a></span>
-<span id="cb91-3"><a href="plotting-and-visualizing-data-in-r.html#cb91-3"></a>cowplot<span class="op">::</span><span class="kw">plot_grid</span>(plot, legend, <span class="dt">rel_widths =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="fl">.3</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="plotting-and-visualizing-data-in-r.html#cb89-1"></a>legend &lt;-<span class="st"> </span>cowplot<span class="op">::</span><span class="kw">get_legend</span>(legend_norms)</span>
+<span id="cb89-2"><a href="plotting-and-visualizing-data-in-r.html#cb89-2"></a></span>
+<span id="cb89-3"><a href="plotting-and-visualizing-data-in-r.html#cb89-3"></a>cowplot<span class="op">::</span><span class="kw">plot_grid</span>(plot, legend, <span class="dt">rel_widths =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="fl">.3</span>))</span></code></pre></div>
 <p><img src="basics-data-viz_files/figure-html/unnamed-chunk-47-2.png" width="70%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="session-summary-1" class="section level2">
+<div id="session-summary" class="section level2">
 <h2><span class="header-section-number">2.4</span> Session summary</h2>
 <ul>
 <li><p>In order to produce a plot with <code>ggplot2</code> three basic elements are needed: the <code>ggplot()</code> call which sets the canvas, a data source and the basic coordinate <strong>aesthetics</strong>, and a geometric object, also known as a <strong>geom</strong>;</p></li>
@@ -383,7 +381,7 @@ immanently related or part of the same concept (i.e., ‘ability to see details�
 <li><p>You can find a summary of the essential <code>ggplot2</code> functions on this <a href="https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/data-visualization-2.1.pdf">Cheatsheet</a>.</p></li>
 </ul>
 </div>
-<div id="exercises-1" class="section level2">
+<div id="exercises" class="section level2">
 <h2><span class="header-section-number">2.5</span> Exercises</h2>
 <ol style="list-style-type: decimal">
 <li><p><code>fill</code> is not the only way to add color to plots using <code>ggplot2</code>. Using the documentation, check what the aesthetic <code>color</code> does and then try to replace <code>fill</code> with <code>color</code> in one of the plots above. If you’re feeling curious, try using both <code>fill</code> and <code>color</code>.</p></li>
@@ -399,7 +397,7 @@ immanently related or part of the same concept (i.e., ‘ability to see details�
         </div>
       </div>
 <a href="basics-of-data-wrangling-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="communicating-patterns-in-rating-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="exploring-and-communicating-patterns-in-rating-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

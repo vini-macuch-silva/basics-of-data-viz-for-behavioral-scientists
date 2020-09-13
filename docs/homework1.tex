@@ -1,0 +1,106 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Homework 1},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{setspace}\onehalfspacing
+
+\title{Homework 1}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\hypertarget{homework-1}{%
+\section{Homework 1}\label{homework-1}}
+
+For this assignment, your task is to explore and then plot the
+familiarity ratings, which is one of the measures from the study we
+looked at in class. Much like we did in class for the transparency
+measures, you are to explore the data, looking at the main contrast of
+interest between metaphors and metonomies as well as at other
+potentially interesting comparisons. You should produce two sets of
+graphs:
+
+\begin{itemize}
+\item
+  \textbf{Set 1} consists of exploration graphs, where you should plot
+  the data using two different geoms and at least one grouping variable,
+  to be chosen between \textbf{state} and \textbf{educ}. In total, you
+  should create four plots, two focused on the main contrast of
+  interest, each with a different geom, and two including at least one
+  further variable;
+\item
+  \textbf{Set 2} consists of camera-ready graphs, where you should pick
+  one pattern/ contrast of your choice and plot it using two different
+  geoms. Importantly, your task is to make the graphs look as bad as
+  possible while the data itself is plotted correctly. For that, you
+  will have to explore different combinations of visualization
+  techniques. Make extensive use of \texttt{fill}, \texttt{color},
+  facetting, and remember to also modify the legend as well as the plot
+  axes (think of axes labels, ticks, etc.).
+\end{itemize}
+
+Use \texttt{ggsave()} to export your final plots as .png files. Upload
+your files to Stud.IP as a single .zip file containing two folders, one
+for each set of graphs. The .zip file should be named \textgreater{}
+homework1\_InitialSurname.
+
+\end{document}
