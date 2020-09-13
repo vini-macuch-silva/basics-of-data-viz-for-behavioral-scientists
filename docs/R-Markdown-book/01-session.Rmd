@@ -276,7 +276,7 @@ This seems to work just fine. Of course not always will we have a handy **tidyve
 
 In the next session of our course, before we learn how to plot data, we will talk about how to map data reflecting some of the measures typically found in behavioral research onto the data structures we can create and manipulate in R. For now, let's recapitulate the key points that we learned in today's session.
 
-## Session summary
+## Session 1 summary
 
 * In order to create a variable or assign something to an already existing variable we use the arrow operator `<-`, e.g. `op1 <- 2 + 2`;
 
@@ -293,7 +293,7 @@ In the next session of our course, before we learn how to plot data, we will tal
 * Finally, we learned that we can feed a data source into one or more operations using the pipe operator `%>%`, e.g. `nv %>% filter( > 4)`. 
 
 
-## Exercises
+## Session 1 exercises 
 
 1. Convert *df1_long* back to its original, wide format. Try using the `pivot_wider()` function from the **tidyr** package.
 

@@ -285,7 +285,7 @@ legend <- cowplot::get_legend(legend_norms)
 cowplot::plot_grid(plot, legend, rel_widths = c(2, .3))
 ```
 
-## Session summary
+## Session 2 summary
 
 * In order to produce a plot with `ggplot2` three basic elements are needed: the `ggplot()` call which sets the canvas, a data source and the basic coordinate **aesthetics**, and a geometric object, also known as a **geom**;
 
@@ -298,7 +298,7 @@ cowplot::plot_grid(plot, legend, rel_widths = c(2, .3))
 * You can find a summary of the essential `ggplot2` functions on this [Cheatsheet](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/data-visualization-2.1.pdf).
 
 
-## Exercises
+## Session 2 exercises
 
 1. `fill` is not the only way to add color to plots using `ggplot2`.  Using the documentation, check what the aesthetic `color` does and then try to replace `fill` with `color` in one of the plots above. If you're feeling curious, try using both `fill` and `color`.
 
