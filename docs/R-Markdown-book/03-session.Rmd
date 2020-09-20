@@ -634,7 +634,7 @@ ggsave("ratings-transparency.png")
 
 ```
 
-## Session 3 summary
+## Session summary
 
 * As we've seen in our last two sessions, geoms are what shape the type of graph one ends up with when using **ggplot2**. The single most important aspect of a geom is what type and number of variables its aesthetics support. We've seen examples of geoms that take one or two variables. In the case of geoms that support two variables, like `geom_boxplot()`, we saw that these can consist either of two variables of the same type, be it continuous or discrete, or a combination of both. In order to produce a plot that renders the data correctly, one needs to understand how the plotted variables are coded in R, so that they match the variable type supported by the selected geom. One also needs to understand what the data corresponds to "in the wild", that is, in terms of its original measurement type. This might impact how the data is plotted regardless of its actual representation in R. Knowing what variables a geom requires and whether one's data matches those requirements is a good recipe for plotting data correctly;
 

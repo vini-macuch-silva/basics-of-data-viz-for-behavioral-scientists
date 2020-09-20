@@ -62,7 +62,7 @@ The studies we are concerned with thus include two types of idiomatic expression
 
     * *die Hand für jmd. ins Feuer legen* (to put one's hand in fire for somebody = to vouchsafe for somebody's virtue)
     
-    * *noch feucht hinter den Ohren sein* (to still be moist behind the ears = to be young ad inexperienced)
+    * *noch feucht hinter den Ohren sein* (to still be moist behind the ears = to be young and inexperienced)
     
 In the first of the two studies, Michl (2019a) investigated how non-literalness might be linked to other properties relevant to the linguistic and cognitive characterization of idioms, such as transparency and familiarity. For that, she had participants rate different German idioms along a number of dimensions, later using those ratings to predict idiom type in an inferential statistical model. In the second study, Michl (2019b) had participants read some of the idioms used in her first study in a task that involved reading the stimuli one chunk at a time. The idioms used in the second study were first rated on their non-literalness by an independent sample of participants, and that is what we turn our attention to now. 
 
@@ -285,7 +285,7 @@ legend <- cowplot::get_legend(legend_norms)
 cowplot::plot_grid(plot, legend, rel_widths = c(2, .3))
 ```
 
-## Session 2 summary
+## Session summary
 
 * In order to produce a plot with `ggplot2` three basic elements are needed: the `ggplot()` call which sets the canvas, a data source and the basic coordinate **aesthetics**, and a geometric object, also known as a **geom**;
 
@@ -298,7 +298,7 @@ cowplot::plot_grid(plot, legend, rel_widths = c(2, .3))
 * You can find a summary of the essential `ggplot2` functions on this [Cheatsheet](https://github.com/vini-macuch-silva/basics-of-data-viz-for-behavioral-scientists/tree/master/materials/data-visualization-2.1.pdf).
 
 
-## Session 2 exercises
+## Exercises
 
 1. `fill` is not the only way to add color to plots using `ggplot2`.  Using the documentation, check what the aesthetic `color` does and then try to replace `fill` with `color` in one of the plots above. If you're feeling curious, try using both `fill` and `color`.
 
