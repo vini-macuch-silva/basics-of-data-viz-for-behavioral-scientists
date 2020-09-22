@@ -426,7 +426,7 @@ Let's explore the data some more to see if there are other relevant patterns wor
 
 ## Exploring the data
 
-Let's try plotting the means of each participant who took part in the study, to see the degree of individual variability we have in the data. First, we need to calculate the participant means. Then, can plot them using the code from above.
+Let's try plotting the means of each participant who took part in the study, to see the degree of individual variability we have in the data. First, we need to calculate the participant means. Then, we can plot them using the code from above.
 
 ```{r out.width="70%", fig.align='center'}
 mean_RT_par <- rts_filter %>%
@@ -480,7 +480,7 @@ mean_CI_RT_par %>%
   
 ```
 
-We can see that some people read the controls more slowly, with small differences between the idiomatic expressions, while others read certain types of idioms more slowly than the controls. It would be ideal if we could tag our data, such that we can highlight the presence or absent of an effect, as indicated in terms of the means, by contrasting the tagged data. First, let's wrangle our data so as to create new variables which indicate, both for idiomaticity and semantic structure, whether the data suggests an effect or not. Let's then color the lines connecting each group in terms of whether an effect is found or not. We're plotting two graphs: one for idiomaticity and one for semantic structure.
+We can see that some people read the controls more slowly, while others read certain types of idioms more slowly than the controls. It would be ideal if we tagged our data, such that we could highlight the presence or absent of an effect, as indicated in terms of the means, by contrasting the tagged data. First, let's wrangle our data so as to create new variables which indicate, both for idiomaticity and semantic structure, whether the data suggests an effect or not. Let's then color the lines connecting each group to represent whether an effect is found or not. We're plotting two graphs: one for idiomaticity and one for semantic structure. Red lines indicate an effect while blue ones indicate no effect.
 
 ```{r fig.show="hold", out.width="50%"}
 mean_RT_par_effect <- mean_RT_par %>%
@@ -586,7 +586,7 @@ mean_CI_RT_par_effect %>%
   
 ```
 
-Let's concentrate on the idiom region, for simplicity. As we can see, the prediction that controls would be read more slowly than idioms seems to be at least somewhat borne out in the data, with considerable differences between idiom types. While metonomies seem to be read on average faster than their controls, metaphors and controls seem to be read more slowly than their respective controls. We would have not been able to spot this fine-grained distinction by looking at a composite plot like the one we had earlier, although the original plot with aggregated means already suggested differential effects of idiomaticity. Categorically speaking, however, we might have inferred that there is no effect. In summary, then, the original prediction seems to be supported in the case of metonomies but not in the case of the other two idiom types. Let's now look at the potential effects of semantic structure.
+Let's concentrate on the idiom region, for simplicity. As we can see, the prediction that controls would be read more slowly than idioms seems to be at least somewhat borne out in the data, with considerable differences between idiom types. While metonomies seem to be read on average faster than their controls, metaphors and literal idioms seem to be read more slowly than their respective controls. We would not have been able to spot this fine-grained distinction by looking at a composite plot like the one we had earlier, although our original plot with aggregated means already suggested differential effects of idiomaticity. Categorically speaking, however, we might have inferred that there is no effect. In summary, then, the original prediction seems to be supported in the case of metonomies but not in the case of the other two idiom types. Let's now look at the potential effects of semantic structure.
 
 ```{r fig.show="hold", out.width="50%"}
 mean_RT_par_effect <- mean_RT_par %>%
@@ -651,9 +651,9 @@ mean_CI_RT_par_effect %>%
   
 ```
 
-For the sake of brevity, let's again focus only on the idiom region. We now see the effects of semantic structure. While it was predicted that more literal idioms would be read faster, literal idioms being read the fastest, followed by metonomies, and then metaphors, we see that the data supports the hypothesis only partially. Metonomies are indeed read faster than metaphors, and so are literal idioms, however, metonomies are read faster than literal idioms, an unexpected response pattern. We thus see an overall effect of semantic structure, although one of the response patterns contradicts the formulated literalness account.
+For the sake of brevity, let's again focus only on the idiom region. While it was predicted that idioms would be read faster the more literal they were, literal idioms being read the fastest, followed by metonomies, and then metaphors, we see that the data supports such a hypothesis only partially. Metonomies are indeed read faster than metaphors, and so are literal idioms, however, literal idioms are not read faster than metonomies, which is an unexpected finding. We thus see an overall effect of semantic structure, although one of the response patterns contradicts the formulated literalness account.
 
-In order to get an altogether different picture of what the patterns might be for each participant, let's facet them. Let's aggregate the two sentence regions again, for simplicity. Since we know we're going to end up with more facets than we can fit within a single plot, let's plot several graphs, each with seven participants, one per facet.
+In order to get an altogether different picture of what the overall patterns might be for each participant, let's facet them. Let's aggregate the two sentence regions again, for simplicity. Since we know we're going to end up with more facets than we can fit within a single plot, let's plot several graphs, each with seven participants, one per facet.
 
 ```{r fig.show="hold", out.width="50%"}
 mean_RT_par_nochunk <- rts_filter %>%
@@ -742,7 +742,7 @@ mean_CI_RT_par_nochunk %>%
   
 ```
 
-Again, we get quite a detailed picture of the amount of individual variation in the data. Participants vary considerably not only in their qualitative patterns but also on the average time taken to read the stimuli, as a whole. With these plots, however, it's hard to tell if there are any systematic differences between groups. We might want to combine information about individual variation with information about the aggregated means. Let's overlay the group means to our plot showing the individual means. For that, we'll need to duplicate our `geom_errorbar()` and `geom_point()` layers, feeding the data with the aggregated means to the new layers. Let's also change the transparency of the individual means to highlight the group means.
+Again, we get quite a detailed picture of the amount of individual variation in the data. Participants vary considerably not only in their qualitative patterns but also on their average time taken to read the stimuli, as a whole. With these plots, however, it's hard to tell if there are any systematic differences between groups. We might want to combine information about individual variation with information about the aggregated means. Let's overlay the group means to our plot showing the individual means. For that, we'll need to duplicate our `geom_errorbar()` and `geom_point()` layers, feeding the data with the aggregated means to the new layers. Let's also change the transparency of the individual means to highlight the group means.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_par %>%
