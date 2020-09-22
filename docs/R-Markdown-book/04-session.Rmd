@@ -248,7 +248,7 @@ Again, not the most informative of plots, but here we get more detail about the 
 
 Since we've already noticed that the differences we're interested in are quite minimal, we might want to use a graph that allows us to look at single points of interest, namely the means themselves, as opposed to whole distributions of response values. When reporting a summary statistic like a sample mean it's also customary to show a measure of variability in the data, that is, a measure of how much the values in the sample diverge from the value represented by the summary statistic. In our case, we can rely on the middle 95% of the data, which we can then use to calculate a confidence interval. A confidence interval tells us, to a certain degree of certainty, what the plausible range of values for the population mean might be. That way, when plotting our means, we can also plot their confidence intervals, so that when comparing means we can have a better idea of whether their likely ranges overlap or not. Ultimately, this is important as we're interested in inferring something about the larger population our empirical sample refers to.
 
-Let's then start by creating a new data frame called **mean_RT** which contains the summaries we want to plot, namely the group means. To that data frame, we will add the lower and upper limits of our confidence interval, which by convention usually correspond to the 2.5th and the 97.5th percentiles of the distribution. One thing we are going to do there is that we are going to simulate more samples based on our empirical distribution, so that the percentiles are based not only on the original sample but rather on an approximation of what the population distribution might be. This is called bootstrapping, and it is based on sampling the distribution with value replacement. Here we're using a function called `rep_sample_n()` from the external package **infer**. What this function allows us to do is to resample our empirical distribution so that we can generate a number of new samples based on which we're calculating our percentiles. Let's draw 1000 samples. Let's then plot the bootstrapped distribution to make sure it resembles, somewhat at least, our original response distribution.
+Let's then start by creating a new data frame called **mean_RT** which contains the summaries we want to plot, namely the group means. To that data frame we will eventually add the lower and upper limits of our confidence interval, which by convention usually correspond to the 2.5th and the 97.5th percentiles of the distribution. What we are going to do, however, is that we are going to simulate more samples based on our empirical distribution, so that the percentiles are based not only on the original sample but rather on an approximation of what the population distribution might be. This is called bootstrapping, and it is based on sampling the distribution with value replacement. Here we're using a function called `rep_sample_n()` from the external package **infer**. What this function allows us to do is to resample our empirical distribution so that we can generate a number of new samples based on which we're calculating our percentiles. Let's draw 1000 samples. Let's then plot the bootstrapped distribution to make sure it resembles, somewhat at least, our original response distribution.
 
 ```{r fig.show="hold", out.width="50%"}
 mean_RT <- rts_filter %>%
@@ -257,14 +257,6 @@ mean_RT <- rts_filter %>%
 
 bootstrapped_samples <- rts_filter %>% 
   infer::rep_sample_n(size = nrow(rts_filter), replace = TRUE, reps = 1000)
-
-bootstrapped_mean_RT = bootstrapped_samples %>%
-  group_by(replicate, cond) %>% 
-  summarize(boot_mean = mean(RT))
-
-bootstrapped_CI = bootstrapped_mean_RT %>%
-  group_by(cond) %>% 
-  summarize(CILow = quantile(boot_mean, .025), CIHigh = quantile(boot_mean, .975))
 
 rts_filter %>% 
   ggplot(aes(RT)) +
@@ -280,9 +272,17 @@ rts_filter %>%
 
 The two distributions have similar shapes. Still, you might be wondering why the bootstrapped distribution, which is based on 1000 samples, looks 'worse' than the empirical distribution, which is based on a single sample. That has to do with the fact that in the case of the bootstrapped distribution, given that we have many samples, we're much more certain about the actual shape of the underlying response distribution, which is what a density plot allows us to visualize, that is, an estimation of the data generating distribution based on observed data. 
 
-Now, let's combine our two data frames, **mean_RT** and **bootstrapped_CI**. Let's then inspect the summaries and feed the data to a `geom_point()` call. Notice that, differently from what we did before in our course with `bind_rows()`, we're not joining two data frames which have the exact same variables, where we'd simply be combining observations, but rather we're joining two data frames which have different variables which need to be linked over a common variable, in our case **cond**. For that, we're using the `left_join()` function from **dplyr**.
+Now, let's calculate the means of our samples, and on the basis of that let's create our desired confidence intervals, which we're going to store as **bootstrapped_CI**. We'll then combine **mean_RT** and **bootstrapped_CI**, and we should then inspect the summaries before feeding the data to a `ggplot()` call. Notice that, differently from what we did before in our course with `bind_rows()`, we're not joining two data frames which have the exact same variables, where we'd simply be combining observations, but rather we're joining two data frames which have different variables which need to be linked over a common variable, in our case **cond**. For that, we're using the `left_join()` function from **dplyr**.
 
 ```{r out.width="70%", fig.align='center'}
+bootstrapped_mean_RT = bootstrapped_samples %>%
+  group_by(replicate, cond) %>% 
+  summarize(boot_mean = mean(RT))
+
+bootstrapped_CI = bootstrapped_mean_RT %>%
+  group_by(cond) %>% 
+  summarize(CILow = quantile(boot_mean, .025), CIHigh = quantile(boot_mean, .975))
+
 mean_CI_RT <- left_join(mean_RT, bootstrapped_CI)
 
 mean_CI_RT
@@ -293,7 +293,7 @@ mean_CI_RT %>%
 
 ```
 
-What we have plotted here are the group means, without the respective confidence intervals for now, just so it's clear that the two are plotted in different layers. It's quite hard to notice the points, so let's increase their size, and let's add the confidence intervals using `geom_errobar()`. Notice how we specify the limits of our intervals using the `ymin` and `ymax` arguments.
+What we have plotted here are the group means, without the respective confidence intervals for now, just so it's clear that the two are plotted in different layers. It's quite hard to notice the points, so let's increase their size, and let's add the confidence intervals using `geom_errobar()`, also with slightly thicker line size. Notice how we specify the limits of our intervals using the `ymin` and `ymax` arguments within `geom_errorbar()`.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT %>%
@@ -303,20 +303,20 @@ mean_CI_RT %>%
 
 ```
 
-Now we have the plot we wanted: we can see the group means with their respective bootstrapped confidence intervals. Visual inspection of the plot suggests that there are differences between the controls and the idiomatic expressions. Moreover, there seem to be differences between the different idiomatic expressions, literal idioms and metonomies being, on average, read faster than metaphor, which seem to be read almost as slow as controls. Now, one thing to notice here is that we're plotting all RTs together, even though the measurements refer to different sentence segments. Recall that in the task participants read the expressions in chunks, as in *Once more* | *Katrin bites the bullet* | *and agrees to everything*, the idiomatic chunk being the main region of interest.
+Now we have the plot we wanted: we can see the group means with their respective bootstrapped confidence intervals. Visual inspection of the plot suggests that there are differences between the controls and the idiomatic expressions. Moreover, there seem to be differences between the different idiomatic expressions, literal idioms and metonomies being, on average, read faster than metaphors, which seem to be read slightly faster than controls. Now, one thing to notice here is that we're plotting all RTs together, even though the measurements refer to different sentence segments. Recall that in the task participants read the expressions in chunks, as in *Once more* | *Katrin bites the bullet* | *and agrees to everything*, the second chunk, the one containing an idiom, being the main region of interest.
 
-Let's replot our data in terms of each sentence chunk. For that, we need to re-calculate the means grouping the data not only by expression type but also by reading chunk. Then, in the new plot, we'll also need to dodge our points and their confidence intervals, otherwise they will be overplotted, as has happened before to us. Notice the argument in the `position_dodge()` calls.
+Let's replot our data in terms of both the idiom chunk and the region following it, the post-idiom chunk. For that, we'll need to re-calculate the means grouping the data not only by expression type but also by reading chunk. Then, in the new plot, we'll also need to dodge our points and their confidence intervals, otherwise they will be overplotted, as has happened before to us. Notice the argument in the `position_dodge()` calls.
 
 ```{r out.width="70%", fig.align='center'}
 mean_RT <- rts_filter %>%
   group_by(cond, chunk) %>%
   summarize(mean = mean(RT))
 
-bootstrapped_mean_RT = bootstrapped_samples %>%
+bootstrapped_mean_RT <- bootstrapped_samples %>%
   group_by(replicate, cond, chunk) %>% 
   summarize(boot_mean = mean(RT))
 
-bootstrapped_CI = bootstrapped_mean_RT %>%
+bootstrapped_CI <- bootstrapped_mean_RT %>%
   group_by(cond, chunk) %>% 
   summarize(CILow = quantile(boot_mean, .025), CIHigh = quantile(boot_mean, .975))
 
@@ -330,7 +330,99 @@ mean_CI_RT %>%
 
 ```
 
-This is closer to what we actually want as a final product: we can see the mean RTs plotted in terms of both the sentence regions and the expression types. Visual inspection of the plot suggests that there are descriptive differences between the different expression types at each of the two plotted sentence regions. The pattern found in the aggregated data seems to map rather directly onto the pattern found in the idiom region, whereas in the post-idiom region there is more overlap between the conditions, indicating that any early effects of idiomaticity, especially in the case of metonomies, are evened out later in processing, once the idiomatic chunk has been processed. Let's explore the data some more before deciding on a final plot.
+This is closer to what we might actually want as a final product: we can see the mean RTs plotted in terms of both the sentence regions and the expression types. Visual inspection of the plot suggests that there are descriptive differences between the different expression types at each of the two plotted sentence regions. The pattern found in the idiom region seems to map rather directly onto the pattern found in the aggregated data, whereas in the post-idiom region there is considerably more overlap between the conditions, indicating that any early effects of idiomaticity, especially in the case of metonomies, are evened out at later stages of processing, once the idiomatic chunk has been processed. Note, however, that so far we have plotted a single control condition, which is how the **cond** variable is represented in our data frame, with four distinct levels, three idiomatic and one control. We do know, though, that each idiom type has its own set of non-idiomatic control expressions, which is why we might expect differences between each control set, as the items in each set have been designed to match, as closely as possible, their idiomatic counterparts, whether literal, metaphoric, or metonymic.
+
+Let's then create a new variable, which we can call **cond2**, where we have information about all control sets, resulting in a factor with six levels instead of four. For that we're going to need to know which controls match which idioms. Fortunately, the items are coded using the same unique IDs for both idioms and their respective controls. Let's inspect our data set to see what that looks like. We're simply printing our items as a function of our conditions, accessing the entire data.
+
+```{r out.width="70%", fig.align='center'}
+table(rts_filter$cond, rts_filter$itemnr)
+
+```
+
+Here we can see how many instances of a given item, indicated by the columns, are found in the data set for each condition, indicated by the rows. As we can see, a given item only ever appears as a control and as a single idiom type, which means that those are control-target pairs. On the basis of this information, we can create a new variable which tell us whether a given item is a control for a literal idiom, for a metaphor, or for a metonomy. We can then use that information to create **cond2**, as explained above. Let's wrangle our data and then try to plot it again, using our newly created wrangled information about the controls. In order to increase the legibility of the graph, let's map controls and idioms to different shapes, namely circles and squares. Notice the usage of `scale_shape_manual()`, where we manually specify which levels from **cond2** are to be mapped onto which shapes.
+
+```{r out.width="70%", fig.align='center'}
+rts_filter <- rts_filter %>%
+  mutate(control2 = case_when(itemnr %in% c(250:318) ~ "control_literal",
+                              itemnr %in% c(3, 17, 22:52, 58, 69, 74, 83:98, 101:108, 125, 138:140, 142:143, 146, 153, 180, 195, 208:229, 235) ~ "control_metaphoric",
+                              itemnr %in% c(8, 18, 55, 60:65, 71, 76:82, 99, 115:118, 130, 141, 144, 150, 154, 188:192, 204:207, 233, 242) ~ "control_metonymic")) %>% 
+  mutate(cond2 = case_when(cond == "literal" ~ "literal",
+                           cond == "metaphoric" ~ "metaphoric",
+                           cond == "metonymic" ~ "metonymic",
+                           control2 == "control_literal" ~ "control_literal",
+                           control2 == "control_metaphoric" ~ "control_metaphoric",
+                           control2 == "control_metonymic" ~ "control_metonymic"))
+
+rts_filter$cond2 <- factor(rts_filter$cond2, levels = c("control_literal", "literal", "control_metaphoric", "metaphoric", "control_metonymic", "metonymic"))
+
+mean_RT_control <- rts_filter %>%
+  group_by(cond2) %>%
+  summarize(mean = mean(RT))
+
+bootstrapped_samples <- rts_filter %>% 
+  infer::rep_sample_n(size = nrow(rts_filter), replace = TRUE, reps = 1000)
+
+bootstrapped_mean_RT_control = bootstrapped_samples %>%
+  group_by(replicate, cond2) %>% 
+  summarize(boot_mean = mean(RT))
+
+bootstrapped_CI_control = bootstrapped_mean_RT_control %>%
+  group_by(cond2) %>% 
+  summarize(CILow = quantile(boot_mean, .025), CIHigh = quantile(boot_mean, .975))
+
+mean_CI_RT_control <- left_join(mean_RT_control, bootstrapped_CI_control)
+
+mean_CI_RT_control %>%
+  ggplot(aes(cond2, mean)) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), size = 1) +
+  geom_point(aes(color = cond2, shape = cond2), size = 5) +
+  scale_shape_manual(values = c("circle", "square", "circle", "square", "circle", "square"))
+
+```
+
+The resulting plot is quite informative: as we can see, each set of controls behaves differently. Importantly, we can see that the baseline effect of idiomaticity is still there, that is, controls are read, on average, more slowly than their idiomatic counterparts, despite differences between each control set. Let's now plot the graph showing the split between the idiom and the post-idiom sentence regions.
+
+```{r out.width="70%", fig.align='center'}
+rts_filter <- rts_filter %>%
+  mutate(control2 = case_when(itemnr %in% c(250:318) ~ "control_literal",
+                              itemnr %in% c(3, 17, 22:52, 58, 69, 74, 83:98, 101:108, 125, 138:140, 142:143, 146, 153, 180, 195, 208:229, 235) ~ "control_metaphoric",
+                              itemnr %in% c(8, 18, 55, 60:65, 71, 76:82, 99, 115:118, 130, 141, 144, 150, 154, 188:192, 204:207, 233, 242) ~ "control_metonymic")) %>% 
+  mutate(cond2 = case_when(cond == "literal" ~ "literal",
+                           cond == "metaphoric" ~ "metaphoric",
+                           cond == "metonymic" ~ "metonymic",
+                           control2 == "control_literal" ~ "control_literal",
+                           control2 == "control_metaphoric" ~ "control_metaphoric",
+                           control2 == "control_metonymic" ~ "control_metonymic"))
+
+rts_filter$cond2 <- factor(rts_filter$cond2, levels = c("control_literal", "literal", "control_metaphoric", "metaphoric", "control_metonymic", "metonymic"))
+
+mean_RT_control <- rts_filter %>%
+  group_by(cond2, chunk) %>%
+  summarize(mean = mean(RT))
+
+bootstrapped_mean_RT_control <- bootstrapped_samples %>%
+  group_by(replicate, cond2, chunk) %>% 
+  summarize(boot_mean = mean(RT))
+
+bootstrapped_CI_control <- bootstrapped_mean_RT_control %>%
+  group_by(cond2, chunk) %>% 
+  summarize(CILow = quantile(boot_mean, .025), CIHigh = quantile(boot_mean, .975))
+
+mean_CI_RT_control <- left_join(mean_RT_control, bootstrapped_CI_control)
+
+mean_CI_RT_control %>%
+  ggplot(aes(chunk, mean)) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), size = 1, 
+                position = position_dodge(.7)) +
+  geom_point(aes(color = cond2, shape = cond2), size = 5, 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c("circle", "square", "circle", "square", "circle", "square"))
+
+```
+
+Again, we see that there are differences between our control sets. The overall patterns are similar to what we've seen before though: at the idiom region, controls seem to be read more slowly than idioms, metaphors being read the slowest among idioms, and metonomies being read the fastest. At the post-idiom region, conditions largely overlap, indicating no late effect of either idiomaticity nor semantic structure.
+
+Let's explore the data some more to see if there are other relevant patterns worth highlighting in our final plot.
 
 ## Exploring the data
 
@@ -338,144 +430,343 @@ Let's try plotting the means of each participant who took part in the study, to 
 
 ```{r out.width="70%", fig.align='center'}
 mean_RT_par <- rts_filter %>%
-  group_by(subj, cond, chunk) %>%
+  group_by(subj, cond2, chunk) %>%
   summarize(mean = mean(RT))
 
 bootstrapped_samples_par <- bootstrapped_samples %>% 
-  group_by(subj, cond, chunk) %>%
-  summarize(boot_mean = mean(RT), CILow = quantile(RT, .025), CIHigh = quantile(RT, .975))
+  group_by(subj, replicate, cond2, chunk) %>% 
+  summarize(boot_mean = mean(RT))
 
-mean_CI_RT_par <- left_join(mean_RT_par, bootstrapped_samples_par)
+bootstrapped_CI_par <- bootstrapped_samples_par %>%
+  group_by(subj, cond2, chunk) %>% 
+  summarize(CILow = quantile(boot_mean, .025), CIHigh = quantile(boot_mean, .975))
+
+mean_CI_RT_par <- left_join(mean_RT_par, bootstrapped_CI_par)
 
 mean_CI_RT_par %>%
   ggplot(aes(chunk, mean)) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7)) +
-  geom_point(aes(color = cond), position = position_dodge(.7))
+  geom_point(aes(color = cond2, shape = cond2), position = position_dodge(.7)) +
+  scale_shape_manual(values = c("circle", "square", "circle", "square", "circle", "square"))
 
 ```
 
-We can see that there's variability in the data, but the plot is highly cluttered, so we'll have to declutter it. This will involve reducing the width of the error bars as well as changing the size and color contrast of the points. Changing the width of the error bars as well as changing the size of the plotted points requires specifying arguments in ways we're already familiar with. Now, in order to strike a good visual contrast between the points and the bars, let's change the `color` argument within `geom_point()` to a `fill` and let's add color separately, so as to make the contours of the points black. For that, we will need to specify a shape which allows us to change both its `fill` and its `color`. Notice also the usage of the `group` argument within the `geom_point()` call, which tells `ggplot()` that each plotted point is to be filled with a color according to its respective group of origin.
+We can see that there's variability in the data, but the plot is highly cluttered, so we'll have to declutter it. This will involve reducing the width of the error bars as well as changing the size and color contrast of the points. Changing the width of the error bars as well as changing the size of the plotted points requires specifying arguments in ways we're already familiar with. Now, in order to strike a good visual contrast between the points and the bars, let's change the `color` argument within `geom_point()` to a `fill` and let's add color separately, so as to make the contours of the points black. For that, we will need to specify shapes which allow us to change both their `fill` and their `color`. Notice also the usage of the `group` argument within the `geom_point()` call, which tells `ggplot()` that each plotted point is to be filled with a color according to its respective group of origin.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_par %>%
   ggplot(aes(chunk, mean)) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7))
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, 
+             color = "black", position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22, 21, 22, 21, 22))
 
 ```
 
-This is much better: there is still a lot of overlap between points but at least we can tell roughly where each individual mean is located. As was expected, participants vary considerably from one another in terms of their responses. Now let's try to highlight the differences between expression types. For that, we'll add lines connecting each group, which we will map back onto the x-axis. Let's use facets to show the different reading segments.
+This is much better: there is still a lot of overlap between points but at least we can tell roughly where each individual mean is located. As was expected, participants vary considerably from one another in terms of their responses. Still, it's hard to tell, for each participant, whether there are differences between expression types. In order to highlight any potential differences, let's add lines connecting each group, which we will map back onto the x-axis. Let's use facets to show the different reading segments.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_par %>%
-  ggplot(aes(cond, mean)) +
+  ggplot(aes(cond2, mean)) +
   geom_line(aes(group = subj), size = .6, alpha = .6) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7)) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, 
+             color = "black", position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22, 21, 22, 21, 22)) +
   facet_wrap(~ chunk)
   
 ```
 
-We can see that some people read the controls more slowly, with small differences between the idiomatic expressions, while others read certain types of idioms more slowly than the controls. In order to get a better picture of what the patterns might be for each participant, let's facet them. Let's aggregate the two sentence regions again, for now. Since we know we're going to end up with more facets than we can fit within a single plot, let's plot several graphs, each with seven participants, one per facet
+We can see that some people read the controls more slowly, with small differences between the idiomatic expressions, while others read certain types of idioms more slowly than the controls. It would be ideal if we could tag our data, such that we can highlight the presence or absent of an effect, as indicated in terms of the means, by contrasting the tagged data. First, let's wrangle our data so as to create new variables which indicate, both for idiomaticity and semantic structure, whether the data suggests an effect or not. Let's then color the lines connecting each group in terms of whether an effect is found or not. We're plotting two graphs: one for idiomaticity and one for semantic structure.
+
+```{r fig.show="hold", out.width="50%"}
+mean_RT_par_effect <- mean_RT_par %>%
+  pivot_wider(names_from = cond2, values_from = mean) %>% 
+  mutate(bl_effect = case_when(control_literal > literal & 
+                                 control_metaphoric > metaphoric &
+                                 control_metonymic > metonymic ~ "effect",
+                               TRUE ~ "no-effect"),
+         sem_str = case_when(metaphoric > literal &
+                               metaphoric > metonymic & 
+                               metonymic > literal ~ "effect",
+                             TRUE ~ "no-effect")) %>%
+  pivot_longer(cols = control_literal:metonymic, names_to = "cond2", values_to = "mean")
+
+mean_CI_RT_par_effect <- left_join(mean_RT_par_effect, bootstrapped_CI_par)
+
+mean_CI_RT_par_effect %>%
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = bl_effect, group = subj), size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22, 21, 22, 21, 22)) +
+  facet_wrap(~ chunk) +
+  theme(legend.position = "bottom") +
+  ggtitle("Idiomaticity")
+
+mean_CI_RT_par_effect %>%
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = sem_str, group = subj), size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22, 21, 22, 21, 22)) +
+  facet_wrap(~ chunk) +
+  theme(legend.position = "bottom") +
+  ggtitle("Semantic structure")
+  
+```
+
+Here we catch a glimpse of our expected effects, coded in terms of the original predictions: on average, participants seem not to take longer reading controls compared to idiomatic expressions. Moreover, on average, there seems to be no effect of semantic structure, at least not in terms of metaphors being read more slowly than both literal idioms and metonomies, and literal idioms being read the fastest. Even though the predictions are not borne out in the data, we do know at this point that the original hypothesis is not altogether unsupported by the data, according to what we learned from our visualizations. Let's then replot the comparisons above, coding the data according to each control-target comparison, so as to check whether the predictions are confirmed or disconfirmed by the data. Let's start by looking at the potential effects of idiomaticity.
+
+```{r fig.show="hold", out.width="50%"}
+mean_RT_par_effect <- mean_RT_par %>%
+  pivot_wider(names_from = cond2, values_from = mean) %>% 
+  mutate(bl_effect_literal = case_when(control_literal > literal ~ "effect",
+                               TRUE ~ "no-effect"),
+         bl_effect_metaphoric = case_when(control_metaphoric > metaphoric ~ "effect",
+                               TRUE ~ "no-effect"),
+         bl_effect_metonymic = case_when(control_metonymic > metonymic ~ "effect",
+                               TRUE ~ "no-effect")) %>% 
+  pivot_longer(cols = control_literal:metonymic, names_to = "cond2", 
+               values_to = "mean") %>% 
+  mutate(control = case_when(grepl("literal", cond2) ~ "literal",
+                             grepl("metaphoric", cond2) ~ "metaphoric",
+                             grepl("metonymic", cond2) ~ "metonymic"))
+
+mean_CI_RT_par_effect <- left_join(mean_RT_par_effect, bootstrapped_CI_par)
+
+mean_CI_RT_par_effect %>%
+  filter(control == "literal") %>% 
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = bl_effect_literal, group = subj), size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22)) +
+  scale_fill_manual(values = c("#F8766D", "#B79F00")) +
+  facet_wrap( ~ chunk) +
+  theme(legend.position = "none") +
+  ggtitle("Idiomaticty - Literal idioms")
+
+mean_CI_RT_par_effect %>%
+  filter(control == "metaphoric") %>% 
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = bl_effect_metaphoric, group = subj), size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22)) +
+  scale_fill_manual(values = c("#00BA38", "#00BFC4")) +
+  facet_wrap( ~ chunk) +
+  theme(legend.position = "none") +
+  ggtitle("Idiomaticity - Metaphors")
+
+mean_CI_RT_par_effect %>%
+  filter(control == "metonymic") %>% 
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = bl_effect_metonymic, group = subj), size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22)) +
+  scale_fill_manual(values = c("#619CFF", "#F564E3")) +
+  facet_wrap( ~ chunk) +
+  theme(legend.position = "none") +
+  ggtitle("Idiomaticity - Metonomies")
+  
+```
+
+Let's concentrate on the idiom region, for simplicity. As we can see, the prediction that controls would be read more slowly than idioms seems to be at least somewhat borne out in the data, with considerable differences between idiom types. While metonomies seem to be read on average faster than their controls, metaphors and controls seem to be read more slowly than their respective controls. We would have not been able to spot this fine-grained distinction by looking at a composite plot like the one we had earlier, although the original plot with aggregated means already suggested differential effects of idiomaticity. Categorically speaking, however, we might have inferred that there is no effect. In summary, then, the original prediction seems to be supported in the case of metonomies but not in the case of the other two idiom types. Let's now look at the potential effects of semantic structure.
+
+```{r fig.show="hold", out.width="50%"}
+mean_RT_par_effect <- mean_RT_par %>%
+  pivot_wider(names_from = cond2, values_from = mean) %>% 
+  mutate(sem_str_met_lit = case_when(metaphoric > literal ~ "effect",
+                               TRUE ~ "no-effect"),
+         sem_str_met_met = case_when(metaphoric > metonymic ~ "effect",
+                               TRUE ~ "no-effect"),
+         sem_str_met_lit = case_when(metonymic > literal ~ "effect",
+                               TRUE ~ "no-effect")) %>% 
+  pivot_longer(cols = control_literal:metonymic, names_to = "cond2", 
+               values_to = "mean")
+
+mean_CI_RT_par_effect <- left_join(mean_RT_par_effect, bootstrapped_CI_par)
+
+mean_CI_RT_par_effect %>%
+  filter(cond2 == "metaphoric" | cond2 == "literal") %>% 
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = sem_str_met_lit, group = subj), size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22)) +
+  scale_fill_manual(values = c("#B79F00", "#00BFC4")) +
+  facet_wrap( ~ chunk) +
+  theme(legend.position = "none") +
+  ggtitle("Semantic structure\nMetaphors x Literal idioms")
+
+mean_CI_RT_par_effect %>%
+  filter(cond2 == "metaphoric" | cond2 == "metonymic") %>% 
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = sem_str_met_met, group = subj, linetype = sem_str_met_met), 
+            size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22)) +
+  scale_fill_manual(values = c("#00BA38", "#F564E3")) +
+  scale_linetype_manual(values = c("solid", "dashed")) +
+  facet_wrap( ~ chunk) +
+  theme(legend.position = "none") +
+  ggtitle("Semantic structure\nMetaphors x Metonomies")
+
+mean_CI_RT_par_effect %>%
+  filter(cond2 == "metonymic" | cond2 == "literal") %>% 
+  ggplot(aes(cond2, mean)) +
+  geom_line(aes(color = sem_str_met_lit, group = subj, linetype = sem_str_met_lit), 
+            size = .6, alpha = .6) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), 
+                position = position_dodge(.7), width = .1) +
+  geom_point(aes(fill = cond2, shape = cond2), size = 2, color = "black", 
+             position = position_dodge(.7)) +
+  scale_shape_manual(values = c(21, 22)) +
+  scale_fill_manual(values = c("#F564E3", "#B79F00")) +
+  scale_color_manual(values = c("#F564E3", "#B79F00")) +
+  scale_linetype_manual(values = c("solid", "dashed")) +
+  facet_wrap( ~ chunk) +
+  theme(legend.position = "none") +
+  ggtitle("Semantic structure\nMetonomies x Literal idioms")
+  
+```
+
+For the sake of brevity, let's again focus only on the idiom region. We now see the effects of semantic structure. While it was predicted that more literal idioms would be read faster, literal idioms being read the fastest, followed by metonomies, and then metaphors, we see that the data supports the hypothesis only partially. Metonomies are indeed read faster than metaphors, and so are literal idioms, however, metonomies are read faster than literal idioms, an unexpected response pattern. We thus see an overall effect of semantic structure, although one of the response patterns contradicts the formulated literalness account.
+
+In order to get an altogether different picture of what the patterns might be for each participant, let's facet them. Let's aggregate the two sentence regions again, for simplicity. Since we know we're going to end up with more facets than we can fit within a single plot, let's plot several graphs, each with seven participants, one per facet.
 
 ```{r fig.show="hold", out.width="50%"}
 mean_RT_par_nochunk <- rts_filter %>%
-  group_by(subj, cond) %>%
+  group_by(subj, cond2) %>%
   summarize(mean = mean(RT))
 
 bootstrapped_samples_par_nochunk <- bootstrapped_samples %>% 
-  group_by(subj, cond) %>%
-  summarize(boot_mean = mean(RT), CILow = quantile(RT, .025), CIHigh = quantile(RT, .975))
+  group_by(subj, replicate, cond2) %>%
+  summarize(boot_mean = mean(RT))
 
-mean_CI_RT_par_nochunk <- left_join(mean_RT_par_nochunk, bootstrapped_samples_par_nochunk)
+bootstrapped_CI_par_nochunk <- bootstrapped_samples_par_nochunk %>%
+  group_by(subj, cond2) %>% 
+  summarize(CILow = quantile(boot_mean, .025), CIHigh = quantile(boot_mean, .975))
 
+mean_CI_RT_par_nochunk <- left_join(mean_RT_par_nochunk, bootstrapped_CI_par_nochunk)
+
+pd <- position_dodge(.7)
+
+shapes_cond <- scale_shape_manual(values = c(21, 22, 21, 22, 21, 22))
 
 mean_CI_RT_par_nochunk %>%
   filter(subj <= 7) %>% 
-  ggplot(aes(cond, mean)) +
+  ggplot(aes(cond2, mean)) +
   geom_line(aes(group = subj), size = .6, alpha = .6) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7)) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, color = "black", 
+             position = pd) +
+  shapes_cond +
   facet_wrap(~ subj)
 
 mean_CI_RT_par_nochunk %>%
   filter(subj > 7 & subj <= 14) %>% 
-  ggplot(aes(cond, mean)) +
+  ggplot(aes(cond2, mean)) +
   geom_line(aes(group = subj), size = .6, alpha = .6) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7)) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, color = "black",
+             position = pd) +
+  shapes_cond +
   facet_wrap(~ subj)
 
 mean_CI_RT_par_nochunk %>%
   filter(subj > 14 & subj <= 21) %>% 
-  ggplot(aes(cond, mean)) +
+  ggplot(aes(cond2, mean)) +
   geom_line(aes(group = subj), size = .6, alpha = .6) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7)) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, color = "black", 
+             position = pd) +
+  shapes_cond +
   facet_wrap(~ subj)
 
 mean_CI_RT_par_nochunk %>%
   filter(subj > 21 & subj <= 28) %>% 
-  ggplot(aes(cond, mean)) +
+  ggplot(aes(cond2, mean)) +
   geom_line(aes(group = subj), size = .6, alpha = .6) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7)) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, color = "black",
+             position = pd) +
+  shapes_cond +
   facet_wrap(~ subj)
 
 mean_CI_RT_par_nochunk %>%
   filter(subj > 28 & subj <= 35) %>% 
-  ggplot(aes(cond, mean)) +
+  ggplot(aes(cond2, mean)) +
   geom_line(aes(group = subj), size = .6, alpha = .6) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7)) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, color = "black", 
+             position = pd) +
+  shapes_cond +
   facet_wrap(~ subj)
 
 mean_CI_RT_par_nochunk %>%
   filter(subj > 35 & subj < 42) %>% 
-  ggplot(aes(cond, mean)) +
+  ggplot(aes(cond2, mean)) +
   geom_line(aes(group = subj), size = .6, alpha = .6) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
                 position = position_dodge(.7), width = .1) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, color = "black", position = position_dodge(.7)) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, color = "black",
+             position = pd) +
+  shapes_cond +
   facet_wrap(~ subj)
   
 ```
 
-
-
-Again, we get a quite detailed picture of the amount of individual variation in the data. Participants vary considerably in the qualitative patterns they show but also on the time they take to read, as a whole. As it is, however, it's hard to tell if there are any systematic differences between groups. We might want to combine this information about individual variation with the information about the aggregated means. Let's overlay the group means to this plot. For that, we'll need to duplicate our `geom_errorbar()` and `geom_point()` layers, feeding the data with the aggregated means to the new layers. Let's also change the transparency of the individual means to highlight the group means.
+Again, we get quite a detailed picture of the amount of individual variation in the data. Participants vary considerably not only in their qualitative patterns but also on the average time taken to read the stimuli, as a whole. With these plots, however, it's hard to tell if there are any systematic differences between groups. We might want to combine information about individual variation with information about the aggregated means. Let's overlay the group means to our plot showing the individual means. For that, we'll need to duplicate our `geom_errorbar()` and `geom_point()` layers, feeding the data with the aggregated means to the new layers. Let's also change the transparency of the individual means to highlight the group means.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_par %>%
   ggplot(aes(chunk, mean)) +
-  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond), 
-                position = position_dodge(.7), width = .1, alpha = .2) +
-  geom_errorbar(data = mean_CI_RT, aes(ymin = CILow, ymax = CIHigh, color = cond), 
-                width = .3, size = 1, alpha = .8, position = position_dodge(.7)) +
-  geom_point(aes(fill = cond, group = cond), size = 2, shape = 21, 
-             color = "black", position = position_dodge(.7), alpha = .2) +
-  geom_point(data = mean_CI_RT, aes(fill = cond, group = cond), size = 3.5, shape = 21,
-             color = "black", position = position_dodge(.7), alpha = .9)
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, color = cond2), 
+                position = pd, width = .1, alpha = .2) +
+  geom_errorbar(data = mean_CI_RT_control, aes(ymin = CILow, ymax = CIHigh, 
+                                               color = cond2), 
+                width = .3, size = 1, alpha = .8, position = pd) +
+  geom_point(aes(fill = cond2, shape = cond2, group = cond2), size = 2, color = "black", 
+             position = pd, alpha = .2) +
+  geom_point(data = mean_CI_RT_control, aes(fill = cond2, shape = cond2, group = cond2),
+             size = 3.5, color = "black", position = pd, alpha = .9) +
+  shapes_cond
   
 ```
 
-With this plot we get the whole picture: we can see the variation in the group means as well as well in the individual participant means. Still, the plot with only the aggregated means is more informative when it comes to our main question of interest, which is whether there are systematic differences between our idiomatic expressions.
+With this plot we get the whole picture: we can see the variation in the group means as well as well in the individual participant means. Still, the plot with only the aggregated means is more informative when it comes to our main question of interest, which is whether there are systematic differences, at the population level, between our different expression types. Individual variation seems to be random enough not to afford itself to being plotted with the aggregated means. Indeed, given the large degree of individual variation and the small differences between aggregated means, it is hard to interpret any population patterns based on the plot containing both. 
 
 
 ## Session summary
 
-* As we've seen in our last two sessions, geoms are what shape the type of graph one ends up with when using **ggplot2**. The single most important aspect of a geom is what type and number of variables its aesthetics support. We've seen examples of geoms that take one or two variables. In the case of geoms that support two variables, like `geom_boxplot()`, we saw that these can consist either of two variables of the same type, be it continuous or discrete, or a combination of both. In order to produce a plot that renders the data correctly, one needs to understand how the plotted variables are coded in R, so that they match the variable type supported by the selected geom. One also needs to understand what the data corresponds to "in the wild", that is, in terms of its original measurement type. This might impact how the data is plotted regardless of its actual representation in R. Knowing what variables a geom requires and whether one's data matches those requirements is a good recipe for plotting data correctly;
+* Today we learned that we should start by plotting whole distributions or ranges of data before focusing on any groupings of interest when dealing with continuous data. That should give us, as analysts, an overview of what our data -- and even more specifically, our main variable of interest -- looks like. We can inspect the whole distribution of responses/ measurements and see if anything looks irregular or unexpected. From there, we can start digging deeper into the data in order to plot those patterns that help us answer our questions of interest;
 
-* In order to explore data for the purposes of data analysis, we saw that a good starting point is with plots and visual representations of the data. Often times, however, one will need to wrangle the data in order to produce certain plots. In addition to wrangling, which can be done with the help of many specialized packages like **tidyverse**'s **dplyr**, one usually needs to summarize the data in different ways or to calculate different descriptive statistics on the basis of the raw data, which themselves can also added to plots in different ways. Exploring a data set will usually involve a combination of visualization, wrangling, and numerical/ statistical summarizing;
+* If we are interested in groups or clusters of data, we should eventually group it as necessary, ideally breaking the data into sub-distributions. This will usually involve introducing more variables into our visualizations and wrangling the data back and forth between different formats. If we are plotting point estimates, like sample means, we might need to calculate those values first; we will usually also want to have a measure of variability in the data, for instance a confidence interval. As we've seen, with **ggplot2** we can plot point estimates using `geom_point()` and confidence intervals using `geom_errobar()`;
 
-* In order to enrich **ggplot2**'s base visualizations, one can make use of different aesthetic specifications. As we've seen, these include specifications which affect major elements of a plot, such as `fill`, `color`, and `alpha`, geom-specific arguments like `lwd` or `linetype`, but also arguments which affect minor elements of the plot such as the legend, the title, and the axes, usually specified within the `theme()` layer. Importantly, as we will see later, where an aesthetic is specified can impact how the plots looks like: whatever is called within the `ggplot()` function will affect all layers in a plot, while aesthetics called within specific geoms will only affect that geom's layer. In addition to specifying aesthetics, using facets or varying the mapping of variables onto the `x, y` coordinates can also help highlight certain contrasts in a graph;
-
-* Plots can be exported from R using the function `ggsave()`, which by default saves the last plotted graph. `ggsave()` takes the arguments `width` and `height` which can be modified in order to change the dimensions of the saved plot.
+* If we are testing hypotheses, the first thing we should do after having calculated the comparisons of interest is to plot exactly the necessary comparisons, as formulated in the original predictions. We will want to check whether our predictions are borne out in the data, and, more specifically, for what combinations of groups/ comparisons. This might involve further exploring the data, however, the main plot used to communicate the results should clearly and unambiguously reflect the contrasts originally formulated in the study predictions.
