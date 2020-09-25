@@ -1,0 +1,2101 @@
+Vp,gesch,age,herk,bildg,min,item,itemid,rat,typ
+72,w,21,Bremen,Abi,78,01 ein Fels in der Brandung sein,NH14_01,1,meta
+72,w,21,Bremen,Abi,78,03 jemandem den Marsch blasen,NH14_03,1,meta
+72,w,21,Bremen,Abi,78,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+72,w,21,Bremen,Abi,78,05 keinen Spaß verstehen,NH14_05,4,woe
+72,w,21,Bremen,Abi,78,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+72,w,21,Bremen,Abi,78,08 etwas an die Öffentlichkeit bringen,NH14_08,2,woe
+72,w,21,Bremen,Abi,78,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+72,w,21,Bremen,Abi,78,10 einen grünen Daumen haben,NH14_10,2,meta
+72,w,21,Bremen,Abi,78,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+72,w,21,Bremen,Abi,78,12 sich nicht von der Stelle rühren,NH14_12,4,woe
+72,w,21,Bremen,Abi,78,13 einen Rausch haben,NH14_13,3,woe
+72,w,21,Bremen,Abi,78,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+72,w,21,Bremen,Abi,78,16 jemanden übers Ohr hauen,NH14_16,1,meta
+72,w,21,Bremen,Abi,78,17 auf der Durchreise sein,NH14_17,4,woe
+72,w,21,Bremen,Abi,78,18 keine Chance haben,NH14_18,3,woe
+72,w,21,Bremen,Abi,78,19 Folgerungen ziehen,NH14_19,2,woe
+72,w,21,Bremen,Abi,78,20 ein ungeschriebenes Gesetz sein,NH14_20,1,woe
+72,w,21,Bremen,Abi,78,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+72,w,21,Bremen,Abi,78,22 in Führung gehen (beim Sport),NH14_22,2,woe
+72,w,21,Bremen,Abi,78,23 jemandem Unrecht tun,NH14_23,4,woe
+72,w,21,Bremen,Abi,78,24 zur Debatte stehen,NH14_24,2,woe
+72,w,21,Bremen,Abi,78,25 etwas aus Prinzip tun,NH14_25,4,woe
+72,w,21,Bremen,Abi,78,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+72,w,21,Bremen,Abi,78,27 unter Druck geraten,NH14_27,1,meta
+72,w,21,Bremen,Abi,78,28 nicht im Hause sein,NH14_28,4,woe
+72,w,21,Bremen,Abi,78,29 die Pferde scheu machen,NH14_29,1,meta
+72,w,21,Bremen,Abi,78,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+72,w,21,Bremen,Abi,78,31 jemandem die Laune verderben,NH14_31,4,woe
+72,w,21,Bremen,Abi,78,32 einen Eid schwören,NH14_32,4,woe
+72,w,21,Bremen,Abi,78,35 die Flinte ins Korn werfen,NH14_35,1,meta
+72,w,21,Bremen,Abi,78,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+72,w,21,Bremen,Abi,78,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+72,w,21,Bremen,Abi,78,03 im Team arbeiten,NH19_03,4,woe
+72,w,21,Bremen,Abi,78,04 an Bord gehen,NH19_04,4,woe
+72,w,21,Bremen,Abi,78,05 in der Tinte sitzen,NH19_05,1,meta
+72,w,21,Bremen,Abi,78,06 jemanden zur Sau machen,NH19_06,1,meta
+72,w,21,Bremen,Abi,78,07 jemandem platzt der Kopf,NH19_07,1,meta
+72,w,21,Bremen,Abi,78,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+72,w,21,Bremen,Abi,78,09 etwas in Stücke schlagen,NH19_09,2,woe
+72,w,21,Bremen,Abi,78,10 Langeweile haben,NH19_10,4,woe
+72,w,21,Bremen,Abi,78,11 die Kirche im Dorf lassen,NH19_11,1,meta
+72,w,21,Bremen,Abi,78,12 sein eigenes Leben haben,NH19_12,4,woe
+72,w,21,Bremen,Abi,78,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+72,w,21,Bremen,Abi,78,14 in Erfüllung gehen,NH19_14,3,woe
+72,w,21,Bremen,Abi,78,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+72,w,21,Bremen,Abi,78,17 das Thema wechseln,NH19_17,4,woe
+72,w,21,Bremen,Abi,78,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+72,w,21,Bremen,Abi,78,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+72,w,21,Bremen,Abi,78,20 mit dem Feuer spielen,NH19_20,2,meta
+72,w,21,Bremen,Abi,78,21 in Kontakt bleiben,NH19_21,4,woe
+72,w,21,Bremen,Abi,78,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+72,w,21,Bremen,Abi,78,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+72,w,21,Bremen,Abi,78,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+72,w,21,Bremen,Abi,78,26 jemandem Dampf machen,NH19_26,1,meta
+72,w,21,Bremen,Abi,78,27 seinen Titel verteidigen,NH19_27,3,woe
+72,w,21,Bremen,Abi,78,28 in Raten zahlen,NH19_28,4,woe
+72,w,21,Bremen,Abi,78,29 seine Berechtigung haben,NH19_29,4,woe
+72,w,21,Bremen,Abi,78,32 in Hörweite sein,NH19_32,4,woe
+72,w,21,Bremen,Abi,78,33 außer Betrieb sein,NH19_33,4,woe
+72,w,21,Bremen,Abi,78,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+72,w,21,Bremen,Abi,78,02 zwischen allen Stühlen sitzen,NH20_02,2,meta
+72,w,21,Bremen,Abi,78,03 jemanden um den Finger wickeln,NH20_03,1,meta
+72,w,21,Bremen,Abi,78,04 die Axt im Walde sein,NH20_04,1,meta
+72,w,21,Bremen,Abi,78,05 ein schlechtes Gewissen haben,NH20_05,2,woe
+72,w,21,Bremen,Abi,78,07 einen empfindlichen Magen haben,NH20_07,4,woe
+72,w,21,Bremen,Abi,78,08 auf eigene Faust handeln,NH20_08,1,meta
+72,w,21,Bremen,Abi,78,09 den Rahmen sprengen,NH20_09,1,meta
+72,w,21,Bremen,Abi,78,12 zur Seite gehen,NH20_12,4,woe
+72,w,21,Bremen,Abi,78,13 seine Meinung ändern,NH20_13,4,woe
+72,w,21,Bremen,Abi,78,14 gegen den Strom schwimmen,NH20_14,1,meta
+72,w,21,Bremen,Abi,78,16 jemandem die Laune verderben,NH20_16,4,woe
+72,w,21,Bremen,Abi,78,17 jemanden in Gefahr bringen,NH20_17,3,woe
+72,w,21,Bremen,Abi,78,18 sich schütteln vor Lachen,NH20_18,3,woe
+72,w,21,Bremen,Abi,78,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+72,w,21,Bremen,Abi,78,20 sich die Kugel geben,NH20_20,1,meta
+72,w,21,Bremen,Abi,78,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+72,w,21,Bremen,Abi,78,22 jemandes gutes Recht sein,NH20_22,2,woe
+72,w,21,Bremen,Abi,78,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+72,w,21,Bremen,Abi,78,24 etwas im Halbschlaf hören,NH20_24,3,woe
+72,w,21,Bremen,Abi,78,25 ein Griff ins Klo sein,NH20_25,1,meta
+72,w,21,Bremen,Abi,78,27 Fahrerflucht begehen,NH20_27,4,woe
+72,w,21,Bremen,Abi,78,28 auf dumme Gedanken kommen,NH20_28,4,woe
+72,w,21,Bremen,Abi,78,29 Luftschlösser bauen,NH20_29,1,meta
+72,w,21,Bremen,Abi,78,31 Schritttempo fahren,NH20_31,4,woe
+73,m,39,NRW,Uni,98,01 ein Fels in der Brandung sein,NH14_01,1,meta
+73,m,39,NRW,Uni,98,03 jemandem den Marsch blasen,NH14_03,1,meta
+73,m,39,NRW,Uni,98,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+73,m,39,NRW,Uni,98,05 keinen Spaß verstehen,NH14_05,4,woe
+73,m,39,NRW,Uni,98,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+73,m,39,NRW,Uni,98,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+73,m,39,NRW,Uni,98,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+73,m,39,NRW,Uni,98,10 einen grünen Daumen haben,NH14_10,1,meta
+73,m,39,NRW,Uni,98,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+73,m,39,NRW,Uni,98,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+73,m,39,NRW,Uni,98,13 einen Rausch haben,NH14_13,4,woe
+73,m,39,NRW,Uni,98,15 jemandem Gesellschaft leisten,NH14_15,3,woe
+73,m,39,NRW,Uni,98,16 jemanden übers Ohr hauen,NH14_16,1,meta
+73,m,39,NRW,Uni,98,17 auf der Durchreise sein,NH14_17,3,woe
+73,m,39,NRW,Uni,98,18 keine Chance haben,NH14_18,4,woe
+73,m,39,NRW,Uni,98,19 Folgerungen ziehen,NH14_19,4,woe
+73,m,39,NRW,Uni,98,20 ein ungeschriebenes Gesetz sein,NH14_20,3,woe
+73,m,39,NRW,Uni,98,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+73,m,39,NRW,Uni,98,22 in Führung gehen (beim Sport),NH14_22,4,woe
+73,m,39,NRW,Uni,98,23 jemandem Unrecht tun,NH14_23,4,woe
+73,m,39,NRW,Uni,98,24 zur Debatte stehen,NH14_24,4,woe
+73,m,39,NRW,Uni,98,25 etwas aus Prinzip tun,NH14_25,4,woe
+73,m,39,NRW,Uni,98,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+73,m,39,NRW,Uni,98,27 unter Druck geraten,NH14_27,4,meta
+73,m,39,NRW,Uni,98,28 nicht im Hause sein,NH14_28,4,woe
+73,m,39,NRW,Uni,98,29 die Pferde scheu machen,NH14_29,3,meta
+73,m,39,NRW,Uni,98,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+73,m,39,NRW,Uni,98,31 jemandem die Laune verderben,NH14_31,4,woe
+73,m,39,NRW,Uni,98,32 einen Eid schwören,NH14_32,4,woe
+73,m,39,NRW,Uni,98,35 die Flinte ins Korn werfen,NH14_35,1,meta
+73,m,39,NRW,Uni,98,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+73,m,39,NRW,Uni,98,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+73,m,39,NRW,Uni,98,03 im Team arbeiten,NH19_03,4,woe
+73,m,39,NRW,Uni,98,04 an Bord gehen,NH19_04,2,woe
+73,m,39,NRW,Uni,98,05 in der Tinte sitzen,NH19_05,1,meta
+73,m,39,NRW,Uni,98,06 jemanden zur Sau machen,NH19_06,1,meta
+73,m,39,NRW,Uni,98,07 jemandem platzt der Kopf,NH19_07,1,meta
+73,m,39,NRW,Uni,98,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+73,m,39,NRW,Uni,98,09 etwas in Stücke schlagen,NH19_09,2,woe
+73,m,39,NRW,Uni,98,10 Langeweile haben,NH19_10,4,woe
+73,m,39,NRW,Uni,98,11 die Kirche im Dorf lassen,NH19_11,1,meta
+73,m,39,NRW,Uni,98,12 sein eigenes Leben haben,NH19_12,4,woe
+73,m,39,NRW,Uni,98,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+73,m,39,NRW,Uni,98,14 in Erfüllung gehen,NH19_14,4,woe
+73,m,39,NRW,Uni,98,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+73,m,39,NRW,Uni,98,17 das Thema wechseln,NH19_17,4,woe
+73,m,39,NRW,Uni,98,18 etwas ist nicht jemandes Sache,NH19_18,4,woe
+73,m,39,NRW,Uni,98,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+73,m,39,NRW,Uni,98,20 mit dem Feuer spielen,NH19_20,1,meta
+73,m,39,NRW,Uni,98,21 in Kontakt bleiben,NH19_21,4,woe
+73,m,39,NRW,Uni,98,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+73,m,39,NRW,Uni,98,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+73,m,39,NRW,Uni,98,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+73,m,39,NRW,Uni,98,26 jemandem Dampf machen,NH19_26,1,meta
+73,m,39,NRW,Uni,98,27 seinen Titel verteidigen,NH19_27,4,woe
+73,m,39,NRW,Uni,98,28 in Raten zahlen,NH19_28,4,woe
+73,m,39,NRW,Uni,98,29 seine Berechtigung haben,NH19_29,4,woe
+73,m,39,NRW,Uni,98,32 in Hörweite sein,NH19_32,3,woe
+73,m,39,NRW,Uni,98,33 außer Betrieb sein,NH19_33,4,woe
+73,m,39,NRW,Uni,98,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+73,m,39,NRW,Uni,98,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+73,m,39,NRW,Uni,98,03 jemanden um den Finger wickeln,NH20_03,1,meta
+73,m,39,NRW,Uni,98,04 die Axt im Walde sein,NH20_04,1,meta
+73,m,39,NRW,Uni,98,05 ein schlechtes Gewissen haben,NH20_05,3,woe
+73,m,39,NRW,Uni,98,07 einen empfindlichen Magen haben,NH20_07,3,woe
+73,m,39,NRW,Uni,98,08 auf eigene Faust handeln,NH20_08,1,meta
+73,m,39,NRW,Uni,98,09 den Rahmen sprengen,NH20_09,1,meta
+73,m,39,NRW,Uni,98,12 zur Seite gehen,NH20_12,4,woe
+73,m,39,NRW,Uni,98,13 seine Meinung ändern,NH20_13,4,woe
+73,m,39,NRW,Uni,98,14 gegen den Strom schwimmen,NH20_14,1,meta
+73,m,39,NRW,Uni,98,16 jemandem die Laune verderben,NH20_16,4,woe
+73,m,39,NRW,Uni,98,17 jemanden in Gefahr bringen,NH20_17,4,woe
+73,m,39,NRW,Uni,98,18 sich schütteln vor Lachen,NH20_18,2,woe
+73,m,39,NRW,Uni,98,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+73,m,39,NRW,Uni,98,20 sich die Kugel geben,NH20_20,1,meta
+73,m,39,NRW,Uni,98,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+73,m,39,NRW,Uni,98,22 jemandes gutes Recht sein,NH20_22,4,woe
+73,m,39,NRW,Uni,98,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+73,m,39,NRW,Uni,98,24 etwas im Halbschlaf hören,NH20_24,2,woe
+73,m,39,NRW,Uni,98,25 ein Griff ins Klo sein,NH20_25,1,meta
+73,m,39,NRW,Uni,98,27 Fahrerflucht begehen,NH20_27,4,woe
+73,m,39,NRW,Uni,98,28 auf dumme Gedanken kommen,NH20_28,4,woe
+73,m,39,NRW,Uni,98,29 Luftschlösser bauen,NH20_29,1,meta
+73,m,39,NRW,Uni,98,31 Schritttempo fahren,NH20_31,4,woe
+75,w,39,Schlesw,Uni,103,01 ein Fels in der Brandung sein,NH14_01,1,meta
+75,w,39,Schlesw,Uni,103,03 jemandem den Marsch blasen,NH14_03,2,meta
+75,w,39,Schlesw,Uni,103,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+75,w,39,Schlesw,Uni,103,05 keinen Spaß verstehen,NH14_05,3,woe
+75,w,39,Schlesw,Uni,103,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+75,w,39,Schlesw,Uni,103,08 etwas an die Öffentlichkeit bringen,NH14_08,2,woe
+75,w,39,Schlesw,Uni,103,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+75,w,39,Schlesw,Uni,103,10 einen grünen Daumen haben,NH14_10,1,meta
+75,w,39,Schlesw,Uni,103,11 jemandem die Vorfahrt nehmen,NH14_11,3,woe
+75,w,39,Schlesw,Uni,103,12 sich nicht von der Stelle rühren,NH14_12,2,woe
+75,w,39,Schlesw,Uni,103,13 einen Rausch haben,NH14_13,3,woe
+75,w,39,Schlesw,Uni,103,15 jemandem Gesellschaft leisten,NH14_15,3,woe
+75,w,39,Schlesw,Uni,103,16 jemanden übers Ohr hauen,NH14_16,1,meta
+75,w,39,Schlesw,Uni,103,17 auf der Durchreise sein,NH14_17,3,woe
+75,w,39,Schlesw,Uni,103,18 keine Chance haben,NH14_18,1,woe
+75,w,39,Schlesw,Uni,103,19 Folgerungen ziehen,NH14_19,4,woe
+75,w,39,Schlesw,Uni,103,20 ein ungeschriebenes Gesetz sein,NH14_20,3,woe
+75,w,39,Schlesw,Uni,103,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+75,w,39,Schlesw,Uni,103,22 in Führung gehen (beim Sport),NH14_22,3,woe
+75,w,39,Schlesw,Uni,103,23 jemandem Unrecht tun,NH14_23,3,woe
+75,w,39,Schlesw,Uni,103,24 zur Debatte stehen,NH14_24,2,woe
+75,w,39,Schlesw,Uni,103,25 etwas aus Prinzip tun,NH14_25,3,woe
+75,w,39,Schlesw,Uni,103,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+75,w,39,Schlesw,Uni,103,27 unter Druck geraten,NH14_27,3,meta
+75,w,39,Schlesw,Uni,103,28 nicht im Hause sein,NH14_28,4,woe
+75,w,39,Schlesw,Uni,103,29 die Pferde scheu machen,NH14_29,1,meta
+75,w,39,Schlesw,Uni,103,30 etwas in aller Deutlichkeit sagen,NH14_30,3,woe
+75,w,39,Schlesw,Uni,103,31 jemandem die Laune verderben,NH14_31,3,woe
+75,w,39,Schlesw,Uni,103,32 einen Eid schwören,NH14_32,3,woe
+75,w,39,Schlesw,Uni,103,35 die Flinte ins Korn werfen,NH14_35,1,meta
+75,w,39,Schlesw,Uni,103,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+75,w,39,Schlesw,Uni,103,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,3,woe
+75,w,39,Schlesw,Uni,103,03 im Team arbeiten,NH19_03,3,woe
+75,w,39,Schlesw,Uni,103,04 an Bord gehen,NH19_04,3,woe
+75,w,39,Schlesw,Uni,103,05 in der Tinte sitzen,NH19_05,1,meta
+75,w,39,Schlesw,Uni,103,06 jemanden zur Sau machen,NH19_06,1,meta
+75,w,39,Schlesw,Uni,103,07 jemandem platzt der Kopf,NH19_07,1,meta
+75,w,39,Schlesw,Uni,103,08 etwas ist in jemandes Interesse,NH19_08,3,woe
+75,w,39,Schlesw,Uni,103,09 etwas in Stücke schlagen,NH19_09,2,woe
+75,w,39,Schlesw,Uni,103,10 Langeweile haben,NH19_10,3,woe
+75,w,39,Schlesw,Uni,103,11 die Kirche im Dorf lassen,NH19_11,1,meta
+75,w,39,Schlesw,Uni,103,12 sein eigenes Leben haben,NH19_12,3,woe
+75,w,39,Schlesw,Uni,103,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+75,w,39,Schlesw,Uni,103,14 in Erfüllung gehen,NH19_14,3,woe
+75,w,39,Schlesw,Uni,103,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+75,w,39,Schlesw,Uni,103,17 das Thema wechseln,NH19_17,3,woe
+75,w,39,Schlesw,Uni,103,18 etwas ist nicht jemandes Sache,NH19_18,2,woe
+75,w,39,Schlesw,Uni,103,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+75,w,39,Schlesw,Uni,103,20 mit dem Feuer spielen,NH19_20,1,meta
+75,w,39,Schlesw,Uni,103,21 in Kontakt bleiben,NH19_21,3,woe
+75,w,39,Schlesw,Uni,103,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+75,w,39,Schlesw,Uni,103,23 etwas zu seinem Vorteil nutzen,NH19_23,3,woe
+75,w,39,Schlesw,Uni,103,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+75,w,39,Schlesw,Uni,103,26 jemandem Dampf machen,NH19_26,1,meta
+75,w,39,Schlesw,Uni,103,27 seinen Titel verteidigen,NH19_27,3,woe
+75,w,39,Schlesw,Uni,103,28 in Raten zahlen,NH19_28,3,woe
+75,w,39,Schlesw,Uni,103,29 seine Berechtigung haben,NH19_29,2,woe
+75,w,39,Schlesw,Uni,103,32 in Hörweite sein,NH19_32,3,woe
+75,w,39,Schlesw,Uni,103,33 außer Betrieb sein,NH19_33,3,woe
+75,w,39,Schlesw,Uni,103,01 keinerlei Mitgefühl haben,NH20_01,2,woe
+75,w,39,Schlesw,Uni,103,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+75,w,39,Schlesw,Uni,103,03 jemanden um den Finger wickeln,NH20_03,1,meta
+75,w,39,Schlesw,Uni,103,04 die Axt im Walde sein,NH20_04,1,meta
+75,w,39,Schlesw,Uni,103,05 ein schlechtes Gewissen haben,NH20_05,2,woe
+75,w,39,Schlesw,Uni,103,07 einen empfindlichen Magen haben,NH20_07,1,woe
+75,w,39,Schlesw,Uni,103,08 auf eigene Faust handeln,NH20_08,2,meta
+75,w,39,Schlesw,Uni,103,09 den Rahmen sprengen,NH20_09,1,meta
+75,w,39,Schlesw,Uni,103,12 zur Seite gehen,NH20_12,3,woe
+75,w,39,Schlesw,Uni,103,13 seine Meinung ändern,NH20_13,3,woe
+75,w,39,Schlesw,Uni,103,14 gegen den Strom schwimmen,NH20_14,1,meta
+75,w,39,Schlesw,Uni,103,16 jemandem die Laune verderben,NH20_16,2,woe
+75,w,39,Schlesw,Uni,103,17 jemanden in Gefahr bringen,NH20_17,3,woe
+75,w,39,Schlesw,Uni,103,18 sich schütteln vor Lachen,NH20_18,2,woe
+75,w,39,Schlesw,Uni,103,19 etwas auf Vorrat kaufen,NH20_19,3,woe
+75,w,39,Schlesw,Uni,103,20 sich die Kugel geben,NH20_20,2,meta
+75,w,39,Schlesw,Uni,103,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+75,w,39,Schlesw,Uni,103,22 jemandes gutes Recht sein,NH20_22,3,woe
+75,w,39,Schlesw,Uni,103,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+75,w,39,Schlesw,Uni,103,24 etwas im Halbschlaf hören,NH20_24,3,woe
+75,w,39,Schlesw,Uni,103,25 ein Griff ins Klo sein,NH20_25,1,meta
+75,w,39,Schlesw,Uni,103,27 Fahrerflucht begehen,NH20_27,3,woe
+75,w,39,Schlesw,Uni,103,28 auf dumme Gedanken kommen,NH20_28,3,woe
+75,w,39,Schlesw,Uni,103,29 Luftschlösser bauen,NH20_29,2,meta
+75,w,39,Schlesw,Uni,103,31 Schritttempo fahren,NH20_31,2,woe
+76,w,27,Sachs-Anh,Uni,94,01 ein Fels in der Brandung sein,NH14_01,1,meta
+76,w,27,Sachs-Anh,Uni,94,03 jemandem den Marsch blasen,NH14_03,1,meta
+76,w,27,Sachs-Anh,Uni,94,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+76,w,27,Sachs-Anh,Uni,94,05 keinen Spaß verstehen,NH14_05,2,woe
+76,w,27,Sachs-Anh,Uni,94,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+76,w,27,Sachs-Anh,Uni,94,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+76,w,27,Sachs-Anh,Uni,94,09 auf jemanden ist kein Verlass,NH14_09,1,woe
+76,w,27,Sachs-Anh,Uni,94,10 einen grünen Daumen haben,NH14_10,1,meta
+76,w,27,Sachs-Anh,Uni,94,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+76,w,27,Sachs-Anh,Uni,94,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+76,w,27,Sachs-Anh,Uni,94,13 einen Rausch haben,NH14_13,2,woe
+76,w,27,Sachs-Anh,Uni,94,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+76,w,27,Sachs-Anh,Uni,94,16 jemanden übers Ohr hauen,NH14_16,1,meta
+76,w,27,Sachs-Anh,Uni,94,17 auf der Durchreise sein,NH14_17,2,woe
+76,w,27,Sachs-Anh,Uni,94,18 keine Chance haben,NH14_18,2,woe
+76,w,27,Sachs-Anh,Uni,94,19 Folgerungen ziehen,NH14_19,3,woe
+76,w,27,Sachs-Anh,Uni,94,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+76,w,27,Sachs-Anh,Uni,94,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+76,w,27,Sachs-Anh,Uni,94,22 in Führung gehen (beim Sport),NH14_22,4,woe
+76,w,27,Sachs-Anh,Uni,94,23 jemandem Unrecht tun,NH14_23,2,woe
+76,w,27,Sachs-Anh,Uni,94,24 zur Debatte stehen,NH14_24,2,woe
+76,w,27,Sachs-Anh,Uni,94,25 etwas aus Prinzip tun,NH14_25,3,woe
+76,w,27,Sachs-Anh,Uni,94,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+76,w,27,Sachs-Anh,Uni,94,27 unter Druck geraten,NH14_27,1,meta
+76,w,27,Sachs-Anh,Uni,94,28 nicht im Hause sein,NH14_28,4,woe
+76,w,27,Sachs-Anh,Uni,94,29 die Pferde scheu machen,NH14_29,1,meta
+76,w,27,Sachs-Anh,Uni,94,30 etwas in aller Deutlichkeit sagen,NH14_30,3,woe
+76,w,27,Sachs-Anh,Uni,94,31 jemandem die Laune verderben,NH14_31,1,woe
+76,w,27,Sachs-Anh,Uni,94,32 einen Eid schwören,NH14_32,3,woe
+76,w,27,Sachs-Anh,Uni,94,35 die Flinte ins Korn werfen,NH14_35,1,meta
+76,w,27,Sachs-Anh,Uni,94,01 vor Gericht stehen (ein Angeklagter),NH19_01,2,woe
+76,w,27,Sachs-Anh,Uni,94,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,3,woe
+76,w,27,Sachs-Anh,Uni,94,03 im Team arbeiten,NH19_03,4,woe
+76,w,27,Sachs-Anh,Uni,94,04 an Bord gehen,NH19_04,2,woe
+76,w,27,Sachs-Anh,Uni,94,05 in der Tinte sitzen,NH19_05,1,meta
+76,w,27,Sachs-Anh,Uni,94,06 jemanden zur Sau machen,NH19_06,1,meta
+76,w,27,Sachs-Anh,Uni,94,07 jemandem platzt der Kopf,NH19_07,1,meta
+76,w,27,Sachs-Anh,Uni,94,08 etwas ist in jemandes Interesse,NH19_08,2,woe
+76,w,27,Sachs-Anh,Uni,94,09 etwas in Stücke schlagen,NH19_09,4,woe
+76,w,27,Sachs-Anh,Uni,94,10 Langeweile haben,NH19_10,2,woe
+76,w,27,Sachs-Anh,Uni,94,11 die Kirche im Dorf lassen,NH19_11,1,meta
+76,w,27,Sachs-Anh,Uni,94,12 sein eigenes Leben haben,NH19_12,2,woe
+76,w,27,Sachs-Anh,Uni,94,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+76,w,27,Sachs-Anh,Uni,94,14 in Erfüllung gehen,NH19_14,2,woe
+76,w,27,Sachs-Anh,Uni,94,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+76,w,27,Sachs-Anh,Uni,94,17 das Thema wechseln,NH19_17,3,woe
+76,w,27,Sachs-Anh,Uni,94,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+76,w,27,Sachs-Anh,Uni,94,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+76,w,27,Sachs-Anh,Uni,94,20 mit dem Feuer spielen,NH19_20,1,meta
+76,w,27,Sachs-Anh,Uni,94,21 in Kontakt bleiben,NH19_21,3,woe
+76,w,27,Sachs-Anh,Uni,94,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+76,w,27,Sachs-Anh,Uni,94,23 etwas zu seinem Vorteil nutzen,NH19_23,2,woe
+76,w,27,Sachs-Anh,Uni,94,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+76,w,27,Sachs-Anh,Uni,94,26 jemandem Dampf machen,NH19_26,1,meta
+76,w,27,Sachs-Anh,Uni,94,27 seinen Titel verteidigen,NH19_27,2,woe
+76,w,27,Sachs-Anh,Uni,94,28 in Raten zahlen,NH19_28,4,woe
+76,w,27,Sachs-Anh,Uni,94,29 seine Berechtigung haben,NH19_29,4,woe
+76,w,27,Sachs-Anh,Uni,94,32 in Hörweite sein,NH19_32,4,woe
+76,w,27,Sachs-Anh,Uni,94,33 außer Betrieb sein,NH19_33,4,woe
+76,w,27,Sachs-Anh,Uni,94,01 keinerlei Mitgefühl haben,NH20_01,2,woe
+76,w,27,Sachs-Anh,Uni,94,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+76,w,27,Sachs-Anh,Uni,94,03 jemanden um den Finger wickeln,NH20_03,1,meta
+76,w,27,Sachs-Anh,Uni,94,04 die Axt im Walde sein,NH20_04,1,meta
+76,w,27,Sachs-Anh,Uni,94,05 ein schlechtes Gewissen haben,NH20_05,2,woe
+76,w,27,Sachs-Anh,Uni,94,07 einen empfindlichen Magen haben,NH20_07,2,woe
+76,w,27,Sachs-Anh,Uni,94,08 auf eigene Faust handeln,NH20_08,1,meta
+76,w,27,Sachs-Anh,Uni,94,09 den Rahmen sprengen,NH20_09,1,meta
+76,w,27,Sachs-Anh,Uni,94,12 zur Seite gehen,NH20_12,4,woe
+76,w,27,Sachs-Anh,Uni,94,13 seine Meinung ändern,NH20_13,2,woe
+76,w,27,Sachs-Anh,Uni,94,14 gegen den Strom schwimmen,NH20_14,1,meta
+76,w,27,Sachs-Anh,Uni,94,16 jemandem die Laune verderben,NH20_16,2,woe
+76,w,27,Sachs-Anh,Uni,94,17 jemanden in Gefahr bringen,NH20_17,2,woe
+76,w,27,Sachs-Anh,Uni,94,18 sich schütteln vor Lachen,NH20_18,2,woe
+76,w,27,Sachs-Anh,Uni,94,19 etwas auf Vorrat kaufen,NH20_19,3,woe
+76,w,27,Sachs-Anh,Uni,94,20 sich die Kugel geben,NH20_20,1,meta
+76,w,27,Sachs-Anh,Uni,94,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+76,w,27,Sachs-Anh,Uni,94,22 jemandes gutes Recht sein,NH20_22,2,woe
+76,w,27,Sachs-Anh,Uni,94,23 etwas zum Selbstzweck betreiben,NH20_23,2,woe
+76,w,27,Sachs-Anh,Uni,94,24 etwas im Halbschlaf hören,NH20_24,2,woe
+76,w,27,Sachs-Anh,Uni,94,25 ein Griff ins Klo sein,NH20_25,1,meta
+76,w,27,Sachs-Anh,Uni,94,27 Fahrerflucht begehen,NH20_27,4,woe
+76,w,27,Sachs-Anh,Uni,94,28 auf dumme Gedanken kommen,NH20_28,1,woe
+76,w,27,Sachs-Anh,Uni,94,29 Luftschlösser bauen,NH20_29,1,meta
+76,w,27,Sachs-Anh,Uni,94,31 Schritttempo fahren,NH20_31,3,woe
+77,w,55,Hessen,Uni,108,01 ein Fels in der Brandung sein,NH14_01,1,meta
+77,w,55,Hessen,Uni,108,03 jemandem den Marsch blasen,NH14_03,1,meta
+77,w,55,Hessen,Uni,108,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+77,w,55,Hessen,Uni,108,05 keinen Spaß verstehen,NH14_05,4,woe
+77,w,55,Hessen,Uni,108,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+77,w,55,Hessen,Uni,108,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+77,w,55,Hessen,Uni,108,09 auf jemanden ist kein Verlass,NH14_09,3,woe
+77,w,55,Hessen,Uni,108,10 einen grünen Daumen haben,NH14_10,1,meta
+77,w,55,Hessen,Uni,108,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+77,w,55,Hessen,Uni,108,12 sich nicht von der Stelle rühren,NH14_12,4,woe
+77,w,55,Hessen,Uni,108,13 einen Rausch haben,NH14_13,4,woe
+77,w,55,Hessen,Uni,108,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+77,w,55,Hessen,Uni,108,16 jemanden übers Ohr hauen,NH14_16,1,meta
+77,w,55,Hessen,Uni,108,17 auf der Durchreise sein,NH14_17,3,woe
+77,w,55,Hessen,Uni,108,18 keine Chance haben,NH14_18,4,woe
+77,w,55,Hessen,Uni,108,19 Folgerungen ziehen,NH14_19,3,woe
+77,w,55,Hessen,Uni,108,20 ein ungeschriebenes Gesetz sein,NH14_20,3,woe
+77,w,55,Hessen,Uni,108,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+77,w,55,Hessen,Uni,108,22 in Führung gehen (beim Sport),NH14_22,3,woe
+77,w,55,Hessen,Uni,108,23 jemandem Unrecht tun,NH14_23,4,woe
+77,w,55,Hessen,Uni,108,24 zur Debatte stehen,NH14_24,3,woe
+77,w,55,Hessen,Uni,108,25 etwas aus Prinzip tun,NH14_25,3,woe
+77,w,55,Hessen,Uni,108,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+77,w,55,Hessen,Uni,108,27 unter Druck geraten,NH14_27,3,meta
+77,w,55,Hessen,Uni,108,28 nicht im Hause sein,NH14_28,4,woe
+77,w,55,Hessen,Uni,108,29 die Pferde scheu machen,NH14_29,1,meta
+77,w,55,Hessen,Uni,108,30 etwas in aller Deutlichkeit sagen,NH14_30,3,woe
+77,w,55,Hessen,Uni,108,31 jemandem die Laune verderben,NH14_31,4,woe
+77,w,55,Hessen,Uni,108,32 einen Eid schwören,NH14_32,3,woe
+77,w,55,Hessen,Uni,108,35 die Flinte ins Korn werfen,NH14_35,1,meta
+77,w,55,Hessen,Uni,108,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+77,w,55,Hessen,Uni,108,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,3,woe
+77,w,55,Hessen,Uni,108,03 im Team arbeiten,NH19_03,3,woe
+77,w,55,Hessen,Uni,108,04 an Bord gehen,NH19_04,3,woe
+77,w,55,Hessen,Uni,108,05 in der Tinte sitzen,NH19_05,1,meta
+77,w,55,Hessen,Uni,108,06 jemanden zur Sau machen,NH19_06,1,meta
+77,w,55,Hessen,Uni,108,07 jemandem platzt der Kopf,NH19_07,2,meta
+77,w,55,Hessen,Uni,108,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+77,w,55,Hessen,Uni,108,09 etwas in Stücke schlagen,NH19_09,2,woe
+77,w,55,Hessen,Uni,108,10 Langeweile haben,NH19_10,4,woe
+77,w,55,Hessen,Uni,108,11 die Kirche im Dorf lassen,NH19_11,1,meta
+77,w,55,Hessen,Uni,108,12 sein eigenes Leben haben,NH19_12,3,woe
+77,w,55,Hessen,Uni,108,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,2,woe
+77,w,55,Hessen,Uni,108,14 in Erfüllung gehen,NH19_14,3,woe
+77,w,55,Hessen,Uni,108,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+77,w,55,Hessen,Uni,108,17 das Thema wechseln,NH19_17,4,woe
+77,w,55,Hessen,Uni,108,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+77,w,55,Hessen,Uni,108,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+77,w,55,Hessen,Uni,108,20 mit dem Feuer spielen,NH19_20,1,meta
+77,w,55,Hessen,Uni,108,21 in Kontakt bleiben,NH19_21,3,woe
+77,w,55,Hessen,Uni,108,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+77,w,55,Hessen,Uni,108,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+77,w,55,Hessen,Uni,108,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+77,w,55,Hessen,Uni,108,26 jemandem Dampf machen,NH19_26,1,meta
+77,w,55,Hessen,Uni,108,27 seinen Titel verteidigen,NH19_27,3,woe
+77,w,55,Hessen,Uni,108,28 in Raten zahlen,NH19_28,4,woe
+77,w,55,Hessen,Uni,108,29 seine Berechtigung haben,NH19_29,3,woe
+77,w,55,Hessen,Uni,108,32 in Hörweite sein,NH19_32,3,woe
+77,w,55,Hessen,Uni,108,33 außer Betrieb sein,NH19_33,4,woe
+77,w,55,Hessen,Uni,108,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+77,w,55,Hessen,Uni,108,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+77,w,55,Hessen,Uni,108,03 jemanden um den Finger wickeln,NH20_03,1,meta
+77,w,55,Hessen,Uni,108,04 die Axt im Walde sein,NH20_04,1,meta
+77,w,55,Hessen,Uni,108,05 ein schlechtes Gewissen haben,NH20_05,3,woe
+77,w,55,Hessen,Uni,108,07 einen empfindlichen Magen haben,NH20_07,4,woe
+77,w,55,Hessen,Uni,108,08 auf eigene Faust handeln,NH20_08,1,meta
+77,w,55,Hessen,Uni,108,09 den Rahmen sprengen,NH20_09,1,meta
+77,w,55,Hessen,Uni,108,12 zur Seite gehen,NH20_12,4,woe
+77,w,55,Hessen,Uni,108,13 seine Meinung ändern,NH20_13,4,woe
+77,w,55,Hessen,Uni,108,14 gegen den Strom schwimmen,NH20_14,1,meta
+77,w,55,Hessen,Uni,108,16 jemandem die Laune verderben,NH20_16,3,woe
+77,w,55,Hessen,Uni,108,17 jemanden in Gefahr bringen,NH20_17,4,woe
+77,w,55,Hessen,Uni,108,18 sich schütteln vor Lachen,NH20_18,3,woe
+77,w,55,Hessen,Uni,108,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+77,w,55,Hessen,Uni,108,20 sich die Kugel geben,NH20_20,1,meta
+77,w,55,Hessen,Uni,108,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+77,w,55,Hessen,Uni,108,22 jemandes gutes Recht sein,NH20_22,3,woe
+77,w,55,Hessen,Uni,108,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+77,w,55,Hessen,Uni,108,24 etwas im Halbschlaf hören,NH20_24,3,woe
+77,w,55,Hessen,Uni,108,25 ein Griff ins Klo sein,NH20_25,1,meta
+77,w,55,Hessen,Uni,108,27 Fahrerflucht begehen,NH20_27,3,woe
+77,w,55,Hessen,Uni,108,28 auf dumme Gedanken kommen,NH20_28,3,woe
+77,w,55,Hessen,Uni,108,29 Luftschlösser bauen,NH20_29,1,meta
+77,w,55,Hessen,Uni,108,31 Schritttempo fahren,NH20_31,3,woe
+78,m,28,Thür,Abi,43,01 ein Fels in der Brandung sein,NH14_01,1,meta
+78,m,28,Thür,Abi,43,03 jemandem den Marsch blasen,NH14_03,1,meta
+78,m,28,Thür,Abi,43,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+78,m,28,Thür,Abi,43,05 keinen Spaß verstehen,NH14_05,4,woe
+78,m,28,Thür,Abi,43,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+78,m,28,Thür,Abi,43,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+78,m,28,Thür,Abi,43,09 auf jemanden ist kein Verlass,NH14_09,3,woe
+78,m,28,Thür,Abi,43,10 einen grünen Daumen haben,NH14_10,2,meta
+78,m,28,Thür,Abi,43,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+78,m,28,Thür,Abi,43,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+78,m,28,Thür,Abi,43,13 einen Rausch haben,NH14_13,2,woe
+78,m,28,Thür,Abi,43,15 jemandem Gesellschaft leisten,NH14_15,2,woe
+78,m,28,Thür,Abi,43,16 jemanden übers Ohr hauen,NH14_16,1,meta
+78,m,28,Thür,Abi,43,17 auf der Durchreise sein,NH14_17,3,woe
+78,m,28,Thür,Abi,43,18 keine Chance haben,NH14_18,2,woe
+78,m,28,Thür,Abi,43,19 Folgerungen ziehen,NH14_19,2,woe
+78,m,28,Thür,Abi,43,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+78,m,28,Thür,Abi,43,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+78,m,28,Thür,Abi,43,22 in Führung gehen (beim Sport),NH14_22,4,woe
+78,m,28,Thür,Abi,43,23 jemandem Unrecht tun,NH14_23,3,woe
+78,m,28,Thür,Abi,43,24 zur Debatte stehen,NH14_24,3,woe
+78,m,28,Thür,Abi,43,25 etwas aus Prinzip tun,NH14_25,3,woe
+78,m,28,Thür,Abi,43,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+78,m,28,Thür,Abi,43,27 unter Druck geraten,NH14_27,2,meta
+78,m,28,Thür,Abi,43,28 nicht im Hause sein,NH14_28,3,woe
+78,m,28,Thür,Abi,43,29 die Pferde scheu machen,NH14_29,2,meta
+78,m,28,Thür,Abi,43,30 etwas in aller Deutlichkeit sagen,NH14_30,2,woe
+78,m,28,Thür,Abi,43,31 jemandem die Laune verderben,NH14_31,4,woe
+78,m,28,Thür,Abi,43,32 einen Eid schwören,NH14_32,3,woe
+78,m,28,Thür,Abi,43,35 die Flinte ins Korn werfen,NH14_35,2,meta
+78,m,28,Thür,Abi,43,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+78,m,28,Thür,Abi,43,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+78,m,28,Thür,Abi,43,03 im Team arbeiten,NH19_03,4,woe
+78,m,28,Thür,Abi,43,04 an Bord gehen,NH19_04,4,woe
+78,m,28,Thür,Abi,43,05 in der Tinte sitzen,NH19_05,1,meta
+78,m,28,Thür,Abi,43,06 jemanden zur Sau machen,NH19_06,1,meta
+78,m,28,Thür,Abi,43,07 jemandem platzt der Kopf,NH19_07,1,meta
+78,m,28,Thür,Abi,43,08 etwas ist in jemandes Interesse,NH19_08,2,woe
+78,m,28,Thür,Abi,43,09 etwas in Stücke schlagen,NH19_09,3,woe
+78,m,28,Thür,Abi,43,10 Langeweile haben,NH19_10,4,woe
+78,m,28,Thür,Abi,43,11 die Kirche im Dorf lassen,NH19_11,1,meta
+78,m,28,Thür,Abi,43,12 sein eigenes Leben haben,NH19_12,3,woe
+78,m,28,Thür,Abi,43,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+78,m,28,Thür,Abi,43,14 in Erfüllung gehen,NH19_14,4,woe
+78,m,28,Thür,Abi,43,16 jemanden an der kurzen Leine halten,NH19_16,2,meta
+78,m,28,Thür,Abi,43,17 das Thema wechseln,NH19_17,3,woe
+78,m,28,Thür,Abi,43,18 etwas ist nicht jemandes Sache,NH19_18,4,woe
+78,m,28,Thür,Abi,43,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+78,m,28,Thür,Abi,43,20 mit dem Feuer spielen,NH19_20,2,meta
+78,m,28,Thür,Abi,43,21 in Kontakt bleiben,NH19_21,4,woe
+78,m,28,Thür,Abi,43,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+78,m,28,Thür,Abi,43,23 etwas zu seinem Vorteil nutzen,NH19_23,3,woe
+78,m,28,Thür,Abi,43,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+78,m,28,Thür,Abi,43,26 jemandem Dampf machen,NH19_26,2,meta
+78,m,28,Thür,Abi,43,27 seinen Titel verteidigen,NH19_27,2,woe
+78,m,28,Thür,Abi,43,28 in Raten zahlen,NH19_28,3,woe
+78,m,28,Thür,Abi,43,29 seine Berechtigung haben,NH19_29,4,woe
+78,m,28,Thür,Abi,43,32 in Hörweite sein,NH19_32,3,woe
+78,m,28,Thür,Abi,43,33 außer Betrieb sein,NH19_33,3,woe
+78,m,28,Thür,Abi,43,01 keinerlei Mitgefühl haben,NH20_01,3,woe
+78,m,28,Thür,Abi,43,02 zwischen allen Stühlen sitzen,NH20_02,2,meta
+78,m,28,Thür,Abi,43,03 jemanden um den Finger wickeln,NH20_03,1,meta
+78,m,28,Thür,Abi,43,04 die Axt im Walde sein,NH20_04,1,meta
+78,m,28,Thür,Abi,43,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+78,m,28,Thür,Abi,43,07 einen empfindlichen Magen haben,NH20_07,3,woe
+78,m,28,Thür,Abi,43,08 auf eigene Faust handeln,NH20_08,2,meta
+78,m,28,Thür,Abi,43,09 den Rahmen sprengen,NH20_09,1,meta
+78,m,28,Thür,Abi,43,12 zur Seite gehen,NH20_12,4,woe
+78,m,28,Thür,Abi,43,13 seine Meinung ändern,NH20_13,3,woe
+78,m,28,Thür,Abi,43,14 gegen den Strom schwimmen,NH20_14,2,meta
+78,m,28,Thür,Abi,43,16 jemandem die Laune verderben,NH20_16,3,woe
+78,m,28,Thür,Abi,43,17 jemanden in Gefahr bringen,NH20_17,4,woe
+78,m,28,Thür,Abi,43,18 sich schütteln vor Lachen,NH20_18,3,woe
+78,m,28,Thür,Abi,43,19 etwas auf Vorrat kaufen,NH20_19,3,woe
+78,m,28,Thür,Abi,43,20 sich die Kugel geben,NH20_20,3,meta
+78,m,28,Thür,Abi,43,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+78,m,28,Thür,Abi,43,22 jemandes gutes Recht sein,NH20_22,3,woe
+78,m,28,Thür,Abi,43,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+78,m,28,Thür,Abi,43,24 etwas im Halbschlaf hören,NH20_24,3,woe
+78,m,28,Thür,Abi,43,25 ein Griff ins Klo sein,NH20_25,1,meta
+78,m,28,Thür,Abi,43,27 Fahrerflucht begehen,NH20_27,4,woe
+78,m,28,Thür,Abi,43,28 auf dumme Gedanken kommen,NH20_28,3,woe
+78,m,28,Thür,Abi,43,29 Luftschlösser bauen,NH20_29,1,meta
+78,m,28,Thür,Abi,43,31 Schritttempo fahren,NH20_31,4,woe
+79,m,19,Nieders,Abi,66,01 ein Fels in der Brandung sein,NH14_01,1,meta
+79,m,19,Nieders,Abi,66,03 jemandem den Marsch blasen,NH14_03,2,meta
+79,m,19,Nieders,Abi,66,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+79,m,19,Nieders,Abi,66,05 keinen Spaß verstehen,NH14_05,3,woe
+79,m,19,Nieders,Abi,66,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+79,m,19,Nieders,Abi,66,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+79,m,19,Nieders,Abi,66,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+79,m,19,Nieders,Abi,66,10 einen grünen Daumen haben,NH14_10,1,meta
+79,m,19,Nieders,Abi,66,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+79,m,19,Nieders,Abi,66,12 sich nicht von der Stelle rühren,NH14_12,2,woe
+79,m,19,Nieders,Abi,66,13 einen Rausch haben,NH14_13,4,woe
+79,m,19,Nieders,Abi,66,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+79,m,19,Nieders,Abi,66,16 jemanden übers Ohr hauen,NH14_16,1,meta
+79,m,19,Nieders,Abi,66,17 auf der Durchreise sein,NH14_17,4,woe
+79,m,19,Nieders,Abi,66,18 keine Chance haben,NH14_18,2,woe
+79,m,19,Nieders,Abi,66,19 Folgerungen ziehen,NH14_19,4,woe
+79,m,19,Nieders,Abi,66,20 ein ungeschriebenes Gesetz sein,NH14_20,3,woe
+79,m,19,Nieders,Abi,66,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+79,m,19,Nieders,Abi,66,22 in Führung gehen (beim Sport),NH14_22,4,woe
+79,m,19,Nieders,Abi,66,23 jemandem Unrecht tun,NH14_23,3,woe
+79,m,19,Nieders,Abi,66,24 zur Debatte stehen,NH14_24,3,woe
+79,m,19,Nieders,Abi,66,25 etwas aus Prinzip tun,NH14_25,4,woe
+79,m,19,Nieders,Abi,66,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+79,m,19,Nieders,Abi,66,27 unter Druck geraten,NH14_27,2,meta
+79,m,19,Nieders,Abi,66,28 nicht im Hause sein,NH14_28,4,woe
+79,m,19,Nieders,Abi,66,29 die Pferde scheu machen,NH14_29,1,meta
+79,m,19,Nieders,Abi,66,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+79,m,19,Nieders,Abi,66,31 jemandem die Laune verderben,NH14_31,3,woe
+79,m,19,Nieders,Abi,66,32 einen Eid schwören,NH14_32,4,woe
+79,m,19,Nieders,Abi,66,35 die Flinte ins Korn werfen,NH14_35,1,meta
+79,m,19,Nieders,Abi,66,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+79,m,19,Nieders,Abi,66,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,2,woe
+79,m,19,Nieders,Abi,66,03 im Team arbeiten,NH19_03,4,woe
+79,m,19,Nieders,Abi,66,04 an Bord gehen,NH19_04,2,woe
+79,m,19,Nieders,Abi,66,05 in der Tinte sitzen,NH19_05,1,meta
+79,m,19,Nieders,Abi,66,06 jemanden zur Sau machen,NH19_06,1,meta
+79,m,19,Nieders,Abi,66,07 jemandem platzt der Kopf,NH19_07,1,meta
+79,m,19,Nieders,Abi,66,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+79,m,19,Nieders,Abi,66,09 etwas in Stücke schlagen,NH19_09,3,woe
+79,m,19,Nieders,Abi,66,10 Langeweile haben,NH19_10,4,woe
+79,m,19,Nieders,Abi,66,11 die Kirche im Dorf lassen,NH19_11,1,meta
+79,m,19,Nieders,Abi,66,12 sein eigenes Leben haben,NH19_12,4,woe
+79,m,19,Nieders,Abi,66,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+79,m,19,Nieders,Abi,66,14 in Erfüllung gehen,NH19_14,3,woe
+79,m,19,Nieders,Abi,66,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+79,m,19,Nieders,Abi,66,17 das Thema wechseln,NH19_17,4,woe
+79,m,19,Nieders,Abi,66,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+79,m,19,Nieders,Abi,66,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+79,m,19,Nieders,Abi,66,20 mit dem Feuer spielen,NH19_20,1,meta
+79,m,19,Nieders,Abi,66,21 in Kontakt bleiben,NH19_21,3,woe
+79,m,19,Nieders,Abi,66,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+79,m,19,Nieders,Abi,66,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+79,m,19,Nieders,Abi,66,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+79,m,19,Nieders,Abi,66,26 jemandem Dampf machen,NH19_26,1,meta
+79,m,19,Nieders,Abi,66,27 seinen Titel verteidigen,NH19_27,3,woe
+79,m,19,Nieders,Abi,66,28 in Raten zahlen,NH19_28,4,woe
+79,m,19,Nieders,Abi,66,29 seine Berechtigung haben,NH19_29,4,woe
+79,m,19,Nieders,Abi,66,32 in Hörweite sein,NH19_32,4,woe
+79,m,19,Nieders,Abi,66,33 außer Betrieb sein,NH19_33,4,woe
+79,m,19,Nieders,Abi,66,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+79,m,19,Nieders,Abi,66,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+79,m,19,Nieders,Abi,66,03 jemanden um den Finger wickeln,NH20_03,1,meta
+79,m,19,Nieders,Abi,66,04 die Axt im Walde sein,NH20_04,1,meta
+79,m,19,Nieders,Abi,66,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+79,m,19,Nieders,Abi,66,07 einen empfindlichen Magen haben,NH20_07,3,woe
+79,m,19,Nieders,Abi,66,08 auf eigene Faust handeln,NH20_08,1,meta
+79,m,19,Nieders,Abi,66,09 den Rahmen sprengen,NH20_09,1,meta
+79,m,19,Nieders,Abi,66,12 zur Seite gehen,NH20_12,4,woe
+79,m,19,Nieders,Abi,66,13 seine Meinung ändern,NH20_13,4,woe
+79,m,19,Nieders,Abi,66,14 gegen den Strom schwimmen,NH20_14,1,meta
+79,m,19,Nieders,Abi,66,16 jemandem die Laune verderben,NH20_16,3,woe
+79,m,19,Nieders,Abi,66,17 jemanden in Gefahr bringen,NH20_17,3,woe
+79,m,19,Nieders,Abi,66,18 sich schütteln vor Lachen,NH20_18,3,woe
+79,m,19,Nieders,Abi,66,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+79,m,19,Nieders,Abi,66,20 sich die Kugel geben,NH20_20,2,meta
+79,m,19,Nieders,Abi,66,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+79,m,19,Nieders,Abi,66,22 jemandes gutes Recht sein,NH20_22,2,woe
+79,m,19,Nieders,Abi,66,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+79,m,19,Nieders,Abi,66,24 etwas im Halbschlaf hören,NH20_24,3,woe
+79,m,19,Nieders,Abi,66,25 ein Griff ins Klo sein,NH20_25,1,meta
+79,m,19,Nieders,Abi,66,27 Fahrerflucht begehen,NH20_27,4,woe
+79,m,19,Nieders,Abi,66,28 auf dumme Gedanken kommen,NH20_28,3,woe
+79,m,19,Nieders,Abi,66,29 Luftschlösser bauen,NH20_29,1,meta
+79,m,19,Nieders,Abi,66,31 Schritttempo fahren,NH20_31,3,woe
+81,m,39,NRW,Uni,73,01 ein Fels in der Brandung sein,NH14_01,1,meta
+81,m,39,NRW,Uni,73,03 jemandem den Marsch blasen,NH14_03,1,meta
+81,m,39,NRW,Uni,73,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+81,m,39,NRW,Uni,73,05 keinen Spaß verstehen,NH14_05,4,woe
+81,m,39,NRW,Uni,73,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+81,m,39,NRW,Uni,73,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+81,m,39,NRW,Uni,73,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+81,m,39,NRW,Uni,73,10 einen grünen Daumen haben,NH14_10,1,meta
+81,m,39,NRW,Uni,73,11 jemandem die Vorfahrt nehmen,NH14_11,3,woe
+81,m,39,NRW,Uni,73,12 sich nicht von der Stelle rühren,NH14_12,4,woe
+81,m,39,NRW,Uni,73,13 einen Rausch haben,NH14_13,3,woe
+81,m,39,NRW,Uni,73,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+81,m,39,NRW,Uni,73,16 jemanden übers Ohr hauen,NH14_16,1,meta
+81,m,39,NRW,Uni,73,17 auf der Durchreise sein,NH14_17,4,woe
+81,m,39,NRW,Uni,73,18 keine Chance haben,NH14_18,4,woe
+81,m,39,NRW,Uni,73,19 Folgerungen ziehen,NH14_19,4,woe
+81,m,39,NRW,Uni,73,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+81,m,39,NRW,Uni,73,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+81,m,39,NRW,Uni,73,22 in Führung gehen (beim Sport),NH14_22,3,woe
+81,m,39,NRW,Uni,73,23 jemandem Unrecht tun,NH14_23,4,woe
+81,m,39,NRW,Uni,73,24 zur Debatte stehen,NH14_24,4,woe
+81,m,39,NRW,Uni,73,25 etwas aus Prinzip tun,NH14_25,4,woe
+81,m,39,NRW,Uni,73,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+81,m,39,NRW,Uni,73,27 unter Druck geraten,NH14_27,3,meta
+81,m,39,NRW,Uni,73,28 nicht im Hause sein,NH14_28,3,woe
+81,m,39,NRW,Uni,73,29 die Pferde scheu machen,NH14_29,1,meta
+81,m,39,NRW,Uni,73,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+81,m,39,NRW,Uni,73,31 jemandem die Laune verderben,NH14_31,4,woe
+81,m,39,NRW,Uni,73,32 einen Eid schwören,NH14_32,4,woe
+81,m,39,NRW,Uni,73,35 die Flinte ins Korn werfen,NH14_35,1,meta
+81,m,39,NRW,Uni,73,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+81,m,39,NRW,Uni,73,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+81,m,39,NRW,Uni,73,03 im Team arbeiten,NH19_03,4,woe
+81,m,39,NRW,Uni,73,04 an Bord gehen,NH19_04,4,woe
+81,m,39,NRW,Uni,73,05 in der Tinte sitzen,NH19_05,1,meta
+81,m,39,NRW,Uni,73,06 jemanden zur Sau machen,NH19_06,1,meta
+81,m,39,NRW,Uni,73,07 jemandem platzt der Kopf,NH19_07,1,meta
+81,m,39,NRW,Uni,73,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+81,m,39,NRW,Uni,73,09 etwas in Stücke schlagen,NH19_09,3,woe
+81,m,39,NRW,Uni,73,10 Langeweile haben,NH19_10,4,woe
+81,m,39,NRW,Uni,73,11 die Kirche im Dorf lassen,NH19_11,1,meta
+81,m,39,NRW,Uni,73,12 sein eigenes Leben haben,NH19_12,2,woe
+81,m,39,NRW,Uni,73,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+81,m,39,NRW,Uni,73,14 in Erfüllung gehen,NH19_14,3,woe
+81,m,39,NRW,Uni,73,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+81,m,39,NRW,Uni,73,17 das Thema wechseln,NH19_17,4,woe
+81,m,39,NRW,Uni,73,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+81,m,39,NRW,Uni,73,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+81,m,39,NRW,Uni,73,20 mit dem Feuer spielen,NH19_20,1,meta
+81,m,39,NRW,Uni,73,21 in Kontakt bleiben,NH19_21,4,woe
+81,m,39,NRW,Uni,73,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+81,m,39,NRW,Uni,73,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+81,m,39,NRW,Uni,73,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+81,m,39,NRW,Uni,73,26 jemandem Dampf machen,NH19_26,1,meta
+81,m,39,NRW,Uni,73,27 seinen Titel verteidigen,NH19_27,4,woe
+81,m,39,NRW,Uni,73,28 in Raten zahlen,NH19_28,4,woe
+81,m,39,NRW,Uni,73,29 seine Berechtigung haben,NH19_29,4,woe
+81,m,39,NRW,Uni,73,32 in Hörweite sein,NH19_32,4,woe
+81,m,39,NRW,Uni,73,33 außer Betrieb sein,NH19_33,4,woe
+81,m,39,NRW,Uni,73,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+81,m,39,NRW,Uni,73,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+81,m,39,NRW,Uni,73,03 jemanden um den Finger wickeln,NH20_03,1,meta
+81,m,39,NRW,Uni,73,04 die Axt im Walde sein,NH20_04,1,meta
+81,m,39,NRW,Uni,73,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+81,m,39,NRW,Uni,73,07 einen empfindlichen Magen haben,NH20_07,4,woe
+81,m,39,NRW,Uni,73,08 auf eigene Faust handeln,NH20_08,4,meta
+81,m,39,NRW,Uni,73,09 den Rahmen sprengen,NH20_09,1,meta
+81,m,39,NRW,Uni,73,12 zur Seite gehen,NH20_12,4,woe
+81,m,39,NRW,Uni,73,13 seine Meinung ändern,NH20_13,4,woe
+81,m,39,NRW,Uni,73,14 gegen den Strom schwimmen,NH20_14,1,meta
+81,m,39,NRW,Uni,73,16 jemandem die Laune verderben,NH20_16,4,woe
+81,m,39,NRW,Uni,73,17 jemanden in Gefahr bringen,NH20_17,4,woe
+81,m,39,NRW,Uni,73,18 sich schütteln vor Lachen,NH20_18,3,woe
+81,m,39,NRW,Uni,73,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+81,m,39,NRW,Uni,73,20 sich die Kugel geben,NH20_20,1,meta
+81,m,39,NRW,Uni,73,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+81,m,39,NRW,Uni,73,22 jemandes gutes Recht sein,NH20_22,4,woe
+81,m,39,NRW,Uni,73,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+81,m,39,NRW,Uni,73,24 etwas im Halbschlaf hören,NH20_24,4,woe
+81,m,39,NRW,Uni,73,25 ein Griff ins Klo sein,NH20_25,1,meta
+81,m,39,NRW,Uni,73,27 Fahrerflucht begehen,NH20_27,4,woe
+81,m,39,NRW,Uni,73,28 auf dumme Gedanken kommen,NH20_28,1,woe
+81,m,39,NRW,Uni,73,29 Luftschlösser bauen,NH20_29,1,meta
+81,m,39,NRW,Uni,73,31 Schritttempo fahren,NH20_31,4,woe
+83,w,65,NRW,Abi,108,01 ein Fels in der Brandung sein,NH14_01,1,meta
+83,w,65,NRW,Abi,108,03 jemandem den Marsch blasen,NH14_03,1,meta
+83,w,65,NRW,Abi,108,04 jemanden in der Luft zerreißen,NH14_04,4,meta
+83,w,65,NRW,Abi,108,05 keinen Spaß verstehen,NH14_05,3,woe
+83,w,65,NRW,Abi,108,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+83,w,65,NRW,Abi,108,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+83,w,65,NRW,Abi,108,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+83,w,65,NRW,Abi,108,10 einen grünen Daumen haben,NH14_10,1,meta
+83,w,65,NRW,Abi,108,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+83,w,65,NRW,Abi,108,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+83,w,65,NRW,Abi,108,13 einen Rausch haben,NH14_13,4,woe
+83,w,65,NRW,Abi,108,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+83,w,65,NRW,Abi,108,16 jemanden übers Ohr hauen,NH14_16,1,meta
+83,w,65,NRW,Abi,108,17 auf der Durchreise sein,NH14_17,4,woe
+83,w,65,NRW,Abi,108,18 keine Chance haben,NH14_18,4,woe
+83,w,65,NRW,Abi,108,19 Folgerungen ziehen,NH14_19,1,woe
+83,w,65,NRW,Abi,108,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+83,w,65,NRW,Abi,108,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+83,w,65,NRW,Abi,108,22 in Führung gehen (beim Sport),NH14_22,4,woe
+83,w,65,NRW,Abi,108,23 jemandem Unrecht tun,NH14_23,4,woe
+83,w,65,NRW,Abi,108,24 zur Debatte stehen,NH14_24,4,woe
+83,w,65,NRW,Abi,108,25 etwas aus Prinzip tun,NH14_25,4,woe
+83,w,65,NRW,Abi,108,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+83,w,65,NRW,Abi,108,27 unter Druck geraten,NH14_27,4,meta
+83,w,65,NRW,Abi,108,28 nicht im Hause sein,NH14_28,4,woe
+83,w,65,NRW,Abi,108,29 die Pferde scheu machen,NH14_29,1,meta
+83,w,65,NRW,Abi,108,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+83,w,65,NRW,Abi,108,31 jemandem die Laune verderben,NH14_31,4,woe
+83,w,65,NRW,Abi,108,32 einen Eid schwören,NH14_32,4,woe
+83,w,65,NRW,Abi,108,35 die Flinte ins Korn werfen,NH14_35,1,meta
+83,w,65,NRW,Abi,108,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+83,w,65,NRW,Abi,108,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+83,w,65,NRW,Abi,108,03 im Team arbeiten,NH19_03,4,woe
+83,w,65,NRW,Abi,108,04 an Bord gehen,NH19_04,4,woe
+83,w,65,NRW,Abi,108,05 in der Tinte sitzen,NH19_05,1,meta
+83,w,65,NRW,Abi,108,06 jemanden zur Sau machen,NH19_06,1,meta
+83,w,65,NRW,Abi,108,07 jemandem platzt der Kopf,NH19_07,2,meta
+83,w,65,NRW,Abi,108,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+83,w,65,NRW,Abi,108,09 etwas in Stücke schlagen,NH19_09,1,woe
+83,w,65,NRW,Abi,108,10 Langeweile haben,NH19_10,4,woe
+83,w,65,NRW,Abi,108,11 die Kirche im Dorf lassen,NH19_11,1,meta
+83,w,65,NRW,Abi,108,12 sein eigenes Leben haben,NH19_12,3,woe
+83,w,65,NRW,Abi,108,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+83,w,65,NRW,Abi,108,14 in Erfüllung gehen,NH19_14,4,woe
+83,w,65,NRW,Abi,108,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+83,w,65,NRW,Abi,108,17 das Thema wechseln,NH19_17,4,woe
+83,w,65,NRW,Abi,108,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+83,w,65,NRW,Abi,108,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+83,w,65,NRW,Abi,108,20 mit dem Feuer spielen,NH19_20,1,meta
+83,w,65,NRW,Abi,108,21 in Kontakt bleiben,NH19_21,4,woe
+83,w,65,NRW,Abi,108,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+83,w,65,NRW,Abi,108,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+83,w,65,NRW,Abi,108,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+83,w,65,NRW,Abi,108,26 jemandem Dampf machen,NH19_26,1,meta
+83,w,65,NRW,Abi,108,27 seinen Titel verteidigen,NH19_27,4,woe
+83,w,65,NRW,Abi,108,28 in Raten zahlen,NH19_28,4,woe
+83,w,65,NRW,Abi,108,29 seine Berechtigung haben,NH19_29,4,woe
+83,w,65,NRW,Abi,108,32 in Hörweite sein,NH19_32,4,woe
+83,w,65,NRW,Abi,108,33 außer Betrieb sein,NH19_33,4,woe
+83,w,65,NRW,Abi,108,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+83,w,65,NRW,Abi,108,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+83,w,65,NRW,Abi,108,03 jemanden um den Finger wickeln,NH20_03,1,meta
+83,w,65,NRW,Abi,108,04 die Axt im Walde sein,NH20_04,1,meta
+83,w,65,NRW,Abi,108,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+83,w,65,NRW,Abi,108,07 einen empfindlichen Magen haben,NH20_07,4,woe
+83,w,65,NRW,Abi,108,08 auf eigene Faust handeln,NH20_08,1,meta
+83,w,65,NRW,Abi,108,09 den Rahmen sprengen,NH20_09,1,meta
+83,w,65,NRW,Abi,108,12 zur Seite gehen,NH20_12,4,woe
+83,w,65,NRW,Abi,108,13 seine Meinung ändern,NH20_13,4,woe
+83,w,65,NRW,Abi,108,14 gegen den Strom schwimmen,NH20_14,1,meta
+83,w,65,NRW,Abi,108,16 jemandem die Laune verderben,NH20_16,4,woe
+83,w,65,NRW,Abi,108,17 jemanden in Gefahr bringen,NH20_17,4,woe
+83,w,65,NRW,Abi,108,18 sich schütteln vor Lachen,NH20_18,3,woe
+83,w,65,NRW,Abi,108,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+83,w,65,NRW,Abi,108,20 sich die Kugel geben,NH20_20,1,meta
+83,w,65,NRW,Abi,108,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+83,w,65,NRW,Abi,108,22 jemandes gutes Recht sein,NH20_22,4,woe
+83,w,65,NRW,Abi,108,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+83,w,65,NRW,Abi,108,24 etwas im Halbschlaf hören,NH20_24,4,woe
+83,w,65,NRW,Abi,108,25 ein Griff ins Klo sein,NH20_25,1,meta
+83,w,65,NRW,Abi,108,27 Fahrerflucht begehen,NH20_27,4,woe
+83,w,65,NRW,Abi,108,28 auf dumme Gedanken kommen,NH20_28,4,woe
+83,w,65,NRW,Abi,108,29 Luftschlösser bauen,NH20_29,2,meta
+83,w,65,NRW,Abi,108,31 Schritttempo fahren,NH20_31,4,woe
+84,m,18,NRW,Abi,43,01 ein Fels in der Brandung sein,NH14_01,1,meta
+84,m,18,NRW,Abi,43,03 jemandem den Marsch blasen,NH14_03,2,meta
+84,m,18,NRW,Abi,43,04 jemanden in der Luft zerreißen,NH14_04,2,meta
+84,m,18,NRW,Abi,43,05 keinen Spaß verstehen,NH14_05,4,woe
+84,m,18,NRW,Abi,43,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+84,m,18,NRW,Abi,43,08 etwas an die Öffentlichkeit bringen,NH14_08,2,woe
+84,m,18,NRW,Abi,43,09 auf jemanden ist kein Verlass,NH14_09,3,woe
+84,m,18,NRW,Abi,43,10 einen grünen Daumen haben,NH14_10,1,meta
+84,m,18,NRW,Abi,43,11 jemandem die Vorfahrt nehmen,NH14_11,3,woe
+84,m,18,NRW,Abi,43,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+84,m,18,NRW,Abi,43,13 einen Rausch haben,NH14_13,3,woe
+84,m,18,NRW,Abi,43,15 jemandem Gesellschaft leisten,NH14_15,2,woe
+84,m,18,NRW,Abi,43,16 jemanden übers Ohr hauen,NH14_16,2,meta
+84,m,18,NRW,Abi,43,17 auf der Durchreise sein,NH14_17,2,woe
+84,m,18,NRW,Abi,43,18 keine Chance haben,NH14_18,4,woe
+84,m,18,NRW,Abi,43,19 Folgerungen ziehen,NH14_19,3,woe
+84,m,18,NRW,Abi,43,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+84,m,18,NRW,Abi,43,21 bei jemandem fällt der Groschen,NH14_21,2,meta
+84,m,18,NRW,Abi,43,22 in Führung gehen (beim Sport),NH14_22,1,woe
+84,m,18,NRW,Abi,43,23 jemandem Unrecht tun,NH14_23,3,woe
+84,m,18,NRW,Abi,43,24 zur Debatte stehen,NH14_24,2,woe
+84,m,18,NRW,Abi,43,25 etwas aus Prinzip tun,NH14_25,2,woe
+84,m,18,NRW,Abi,43,26 das fünfte Rad am Wagen sein,NH14_26,2,meta
+84,m,18,NRW,Abi,43,27 unter Druck geraten,NH14_27,3,meta
+84,m,18,NRW,Abi,43,28 nicht im Hause sein,NH14_28,2,woe
+84,m,18,NRW,Abi,43,29 die Pferde scheu machen,NH14_29,3,meta
+84,m,18,NRW,Abi,43,30 etwas in aller Deutlichkeit sagen,NH14_30,3,woe
+84,m,18,NRW,Abi,43,31 jemandem die Laune verderben,NH14_31,2,woe
+84,m,18,NRW,Abi,43,32 einen Eid schwören,NH14_32,3,woe
+84,m,18,NRW,Abi,43,35 die Flinte ins Korn werfen,NH14_35,3,meta
+84,m,18,NRW,Abi,43,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+84,m,18,NRW,Abi,43,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,2,woe
+84,m,18,NRW,Abi,43,03 im Team arbeiten,NH19_03,3,woe
+84,m,18,NRW,Abi,43,04 an Bord gehen,NH19_04,4,woe
+84,m,18,NRW,Abi,43,05 in der Tinte sitzen,NH19_05,3,meta
+84,m,18,NRW,Abi,43,06 jemanden zur Sau machen,NH19_06,1,meta
+84,m,18,NRW,Abi,43,07 jemandem platzt der Kopf,NH19_07,4,meta
+84,m,18,NRW,Abi,43,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+84,m,18,NRW,Abi,43,09 etwas in Stücke schlagen,NH19_09,1,woe
+84,m,18,NRW,Abi,43,10 Langeweile haben,NH19_10,3,woe
+84,m,18,NRW,Abi,43,11 die Kirche im Dorf lassen,NH19_11,2,meta
+84,m,18,NRW,Abi,43,12 sein eigenes Leben haben,NH19_12,2,woe
+84,m,18,NRW,Abi,43,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,1,woe
+84,m,18,NRW,Abi,43,14 in Erfüllung gehen,NH19_14,4,woe
+84,m,18,NRW,Abi,43,16 jemanden an der kurzen Leine halten,NH19_16,4,meta
+84,m,18,NRW,Abi,43,17 das Thema wechseln,NH19_17,4,woe
+84,m,18,NRW,Abi,43,18 etwas ist nicht jemandes Sache,NH19_18,4,woe
+84,m,18,NRW,Abi,43,19 jemanden im Vorbeigehen grüßen,NH19_19,2,woe
+84,m,18,NRW,Abi,43,20 mit dem Feuer spielen,NH19_20,2,meta
+84,m,18,NRW,Abi,43,21 in Kontakt bleiben,NH19_21,3,woe
+84,m,18,NRW,Abi,43,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+84,m,18,NRW,Abi,43,23 etwas zu seinem Vorteil nutzen,NH19_23,2,woe
+84,m,18,NRW,Abi,43,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,2,woe
+84,m,18,NRW,Abi,43,26 jemandem Dampf machen,NH19_26,4,meta
+84,m,18,NRW,Abi,43,27 seinen Titel verteidigen,NH19_27,1,woe
+84,m,18,NRW,Abi,43,28 in Raten zahlen,NH19_28,2,woe
+84,m,18,NRW,Abi,43,29 seine Berechtigung haben,NH19_29,4,woe
+84,m,18,NRW,Abi,43,32 in Hörweite sein,NH19_32,2,woe
+84,m,18,NRW,Abi,43,33 außer Betrieb sein,NH19_33,3,woe
+84,m,18,NRW,Abi,43,01 keinerlei Mitgefühl haben,NH20_01,1,woe
+84,m,18,NRW,Abi,43,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+84,m,18,NRW,Abi,43,03 jemanden um den Finger wickeln,NH20_03,2,meta
+84,m,18,NRW,Abi,43,04 die Axt im Walde sein,NH20_04,2,meta
+84,m,18,NRW,Abi,43,05 ein schlechtes Gewissen haben,NH20_05,1,woe
+84,m,18,NRW,Abi,43,07 einen empfindlichen Magen haben,NH20_07,4,woe
+84,m,18,NRW,Abi,43,08 auf eigene Faust handeln,NH20_08,3,meta
+84,m,18,NRW,Abi,43,09 den Rahmen sprengen,NH20_09,2,meta
+84,m,18,NRW,Abi,43,12 zur Seite gehen,NH20_12,2,woe
+84,m,18,NRW,Abi,43,13 seine Meinung ändern,NH20_13,3,woe
+84,m,18,NRW,Abi,43,14 gegen den Strom schwimmen,NH20_14,2,meta
+84,m,18,NRW,Abi,43,16 jemandem die Laune verderben,NH20_16,3,woe
+84,m,18,NRW,Abi,43,17 jemanden in Gefahr bringen,NH20_17,4,woe
+84,m,18,NRW,Abi,43,18 sich schütteln vor Lachen,NH20_18,2,woe
+84,m,18,NRW,Abi,43,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+84,m,18,NRW,Abi,43,20 sich die Kugel geben,NH20_20,3,meta
+84,m,18,NRW,Abi,43,21 ein zweischneidiges Schwert sein,NH20_21,2,meta
+84,m,18,NRW,Abi,43,22 jemandes gutes Recht sein,NH20_22,3,woe
+84,m,18,NRW,Abi,43,23 etwas zum Selbstzweck betreiben,NH20_23,2,woe
+84,m,18,NRW,Abi,43,24 etwas im Halbschlaf hören,NH20_24,2,woe
+84,m,18,NRW,Abi,43,25 ein Griff ins Klo sein,NH20_25,2,meta
+84,m,18,NRW,Abi,43,27 Fahrerflucht begehen,NH20_27,3,woe
+84,m,18,NRW,Abi,43,28 auf dumme Gedanken kommen,NH20_28,3,woe
+84,m,18,NRW,Abi,43,29 Luftschlösser bauen,NH20_29,1,meta
+84,m,18,NRW,Abi,43,31 Schritttempo fahren,NH20_31,3,woe
+93,m,25,NRW,Uni,6,01 ein Fels in der Brandung sein,NH14_01,1,meta
+93,m,25,NRW,Uni,6,03 jemandem den Marsch blasen,NH14_03,2,meta
+93,m,25,NRW,Uni,6,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+93,m,25,NRW,Uni,6,05 keinen Spaß verstehen,NH14_05,4,woe
+93,m,25,NRW,Uni,6,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+93,m,25,NRW,Uni,6,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+93,m,25,NRW,Uni,6,09 auf jemanden ist kein Verlass,NH14_09,3,woe
+93,m,25,NRW,Uni,6,10 einen grünen Daumen haben,NH14_10,1,meta
+93,m,25,NRW,Uni,6,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+93,m,25,NRW,Uni,6,12 sich nicht von der Stelle rühren,NH14_12,4,woe
+93,m,25,NRW,Uni,6,13 einen Rausch haben,NH14_13,2,woe
+93,m,25,NRW,Uni,6,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+93,m,25,NRW,Uni,6,16 jemanden übers Ohr hauen,NH14_16,1,meta
+93,m,25,NRW,Uni,6,17 auf der Durchreise sein,NH14_17,4,woe
+93,m,25,NRW,Uni,6,18 keine Chance haben,NH14_18,3,woe
+93,m,25,NRW,Uni,6,19 Folgerungen ziehen,NH14_19,3,woe
+93,m,25,NRW,Uni,6,20 ein ungeschriebenes Gesetz sein,NH14_20,3,woe
+93,m,25,NRW,Uni,6,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+93,m,25,NRW,Uni,6,22 in Führung gehen (beim Sport),NH14_22,4,woe
+93,m,25,NRW,Uni,6,23 jemandem Unrecht tun,NH14_23,3,woe
+93,m,25,NRW,Uni,6,24 zur Debatte stehen,NH14_24,2,woe
+93,m,25,NRW,Uni,6,25 etwas aus Prinzip tun,NH14_25,3,woe
+93,m,25,NRW,Uni,6,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+93,m,25,NRW,Uni,6,27 unter Druck geraten,NH14_27,1,meta
+93,m,25,NRW,Uni,6,28 nicht im Hause sein,NH14_28,4,woe
+93,m,25,NRW,Uni,6,29 die Pferde scheu machen,NH14_29,1,meta
+93,m,25,NRW,Uni,6,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+93,m,25,NRW,Uni,6,31 jemandem die Laune verderben,NH14_31,3,woe
+93,m,25,NRW,Uni,6,32 einen Eid schwören,NH14_32,3,woe
+93,m,25,NRW,Uni,6,35 die Flinte ins Korn werfen,NH14_35,1,meta
+93,m,25,NRW,Uni,6,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+93,m,25,NRW,Uni,6,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+93,m,25,NRW,Uni,6,03 im Team arbeiten,NH19_03,4,woe
+93,m,25,NRW,Uni,6,04 an Bord gehen,NH19_04,4,woe
+93,m,25,NRW,Uni,6,05 in der Tinte sitzen,NH19_05,1,meta
+93,m,25,NRW,Uni,6,06 jemanden zur Sau machen,NH19_06,1,meta
+93,m,25,NRW,Uni,6,07 jemandem platzt der Kopf,NH19_07,1,meta
+93,m,25,NRW,Uni,6,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+93,m,25,NRW,Uni,6,09 etwas in Stücke schlagen,NH19_09,3,woe
+93,m,25,NRW,Uni,6,10 Langeweile haben,NH19_10,4,woe
+93,m,25,NRW,Uni,6,11 die Kirche im Dorf lassen,NH19_11,2,meta
+93,m,25,NRW,Uni,6,12 sein eigenes Leben haben,NH19_12,4,woe
+93,m,25,NRW,Uni,6,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+93,m,25,NRW,Uni,6,14 in Erfüllung gehen,NH19_14,4,woe
+93,m,25,NRW,Uni,6,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+93,m,25,NRW,Uni,6,17 das Thema wechseln,NH19_17,4,woe
+93,m,25,NRW,Uni,6,18 etwas ist nicht jemandes Sache,NH19_18,2,woe
+93,m,25,NRW,Uni,6,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+93,m,25,NRW,Uni,6,20 mit dem Feuer spielen,NH19_20,2,meta
+93,m,25,NRW,Uni,6,21 in Kontakt bleiben,NH19_21,4,woe
+93,m,25,NRW,Uni,6,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+93,m,25,NRW,Uni,6,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+93,m,25,NRW,Uni,6,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+93,m,25,NRW,Uni,6,26 jemandem Dampf machen,NH19_26,1,meta
+93,m,25,NRW,Uni,6,27 seinen Titel verteidigen,NH19_27,4,woe
+93,m,25,NRW,Uni,6,28 in Raten zahlen,NH19_28,4,woe
+93,m,25,NRW,Uni,6,29 seine Berechtigung haben,NH19_29,4,woe
+93,m,25,NRW,Uni,6,32 in Hörweite sein,NH19_32,4,woe
+93,m,25,NRW,Uni,6,33 außer Betrieb sein,NH19_33,4,woe
+93,m,25,NRW,Uni,6,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+93,m,25,NRW,Uni,6,02 zwischen allen Stühlen sitzen,NH20_02,2,meta
+93,m,25,NRW,Uni,6,03 jemanden um den Finger wickeln,NH20_03,1,meta
+93,m,25,NRW,Uni,6,04 die Axt im Walde sein,NH20_04,1,meta
+93,m,25,NRW,Uni,6,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+93,m,25,NRW,Uni,6,07 einen empfindlichen Magen haben,NH20_07,4,woe
+93,m,25,NRW,Uni,6,08 auf eigene Faust handeln,NH20_08,2,meta
+93,m,25,NRW,Uni,6,09 den Rahmen sprengen,NH20_09,2,meta
+93,m,25,NRW,Uni,6,12 zur Seite gehen,NH20_12,4,woe
+93,m,25,NRW,Uni,6,13 seine Meinung ändern,NH20_13,4,woe
+93,m,25,NRW,Uni,6,14 gegen den Strom schwimmen,NH20_14,2,meta
+93,m,25,NRW,Uni,6,16 jemandem die Laune verderben,NH20_16,4,woe
+93,m,25,NRW,Uni,6,17 jemanden in Gefahr bringen,NH20_17,4,woe
+93,m,25,NRW,Uni,6,18 sich schütteln vor Lachen,NH20_18,4,woe
+93,m,25,NRW,Uni,6,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+93,m,25,NRW,Uni,6,20 sich die Kugel geben,NH20_20,1,meta
+93,m,25,NRW,Uni,6,21 ein zweischneidiges Schwert sein,NH20_21,2,meta
+93,m,25,NRW,Uni,6,22 jemandes gutes Recht sein,NH20_22,3,woe
+93,m,25,NRW,Uni,6,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+93,m,25,NRW,Uni,6,24 etwas im Halbschlaf hören,NH20_24,4,woe
+93,m,25,NRW,Uni,6,25 ein Griff ins Klo sein,NH20_25,1,meta
+93,m,25,NRW,Uni,6,27 Fahrerflucht begehen,NH20_27,4,woe
+93,m,25,NRW,Uni,6,28 auf dumme Gedanken kommen,NH20_28,3,woe
+93,m,25,NRW,Uni,6,29 Luftschlösser bauen,NH20_29,1,meta
+93,m,25,NRW,Uni,6,31 Schritttempo fahren,NH20_31,4,woe
+94,m,43,Rheinl-Pf,Uni,115,01 ein Fels in der Brandung sein,NH14_01,1,meta
+94,m,43,Rheinl-Pf,Uni,115,03 jemandem den Marsch blasen,NH14_03,1,meta
+94,m,43,Rheinl-Pf,Uni,115,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+94,m,43,Rheinl-Pf,Uni,115,05 keinen Spaß verstehen,NH14_05,2,woe
+94,m,43,Rheinl-Pf,Uni,115,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+94,m,43,Rheinl-Pf,Uni,115,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+94,m,43,Rheinl-Pf,Uni,115,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+94,m,43,Rheinl-Pf,Uni,115,10 einen grünen Daumen haben,NH14_10,1,meta
+94,m,43,Rheinl-Pf,Uni,115,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+94,m,43,Rheinl-Pf,Uni,115,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+94,m,43,Rheinl-Pf,Uni,115,13 einen Rausch haben,NH14_13,1,woe
+94,m,43,Rheinl-Pf,Uni,115,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+94,m,43,Rheinl-Pf,Uni,115,16 jemanden übers Ohr hauen,NH14_16,1,meta
+94,m,43,Rheinl-Pf,Uni,115,17 auf der Durchreise sein,NH14_17,2,woe
+94,m,43,Rheinl-Pf,Uni,115,18 keine Chance haben,NH14_18,3,woe
+94,m,43,Rheinl-Pf,Uni,115,19 Folgerungen ziehen,NH14_19,4,woe
+94,m,43,Rheinl-Pf,Uni,115,20 ein ungeschriebenes Gesetz sein,NH14_20,1,woe
+94,m,43,Rheinl-Pf,Uni,115,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+94,m,43,Rheinl-Pf,Uni,115,22 in Führung gehen (beim Sport),NH14_22,3,woe
+94,m,43,Rheinl-Pf,Uni,115,23 jemandem Unrecht tun,NH14_23,3,woe
+94,m,43,Rheinl-Pf,Uni,115,24 zur Debatte stehen,NH14_24,4,woe
+94,m,43,Rheinl-Pf,Uni,115,25 etwas aus Prinzip tun,NH14_25,3,woe
+94,m,43,Rheinl-Pf,Uni,115,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+94,m,43,Rheinl-Pf,Uni,115,27 unter Druck geraten,NH14_27,3,meta
+94,m,43,Rheinl-Pf,Uni,115,28 nicht im Hause sein,NH14_28,4,woe
+94,m,43,Rheinl-Pf,Uni,115,29 die Pferde scheu machen,NH14_29,1,meta
+94,m,43,Rheinl-Pf,Uni,115,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+94,m,43,Rheinl-Pf,Uni,115,31 jemandem die Laune verderben,NH14_31,4,woe
+94,m,43,Rheinl-Pf,Uni,115,32 einen Eid schwören,NH14_32,3,woe
+94,m,43,Rheinl-Pf,Uni,115,35 die Flinte ins Korn werfen,NH14_35,1,meta
+94,m,43,Rheinl-Pf,Uni,115,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+94,m,43,Rheinl-Pf,Uni,115,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+94,m,43,Rheinl-Pf,Uni,115,03 im Team arbeiten,NH19_03,4,woe
+94,m,43,Rheinl-Pf,Uni,115,04 an Bord gehen,NH19_04,2,woe
+94,m,43,Rheinl-Pf,Uni,115,05 in der Tinte sitzen,NH19_05,1,meta
+94,m,43,Rheinl-Pf,Uni,115,06 jemanden zur Sau machen,NH19_06,1,meta
+94,m,43,Rheinl-Pf,Uni,115,07 jemandem platzt der Kopf,NH19_07,1,meta
+94,m,43,Rheinl-Pf,Uni,115,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+94,m,43,Rheinl-Pf,Uni,115,09 etwas in Stücke schlagen,NH19_09,2,woe
+94,m,43,Rheinl-Pf,Uni,115,10 Langeweile haben,NH19_10,4,woe
+94,m,43,Rheinl-Pf,Uni,115,11 die Kirche im Dorf lassen,NH19_11,1,meta
+94,m,43,Rheinl-Pf,Uni,115,12 sein eigenes Leben haben,NH19_12,4,woe
+94,m,43,Rheinl-Pf,Uni,115,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,2,woe
+94,m,43,Rheinl-Pf,Uni,115,14 in Erfüllung gehen,NH19_14,3,woe
+94,m,43,Rheinl-Pf,Uni,115,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+94,m,43,Rheinl-Pf,Uni,115,17 das Thema wechseln,NH19_17,4,woe
+94,m,43,Rheinl-Pf,Uni,115,18 etwas ist nicht jemandes Sache,NH19_18,1,woe
+94,m,43,Rheinl-Pf,Uni,115,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+94,m,43,Rheinl-Pf,Uni,115,20 mit dem Feuer spielen,NH19_20,1,meta
+94,m,43,Rheinl-Pf,Uni,115,21 in Kontakt bleiben,NH19_21,4,woe
+94,m,43,Rheinl-Pf,Uni,115,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+94,m,43,Rheinl-Pf,Uni,115,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+94,m,43,Rheinl-Pf,Uni,115,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+94,m,43,Rheinl-Pf,Uni,115,26 jemandem Dampf machen,NH19_26,1,meta
+94,m,43,Rheinl-Pf,Uni,115,27 seinen Titel verteidigen,NH19_27,4,woe
+94,m,43,Rheinl-Pf,Uni,115,28 in Raten zahlen,NH19_28,4,woe
+94,m,43,Rheinl-Pf,Uni,115,29 seine Berechtigung haben,NH19_29,3,woe
+94,m,43,Rheinl-Pf,Uni,115,32 in Hörweite sein,NH19_32,2,woe
+94,m,43,Rheinl-Pf,Uni,115,33 außer Betrieb sein,NH19_33,3,woe
+94,m,43,Rheinl-Pf,Uni,115,01 keinerlei Mitgefühl haben,NH20_01,2,woe
+94,m,43,Rheinl-Pf,Uni,115,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+94,m,43,Rheinl-Pf,Uni,115,03 jemanden um den Finger wickeln,NH20_03,1,meta
+94,m,43,Rheinl-Pf,Uni,115,04 die Axt im Walde sein,NH20_04,1,meta
+94,m,43,Rheinl-Pf,Uni,115,05 ein schlechtes Gewissen haben,NH20_05,3,woe
+94,m,43,Rheinl-Pf,Uni,115,07 einen empfindlichen Magen haben,NH20_07,2,woe
+94,m,43,Rheinl-Pf,Uni,115,08 auf eigene Faust handeln,NH20_08,1,meta
+94,m,43,Rheinl-Pf,Uni,115,09 den Rahmen sprengen,NH20_09,1,meta
+94,m,43,Rheinl-Pf,Uni,115,12 zur Seite gehen,NH20_12,3,woe
+94,m,43,Rheinl-Pf,Uni,115,13 seine Meinung ändern,NH20_13,4,woe
+94,m,43,Rheinl-Pf,Uni,115,14 gegen den Strom schwimmen,NH20_14,1,meta
+94,m,43,Rheinl-Pf,Uni,115,16 jemandem die Laune verderben,NH20_16,4,woe
+94,m,43,Rheinl-Pf,Uni,115,17 jemanden in Gefahr bringen,NH20_17,3,woe
+94,m,43,Rheinl-Pf,Uni,115,18 sich schütteln vor Lachen,NH20_18,2,woe
+94,m,43,Rheinl-Pf,Uni,115,19 etwas auf Vorrat kaufen,NH20_19,3,woe
+94,m,43,Rheinl-Pf,Uni,115,20 sich die Kugel geben,NH20_20,1,meta
+94,m,43,Rheinl-Pf,Uni,115,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+94,m,43,Rheinl-Pf,Uni,115,22 jemandes gutes Recht sein,NH20_22,2,woe
+94,m,43,Rheinl-Pf,Uni,115,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+94,m,43,Rheinl-Pf,Uni,115,24 etwas im Halbschlaf hören,NH20_24,1,woe
+94,m,43,Rheinl-Pf,Uni,115,25 ein Griff ins Klo sein,NH20_25,1,meta
+94,m,43,Rheinl-Pf,Uni,115,27 Fahrerflucht begehen,NH20_27,4,woe
+94,m,43,Rheinl-Pf,Uni,115,28 auf dumme Gedanken kommen,NH20_28,2,woe
+94,m,43,Rheinl-Pf,Uni,115,29 Luftschlösser bauen,NH20_29,1,meta
+94,m,43,Rheinl-Pf,Uni,115,31 Schritttempo fahren,NH20_31,3,woe
+95,w,36,NRW,Abi,53,01 ein Fels in der Brandung sein,NH14_01,1,meta
+95,w,36,NRW,Abi,53,03 jemandem den Marsch blasen,NH14_03,1,meta
+95,w,36,NRW,Abi,53,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+95,w,36,NRW,Abi,53,05 keinen Spaß verstehen,NH14_05,4,woe
+95,w,36,NRW,Abi,53,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+95,w,36,NRW,Abi,53,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+95,w,36,NRW,Abi,53,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+95,w,36,NRW,Abi,53,10 einen grünen Daumen haben,NH14_10,1,meta
+95,w,36,NRW,Abi,53,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+95,w,36,NRW,Abi,53,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+95,w,36,NRW,Abi,53,13 einen Rausch haben,NH14_13,3,woe
+95,w,36,NRW,Abi,53,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+95,w,36,NRW,Abi,53,16 jemanden übers Ohr hauen,NH14_16,1,meta
+95,w,36,NRW,Abi,53,17 auf der Durchreise sein,NH14_17,3,woe
+95,w,36,NRW,Abi,53,18 keine Chance haben,NH14_18,3,woe
+95,w,36,NRW,Abi,53,19 Folgerungen ziehen,NH14_19,3,woe
+95,w,36,NRW,Abi,53,20 ein ungeschriebenes Gesetz sein,NH14_20,3,woe
+95,w,36,NRW,Abi,53,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+95,w,36,NRW,Abi,53,22 in Führung gehen (beim Sport),NH14_22,3,woe
+95,w,36,NRW,Abi,53,23 jemandem Unrecht tun,NH14_23,4,woe
+95,w,36,NRW,Abi,53,24 zur Debatte stehen,NH14_24,3,woe
+95,w,36,NRW,Abi,53,25 etwas aus Prinzip tun,NH14_25,3,woe
+95,w,36,NRW,Abi,53,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+95,w,36,NRW,Abi,53,27 unter Druck geraten,NH14_27,2,meta
+95,w,36,NRW,Abi,53,28 nicht im Hause sein,NH14_28,4,woe
+95,w,36,NRW,Abi,53,29 die Pferde scheu machen,NH14_29,1,meta
+95,w,36,NRW,Abi,53,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+95,w,36,NRW,Abi,53,31 jemandem die Laune verderben,NH14_31,3,woe
+95,w,36,NRW,Abi,53,32 einen Eid schwören,NH14_32,4,woe
+95,w,36,NRW,Abi,53,35 die Flinte ins Korn werfen,NH14_35,1,meta
+95,w,36,NRW,Abi,53,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+95,w,36,NRW,Abi,53,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,3,woe
+95,w,36,NRW,Abi,53,03 im Team arbeiten,NH19_03,4,woe
+95,w,36,NRW,Abi,53,04 an Bord gehen,NH19_04,3,woe
+95,w,36,NRW,Abi,53,05 in der Tinte sitzen,NH19_05,1,meta
+95,w,36,NRW,Abi,53,06 jemanden zur Sau machen,NH19_06,1,meta
+95,w,36,NRW,Abi,53,07 jemandem platzt der Kopf,NH19_07,1,meta
+95,w,36,NRW,Abi,53,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+95,w,36,NRW,Abi,53,09 etwas in Stücke schlagen,NH19_09,4,woe
+95,w,36,NRW,Abi,53,10 Langeweile haben,NH19_10,3,woe
+95,w,36,NRW,Abi,53,11 die Kirche im Dorf lassen,NH19_11,1,meta
+95,w,36,NRW,Abi,53,12 sein eigenes Leben haben,NH19_12,3,woe
+95,w,36,NRW,Abi,53,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+95,w,36,NRW,Abi,53,14 in Erfüllung gehen,NH19_14,4,woe
+95,w,36,NRW,Abi,53,16 jemanden an der kurzen Leine halten,NH19_16,2,meta
+95,w,36,NRW,Abi,53,17 das Thema wechseln,NH19_17,4,woe
+95,w,36,NRW,Abi,53,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+95,w,36,NRW,Abi,53,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+95,w,36,NRW,Abi,53,20 mit dem Feuer spielen,NH19_20,1,meta
+95,w,36,NRW,Abi,53,21 in Kontakt bleiben,NH19_21,3,woe
+95,w,36,NRW,Abi,53,22 auf die schiefe Bahn geraten,NH19_22,2,meta
+95,w,36,NRW,Abi,53,23 etwas zu seinem Vorteil nutzen,NH19_23,3,woe
+95,w,36,NRW,Abi,53,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+95,w,36,NRW,Abi,53,26 jemandem Dampf machen,NH19_26,2,meta
+95,w,36,NRW,Abi,53,27 seinen Titel verteidigen,NH19_27,3,woe
+95,w,36,NRW,Abi,53,28 in Raten zahlen,NH19_28,4,woe
+95,w,36,NRW,Abi,53,29 seine Berechtigung haben,NH19_29,3,woe
+95,w,36,NRW,Abi,53,32 in Hörweite sein,NH19_32,4,woe
+95,w,36,NRW,Abi,53,33 außer Betrieb sein,NH19_33,3,woe
+95,w,36,NRW,Abi,53,01 keinerlei Mitgefühl haben,NH20_01,3,woe
+95,w,36,NRW,Abi,53,02 zwischen allen Stühlen sitzen,NH20_02,2,meta
+95,w,36,NRW,Abi,53,03 jemanden um den Finger wickeln,NH20_03,1,meta
+95,w,36,NRW,Abi,53,04 die Axt im Walde sein,NH20_04,1,meta
+95,w,36,NRW,Abi,53,05 ein schlechtes Gewissen haben,NH20_05,3,woe
+95,w,36,NRW,Abi,53,07 einen empfindlichen Magen haben,NH20_07,4,woe
+95,w,36,NRW,Abi,53,08 auf eigene Faust handeln,NH20_08,3,meta
+95,w,36,NRW,Abi,53,09 den Rahmen sprengen,NH20_09,1,meta
+95,w,36,NRW,Abi,53,12 zur Seite gehen,NH20_12,4,woe
+95,w,36,NRW,Abi,53,13 seine Meinung ändern,NH20_13,4,woe
+95,w,36,NRW,Abi,53,14 gegen den Strom schwimmen,NH20_14,2,meta
+95,w,36,NRW,Abi,53,16 jemandem die Laune verderben,NH20_16,3,woe
+95,w,36,NRW,Abi,53,17 jemanden in Gefahr bringen,NH20_17,4,woe
+95,w,36,NRW,Abi,53,18 sich schütteln vor Lachen,NH20_18,3,woe
+95,w,36,NRW,Abi,53,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+95,w,36,NRW,Abi,53,20 sich die Kugel geben,NH20_20,1,meta
+95,w,36,NRW,Abi,53,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+95,w,36,NRW,Abi,53,22 jemandes gutes Recht sein,NH20_22,3,woe
+95,w,36,NRW,Abi,53,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+95,w,36,NRW,Abi,53,24 etwas im Halbschlaf hören,NH20_24,4,woe
+95,w,36,NRW,Abi,53,25 ein Griff ins Klo sein,NH20_25,1,meta
+95,w,36,NRW,Abi,53,27 Fahrerflucht begehen,NH20_27,3,woe
+95,w,36,NRW,Abi,53,28 auf dumme Gedanken kommen,NH20_28,3,woe
+95,w,36,NRW,Abi,53,29 Luftschlösser bauen,NH20_29,1,meta
+95,w,36,NRW,Abi,53,31 Schritttempo fahren,NH20_31,4,woe
+97,m,27,Hamburg,Uni,78,01 ein Fels in der Brandung sein,NH14_01,1,meta
+97,m,27,Hamburg,Uni,78,03 jemandem den Marsch blasen,NH14_03,1,meta
+97,m,27,Hamburg,Uni,78,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+97,m,27,Hamburg,Uni,78,05 keinen Spaß verstehen,NH14_05,4,woe
+97,m,27,Hamburg,Uni,78,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+97,m,27,Hamburg,Uni,78,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+97,m,27,Hamburg,Uni,78,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+97,m,27,Hamburg,Uni,78,10 einen grünen Daumen haben,NH14_10,1,meta
+97,m,27,Hamburg,Uni,78,11 jemandem die Vorfahrt nehmen,NH14_11,3,woe
+97,m,27,Hamburg,Uni,78,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+97,m,27,Hamburg,Uni,78,13 einen Rausch haben,NH14_13,3,woe
+97,m,27,Hamburg,Uni,78,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+97,m,27,Hamburg,Uni,78,16 jemanden übers Ohr hauen,NH14_16,1,meta
+97,m,27,Hamburg,Uni,78,17 auf der Durchreise sein,NH14_17,3,woe
+97,m,27,Hamburg,Uni,78,18 keine Chance haben,NH14_18,4,woe
+97,m,27,Hamburg,Uni,78,19 Folgerungen ziehen,NH14_19,3,woe
+97,m,27,Hamburg,Uni,78,20 ein ungeschriebenes Gesetz sein,NH14_20,4,woe
+97,m,27,Hamburg,Uni,78,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+97,m,27,Hamburg,Uni,78,22 in Führung gehen (beim Sport),NH14_22,3,woe
+97,m,27,Hamburg,Uni,78,23 jemandem Unrecht tun,NH14_23,4,woe
+97,m,27,Hamburg,Uni,78,24 zur Debatte stehen,NH14_24,3,woe
+97,m,27,Hamburg,Uni,78,25 etwas aus Prinzip tun,NH14_25,4,woe
+97,m,27,Hamburg,Uni,78,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+97,m,27,Hamburg,Uni,78,27 unter Druck geraten,NH14_27,3,meta
+97,m,27,Hamburg,Uni,78,28 nicht im Hause sein,NH14_28,4,woe
+97,m,27,Hamburg,Uni,78,29 die Pferde scheu machen,NH14_29,1,meta
+97,m,27,Hamburg,Uni,78,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+97,m,27,Hamburg,Uni,78,31 jemandem die Laune verderben,NH14_31,3,woe
+97,m,27,Hamburg,Uni,78,32 einen Eid schwören,NH14_32,4,woe
+97,m,27,Hamburg,Uni,78,35 die Flinte ins Korn werfen,NH14_35,1,meta
+97,m,27,Hamburg,Uni,78,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+97,m,27,Hamburg,Uni,78,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,3,woe
+97,m,27,Hamburg,Uni,78,03 im Team arbeiten,NH19_03,4,woe
+97,m,27,Hamburg,Uni,78,04 an Bord gehen,NH19_04,4,woe
+97,m,27,Hamburg,Uni,78,05 in der Tinte sitzen,NH19_05,1,meta
+97,m,27,Hamburg,Uni,78,06 jemanden zur Sau machen,NH19_06,1,meta
+97,m,27,Hamburg,Uni,78,07 jemandem platzt der Kopf,NH19_07,1,meta
+97,m,27,Hamburg,Uni,78,08 etwas ist in jemandes Interesse,NH19_08,3,woe
+97,m,27,Hamburg,Uni,78,09 etwas in Stücke schlagen,NH19_09,3,woe
+97,m,27,Hamburg,Uni,78,10 Langeweile haben,NH19_10,3,woe
+97,m,27,Hamburg,Uni,78,11 die Kirche im Dorf lassen,NH19_11,1,meta
+97,m,27,Hamburg,Uni,78,12 sein eigenes Leben haben,NH19_12,3,woe
+97,m,27,Hamburg,Uni,78,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+97,m,27,Hamburg,Uni,78,14 in Erfüllung gehen,NH19_14,3,woe
+97,m,27,Hamburg,Uni,78,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+97,m,27,Hamburg,Uni,78,17 das Thema wechseln,NH19_17,4,woe
+97,m,27,Hamburg,Uni,78,18 etwas ist nicht jemandes Sache,NH19_18,2,woe
+97,m,27,Hamburg,Uni,78,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+97,m,27,Hamburg,Uni,78,20 mit dem Feuer spielen,NH19_20,2,meta
+97,m,27,Hamburg,Uni,78,21 in Kontakt bleiben,NH19_21,4,woe
+97,m,27,Hamburg,Uni,78,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+97,m,27,Hamburg,Uni,78,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+97,m,27,Hamburg,Uni,78,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+97,m,27,Hamburg,Uni,78,26 jemandem Dampf machen,NH19_26,1,meta
+97,m,27,Hamburg,Uni,78,27 seinen Titel verteidigen,NH19_27,2,woe
+97,m,27,Hamburg,Uni,78,28 in Raten zahlen,NH19_28,3,woe
+97,m,27,Hamburg,Uni,78,29 seine Berechtigung haben,NH19_29,4,woe
+97,m,27,Hamburg,Uni,78,32 in Hörweite sein,NH19_32,4,woe
+97,m,27,Hamburg,Uni,78,33 außer Betrieb sein,NH19_33,3,woe
+97,m,27,Hamburg,Uni,78,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+97,m,27,Hamburg,Uni,78,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+97,m,27,Hamburg,Uni,78,03 jemanden um den Finger wickeln,NH20_03,1,meta
+97,m,27,Hamburg,Uni,78,04 die Axt im Walde sein,NH20_04,1,meta
+97,m,27,Hamburg,Uni,78,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+97,m,27,Hamburg,Uni,78,07 einen empfindlichen Magen haben,NH20_07,4,woe
+97,m,27,Hamburg,Uni,78,08 auf eigene Faust handeln,NH20_08,2,meta
+97,m,27,Hamburg,Uni,78,09 den Rahmen sprengen,NH20_09,1,meta
+97,m,27,Hamburg,Uni,78,12 zur Seite gehen,NH20_12,4,woe
+97,m,27,Hamburg,Uni,78,13 seine Meinung ändern,NH20_13,4,woe
+97,m,27,Hamburg,Uni,78,14 gegen den Strom schwimmen,NH20_14,1,meta
+97,m,27,Hamburg,Uni,78,16 jemandem die Laune verderben,NH20_16,3,woe
+97,m,27,Hamburg,Uni,78,17 jemanden in Gefahr bringen,NH20_17,3,woe
+97,m,27,Hamburg,Uni,78,18 sich schütteln vor Lachen,NH20_18,3,woe
+97,m,27,Hamburg,Uni,78,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+97,m,27,Hamburg,Uni,78,20 sich die Kugel geben,NH20_20,1,meta
+97,m,27,Hamburg,Uni,78,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+97,m,27,Hamburg,Uni,78,22 jemandes gutes Recht sein,NH20_22,3,woe
+97,m,27,Hamburg,Uni,78,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+97,m,27,Hamburg,Uni,78,24 etwas im Halbschlaf hören,NH20_24,3,woe
+97,m,27,Hamburg,Uni,78,25 ein Griff ins Klo sein,NH20_25,1,meta
+97,m,27,Hamburg,Uni,78,27 Fahrerflucht begehen,NH20_27,4,woe
+97,m,27,Hamburg,Uni,78,28 auf dumme Gedanken kommen,NH20_28,4,woe
+97,m,27,Hamburg,Uni,78,29 Luftschlösser bauen,NH20_29,1,meta
+97,m,27,Hamburg,Uni,78,31 Schritttempo fahren,NH20_31,4,woe
+99,m,23,Nieders,Uni,104,01 ein Fels in der Brandung sein,NH14_01,1,meta
+99,m,23,Nieders,Uni,104,03 jemandem den Marsch blasen,NH14_03,1,meta
+99,m,23,Nieders,Uni,104,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+99,m,23,Nieders,Uni,104,05 keinen Spaß verstehen,NH14_05,2,woe
+99,m,23,Nieders,Uni,104,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+99,m,23,Nieders,Uni,104,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+99,m,23,Nieders,Uni,104,09 auf jemanden ist kein Verlass,NH14_09,3,woe
+99,m,23,Nieders,Uni,104,10 einen grünen Daumen haben,NH14_10,1,meta
+99,m,23,Nieders,Uni,104,11 jemandem die Vorfahrt nehmen,NH14_11,2,woe
+99,m,23,Nieders,Uni,104,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+99,m,23,Nieders,Uni,104,13 einen Rausch haben,NH14_13,4,woe
+99,m,23,Nieders,Uni,104,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+99,m,23,Nieders,Uni,104,16 jemanden übers Ohr hauen,NH14_16,1,meta
+99,m,23,Nieders,Uni,104,17 auf der Durchreise sein,NH14_17,4,woe
+99,m,23,Nieders,Uni,104,18 keine Chance haben,NH14_18,3,woe
+99,m,23,Nieders,Uni,104,19 Folgerungen ziehen,NH14_19,3,woe
+99,m,23,Nieders,Uni,104,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+99,m,23,Nieders,Uni,104,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+99,m,23,Nieders,Uni,104,22 in Führung gehen (beim Sport),NH14_22,3,woe
+99,m,23,Nieders,Uni,104,23 jemandem Unrecht tun,NH14_23,3,woe
+99,m,23,Nieders,Uni,104,24 zur Debatte stehen,NH14_24,2,woe
+99,m,23,Nieders,Uni,104,25 etwas aus Prinzip tun,NH14_25,4,woe
+99,m,23,Nieders,Uni,104,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+99,m,23,Nieders,Uni,104,27 unter Druck geraten,NH14_27,3,meta
+99,m,23,Nieders,Uni,104,28 nicht im Hause sein,NH14_28,4,woe
+99,m,23,Nieders,Uni,104,29 die Pferde scheu machen,NH14_29,1,meta
+99,m,23,Nieders,Uni,104,30 etwas in aller Deutlichkeit sagen,NH14_30,3,woe
+99,m,23,Nieders,Uni,104,31 jemandem die Laune verderben,NH14_31,3,woe
+99,m,23,Nieders,Uni,104,32 einen Eid schwören,NH14_32,4,woe
+99,m,23,Nieders,Uni,104,35 die Flinte ins Korn werfen,NH14_35,1,meta
+99,m,23,Nieders,Uni,104,01 vor Gericht stehen (ein Angeklagter),NH19_01,2,woe
+99,m,23,Nieders,Uni,104,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,1,woe
+99,m,23,Nieders,Uni,104,03 im Team arbeiten,NH19_03,4,woe
+99,m,23,Nieders,Uni,104,04 an Bord gehen,NH19_04,3,woe
+99,m,23,Nieders,Uni,104,05 in der Tinte sitzen,NH19_05,1,meta
+99,m,23,Nieders,Uni,104,06 jemanden zur Sau machen,NH19_06,1,meta
+99,m,23,Nieders,Uni,104,07 jemandem platzt der Kopf,NH19_07,1,meta
+99,m,23,Nieders,Uni,104,08 etwas ist in jemandes Interesse,NH19_08,3,woe
+99,m,23,Nieders,Uni,104,09 etwas in Stücke schlagen,NH19_09,2,woe
+99,m,23,Nieders,Uni,104,10 Langeweile haben,NH19_10,3,woe
+99,m,23,Nieders,Uni,104,11 die Kirche im Dorf lassen,NH19_11,1,meta
+99,m,23,Nieders,Uni,104,12 sein eigenes Leben haben,NH19_12,4,woe
+99,m,23,Nieders,Uni,104,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,2,woe
+99,m,23,Nieders,Uni,104,14 in Erfüllung gehen,NH19_14,1,woe
+99,m,23,Nieders,Uni,104,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+99,m,23,Nieders,Uni,104,17 das Thema wechseln,NH19_17,4,woe
+99,m,23,Nieders,Uni,104,18 etwas ist nicht jemandes Sache,NH19_18,2,woe
+99,m,23,Nieders,Uni,104,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+99,m,23,Nieders,Uni,104,20 mit dem Feuer spielen,NH19_20,2,meta
+99,m,23,Nieders,Uni,104,21 in Kontakt bleiben,NH19_21,4,woe
+99,m,23,Nieders,Uni,104,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+99,m,23,Nieders,Uni,104,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+99,m,23,Nieders,Uni,104,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+99,m,23,Nieders,Uni,104,26 jemandem Dampf machen,NH19_26,1,meta
+99,m,23,Nieders,Uni,104,27 seinen Titel verteidigen,NH19_27,2,woe
+99,m,23,Nieders,Uni,104,28 in Raten zahlen,NH19_28,4,woe
+99,m,23,Nieders,Uni,104,29 seine Berechtigung haben,NH19_29,2,woe
+99,m,23,Nieders,Uni,104,32 in Hörweite sein,NH19_32,4,woe
+99,m,23,Nieders,Uni,104,33 außer Betrieb sein,NH19_33,2,woe
+99,m,23,Nieders,Uni,104,01 keinerlei Mitgefühl haben,NH20_01,3,woe
+99,m,23,Nieders,Uni,104,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+99,m,23,Nieders,Uni,104,03 jemanden um den Finger wickeln,NH20_03,1,meta
+99,m,23,Nieders,Uni,104,04 die Axt im Walde sein,NH20_04,1,meta
+99,m,23,Nieders,Uni,104,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+99,m,23,Nieders,Uni,104,07 einen empfindlichen Magen haben,NH20_07,4,woe
+99,m,23,Nieders,Uni,104,08 auf eigene Faust handeln,NH20_08,1,meta
+99,m,23,Nieders,Uni,104,09 den Rahmen sprengen,NH20_09,2,meta
+99,m,23,Nieders,Uni,104,12 zur Seite gehen,NH20_12,3,woe
+99,m,23,Nieders,Uni,104,13 seine Meinung ändern,NH20_13,4,woe
+99,m,23,Nieders,Uni,104,14 gegen den Strom schwimmen,NH20_14,1,meta
+99,m,23,Nieders,Uni,104,16 jemandem die Laune verderben,NH20_16,3,woe
+99,m,23,Nieders,Uni,104,17 jemanden in Gefahr bringen,NH20_17,2,woe
+99,m,23,Nieders,Uni,104,18 sich schütteln vor Lachen,NH20_18,3,woe
+99,m,23,Nieders,Uni,104,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+99,m,23,Nieders,Uni,104,20 sich die Kugel geben,NH20_20,1,meta
+99,m,23,Nieders,Uni,104,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+99,m,23,Nieders,Uni,104,22 jemandes gutes Recht sein,NH20_22,3,woe
+99,m,23,Nieders,Uni,104,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+99,m,23,Nieders,Uni,104,24 etwas im Halbschlaf hören,NH20_24,3,woe
+99,m,23,Nieders,Uni,104,25 ein Griff ins Klo sein,NH20_25,1,meta
+99,m,23,Nieders,Uni,104,27 Fahrerflucht begehen,NH20_27,4,woe
+99,m,23,Nieders,Uni,104,28 auf dumme Gedanken kommen,NH20_28,3,woe
+99,m,23,Nieders,Uni,104,29 Luftschlösser bauen,NH20_29,1,meta
+99,m,23,Nieders,Uni,104,31 Schritttempo fahren,NH20_31,3,woe
+101,w,43,Hamburg,Uni,105,01 ein Fels in der Brandung sein,NH14_01,1,meta
+101,w,43,Hamburg,Uni,105,03 jemandem den Marsch blasen,NH14_03,1,meta
+101,w,43,Hamburg,Uni,105,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+101,w,43,Hamburg,Uni,105,05 keinen Spaß verstehen,NH14_05,4,woe
+101,w,43,Hamburg,Uni,105,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+101,w,43,Hamburg,Uni,105,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+101,w,43,Hamburg,Uni,105,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+101,w,43,Hamburg,Uni,105,10 einen grünen Daumen haben,NH14_10,1,meta
+101,w,43,Hamburg,Uni,105,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+101,w,43,Hamburg,Uni,105,12 sich nicht von der Stelle rühren,NH14_12,1,woe
+101,w,43,Hamburg,Uni,105,13 einen Rausch haben,NH14_13,4,woe
+101,w,43,Hamburg,Uni,105,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+101,w,43,Hamburg,Uni,105,16 jemanden übers Ohr hauen,NH14_16,1,meta
+101,w,43,Hamburg,Uni,105,17 auf der Durchreise sein,NH14_17,4,woe
+101,w,43,Hamburg,Uni,105,18 keine Chance haben,NH14_18,4,woe
+101,w,43,Hamburg,Uni,105,19 Folgerungen ziehen,NH14_19,4,woe
+101,w,43,Hamburg,Uni,105,20 ein ungeschriebenes Gesetz sein,NH14_20,1,woe
+101,w,43,Hamburg,Uni,105,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+101,w,43,Hamburg,Uni,105,22 in Führung gehen (beim Sport),NH14_22,4,woe
+101,w,43,Hamburg,Uni,105,23 jemandem Unrecht tun,NH14_23,4,woe
+101,w,43,Hamburg,Uni,105,24 zur Debatte stehen,NH14_24,4,woe
+101,w,43,Hamburg,Uni,105,25 etwas aus Prinzip tun,NH14_25,4,woe
+101,w,43,Hamburg,Uni,105,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+101,w,43,Hamburg,Uni,105,27 unter Druck geraten,NH14_27,4,meta
+101,w,43,Hamburg,Uni,105,28 nicht im Hause sein,NH14_28,4,woe
+101,w,43,Hamburg,Uni,105,29 die Pferde scheu machen,NH14_29,1,meta
+101,w,43,Hamburg,Uni,105,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+101,w,43,Hamburg,Uni,105,31 jemandem die Laune verderben,NH14_31,4,woe
+101,w,43,Hamburg,Uni,105,32 einen Eid schwören,NH14_32,4,woe
+101,w,43,Hamburg,Uni,105,35 die Flinte ins Korn werfen,NH14_35,1,meta
+101,w,43,Hamburg,Uni,105,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+101,w,43,Hamburg,Uni,105,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+101,w,43,Hamburg,Uni,105,03 im Team arbeiten,NH19_03,4,woe
+101,w,43,Hamburg,Uni,105,04 an Bord gehen,NH19_04,4,woe
+101,w,43,Hamburg,Uni,105,05 in der Tinte sitzen,NH19_05,1,meta
+101,w,43,Hamburg,Uni,105,06 jemanden zur Sau machen,NH19_06,1,meta
+101,w,43,Hamburg,Uni,105,07 jemandem platzt der Kopf,NH19_07,1,meta
+101,w,43,Hamburg,Uni,105,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+101,w,43,Hamburg,Uni,105,09 etwas in Stücke schlagen,NH19_09,1,woe
+101,w,43,Hamburg,Uni,105,10 Langeweile haben,NH19_10,4,woe
+101,w,43,Hamburg,Uni,105,11 die Kirche im Dorf lassen,NH19_11,1,meta
+101,w,43,Hamburg,Uni,105,12 sein eigenes Leben haben,NH19_12,4,woe
+101,w,43,Hamburg,Uni,105,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+101,w,43,Hamburg,Uni,105,14 in Erfüllung gehen,NH19_14,4,woe
+101,w,43,Hamburg,Uni,105,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+101,w,43,Hamburg,Uni,105,17 das Thema wechseln,NH19_17,4,woe
+101,w,43,Hamburg,Uni,105,18 etwas ist nicht jemandes Sache,NH19_18,1,woe
+101,w,43,Hamburg,Uni,105,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+101,w,43,Hamburg,Uni,105,20 mit dem Feuer spielen,NH19_20,1,meta
+101,w,43,Hamburg,Uni,105,21 in Kontakt bleiben,NH19_21,4,woe
+101,w,43,Hamburg,Uni,105,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+101,w,43,Hamburg,Uni,105,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+101,w,43,Hamburg,Uni,105,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+101,w,43,Hamburg,Uni,105,26 jemandem Dampf machen,NH19_26,1,meta
+101,w,43,Hamburg,Uni,105,27 seinen Titel verteidigen,NH19_27,4,woe
+101,w,43,Hamburg,Uni,105,28 in Raten zahlen,NH19_28,4,woe
+101,w,43,Hamburg,Uni,105,29 seine Berechtigung haben,NH19_29,4,woe
+101,w,43,Hamburg,Uni,105,32 in Hörweite sein,NH19_32,4,woe
+101,w,43,Hamburg,Uni,105,33 außer Betrieb sein,NH19_33,4,woe
+101,w,43,Hamburg,Uni,105,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+101,w,43,Hamburg,Uni,105,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+101,w,43,Hamburg,Uni,105,03 jemanden um den Finger wickeln,NH20_03,1,meta
+101,w,43,Hamburg,Uni,105,04 die Axt im Walde sein,NH20_04,1,meta
+101,w,43,Hamburg,Uni,105,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+101,w,43,Hamburg,Uni,105,07 einen empfindlichen Magen haben,NH20_07,4,woe
+101,w,43,Hamburg,Uni,105,08 auf eigene Faust handeln,NH20_08,1,meta
+101,w,43,Hamburg,Uni,105,09 den Rahmen sprengen,NH20_09,1,meta
+101,w,43,Hamburg,Uni,105,12 zur Seite gehen,NH20_12,4,woe
+101,w,43,Hamburg,Uni,105,13 seine Meinung ändern,NH20_13,4,woe
+101,w,43,Hamburg,Uni,105,14 gegen den Strom schwimmen,NH20_14,1,meta
+101,w,43,Hamburg,Uni,105,16 jemandem die Laune verderben,NH20_16,4,woe
+101,w,43,Hamburg,Uni,105,17 jemanden in Gefahr bringen,NH20_17,4,woe
+101,w,43,Hamburg,Uni,105,18 sich schütteln vor Lachen,NH20_18,4,woe
+101,w,43,Hamburg,Uni,105,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+101,w,43,Hamburg,Uni,105,20 sich die Kugel geben,NH20_20,1,meta
+101,w,43,Hamburg,Uni,105,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+101,w,43,Hamburg,Uni,105,22 jemandes gutes Recht sein,NH20_22,4,woe
+101,w,43,Hamburg,Uni,105,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+101,w,43,Hamburg,Uni,105,24 etwas im Halbschlaf hören,NH20_24,4,woe
+101,w,43,Hamburg,Uni,105,25 ein Griff ins Klo sein,NH20_25,1,meta
+101,w,43,Hamburg,Uni,105,27 Fahrerflucht begehen,NH20_27,4,woe
+101,w,43,Hamburg,Uni,105,28 auf dumme Gedanken kommen,NH20_28,4,woe
+101,w,43,Hamburg,Uni,105,29 Luftschlösser bauen,NH20_29,1,meta
+101,w,43,Hamburg,Uni,105,31 Schritttempo fahren,NH20_31,4,woe
+103,w,28,NRW,Uni,65,01 ein Fels in der Brandung sein,NH14_01,2,meta
+103,w,28,NRW,Uni,65,03 jemandem den Marsch blasen,NH14_03,1,meta
+103,w,28,NRW,Uni,65,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+103,w,28,NRW,Uni,65,05 keinen Spaß verstehen,NH14_05,4,woe
+103,w,28,NRW,Uni,65,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+103,w,28,NRW,Uni,65,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+103,w,28,NRW,Uni,65,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+103,w,28,NRW,Uni,65,10 einen grünen Daumen haben,NH14_10,1,meta
+103,w,28,NRW,Uni,65,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+103,w,28,NRW,Uni,65,12 sich nicht von der Stelle rühren,NH14_12,4,woe
+103,w,28,NRW,Uni,65,13 einen Rausch haben,NH14_13,3,woe
+103,w,28,NRW,Uni,65,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+103,w,28,NRW,Uni,65,16 jemanden übers Ohr hauen,NH14_16,1,meta
+103,w,28,NRW,Uni,65,17 auf der Durchreise sein,NH14_17,4,woe
+103,w,28,NRW,Uni,65,18 keine Chance haben,NH14_18,4,woe
+103,w,28,NRW,Uni,65,19 Folgerungen ziehen,NH14_19,4,woe
+103,w,28,NRW,Uni,65,20 ein ungeschriebenes Gesetz sein,NH14_20,4,woe
+103,w,28,NRW,Uni,65,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+103,w,28,NRW,Uni,65,22 in Führung gehen (beim Sport),NH14_22,4,woe
+103,w,28,NRW,Uni,65,23 jemandem Unrecht tun,NH14_23,4,woe
+103,w,28,NRW,Uni,65,24 zur Debatte stehen,NH14_24,4,woe
+103,w,28,NRW,Uni,65,25 etwas aus Prinzip tun,NH14_25,4,woe
+103,w,28,NRW,Uni,65,26 das fünfte Rad am Wagen sein,NH14_26,2,meta
+103,w,28,NRW,Uni,65,27 unter Druck geraten,NH14_27,4,meta
+103,w,28,NRW,Uni,65,28 nicht im Hause sein,NH14_28,3,woe
+103,w,28,NRW,Uni,65,29 die Pferde scheu machen,NH14_29,1,meta
+103,w,28,NRW,Uni,65,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+103,w,28,NRW,Uni,65,31 jemandem die Laune verderben,NH14_31,4,woe
+103,w,28,NRW,Uni,65,32 einen Eid schwören,NH14_32,4,woe
+103,w,28,NRW,Uni,65,35 die Flinte ins Korn werfen,NH14_35,1,meta
+103,w,28,NRW,Uni,65,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+103,w,28,NRW,Uni,65,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+103,w,28,NRW,Uni,65,03 im Team arbeiten,NH19_03,4,woe
+103,w,28,NRW,Uni,65,04 an Bord gehen,NH19_04,4,woe
+103,w,28,NRW,Uni,65,05 in der Tinte sitzen,NH19_05,1,meta
+103,w,28,NRW,Uni,65,06 jemanden zur Sau machen,NH19_06,1,meta
+103,w,28,NRW,Uni,65,07 jemandem platzt der Kopf,NH19_07,1,meta
+103,w,28,NRW,Uni,65,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+103,w,28,NRW,Uni,65,09 etwas in Stücke schlagen,NH19_09,2,woe
+103,w,28,NRW,Uni,65,10 Langeweile haben,NH19_10,4,woe
+103,w,28,NRW,Uni,65,11 die Kirche im Dorf lassen,NH19_11,1,meta
+103,w,28,NRW,Uni,65,12 sein eigenes Leben haben,NH19_12,4,woe
+103,w,28,NRW,Uni,65,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+103,w,28,NRW,Uni,65,14 in Erfüllung gehen,NH19_14,4,woe
+103,w,28,NRW,Uni,65,16 jemanden an der kurzen Leine halten,NH19_16,2,meta
+103,w,28,NRW,Uni,65,17 das Thema wechseln,NH19_17,4,woe
+103,w,28,NRW,Uni,65,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+103,w,28,NRW,Uni,65,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+103,w,28,NRW,Uni,65,20 mit dem Feuer spielen,NH19_20,1,meta
+103,w,28,NRW,Uni,65,21 in Kontakt bleiben,NH19_21,4,woe
+103,w,28,NRW,Uni,65,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+103,w,28,NRW,Uni,65,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+103,w,28,NRW,Uni,65,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+103,w,28,NRW,Uni,65,26 jemandem Dampf machen,NH19_26,2,meta
+103,w,28,NRW,Uni,65,27 seinen Titel verteidigen,NH19_27,4,woe
+103,w,28,NRW,Uni,65,28 in Raten zahlen,NH19_28,4,woe
+103,w,28,NRW,Uni,65,29 seine Berechtigung haben,NH19_29,4,woe
+103,w,28,NRW,Uni,65,32 in Hörweite sein,NH19_32,4,woe
+103,w,28,NRW,Uni,65,33 außer Betrieb sein,NH19_33,4,woe
+103,w,28,NRW,Uni,65,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+103,w,28,NRW,Uni,65,02 zwischen allen Stühlen sitzen,NH20_02,3,meta
+103,w,28,NRW,Uni,65,03 jemanden um den Finger wickeln,NH20_03,1,meta
+103,w,28,NRW,Uni,65,04 die Axt im Walde sein,NH20_04,1,meta
+103,w,28,NRW,Uni,65,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+103,w,28,NRW,Uni,65,07 einen empfindlichen Magen haben,NH20_07,4,woe
+103,w,28,NRW,Uni,65,08 auf eigene Faust handeln,NH20_08,1,meta
+103,w,28,NRW,Uni,65,09 den Rahmen sprengen,NH20_09,3,meta
+103,w,28,NRW,Uni,65,12 zur Seite gehen,NH20_12,4,woe
+103,w,28,NRW,Uni,65,13 seine Meinung ändern,NH20_13,4,woe
+103,w,28,NRW,Uni,65,14 gegen den Strom schwimmen,NH20_14,2,meta
+103,w,28,NRW,Uni,65,16 jemandem die Laune verderben,NH20_16,4,woe
+103,w,28,NRW,Uni,65,17 jemanden in Gefahr bringen,NH20_17,4,woe
+103,w,28,NRW,Uni,65,18 sich schütteln vor Lachen,NH20_18,3,woe
+103,w,28,NRW,Uni,65,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+103,w,28,NRW,Uni,65,20 sich die Kugel geben,NH20_20,2,meta
+103,w,28,NRW,Uni,65,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+103,w,28,NRW,Uni,65,22 jemandes gutes Recht sein,NH20_22,4,woe
+103,w,28,NRW,Uni,65,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+103,w,28,NRW,Uni,65,24 etwas im Halbschlaf hören,NH20_24,3,woe
+103,w,28,NRW,Uni,65,25 ein Griff ins Klo sein,NH20_25,1,meta
+103,w,28,NRW,Uni,65,27 Fahrerflucht begehen,NH20_27,4,woe
+103,w,28,NRW,Uni,65,28 auf dumme Gedanken kommen,NH20_28,4,woe
+103,w,28,NRW,Uni,65,29 Luftschlösser bauen,NH20_29,1,meta
+103,w,28,NRW,Uni,65,31 Schritttempo fahren,NH20_31,4,woe
+104,m,21,Berlin,MittlRei,81,01 ein Fels in der Brandung sein,NH14_01,1,meta
+104,m,21,Berlin,MittlRei,81,03 jemandem den Marsch blasen,NH14_03,2,meta
+104,m,21,Berlin,MittlRei,81,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+104,m,21,Berlin,MittlRei,81,05 keinen Spaß verstehen,NH14_05,4,woe
+104,m,21,Berlin,MittlRei,81,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+104,m,21,Berlin,MittlRei,81,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+104,m,21,Berlin,MittlRei,81,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+104,m,21,Berlin,MittlRei,81,10 einen grünen Daumen haben,NH14_10,2,meta
+104,m,21,Berlin,MittlRei,81,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+104,m,21,Berlin,MittlRei,81,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+104,m,21,Berlin,MittlRei,81,13 einen Rausch haben,NH14_13,3,woe
+104,m,21,Berlin,MittlRei,81,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+104,m,21,Berlin,MittlRei,81,16 jemanden übers Ohr hauen,NH14_16,2,meta
+104,m,21,Berlin,MittlRei,81,17 auf der Durchreise sein,NH14_17,4,woe
+104,m,21,Berlin,MittlRei,81,18 keine Chance haben,NH14_18,4,woe
+104,m,21,Berlin,MittlRei,81,19 Folgerungen ziehen,NH14_19,4,woe
+104,m,21,Berlin,MittlRei,81,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+104,m,21,Berlin,MittlRei,81,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+104,m,21,Berlin,MittlRei,81,22 in Führung gehen (beim Sport),NH14_22,3,woe
+104,m,21,Berlin,MittlRei,81,23 jemandem Unrecht tun,NH14_23,4,woe
+104,m,21,Berlin,MittlRei,81,24 zur Debatte stehen,NH14_24,3,woe
+104,m,21,Berlin,MittlRei,81,25 etwas aus Prinzip tun,NH14_25,3,woe
+104,m,21,Berlin,MittlRei,81,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+104,m,21,Berlin,MittlRei,81,27 unter Druck geraten,NH14_27,4,meta
+104,m,21,Berlin,MittlRei,81,28 nicht im Hause sein,NH14_28,3,woe
+104,m,21,Berlin,MittlRei,81,29 die Pferde scheu machen,NH14_29,1,meta
+104,m,21,Berlin,MittlRei,81,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+104,m,21,Berlin,MittlRei,81,31 jemandem die Laune verderben,NH14_31,4,woe
+104,m,21,Berlin,MittlRei,81,32 einen Eid schwören,NH14_32,4,woe
+104,m,21,Berlin,MittlRei,81,35 die Flinte ins Korn werfen,NH14_35,1,meta
+104,m,21,Berlin,MittlRei,81,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+104,m,21,Berlin,MittlRei,81,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+104,m,21,Berlin,MittlRei,81,03 im Team arbeiten,NH19_03,4,woe
+104,m,21,Berlin,MittlRei,81,04 an Bord gehen,NH19_04,4,woe
+104,m,21,Berlin,MittlRei,81,05 in der Tinte sitzen,NH19_05,1,meta
+104,m,21,Berlin,MittlRei,81,06 jemanden zur Sau machen,NH19_06,1,meta
+104,m,21,Berlin,MittlRei,81,07 jemandem platzt der Kopf,NH19_07,1,meta
+104,m,21,Berlin,MittlRei,81,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+104,m,21,Berlin,MittlRei,81,09 etwas in Stücke schlagen,NH19_09,2,woe
+104,m,21,Berlin,MittlRei,81,10 Langeweile haben,NH19_10,4,woe
+104,m,21,Berlin,MittlRei,81,11 die Kirche im Dorf lassen,NH19_11,1,meta
+104,m,21,Berlin,MittlRei,81,12 sein eigenes Leben haben,NH19_12,3,woe
+104,m,21,Berlin,MittlRei,81,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+104,m,21,Berlin,MittlRei,81,14 in Erfüllung gehen,NH19_14,3,woe
+104,m,21,Berlin,MittlRei,81,16 jemanden an der kurzen Leine halten,NH19_16,2,meta
+104,m,21,Berlin,MittlRei,81,17 das Thema wechseln,NH19_17,4,woe
+104,m,21,Berlin,MittlRei,81,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+104,m,21,Berlin,MittlRei,81,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+104,m,21,Berlin,MittlRei,81,20 mit dem Feuer spielen,NH19_20,2,meta
+104,m,21,Berlin,MittlRei,81,21 in Kontakt bleiben,NH19_21,4,woe
+104,m,21,Berlin,MittlRei,81,22 auf die schiefe Bahn geraten,NH19_22,3,meta
+104,m,21,Berlin,MittlRei,81,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+104,m,21,Berlin,MittlRei,81,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+104,m,21,Berlin,MittlRei,81,26 jemandem Dampf machen,NH19_26,1,meta
+104,m,21,Berlin,MittlRei,81,27 seinen Titel verteidigen,NH19_27,4,woe
+104,m,21,Berlin,MittlRei,81,28 in Raten zahlen,NH19_28,4,woe
+104,m,21,Berlin,MittlRei,81,29 seine Berechtigung haben,NH19_29,3,woe
+104,m,21,Berlin,MittlRei,81,32 in Hörweite sein,NH19_32,4,woe
+104,m,21,Berlin,MittlRei,81,33 außer Betrieb sein,NH19_33,4,woe
+104,m,21,Berlin,MittlRei,81,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+104,m,21,Berlin,MittlRei,81,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+104,m,21,Berlin,MittlRei,81,03 jemanden um den Finger wickeln,NH20_03,2,meta
+104,m,21,Berlin,MittlRei,81,04 die Axt im Walde sein,NH20_04,1,meta
+104,m,21,Berlin,MittlRei,81,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+104,m,21,Berlin,MittlRei,81,07 einen empfindlichen Magen haben,NH20_07,4,woe
+104,m,21,Berlin,MittlRei,81,08 auf eigene Faust handeln,NH20_08,2,meta
+104,m,21,Berlin,MittlRei,81,09 den Rahmen sprengen,NH20_09,2,meta
+104,m,21,Berlin,MittlRei,81,12 zur Seite gehen,NH20_12,4,woe
+104,m,21,Berlin,MittlRei,81,13 seine Meinung ändern,NH20_13,4,woe
+104,m,21,Berlin,MittlRei,81,14 gegen den Strom schwimmen,NH20_14,2,meta
+104,m,21,Berlin,MittlRei,81,16 jemandem die Laune verderben,NH20_16,4,woe
+104,m,21,Berlin,MittlRei,81,17 jemanden in Gefahr bringen,NH20_17,4,woe
+104,m,21,Berlin,MittlRei,81,18 sich schütteln vor Lachen,NH20_18,2,woe
+104,m,21,Berlin,MittlRei,81,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+104,m,21,Berlin,MittlRei,81,20 sich die Kugel geben,NH20_20,1,meta
+104,m,21,Berlin,MittlRei,81,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+104,m,21,Berlin,MittlRei,81,22 jemandes gutes Recht sein,NH20_22,2,woe
+104,m,21,Berlin,MittlRei,81,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+104,m,21,Berlin,MittlRei,81,24 etwas im Halbschlaf hören,NH20_24,4,woe
+104,m,21,Berlin,MittlRei,81,25 ein Griff ins Klo sein,NH20_25,1,meta
+104,m,21,Berlin,MittlRei,81,27 Fahrerflucht begehen,NH20_27,4,woe
+104,m,21,Berlin,MittlRei,81,28 auf dumme Gedanken kommen,NH20_28,4,woe
+104,m,21,Berlin,MittlRei,81,29 Luftschlösser bauen,NH20_29,1,meta
+104,m,21,Berlin,MittlRei,81,31 Schritttempo fahren,NH20_31,4,woe
+105,m,27,Bayern,Uni,104,01 ein Fels in der Brandung sein,NH14_01,1,meta
+105,m,27,Bayern,Uni,104,03 jemandem den Marsch blasen,NH14_03,1,meta
+105,m,27,Bayern,Uni,104,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+105,m,27,Bayern,Uni,104,05 keinen Spaß verstehen,NH14_05,3,woe
+105,m,27,Bayern,Uni,104,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+105,m,27,Bayern,Uni,104,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+105,m,27,Bayern,Uni,104,09 auf jemanden ist kein Verlass,NH14_09,3,woe
+105,m,27,Bayern,Uni,104,10 einen grünen Daumen haben,NH14_10,1,meta
+105,m,27,Bayern,Uni,104,11 jemandem die Vorfahrt nehmen,NH14_11,2,woe
+105,m,27,Bayern,Uni,104,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+105,m,27,Bayern,Uni,104,13 einen Rausch haben,NH14_13,4,woe
+105,m,27,Bayern,Uni,104,15 jemandem Gesellschaft leisten,NH14_15,3,woe
+105,m,27,Bayern,Uni,104,16 jemanden übers Ohr hauen,NH14_16,1,meta
+105,m,27,Bayern,Uni,104,17 auf der Durchreise sein,NH14_17,4,woe
+105,m,27,Bayern,Uni,104,18 keine Chance haben,NH14_18,4,woe
+105,m,27,Bayern,Uni,104,19 Folgerungen ziehen,NH14_19,3,woe
+105,m,27,Bayern,Uni,104,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+105,m,27,Bayern,Uni,104,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+105,m,27,Bayern,Uni,104,22 in Führung gehen (beim Sport),NH14_22,2,woe
+105,m,27,Bayern,Uni,104,23 jemandem Unrecht tun,NH14_23,1,woe
+105,m,27,Bayern,Uni,104,24 zur Debatte stehen,NH14_24,1,woe
+105,m,27,Bayern,Uni,104,25 etwas aus Prinzip tun,NH14_25,3,woe
+105,m,27,Bayern,Uni,104,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+105,m,27,Bayern,Uni,104,27 unter Druck geraten,NH14_27,1,meta
+105,m,27,Bayern,Uni,104,28 nicht im Hause sein,NH14_28,4,woe
+105,m,27,Bayern,Uni,104,29 die Pferde scheu machen,NH14_29,1,meta
+105,m,27,Bayern,Uni,104,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+105,m,27,Bayern,Uni,104,31 jemandem die Laune verderben,NH14_31,4,woe
+105,m,27,Bayern,Uni,104,32 einen Eid schwören,NH14_32,3,woe
+105,m,27,Bayern,Uni,104,35 die Flinte ins Korn werfen,NH14_35,1,meta
+105,m,27,Bayern,Uni,104,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+105,m,27,Bayern,Uni,104,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,3,woe
+105,m,27,Bayern,Uni,104,03 im Team arbeiten,NH19_03,4,woe
+105,m,27,Bayern,Uni,104,04 an Bord gehen,NH19_04,4,woe
+105,m,27,Bayern,Uni,104,05 in der Tinte sitzen,NH19_05,1,meta
+105,m,27,Bayern,Uni,104,06 jemanden zur Sau machen,NH19_06,1,meta
+105,m,27,Bayern,Uni,104,07 jemandem platzt der Kopf,NH19_07,1,meta
+105,m,27,Bayern,Uni,104,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+105,m,27,Bayern,Uni,104,09 etwas in Stücke schlagen,NH19_09,3,woe
+105,m,27,Bayern,Uni,104,10 Langeweile haben,NH19_10,4,woe
+105,m,27,Bayern,Uni,104,11 die Kirche im Dorf lassen,NH19_11,1,meta
+105,m,27,Bayern,Uni,104,12 sein eigenes Leben haben,NH19_12,2,woe
+105,m,27,Bayern,Uni,104,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,1,woe
+105,m,27,Bayern,Uni,104,14 in Erfüllung gehen,NH19_14,4,woe
+105,m,27,Bayern,Uni,104,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+105,m,27,Bayern,Uni,104,17 das Thema wechseln,NH19_17,4,woe
+105,m,27,Bayern,Uni,104,18 etwas ist nicht jemandes Sache,NH19_18,1,woe
+105,m,27,Bayern,Uni,104,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+105,m,27,Bayern,Uni,104,20 mit dem Feuer spielen,NH19_20,1,meta
+105,m,27,Bayern,Uni,104,21 in Kontakt bleiben,NH19_21,4,woe
+105,m,27,Bayern,Uni,104,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+105,m,27,Bayern,Uni,104,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+105,m,27,Bayern,Uni,104,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+105,m,27,Bayern,Uni,104,26 jemandem Dampf machen,NH19_26,1,meta
+105,m,27,Bayern,Uni,104,27 seinen Titel verteidigen,NH19_27,1,woe
+105,m,27,Bayern,Uni,104,28 in Raten zahlen,NH19_28,4,woe
+105,m,27,Bayern,Uni,104,29 seine Berechtigung haben,NH19_29,3,woe
+105,m,27,Bayern,Uni,104,32 in Hörweite sein,NH19_32,4,woe
+105,m,27,Bayern,Uni,104,33 außer Betrieb sein,NH19_33,3,woe
+105,m,27,Bayern,Uni,104,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+105,m,27,Bayern,Uni,104,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+105,m,27,Bayern,Uni,104,03 jemanden um den Finger wickeln,NH20_03,1,meta
+105,m,27,Bayern,Uni,104,04 die Axt im Walde sein,NH20_04,1,meta
+105,m,27,Bayern,Uni,104,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+105,m,27,Bayern,Uni,104,07 einen empfindlichen Magen haben,NH20_07,3,woe
+105,m,27,Bayern,Uni,104,08 auf eigene Faust handeln,NH20_08,2,meta
+105,m,27,Bayern,Uni,104,09 den Rahmen sprengen,NH20_09,1,meta
+105,m,27,Bayern,Uni,104,12 zur Seite gehen,NH20_12,4,woe
+105,m,27,Bayern,Uni,104,13 seine Meinung ändern,NH20_13,4,woe
+105,m,27,Bayern,Uni,104,14 gegen den Strom schwimmen,NH20_14,1,meta
+105,m,27,Bayern,Uni,104,16 jemandem die Laune verderben,NH20_16,4,woe
+105,m,27,Bayern,Uni,104,17 jemanden in Gefahr bringen,NH20_17,4,woe
+105,m,27,Bayern,Uni,104,18 sich schütteln vor Lachen,NH20_18,1,woe
+105,m,27,Bayern,Uni,104,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+105,m,27,Bayern,Uni,104,20 sich die Kugel geben,NH20_20,1,meta
+105,m,27,Bayern,Uni,104,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+105,m,27,Bayern,Uni,104,22 jemandes gutes Recht sein,NH20_22,3,woe
+105,m,27,Bayern,Uni,104,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+105,m,27,Bayern,Uni,104,24 etwas im Halbschlaf hören,NH20_24,4,woe
+105,m,27,Bayern,Uni,104,25 ein Griff ins Klo sein,NH20_25,1,meta
+105,m,27,Bayern,Uni,104,27 Fahrerflucht begehen,NH20_27,4,woe
+105,m,27,Bayern,Uni,104,28 auf dumme Gedanken kommen,NH20_28,3,woe
+105,m,27,Bayern,Uni,104,29 Luftschlösser bauen,NH20_29,1,meta
+105,m,27,Bayern,Uni,104,31 Schritttempo fahren,NH20_31,4,woe
+106,w,22,Nieders,Uni,76,01 ein Fels in der Brandung sein,NH14_01,1,meta
+106,w,22,Nieders,Uni,76,03 jemandem den Marsch blasen,NH14_03,1,meta
+106,w,22,Nieders,Uni,76,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+106,w,22,Nieders,Uni,76,05 keinen Spaß verstehen,NH14_05,3,woe
+106,w,22,Nieders,Uni,76,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+106,w,22,Nieders,Uni,76,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+106,w,22,Nieders,Uni,76,09 auf jemanden ist kein Verlass,NH14_09,3,woe
+106,w,22,Nieders,Uni,76,10 einen grünen Daumen haben,NH14_10,1,meta
+106,w,22,Nieders,Uni,76,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+106,w,22,Nieders,Uni,76,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+106,w,22,Nieders,Uni,76,13 einen Rausch haben,NH14_13,4,woe
+106,w,22,Nieders,Uni,76,15 jemandem Gesellschaft leisten,NH14_15,3,woe
+106,w,22,Nieders,Uni,76,16 jemanden übers Ohr hauen,NH14_16,1,meta
+106,w,22,Nieders,Uni,76,17 auf der Durchreise sein,NH14_17,3,woe
+106,w,22,Nieders,Uni,76,18 keine Chance haben,NH14_18,4,woe
+106,w,22,Nieders,Uni,76,19 Folgerungen ziehen,NH14_19,3,woe
+106,w,22,Nieders,Uni,76,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+106,w,22,Nieders,Uni,76,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+106,w,22,Nieders,Uni,76,22 in Führung gehen (beim Sport),NH14_22,3,woe
+106,w,22,Nieders,Uni,76,23 jemandem Unrecht tun,NH14_23,4,woe
+106,w,22,Nieders,Uni,76,24 zur Debatte stehen,NH14_24,3,woe
+106,w,22,Nieders,Uni,76,25 etwas aus Prinzip tun,NH14_25,3,woe
+106,w,22,Nieders,Uni,76,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+106,w,22,Nieders,Uni,76,27 unter Druck geraten,NH14_27,3,meta
+106,w,22,Nieders,Uni,76,28 nicht im Hause sein,NH14_28,3,woe
+106,w,22,Nieders,Uni,76,29 die Pferde scheu machen,NH14_29,2,meta
+106,w,22,Nieders,Uni,76,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+106,w,22,Nieders,Uni,76,31 jemandem die Laune verderben,NH14_31,3,woe
+106,w,22,Nieders,Uni,76,32 einen Eid schwören,NH14_32,4,woe
+106,w,22,Nieders,Uni,76,35 die Flinte ins Korn werfen,NH14_35,1,meta
+106,w,22,Nieders,Uni,76,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+106,w,22,Nieders,Uni,76,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,3,woe
+106,w,22,Nieders,Uni,76,03 im Team arbeiten,NH19_03,4,woe
+106,w,22,Nieders,Uni,76,04 an Bord gehen,NH19_04,3,woe
+106,w,22,Nieders,Uni,76,05 in der Tinte sitzen,NH19_05,1,meta
+106,w,22,Nieders,Uni,76,06 jemanden zur Sau machen,NH19_06,1,meta
+106,w,22,Nieders,Uni,76,07 jemandem platzt der Kopf,NH19_07,1,meta
+106,w,22,Nieders,Uni,76,08 etwas ist in jemandes Interesse,NH19_08,3,woe
+106,w,22,Nieders,Uni,76,09 etwas in Stücke schlagen,NH19_09,3,woe
+106,w,22,Nieders,Uni,76,10 Langeweile haben,NH19_10,3,woe
+106,w,22,Nieders,Uni,76,11 die Kirche im Dorf lassen,NH19_11,1,meta
+106,w,22,Nieders,Uni,76,12 sein eigenes Leben haben,NH19_12,2,woe
+106,w,22,Nieders,Uni,76,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,2,woe
+106,w,22,Nieders,Uni,76,14 in Erfüllung gehen,NH19_14,3,woe
+106,w,22,Nieders,Uni,76,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+106,w,22,Nieders,Uni,76,17 das Thema wechseln,NH19_17,4,woe
+106,w,22,Nieders,Uni,76,18 etwas ist nicht jemandes Sache,NH19_18,2,woe
+106,w,22,Nieders,Uni,76,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+106,w,22,Nieders,Uni,76,20 mit dem Feuer spielen,NH19_20,2,meta
+106,w,22,Nieders,Uni,76,21 in Kontakt bleiben,NH19_21,4,woe
+106,w,22,Nieders,Uni,76,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+106,w,22,Nieders,Uni,76,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+106,w,22,Nieders,Uni,76,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+106,w,22,Nieders,Uni,76,26 jemandem Dampf machen,NH19_26,1,meta
+106,w,22,Nieders,Uni,76,27 seinen Titel verteidigen,NH19_27,3,woe
+106,w,22,Nieders,Uni,76,28 in Raten zahlen,NH19_28,4,woe
+106,w,22,Nieders,Uni,76,29 seine Berechtigung haben,NH19_29,3,woe
+106,w,22,Nieders,Uni,76,32 in Hörweite sein,NH19_32,4,woe
+106,w,22,Nieders,Uni,76,33 außer Betrieb sein,NH19_33,2,woe
+106,w,22,Nieders,Uni,76,01 keinerlei Mitgefühl haben,NH20_01,3,woe
+106,w,22,Nieders,Uni,76,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+106,w,22,Nieders,Uni,76,03 jemanden um den Finger wickeln,NH20_03,1,meta
+106,w,22,Nieders,Uni,76,04 die Axt im Walde sein,NH20_04,1,meta
+106,w,22,Nieders,Uni,76,05 ein schlechtes Gewissen haben,NH20_05,3,woe
+106,w,22,Nieders,Uni,76,07 einen empfindlichen Magen haben,NH20_07,4,woe
+106,w,22,Nieders,Uni,76,08 auf eigene Faust handeln,NH20_08,2,meta
+106,w,22,Nieders,Uni,76,09 den Rahmen sprengen,NH20_09,2,meta
+106,w,22,Nieders,Uni,76,12 zur Seite gehen,NH20_12,3,woe
+106,w,22,Nieders,Uni,76,13 seine Meinung ändern,NH20_13,4,woe
+106,w,22,Nieders,Uni,76,14 gegen den Strom schwimmen,NH20_14,2,meta
+106,w,22,Nieders,Uni,76,16 jemandem die Laune verderben,NH20_16,3,woe
+106,w,22,Nieders,Uni,76,17 jemanden in Gefahr bringen,NH20_17,4,woe
+106,w,22,Nieders,Uni,76,18 sich schütteln vor Lachen,NH20_18,2,woe
+106,w,22,Nieders,Uni,76,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+106,w,22,Nieders,Uni,76,20 sich die Kugel geben,NH20_20,1,meta
+106,w,22,Nieders,Uni,76,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+106,w,22,Nieders,Uni,76,22 jemandes gutes Recht sein,NH20_22,3,woe
+106,w,22,Nieders,Uni,76,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+106,w,22,Nieders,Uni,76,24 etwas im Halbschlaf hören,NH20_24,3,woe
+106,w,22,Nieders,Uni,76,25 ein Griff ins Klo sein,NH20_25,1,meta
+106,w,22,Nieders,Uni,76,27 Fahrerflucht begehen,NH20_27,3,woe
+106,w,22,Nieders,Uni,76,28 auf dumme Gedanken kommen,NH20_28,4,woe
+106,w,22,Nieders,Uni,76,29 Luftschlösser bauen,NH20_29,1,meta
+106,w,22,Nieders,Uni,76,31 Schritttempo fahren,NH20_31,4,woe
+107,m,18,Nieders,Fachabi,97,01 ein Fels in der Brandung sein,NH14_01,1,meta
+107,m,18,Nieders,Fachabi,97,03 jemandem den Marsch blasen,NH14_03,2,meta
+107,m,18,Nieders,Fachabi,97,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+107,m,18,Nieders,Fachabi,97,05 keinen Spaß verstehen,NH14_05,4,woe
+107,m,18,Nieders,Fachabi,97,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+107,m,18,Nieders,Fachabi,97,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+107,m,18,Nieders,Fachabi,97,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+107,m,18,Nieders,Fachabi,97,10 einen grünen Daumen haben,NH14_10,1,meta
+107,m,18,Nieders,Fachabi,97,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+107,m,18,Nieders,Fachabi,97,12 sich nicht von der Stelle rühren,NH14_12,4,woe
+107,m,18,Nieders,Fachabi,97,13 einen Rausch haben,NH14_13,2,woe
+107,m,18,Nieders,Fachabi,97,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+107,m,18,Nieders,Fachabi,97,16 jemanden übers Ohr hauen,NH14_16,1,meta
+107,m,18,Nieders,Fachabi,97,17 auf der Durchreise sein,NH14_17,4,woe
+107,m,18,Nieders,Fachabi,97,18 keine Chance haben,NH14_18,4,woe
+107,m,18,Nieders,Fachabi,97,19 Folgerungen ziehen,NH14_19,4,woe
+107,m,18,Nieders,Fachabi,97,20 ein ungeschriebenes Gesetz sein,NH14_20,1,woe
+107,m,18,Nieders,Fachabi,97,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+107,m,18,Nieders,Fachabi,97,22 in Führung gehen (beim Sport),NH14_22,4,woe
+107,m,18,Nieders,Fachabi,97,23 jemandem Unrecht tun,NH14_23,4,woe
+107,m,18,Nieders,Fachabi,97,24 zur Debatte stehen,NH14_24,4,woe
+107,m,18,Nieders,Fachabi,97,25 etwas aus Prinzip tun,NH14_25,4,woe
+107,m,18,Nieders,Fachabi,97,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+107,m,18,Nieders,Fachabi,97,27 unter Druck geraten,NH14_27,4,meta
+107,m,18,Nieders,Fachabi,97,28 nicht im Hause sein,NH14_28,4,woe
+107,m,18,Nieders,Fachabi,97,29 die Pferde scheu machen,NH14_29,3,meta
+107,m,18,Nieders,Fachabi,97,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+107,m,18,Nieders,Fachabi,97,31 jemandem die Laune verderben,NH14_31,4,woe
+107,m,18,Nieders,Fachabi,97,32 einen Eid schwören,NH14_32,4,woe
+107,m,18,Nieders,Fachabi,97,35 die Flinte ins Korn werfen,NH14_35,1,meta
+107,m,18,Nieders,Fachabi,97,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+107,m,18,Nieders,Fachabi,97,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+107,m,18,Nieders,Fachabi,97,03 im Team arbeiten,NH19_03,4,woe
+107,m,18,Nieders,Fachabi,97,04 an Bord gehen,NH19_04,4,woe
+107,m,18,Nieders,Fachabi,97,05 in der Tinte sitzen,NH19_05,1,meta
+107,m,18,Nieders,Fachabi,97,06 jemanden zur Sau machen,NH19_06,1,meta
+107,m,18,Nieders,Fachabi,97,07 jemandem platzt der Kopf,NH19_07,1,meta
+107,m,18,Nieders,Fachabi,97,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+107,m,18,Nieders,Fachabi,97,09 etwas in Stücke schlagen,NH19_09,4,woe
+107,m,18,Nieders,Fachabi,97,10 Langeweile haben,NH19_10,4,woe
+107,m,18,Nieders,Fachabi,97,11 die Kirche im Dorf lassen,NH19_11,1,meta
+107,m,18,Nieders,Fachabi,97,12 sein eigenes Leben haben,NH19_12,4,woe
+107,m,18,Nieders,Fachabi,97,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+107,m,18,Nieders,Fachabi,97,14 in Erfüllung gehen,NH19_14,3,woe
+107,m,18,Nieders,Fachabi,97,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+107,m,18,Nieders,Fachabi,97,17 das Thema wechseln,NH19_17,4,woe
+107,m,18,Nieders,Fachabi,97,18 etwas ist nicht jemandes Sache,NH19_18,4,woe
+107,m,18,Nieders,Fachabi,97,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+107,m,18,Nieders,Fachabi,97,20 mit dem Feuer spielen,NH19_20,1,meta
+107,m,18,Nieders,Fachabi,97,21 in Kontakt bleiben,NH19_21,4,woe
+107,m,18,Nieders,Fachabi,97,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+107,m,18,Nieders,Fachabi,97,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+107,m,18,Nieders,Fachabi,97,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+107,m,18,Nieders,Fachabi,97,26 jemandem Dampf machen,NH19_26,1,meta
+107,m,18,Nieders,Fachabi,97,27 seinen Titel verteidigen,NH19_27,2,woe
+107,m,18,Nieders,Fachabi,97,28 in Raten zahlen,NH19_28,4,woe
+107,m,18,Nieders,Fachabi,97,29 seine Berechtigung haben,NH19_29,4,woe
+107,m,18,Nieders,Fachabi,97,32 in Hörweite sein,NH19_32,4,woe
+107,m,18,Nieders,Fachabi,97,33 außer Betrieb sein,NH19_33,3,woe
+107,m,18,Nieders,Fachabi,97,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+107,m,18,Nieders,Fachabi,97,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+107,m,18,Nieders,Fachabi,97,03 jemanden um den Finger wickeln,NH20_03,1,meta
+107,m,18,Nieders,Fachabi,97,04 die Axt im Walde sein,NH20_04,1,meta
+107,m,18,Nieders,Fachabi,97,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+107,m,18,Nieders,Fachabi,97,07 einen empfindlichen Magen haben,NH20_07,4,woe
+107,m,18,Nieders,Fachabi,97,08 auf eigene Faust handeln,NH20_08,4,meta
+107,m,18,Nieders,Fachabi,97,09 den Rahmen sprengen,NH20_09,1,meta
+107,m,18,Nieders,Fachabi,97,12 zur Seite gehen,NH20_12,4,woe
+107,m,18,Nieders,Fachabi,97,13 seine Meinung ändern,NH20_13,4,woe
+107,m,18,Nieders,Fachabi,97,14 gegen den Strom schwimmen,NH20_14,3,meta
+107,m,18,Nieders,Fachabi,97,16 jemandem die Laune verderben,NH20_16,4,woe
+107,m,18,Nieders,Fachabi,97,17 jemanden in Gefahr bringen,NH20_17,4,woe
+107,m,18,Nieders,Fachabi,97,18 sich schütteln vor Lachen,NH20_18,4,woe
+107,m,18,Nieders,Fachabi,97,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+107,m,18,Nieders,Fachabi,97,20 sich die Kugel geben,NH20_20,2,meta
+107,m,18,Nieders,Fachabi,97,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+107,m,18,Nieders,Fachabi,97,22 jemandes gutes Recht sein,NH20_22,4,woe
+107,m,18,Nieders,Fachabi,97,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+107,m,18,Nieders,Fachabi,97,24 etwas im Halbschlaf hören,NH20_24,4,woe
+107,m,18,Nieders,Fachabi,97,25 ein Griff ins Klo sein,NH20_25,1,meta
+107,m,18,Nieders,Fachabi,97,27 Fahrerflucht begehen,NH20_27,4,woe
+107,m,18,Nieders,Fachabi,97,28 auf dumme Gedanken kommen,NH20_28,4,woe
+107,m,18,Nieders,Fachabi,97,29 Luftschlösser bauen,NH20_29,1,meta
+107,m,18,Nieders,Fachabi,97,31 Schritttempo fahren,NH20_31,4,woe
+110,m,40,Brandbg,Uni,86,01 ein Fels in der Brandung sein,NH14_01,2,meta
+110,m,40,Brandbg,Uni,86,03 jemandem den Marsch blasen,NH14_03,2,meta
+110,m,40,Brandbg,Uni,86,04 jemanden in der Luft zerreißen,NH14_04,2,meta
+110,m,40,Brandbg,Uni,86,05 keinen Spaß verstehen,NH14_05,3,woe
+110,m,40,Brandbg,Uni,86,06 etwas aus dem Ärmel schütteln,NH14_06,2,meta
+110,m,40,Brandbg,Uni,86,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+110,m,40,Brandbg,Uni,86,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+110,m,40,Brandbg,Uni,86,10 einen grünen Daumen haben,NH14_10,2,meta
+110,m,40,Brandbg,Uni,86,11 jemandem die Vorfahrt nehmen,NH14_11,2,woe
+110,m,40,Brandbg,Uni,86,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+110,m,40,Brandbg,Uni,86,13 einen Rausch haben,NH14_13,2,woe
+110,m,40,Brandbg,Uni,86,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+110,m,40,Brandbg,Uni,86,16 jemanden übers Ohr hauen,NH14_16,1,meta
+110,m,40,Brandbg,Uni,86,17 auf der Durchreise sein,NH14_17,3,woe
+110,m,40,Brandbg,Uni,86,18 keine Chance haben,NH14_18,4,woe
+110,m,40,Brandbg,Uni,86,19 Folgerungen ziehen,NH14_19,4,woe
+110,m,40,Brandbg,Uni,86,20 ein ungeschriebenes Gesetz sein,NH14_20,4,woe
+110,m,40,Brandbg,Uni,86,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+110,m,40,Brandbg,Uni,86,22 in Führung gehen (beim Sport),NH14_22,4,woe
+110,m,40,Brandbg,Uni,86,23 jemandem Unrecht tun,NH14_23,4,woe
+110,m,40,Brandbg,Uni,86,24 zur Debatte stehen,NH14_24,3,woe
+110,m,40,Brandbg,Uni,86,25 etwas aus Prinzip tun,NH14_25,4,woe
+110,m,40,Brandbg,Uni,86,26 das fünfte Rad am Wagen sein,NH14_26,2,meta
+110,m,40,Brandbg,Uni,86,27 unter Druck geraten,NH14_27,4,meta
+110,m,40,Brandbg,Uni,86,28 nicht im Hause sein,NH14_28,1,woe
+110,m,40,Brandbg,Uni,86,29 die Pferde scheu machen,NH14_29,1,meta
+110,m,40,Brandbg,Uni,86,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+110,m,40,Brandbg,Uni,86,31 jemandem die Laune verderben,NH14_31,4,woe
+110,m,40,Brandbg,Uni,86,32 einen Eid schwören,NH14_32,4,woe
+110,m,40,Brandbg,Uni,86,35 die Flinte ins Korn werfen,NH14_35,1,meta
+110,m,40,Brandbg,Uni,86,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+110,m,40,Brandbg,Uni,86,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+110,m,40,Brandbg,Uni,86,03 im Team arbeiten,NH19_03,4,woe
+110,m,40,Brandbg,Uni,86,04 an Bord gehen,NH19_04,4,woe
+110,m,40,Brandbg,Uni,86,05 in der Tinte sitzen,NH19_05,1,meta
+110,m,40,Brandbg,Uni,86,06 jemanden zur Sau machen,NH19_06,2,meta
+110,m,40,Brandbg,Uni,86,07 jemandem platzt der Kopf,NH19_07,3,meta
+110,m,40,Brandbg,Uni,86,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+110,m,40,Brandbg,Uni,86,09 etwas in Stücke schlagen,NH19_09,2,woe
+110,m,40,Brandbg,Uni,86,10 Langeweile haben,NH19_10,4,woe
+110,m,40,Brandbg,Uni,86,11 die Kirche im Dorf lassen,NH19_11,1,meta
+110,m,40,Brandbg,Uni,86,12 sein eigenes Leben haben,NH19_12,3,woe
+110,m,40,Brandbg,Uni,86,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+110,m,40,Brandbg,Uni,86,14 in Erfüllung gehen,NH19_14,4,woe
+110,m,40,Brandbg,Uni,86,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+110,m,40,Brandbg,Uni,86,17 das Thema wechseln,NH19_17,4,woe
+110,m,40,Brandbg,Uni,86,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+110,m,40,Brandbg,Uni,86,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+110,m,40,Brandbg,Uni,86,20 mit dem Feuer spielen,NH19_20,2,meta
+110,m,40,Brandbg,Uni,86,21 in Kontakt bleiben,NH19_21,4,woe
+110,m,40,Brandbg,Uni,86,22 auf die schiefe Bahn geraten,NH19_22,2,meta
+110,m,40,Brandbg,Uni,86,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+110,m,40,Brandbg,Uni,86,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+110,m,40,Brandbg,Uni,86,26 jemandem Dampf machen,NH19_26,1,meta
+110,m,40,Brandbg,Uni,86,27 seinen Titel verteidigen,NH19_27,4,woe
+110,m,40,Brandbg,Uni,86,28 in Raten zahlen,NH19_28,4,woe
+110,m,40,Brandbg,Uni,86,29 seine Berechtigung haben,NH19_29,4,woe
+110,m,40,Brandbg,Uni,86,32 in Hörweite sein,NH19_32,4,woe
+110,m,40,Brandbg,Uni,86,33 außer Betrieb sein,NH19_33,4,woe
+110,m,40,Brandbg,Uni,86,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+110,m,40,Brandbg,Uni,86,02 zwischen allen Stühlen sitzen,NH20_02,2,meta
+110,m,40,Brandbg,Uni,86,03 jemanden um den Finger wickeln,NH20_03,1,meta
+110,m,40,Brandbg,Uni,86,04 die Axt im Walde sein,NH20_04,2,meta
+110,m,40,Brandbg,Uni,86,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+110,m,40,Brandbg,Uni,86,07 einen empfindlichen Magen haben,NH20_07,2,woe
+110,m,40,Brandbg,Uni,86,08 auf eigene Faust handeln,NH20_08,2,meta
+110,m,40,Brandbg,Uni,86,09 den Rahmen sprengen,NH20_09,3,meta
+110,m,40,Brandbg,Uni,86,12 zur Seite gehen,NH20_12,4,woe
+110,m,40,Brandbg,Uni,86,13 seine Meinung ändern,NH20_13,4,woe
+110,m,40,Brandbg,Uni,86,14 gegen den Strom schwimmen,NH20_14,3,meta
+110,m,40,Brandbg,Uni,86,16 jemandem die Laune verderben,NH20_16,4,woe
+110,m,40,Brandbg,Uni,86,17 jemanden in Gefahr bringen,NH20_17,4,woe
+110,m,40,Brandbg,Uni,86,18 sich schütteln vor Lachen,NH20_18,4,woe
+110,m,40,Brandbg,Uni,86,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+110,m,40,Brandbg,Uni,86,20 sich die Kugel geben,NH20_20,2,meta
+110,m,40,Brandbg,Uni,86,21 ein zweischneidiges Schwert sein,NH20_21,2,meta
+110,m,40,Brandbg,Uni,86,22 jemandes gutes Recht sein,NH20_22,4,woe
+110,m,40,Brandbg,Uni,86,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+110,m,40,Brandbg,Uni,86,24 etwas im Halbschlaf hören,NH20_24,4,woe
+110,m,40,Brandbg,Uni,86,25 ein Griff ins Klo sein,NH20_25,3,meta
+110,m,40,Brandbg,Uni,86,27 Fahrerflucht begehen,NH20_27,3,woe
+110,m,40,Brandbg,Uni,86,28 auf dumme Gedanken kommen,NH20_28,4,woe
+110,m,40,Brandbg,Uni,86,29 Luftschlösser bauen,NH20_29,2,meta
+110,m,40,Brandbg,Uni,86,31 Schritttempo fahren,NH20_31,4,woe
+111,m,42,Berlin,Uni,104,01 ein Fels in der Brandung sein,NH14_01,1,meta
+111,m,42,Berlin,Uni,104,03 jemandem den Marsch blasen,NH14_03,1,meta
+111,m,42,Berlin,Uni,104,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+111,m,42,Berlin,Uni,104,05 keinen Spaß verstehen,NH14_05,3,woe
+111,m,42,Berlin,Uni,104,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+111,m,42,Berlin,Uni,104,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+111,m,42,Berlin,Uni,104,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+111,m,42,Berlin,Uni,104,10 einen grünen Daumen haben,NH14_10,1,meta
+111,m,42,Berlin,Uni,104,11 jemandem die Vorfahrt nehmen,NH14_11,3,woe
+111,m,42,Berlin,Uni,104,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+111,m,42,Berlin,Uni,104,13 einen Rausch haben,NH14_13,4,woe
+111,m,42,Berlin,Uni,104,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+111,m,42,Berlin,Uni,104,16 jemanden übers Ohr hauen,NH14_16,1,meta
+111,m,42,Berlin,Uni,104,17 auf der Durchreise sein,NH14_17,3,woe
+111,m,42,Berlin,Uni,104,18 keine Chance haben,NH14_18,3,woe
+111,m,42,Berlin,Uni,104,19 Folgerungen ziehen,NH14_19,4,woe
+111,m,42,Berlin,Uni,104,20 ein ungeschriebenes Gesetz sein,NH14_20,3,woe
+111,m,42,Berlin,Uni,104,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+111,m,42,Berlin,Uni,104,22 in Führung gehen (beim Sport),NH14_22,4,woe
+111,m,42,Berlin,Uni,104,23 jemandem Unrecht tun,NH14_23,2,woe
+111,m,42,Berlin,Uni,104,24 zur Debatte stehen,NH14_24,2,woe
+111,m,42,Berlin,Uni,104,25 etwas aus Prinzip tun,NH14_25,4,woe
+111,m,42,Berlin,Uni,104,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+111,m,42,Berlin,Uni,104,27 unter Druck geraten,NH14_27,2,meta
+111,m,42,Berlin,Uni,104,28 nicht im Hause sein,NH14_28,4,woe
+111,m,42,Berlin,Uni,104,29 die Pferde scheu machen,NH14_29,1,meta
+111,m,42,Berlin,Uni,104,30 etwas in aller Deutlichkeit sagen,NH14_30,3,woe
+111,m,42,Berlin,Uni,104,31 jemandem die Laune verderben,NH14_31,3,woe
+111,m,42,Berlin,Uni,104,32 einen Eid schwören,NH14_32,3,woe
+111,m,42,Berlin,Uni,104,35 die Flinte ins Korn werfen,NH14_35,1,meta
+111,m,42,Berlin,Uni,104,01 vor Gericht stehen (ein Angeklagter),NH19_01,3,woe
+111,m,42,Berlin,Uni,104,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+111,m,42,Berlin,Uni,104,03 im Team arbeiten,NH19_03,4,woe
+111,m,42,Berlin,Uni,104,04 an Bord gehen,NH19_04,3,woe
+111,m,42,Berlin,Uni,104,05 in der Tinte sitzen,NH19_05,1,meta
+111,m,42,Berlin,Uni,104,06 jemanden zur Sau machen,NH19_06,1,meta
+111,m,42,Berlin,Uni,104,07 jemandem platzt der Kopf,NH19_07,1,meta
+111,m,42,Berlin,Uni,104,08 etwas ist in jemandes Interesse,NH19_08,3,woe
+111,m,42,Berlin,Uni,104,09 etwas in Stücke schlagen,NH19_09,2,woe
+111,m,42,Berlin,Uni,104,10 Langeweile haben,NH19_10,4,woe
+111,m,42,Berlin,Uni,104,11 die Kirche im Dorf lassen,NH19_11,1,meta
+111,m,42,Berlin,Uni,104,12 sein eigenes Leben haben,NH19_12,3,woe
+111,m,42,Berlin,Uni,104,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,3,woe
+111,m,42,Berlin,Uni,104,14 in Erfüllung gehen,NH19_14,4,woe
+111,m,42,Berlin,Uni,104,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+111,m,42,Berlin,Uni,104,17 das Thema wechseln,NH19_17,4,woe
+111,m,42,Berlin,Uni,104,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+111,m,42,Berlin,Uni,104,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+111,m,42,Berlin,Uni,104,20 mit dem Feuer spielen,NH19_20,1,meta
+111,m,42,Berlin,Uni,104,21 in Kontakt bleiben,NH19_21,2,woe
+111,m,42,Berlin,Uni,104,22 auf die schiefe Bahn geraten,NH19_22,2,meta
+111,m,42,Berlin,Uni,104,23 etwas zu seinem Vorteil nutzen,NH19_23,3,woe
+111,m,42,Berlin,Uni,104,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+111,m,42,Berlin,Uni,104,26 jemandem Dampf machen,NH19_26,1,meta
+111,m,42,Berlin,Uni,104,27 seinen Titel verteidigen,NH19_27,4,woe
+111,m,42,Berlin,Uni,104,28 in Raten zahlen,NH19_28,4,woe
+111,m,42,Berlin,Uni,104,29 seine Berechtigung haben,NH19_29,3,woe
+111,m,42,Berlin,Uni,104,32 in Hörweite sein,NH19_32,3,woe
+111,m,42,Berlin,Uni,104,33 außer Betrieb sein,NH19_33,3,woe
+111,m,42,Berlin,Uni,104,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+111,m,42,Berlin,Uni,104,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+111,m,42,Berlin,Uni,104,03 jemanden um den Finger wickeln,NH20_03,1,meta
+111,m,42,Berlin,Uni,104,04 die Axt im Walde sein,NH20_04,1,meta
+111,m,42,Berlin,Uni,104,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+111,m,42,Berlin,Uni,104,07 einen empfindlichen Magen haben,NH20_07,3,woe
+111,m,42,Berlin,Uni,104,08 auf eigene Faust handeln,NH20_08,2,meta
+111,m,42,Berlin,Uni,104,09 den Rahmen sprengen,NH20_09,1,meta
+111,m,42,Berlin,Uni,104,12 zur Seite gehen,NH20_12,4,woe
+111,m,42,Berlin,Uni,104,13 seine Meinung ändern,NH20_13,4,woe
+111,m,42,Berlin,Uni,104,14 gegen den Strom schwimmen,NH20_14,1,meta
+111,m,42,Berlin,Uni,104,16 jemandem die Laune verderben,NH20_16,3,woe
+111,m,42,Berlin,Uni,104,17 jemanden in Gefahr bringen,NH20_17,4,woe
+111,m,42,Berlin,Uni,104,18 sich schütteln vor Lachen,NH20_18,3,woe
+111,m,42,Berlin,Uni,104,19 etwas auf Vorrat kaufen,NH20_19,3,woe
+111,m,42,Berlin,Uni,104,20 sich die Kugel geben,NH20_20,1,meta
+111,m,42,Berlin,Uni,104,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+111,m,42,Berlin,Uni,104,22 jemandes gutes Recht sein,NH20_22,3,woe
+111,m,42,Berlin,Uni,104,23 etwas zum Selbstzweck betreiben,NH20_23,3,woe
+111,m,42,Berlin,Uni,104,24 etwas im Halbschlaf hören,NH20_24,3,woe
+111,m,42,Berlin,Uni,104,25 ein Griff ins Klo sein,NH20_25,1,meta
+111,m,42,Berlin,Uni,104,27 Fahrerflucht begehen,NH20_27,4,woe
+111,m,42,Berlin,Uni,104,28 auf dumme Gedanken kommen,NH20_28,3,woe
+111,m,42,Berlin,Uni,104,29 Luftschlösser bauen,NH20_29,2,meta
+111,m,42,Berlin,Uni,104,31 Schritttempo fahren,NH20_31,4,woe
+112,w,26,Berlin,Fachabi,111,01 ein Fels in der Brandung sein,NH14_01,1,meta
+112,w,26,Berlin,Fachabi,111,03 jemandem den Marsch blasen,NH14_03,1,meta
+112,w,26,Berlin,Fachabi,111,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+112,w,26,Berlin,Fachabi,111,05 keinen Spaß verstehen,NH14_05,4,woe
+112,w,26,Berlin,Fachabi,111,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+112,w,26,Berlin,Fachabi,111,08 etwas an die Öffentlichkeit bringen,NH14_08,4,woe
+112,w,26,Berlin,Fachabi,111,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+112,w,26,Berlin,Fachabi,111,10 einen grünen Daumen haben,NH14_10,1,meta
+112,w,26,Berlin,Fachabi,111,11 jemandem die Vorfahrt nehmen,NH14_11,3,woe
+112,w,26,Berlin,Fachabi,111,12 sich nicht von der Stelle rühren,NH14_12,4,woe
+112,w,26,Berlin,Fachabi,111,13 einen Rausch haben,NH14_13,3,woe
+112,w,26,Berlin,Fachabi,111,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+112,w,26,Berlin,Fachabi,111,16 jemanden übers Ohr hauen,NH14_16,2,meta
+112,w,26,Berlin,Fachabi,111,17 auf der Durchreise sein,NH14_17,1,woe
+112,w,26,Berlin,Fachabi,111,18 keine Chance haben,NH14_18,4,woe
+112,w,26,Berlin,Fachabi,111,19 Folgerungen ziehen,NH14_19,4,woe
+112,w,26,Berlin,Fachabi,111,20 ein ungeschriebenes Gesetz sein,NH14_20,2,woe
+112,w,26,Berlin,Fachabi,111,21 bei jemandem fällt der Groschen,NH14_21,2,meta
+112,w,26,Berlin,Fachabi,111,22 in Führung gehen (beim Sport),NH14_22,4,woe
+112,w,26,Berlin,Fachabi,111,23 jemandem Unrecht tun,NH14_23,4,woe
+112,w,26,Berlin,Fachabi,111,24 zur Debatte stehen,NH14_24,3,woe
+112,w,26,Berlin,Fachabi,111,25 etwas aus Prinzip tun,NH14_25,4,woe
+112,w,26,Berlin,Fachabi,111,26 das fünfte Rad am Wagen sein,NH14_26,1,meta
+112,w,26,Berlin,Fachabi,111,27 unter Druck geraten,NH14_27,3,meta
+112,w,26,Berlin,Fachabi,111,28 nicht im Hause sein,NH14_28,4,woe
+112,w,26,Berlin,Fachabi,111,29 die Pferde scheu machen,NH14_29,1,meta
+112,w,26,Berlin,Fachabi,111,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+112,w,26,Berlin,Fachabi,111,31 jemandem die Laune verderben,NH14_31,3,woe
+112,w,26,Berlin,Fachabi,111,32 einen Eid schwören,NH14_32,4,woe
+112,w,26,Berlin,Fachabi,111,35 die Flinte ins Korn werfen,NH14_35,2,meta
+112,w,26,Berlin,Fachabi,111,01 vor Gericht stehen (ein Angeklagter),NH19_01,4,woe
+112,w,26,Berlin,Fachabi,111,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+112,w,26,Berlin,Fachabi,111,03 im Team arbeiten,NH19_03,4,woe
+112,w,26,Berlin,Fachabi,111,04 an Bord gehen,NH19_04,4,woe
+112,w,26,Berlin,Fachabi,111,05 in der Tinte sitzen,NH19_05,1,meta
+112,w,26,Berlin,Fachabi,111,06 jemanden zur Sau machen,NH19_06,1,meta
+112,w,26,Berlin,Fachabi,111,07 jemandem platzt der Kopf,NH19_07,1,meta
+112,w,26,Berlin,Fachabi,111,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+112,w,26,Berlin,Fachabi,111,09 etwas in Stücke schlagen,NH19_09,1,woe
+112,w,26,Berlin,Fachabi,111,10 Langeweile haben,NH19_10,4,woe
+112,w,26,Berlin,Fachabi,111,11 die Kirche im Dorf lassen,NH19_11,1,meta
+112,w,26,Berlin,Fachabi,111,12 sein eigenes Leben haben,NH19_12,4,woe
+112,w,26,Berlin,Fachabi,111,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+112,w,26,Berlin,Fachabi,111,14 in Erfüllung gehen,NH19_14,1,woe
+112,w,26,Berlin,Fachabi,111,16 jemanden an der kurzen Leine halten,NH19_16,2,meta
+112,w,26,Berlin,Fachabi,111,17 das Thema wechseln,NH19_17,3,woe
+112,w,26,Berlin,Fachabi,111,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+112,w,26,Berlin,Fachabi,111,19 jemanden im Vorbeigehen grüßen,NH19_19,3,woe
+112,w,26,Berlin,Fachabi,111,20 mit dem Feuer spielen,NH19_20,1,meta
+112,w,26,Berlin,Fachabi,111,21 in Kontakt bleiben,NH19_21,4,woe
+112,w,26,Berlin,Fachabi,111,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+112,w,26,Berlin,Fachabi,111,23 etwas zu seinem Vorteil nutzen,NH19_23,3,woe
+112,w,26,Berlin,Fachabi,111,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,4,woe
+112,w,26,Berlin,Fachabi,111,26 jemandem Dampf machen,NH19_26,1,meta
+112,w,26,Berlin,Fachabi,111,27 seinen Titel verteidigen,NH19_27,3,woe
+112,w,26,Berlin,Fachabi,111,28 in Raten zahlen,NH19_28,4,woe
+112,w,26,Berlin,Fachabi,111,29 seine Berechtigung haben,NH19_29,4,woe
+112,w,26,Berlin,Fachabi,111,32 in Hörweite sein,NH19_32,1,woe
+112,w,26,Berlin,Fachabi,111,33 außer Betrieb sein,NH19_33,4,woe
+112,w,26,Berlin,Fachabi,111,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+112,w,26,Berlin,Fachabi,111,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+112,w,26,Berlin,Fachabi,111,03 jemanden um den Finger wickeln,NH20_03,1,meta
+112,w,26,Berlin,Fachabi,111,04 die Axt im Walde sein,NH20_04,1,meta
+112,w,26,Berlin,Fachabi,111,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+112,w,26,Berlin,Fachabi,111,07 einen empfindlichen Magen haben,NH20_07,3,woe
+112,w,26,Berlin,Fachabi,111,08 auf eigene Faust handeln,NH20_08,1,meta
+112,w,26,Berlin,Fachabi,111,09 den Rahmen sprengen,NH20_09,1,meta
+112,w,26,Berlin,Fachabi,111,12 zur Seite gehen,NH20_12,4,woe
+112,w,26,Berlin,Fachabi,111,13 seine Meinung ändern,NH20_13,4,woe
+112,w,26,Berlin,Fachabi,111,14 gegen den Strom schwimmen,NH20_14,1,meta
+112,w,26,Berlin,Fachabi,111,16 jemandem die Laune verderben,NH20_16,4,woe
+112,w,26,Berlin,Fachabi,111,17 jemanden in Gefahr bringen,NH20_17,4,woe
+112,w,26,Berlin,Fachabi,111,18 sich schütteln vor Lachen,NH20_18,4,woe
+112,w,26,Berlin,Fachabi,111,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+112,w,26,Berlin,Fachabi,111,20 sich die Kugel geben,NH20_20,1,meta
+112,w,26,Berlin,Fachabi,111,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+112,w,26,Berlin,Fachabi,111,22 jemandes gutes Recht sein,NH20_22,3,woe
+112,w,26,Berlin,Fachabi,111,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+112,w,26,Berlin,Fachabi,111,24 etwas im Halbschlaf hören,NH20_24,3,woe
+112,w,26,Berlin,Fachabi,111,25 ein Griff ins Klo sein,NH20_25,1,meta
+112,w,26,Berlin,Fachabi,111,27 Fahrerflucht begehen,NH20_27,1,woe
+112,w,26,Berlin,Fachabi,111,28 auf dumme Gedanken kommen,NH20_28,4,woe
+112,w,26,Berlin,Fachabi,111,29 Luftschlösser bauen,NH20_29,1,meta
+112,w,26,Berlin,Fachabi,111,31 Schritttempo fahren,NH20_31,2,woe
+114,m,32,Sachs-Anh,Uni,84,01 ein Fels in der Brandung sein,NH14_01,1,meta
+114,m,32,Sachs-Anh,Uni,84,03 jemandem den Marsch blasen,NH14_03,1,meta
+114,m,32,Sachs-Anh,Uni,84,04 jemanden in der Luft zerreißen,NH14_04,1,meta
+114,m,32,Sachs-Anh,Uni,84,05 keinen Spaß verstehen,NH14_05,4,woe
+114,m,32,Sachs-Anh,Uni,84,06 etwas aus dem Ärmel schütteln,NH14_06,1,meta
+114,m,32,Sachs-Anh,Uni,84,08 etwas an die Öffentlichkeit bringen,NH14_08,3,woe
+114,m,32,Sachs-Anh,Uni,84,09 auf jemanden ist kein Verlass,NH14_09,4,woe
+114,m,32,Sachs-Anh,Uni,84,10 einen grünen Daumen haben,NH14_10,1,meta
+114,m,32,Sachs-Anh,Uni,84,11 jemandem die Vorfahrt nehmen,NH14_11,4,woe
+114,m,32,Sachs-Anh,Uni,84,12 sich nicht von der Stelle rühren,NH14_12,3,woe
+114,m,32,Sachs-Anh,Uni,84,13 einen Rausch haben,NH14_13,3,woe
+114,m,32,Sachs-Anh,Uni,84,15 jemandem Gesellschaft leisten,NH14_15,4,woe
+114,m,32,Sachs-Anh,Uni,84,16 jemanden übers Ohr hauen,NH14_16,1,meta
+114,m,32,Sachs-Anh,Uni,84,17 auf der Durchreise sein,NH14_17,4,woe
+114,m,32,Sachs-Anh,Uni,84,18 keine Chance haben,NH14_18,4,woe
+114,m,32,Sachs-Anh,Uni,84,19 Folgerungen ziehen,NH14_19,4,woe
+114,m,32,Sachs-Anh,Uni,84,20 ein ungeschriebenes Gesetz sein,NH14_20,4,woe
+114,m,32,Sachs-Anh,Uni,84,21 bei jemandem fällt der Groschen,NH14_21,1,meta
+114,m,32,Sachs-Anh,Uni,84,22 in Führung gehen (beim Sport),NH14_22,3,woe
+114,m,32,Sachs-Anh,Uni,84,23 jemandem Unrecht tun,NH14_23,4,woe
+114,m,32,Sachs-Anh,Uni,84,24 zur Debatte stehen,NH14_24,4,woe
+114,m,32,Sachs-Anh,Uni,84,25 etwas aus Prinzip tun,NH14_25,4,woe
+114,m,32,Sachs-Anh,Uni,84,26 das fünfte Rad am Wagen sein,NH14_26,2,meta
+114,m,32,Sachs-Anh,Uni,84,27 unter Druck geraten,NH14_27,2,meta
+114,m,32,Sachs-Anh,Uni,84,28 nicht im Hause sein,NH14_28,4,woe
+114,m,32,Sachs-Anh,Uni,84,29 die Pferde scheu machen,NH14_29,1,meta
+114,m,32,Sachs-Anh,Uni,84,30 etwas in aller Deutlichkeit sagen,NH14_30,4,woe
+114,m,32,Sachs-Anh,Uni,84,31 jemandem die Laune verderben,NH14_31,4,woe
+114,m,32,Sachs-Anh,Uni,84,32 einen Eid schwören,NH14_32,4,woe
+114,m,32,Sachs-Anh,Uni,84,35 die Flinte ins Korn werfen,NH14_35,1,meta
+114,m,32,Sachs-Anh,Uni,84,01 vor Gericht stehen (ein Angeklagter),NH19_01,2,woe
+114,m,32,Sachs-Anh,Uni,84,02 zum Einsatz kommen (zB: Der Schlauch kam zum Einsatz.),NH19_02,4,woe
+114,m,32,Sachs-Anh,Uni,84,03 im Team arbeiten,NH19_03,4,woe
+114,m,32,Sachs-Anh,Uni,84,04 an Bord gehen,NH19_04,4,woe
+114,m,32,Sachs-Anh,Uni,84,05 in der Tinte sitzen,NH19_05,1,meta
+114,m,32,Sachs-Anh,Uni,84,06 jemanden zur Sau machen,NH19_06,1,meta
+114,m,32,Sachs-Anh,Uni,84,07 jemandem platzt der Kopf,NH19_07,1,meta
+114,m,32,Sachs-Anh,Uni,84,08 etwas ist in jemandes Interesse,NH19_08,4,woe
+114,m,32,Sachs-Anh,Uni,84,09 etwas in Stücke schlagen,NH19_09,3,woe
+114,m,32,Sachs-Anh,Uni,84,10 Langeweile haben,NH19_10,4,woe
+114,m,32,Sachs-Anh,Uni,84,11 die Kirche im Dorf lassen,NH19_11,1,meta
+114,m,32,Sachs-Anh,Uni,84,12 sein eigenes Leben haben,NH19_12,4,woe
+114,m,32,Sachs-Anh,Uni,84,13 gute Dienste leisten (zB: Das Handy leistet ihr gute Dienste.),NH19_13,4,woe
+114,m,32,Sachs-Anh,Uni,84,14 in Erfüllung gehen,NH19_14,4,woe
+114,m,32,Sachs-Anh,Uni,84,16 jemanden an der kurzen Leine halten,NH19_16,1,meta
+114,m,32,Sachs-Anh,Uni,84,17 das Thema wechseln,NH19_17,4,woe
+114,m,32,Sachs-Anh,Uni,84,18 etwas ist nicht jemandes Sache,NH19_18,3,woe
+114,m,32,Sachs-Anh,Uni,84,19 jemanden im Vorbeigehen grüßen,NH19_19,4,woe
+114,m,32,Sachs-Anh,Uni,84,20 mit dem Feuer spielen,NH19_20,1,meta
+114,m,32,Sachs-Anh,Uni,84,21 in Kontakt bleiben,NH19_21,4,woe
+114,m,32,Sachs-Anh,Uni,84,22 auf die schiefe Bahn geraten,NH19_22,1,meta
+114,m,32,Sachs-Anh,Uni,84,23 etwas zu seinem Vorteil nutzen,NH19_23,4,woe
+114,m,32,Sachs-Anh,Uni,84,"25 etwas am Stück kaufen (Stoff, Wurst, Brot...)",NH19_25,3,woe
+114,m,32,Sachs-Anh,Uni,84,26 jemandem Dampf machen,NH19_26,1,meta
+114,m,32,Sachs-Anh,Uni,84,27 seinen Titel verteidigen,NH19_27,3,woe
+114,m,32,Sachs-Anh,Uni,84,28 in Raten zahlen,NH19_28,4,woe
+114,m,32,Sachs-Anh,Uni,84,29 seine Berechtigung haben,NH19_29,4,woe
+114,m,32,Sachs-Anh,Uni,84,32 in Hörweite sein,NH19_32,4,woe
+114,m,32,Sachs-Anh,Uni,84,33 außer Betrieb sein,NH19_33,4,woe
+114,m,32,Sachs-Anh,Uni,84,01 keinerlei Mitgefühl haben,NH20_01,4,woe
+114,m,32,Sachs-Anh,Uni,84,02 zwischen allen Stühlen sitzen,NH20_02,1,meta
+114,m,32,Sachs-Anh,Uni,84,03 jemanden um den Finger wickeln,NH20_03,1,meta
+114,m,32,Sachs-Anh,Uni,84,04 die Axt im Walde sein,NH20_04,1,meta
+114,m,32,Sachs-Anh,Uni,84,05 ein schlechtes Gewissen haben,NH20_05,4,woe
+114,m,32,Sachs-Anh,Uni,84,07 einen empfindlichen Magen haben,NH20_07,3,woe
+114,m,32,Sachs-Anh,Uni,84,08 auf eigene Faust handeln,NH20_08,2,meta
+114,m,32,Sachs-Anh,Uni,84,09 den Rahmen sprengen,NH20_09,1,meta
+114,m,32,Sachs-Anh,Uni,84,12 zur Seite gehen,NH20_12,4,woe
+114,m,32,Sachs-Anh,Uni,84,13 seine Meinung ändern,NH20_13,4,woe
+114,m,32,Sachs-Anh,Uni,84,14 gegen den Strom schwimmen,NH20_14,1,meta
+114,m,32,Sachs-Anh,Uni,84,16 jemandem die Laune verderben,NH20_16,4,woe
+114,m,32,Sachs-Anh,Uni,84,17 jemanden in Gefahr bringen,NH20_17,4,woe
+114,m,32,Sachs-Anh,Uni,84,18 sich schütteln vor Lachen,NH20_18,2,woe
+114,m,32,Sachs-Anh,Uni,84,19 etwas auf Vorrat kaufen,NH20_19,4,woe
+114,m,32,Sachs-Anh,Uni,84,20 sich die Kugel geben,NH20_20,2,meta
+114,m,32,Sachs-Anh,Uni,84,21 ein zweischneidiges Schwert sein,NH20_21,1,meta
+114,m,32,Sachs-Anh,Uni,84,22 jemandes gutes Recht sein,NH20_22,4,woe
+114,m,32,Sachs-Anh,Uni,84,23 etwas zum Selbstzweck betreiben,NH20_23,4,woe
+114,m,32,Sachs-Anh,Uni,84,24 etwas im Halbschlaf hören,NH20_24,4,woe
+114,m,32,Sachs-Anh,Uni,84,25 ein Griff ins Klo sein,NH20_25,1,meta
+114,m,32,Sachs-Anh,Uni,84,27 Fahrerflucht begehen,NH20_27,4,woe
+114,m,32,Sachs-Anh,Uni,84,28 auf dumme Gedanken kommen,NH20_28,4,woe
+114,m,32,Sachs-Anh,Uni,84,29 Luftschlösser bauen,NH20_29,1,meta
+114,m,32,Sachs-Anh,Uni,84,31 Schritttempo fahren,NH20_31,4,woe
