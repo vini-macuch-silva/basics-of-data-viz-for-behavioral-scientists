@@ -23,6 +23,6 @@ exploring-the-data-1
 session-summary-3
 communicating-patterns-in-reaction-time-data
 enriching-the-base-visualization
-session-summary-4
 modifying-major-elements-of-the-plot-1
 refining-minor-elements-of-the-plot-1
+session-summary-4

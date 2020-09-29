@@ -2,7 +2,7 @@
 
 ## Enriching the base visualization
 
-Last session, we started dealing with continuous data, namely reading time data. Having visualized our data and explored it in terms of variability at the individual level, we ended up deciding that a simple plot showing the aggregated group means was most informative for our purposes, given the large degree of individual variation in the data and the small differences between group means. Today, we're refining the plot we decided we were going to use to communicate the main patterns of interest in the RT data. In the process of doing so, we will check the data once more, before preparing a visual report using a tool for producing high-quality documents straight out of RStudio. Let's begin by re-plotting our graph from last class.
+Last session, we started dealing with continuous data, namely reading time data. Having visualized our data and explored it in terms of variability at the individual level, we ended up deciding that a simple plot showing the aggregated group means was most informative for our purposes, given the large degree of individual variation in the data and the small differences between group means. In today's session, we're refining the plot we decided we were going to use to communicate the main patterns of interest in the RT data. Let's begin by re-plotting our graph from last class.
 
 ```{r include=FALSE}
 library(tidyverse)
@@ -70,7 +70,7 @@ mean_CI_RT_control %>%
 
 ```
 
-Now, let's change the color palette of our plot. Since we are using shapes to differentiate between controls and idioms, we can color-code our control-target pairs. For now, let's color literal idioms in purple, metaphors in dark green, and metonomies in light green. Although the resulting visual impact might be subtle, our line of reasoning is that, according to what we know about their semantic structure, literal idioms and metaphors lie at opposite ends of the non-literalness spectrum, metonomies lying somewhere in between both. Our color code can reflect that intuition, regardless of the actual degree to which the reading patterns support the theoretically-motivated hypothesis that semantic structure affects the online processing of idioms.
+Now, let's change the color palette of our plot. Since we are using shapes to differentiate between controls and idioms, we can color-code our control-target pairs. For now, let's color literal idioms in purple, metaphors in dark green, and metonomies in light green. Although the resulting visual impact might be subtle, our line of reasoning is that, according to what we know about their semantic structure, literal idioms and metaphors lie at opposite ends of the non-literalness spectrum, metonomies lying somewhere in between the two. Our color code can reflect that intuition, regardless of the actual degree to which the reading patterns support the theoretically-motivated hypothesis that semantic structure affects the online processing of idioms.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_control %>%
@@ -101,7 +101,7 @@ mean_CI_RT_control %>%
 
 ```
 
-This looks better. Still, visually speaking, the light green representing metonomies is not contrasted enough with the white background. One tentative solution is to color the shape contours in black, which we already know we can do by using shapes that allow both `fill` and `color` aesthetic specifications. Let's try doing that. Before we do so, however, notice how the mapping for `color` within both `geom_errorbar()` and `geom_point()` is **cond2**. Instead of specifying `color` twice, once for each geom, we can use a single specification in the superordinate `ggplot()` call, which means that the `color = cond2` mapping will be used for all geoms `ggplot()` scopes over. Notice the difference in the code below, despite the output looking exactly the same.
+This looks better. Still, visually speaking, the light green representing metonomies is not contrasted enough with the white background. One tentative solution is to color the shape contours in black, which we already know we can do by using shapes that allow both `fill` and `color` aesthetic specifications. Let's try doing that. Before we do so, however, take a look at the mapping for `color` within `geom_errorbar()` and `geom_point()`: we have the same variable, **cond2**, in both cases. Instead of specifying `color` twice, once for each geom, we can use a single specification in the superordinate `ggplot()` call, which means that the `color = cond2` mapping will be used for all geoms `ggplot()` scopes over. Notice the difference in the code below, despite the output looking exactly the same.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_control %>%
@@ -131,7 +131,7 @@ mean_CI_RT_control %>%
 
 ```
 
-Notice how the shape contours are now colored black. And yet, the color of the shapes also changed, reverting back to the **ggplot2** default. That is because we're only manually specifying colors for the `color` aesthetic but not for the `fill` aesthetic. Let's then add a `scale_fill_manual()` call with the desired color values. Let's also slightly increase the size of the error bars, making them, in practice, thicker.
+Notice how the shape contours are now colored black. And yet, the color of the shapes also changed, reverting back to the **ggplot2** default. That is because we're only manually specifying colors for the `color` aesthetic but not for the `fill` aesthetic. Let's then add a `scale_fill_manual()` call with the desired color values. Let's also slightly increase the size of the error bars, making them, in practice, thicker, and let's slightl increase their transparency.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_control %>%
@@ -181,7 +181,7 @@ mean_CI_RT_control %>%
 
 ```
 
-The change worked as intended, but maybe the plot is slightly too confusing now, with not only different shapes but also different colors both in the points and the error bars. Let's revert the error bars back to how they were before, and let's increase the thickness of black contour around the plotted shapes, so as to increase the contrast between the shapes and the error bars. A simple way of doing that is by increasing the `stroke` aesthetic within `geom_point()`.
+The change worked as intended, but maybe the plot is slightly too confusing now, with not only different shapes but also different colors both in the points and the error bars. Let's revert the error bars back to how they were before, and let's increase the thickness of the black contour around the plotted shapes, so as to increase the contrast between the shapes and the error bars. A simple way of doing that is by increasing the `stroke` aesthetic within `geom_point()`.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_control %>%
@@ -237,7 +237,7 @@ mean_CI_RT_control %>%
 
 ```
 
-Next, we're modifying the y-axis and increasing the legibility of the ticks/ labels.
+Next, we're increasing the legibility of both the ticks and the labels.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_control %>%
@@ -344,17 +344,18 @@ mean_CI_RT_control %>%
 
 ```
 
-Notice that when using multiple layers transparency might not work as intended.
+The legend now looks fine. To finish up, we could try increasing the transparency of our controls, to highlight the contrast with the idioms. Notice, however, that when using multiple layers transparency might not work as intended.
 
 ```{r out.width="70%", fig.align='center'}
 mean_CI_RT_control %>%
-  ggplot(aes(chunk, mean, color = cond2)) +
+  ggplot(aes(chunk, mean, color = cond2, alpha = .7)) +
   geom_errorbar(aes(ymin = CILow, ymax = CIHigh), size = 1.1, 
-                position = position_dodge(.9), width = .2, alpha = .7) +
+                position = position_dodge(.9), width = .2) +
   geom_point(aes(shape = cond2), color = "black", size = 5.5, 
              position = position_dodge(.9)) +
   geom_point(aes(shape = cond2), size = 4, 
              position = position_dodge(.9)) +
+  scale_alpha_continuous(guide = FALSE) +
   scale_shape_manual(values = c("circle", "square", "circle", "square", "circle", "square"), name = "Expression type", 
                     labels = c("control_literal" = "Control", "literal" = "Literal", "control_metaphoric" = "Control", "metaphoric" = "Metaphoric", "control_metonymic" = "Control", "metonymic" = "Metonymic")) +
   scale_fill_manual(values = c("#4575b4", "#4575b4", "#fee090", "#fee090", "#d73027", "#d73027")) +
@@ -373,10 +374,68 @@ mean_CI_RT_control %>%
 
 ```
 
+One possible fix is to use `scale_alpha_manual()` to have a higher degree of control over which levels become [more] transparent.
+
+```{r out.width="70%", fig.align='center'}
+mean_CI_RT_control %>%
+  ggplot(aes(chunk, mean, color = cond2)) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh, alpha = cond2), size = 1.1, 
+                position = position_dodge(.9), width = .2) +
+  geom_point(aes(shape = cond2, alpha = cond2), color = "black", size = 5.5, 
+             position = position_dodge(.9)) +
+  geom_point(aes(shape = cond2), size = 4, 
+             position = position_dodge(.9)) +
+  scale_alpha_manual(values = c(.5, .9, .5, .9, .5, .9), guide = FALSE) +
+  scale_shape_manual(values = c("circle", "square", "circle", "square", "circle", "square"), name = "Expression type", 
+                    labels = c("control_literal" = "Control", "literal" = "Literal", "control_metaphoric" = "Control", "metaphoric" = "Metaphoric", "control_metonymic" = "Control", "metonymic" = "Metonymic")) +
+  scale_fill_manual(values = c("#4575b4", "#4575b4", "#fee090", "#fee090", "#d73027", "#d73027")) +
+  scale_color_manual(values = c("#4575b4", "#4575b4", "#fee090", "#fee090", "#d73027", "#d73027"), name = "Expression type", 
+                    labels = c("control_literal" = "Control", "literal" = "Literal", "control_metaphoric" = "Control", "metaphoric" = "Metaphoric", "control_metonymic" = "Control", "metonymic" = "Metonymic")) +
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.x = element_blank(),
+        axis.text.y = element_text(face = "bold", size = 10), 
+        axis.text.x = element_text(face = "bold", size = 14),
+        plot.title = element_text(face = "bold", size = 24, hjust = .5, 
+                                  margin = margin(t = 10, r = 0, b = 40, l = 0)),
+        legend.title.align = 0.5,) +
+  scale_x_discrete(labels = c("idiom" = "Idiom", "post_idiom" = "Post-idiom")) +
+  ggtitle("Reading times")
+
+```
+
+Alternatively, we could color our controls black, and use a different shape for each control-target pair.
+
+```{r out.width="70%", fig.align='center'}
+mean_CI_RT_control %>%
+  ggplot(aes(chunk, mean, color = cond2, alpha = cond2)) +
+  geom_errorbar(aes(ymin = CILow, ymax = CIHigh), size = 1.1, 
+                position = position_dodge(.9), width = .2) +
+  geom_point(aes(shape = cond2), color = "black", size = 5.5, 
+             position = position_dodge(.9)) +
+  geom_point(aes(shape = cond2), size = 4, 
+             position = position_dodge(.9)) +
+  scale_alpha_manual(values = c(.5, .9, .5, .9, .5, .9), guide = FALSE) +
+  scale_shape_manual(values = c("circle", "circle", "square", "square", "triangle", "triangle"), name = "Expression type", 
+                    labels = c("control_literal" = "Control", "literal" = "Literal", "control_metaphoric" = "Control", "metaphoric" = "Metaphoric", "control_metonymic" = "Control", "metonymic" = "Metonymic")) +
+  scale_fill_manual(values = c("black", "#4575b4", "black", "#fee090", "black", "#d73027")) +
+  scale_color_manual(values = c("black", "#4575b4", "black", "#fee090", "black", "#d73027"), name = "Expression type", 
+                    labels = c("control_literal" = "Control", "literal" = "Literal", "control_metaphoric" = "Control", "metaphoric" = "Metaphoric", "control_metonymic" = "Control", "metonymic" = "Metonymic")) +
+  theme_minimal() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(),
+        panel.grid.major.x = element_blank(),
+        axis.text.y = element_text(face = "bold", size = 10), 
+        axis.text.x = element_text(face = "bold", size = 14),
+        plot.title = element_text(face = "bold", size = 24, hjust = .5, 
+                                  margin = margin(t = 10, r = 0, b = 40, l = 0)),
+        legend.title.align = 0.5,) +
+  scale_x_discrete(labels = c("idiom" = "Idiom", "post_idiom" = "Post-idiom")) +
+  ggtitle("Reading times")
+
+```
+
 ## Session summary
 
-* Today we learned that we should start by plotting whole distributions or ranges of data before focusing on any groupings of interest when dealing with continuous data. That should give us, as analysts, an overview of what our data -- and even more specifically, our main variable of interest -- looks like. We can inspect the whole distribution of responses/ measurements and see if anything looks irregular or unexpected. From there, we can start digging deeper into the data in order to plot those patterns that help us answer our questions of interest;
+* Today we learned how to improve visualizations that involve point estimates, or summary statistics, as opposed to whole distributions or intervals of data. Most importantly, we explored different ways of highlighting our contrasts of interest, which in the case of the data at hand were theoretically-motivated contrasts between sets of experimental items;
 
-* If we are interested in groups or clusters of data, we should eventually group it as necessary, ideally breaking the data into sub-distributions. This will usually involve introducing more variables into our visualizations and wrangling the data back and forth between different formats. If we are plotting point estimates, like sample means, we might need to calculate those values first; we will usually also want to have a measure of variability in the data, for instance a confidence interval. As we've seen, with **ggplot2** we can plot point estimates using `geom_point()` and confidence intervals using `geom_errobar()`;
-
-* If we are testing hypotheses, the first thing we should do after having calculated the comparisons of interest is to plot exactly the necessary comparisons, as formulated in the original predictions. We will want to check whether our predictions are borne out in the data, and, more specifically, for what combinations of groups/ comparisons. This might involve further exploring the data, however, the main plot used to communicate the results should clearly and unambiguously reflect the contrasts originally formulated in the study predictions.
+* The major visual/ aesthetic element we modified in the plot was the color and the shapes of the plotted groups. We saw that we can combine these two aesthetics in different ways so as to highlight our contrasts of interest, which might involve subtle differences between groups. Certain combinations of aesthetics might be more visually striking than others, though at the end of the day these are design choices that are influenced by individual preferences from the side of the analyst. Aside from major aesthetic changes and other general improvements to the plot such as adding a title and customizing the legend, we made minor improvements to the plot involving changing the grid lines in the background and increasing the distance between the plotted points.
